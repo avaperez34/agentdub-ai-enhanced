@@ -1,0 +1,383 @@
+import { useState, useEffect } from "react";
+import { Input } from "@/components/ui/input";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Badge } from "@/components/ui/badge";
+import { ExternalLink } from "lucide-react";
+
+interface Agent {
+  name: string;
+  slug: string;
+  website: string;
+  category: string;
+  sectors: string[];
+  deployment: string[];
+  gcc: {
+    uae_compliant: boolean;
+    saudi_compliant: boolean;
+    qatar_sovereign_cloud_compatible: boolean;
+    arabic_nlp_quality: string;
+    local_support: string;
+  };
+  scores: {
+    residency_hosting: number;
+    arabic_support: number;
+    deployment_model: number;
+    security_enterprise: number;
+    sector_fit: number;
+  };
+  badges: string[];
+  sentinel_brief: string;
+  risk_snapshot: string;
+  adoption_outlook: string;
+  recommended_use_case: string;
+}
+
+interface AgentsData {
+  updated: string;
+  agents: Agent[];
+}
+
+export default function Directory() {
+  const [agents, setAgents] = useState<Agent[]>([]);
+  const [filteredAgents, setFilteredAgents] = useState<Agent[]>([]);
+  const [search, setSearch] = useState("");
+  const [categoryFilter, setCategoryFilter] = useState("");
+  const [deploymentFilter, setDeploymentFilter] = useState("");
+  const [sectorFilter, setSectorFilter] = useState("");
+  const [gccFilter, setGccFilter] = useState("");
+  const [sortBy, setSortBy] = useState("score_desc");
+  const [categories, setCategories] = useState<string[]>([]);
+  const [deployments, setDeployments] = useState<string[]>([]);
+  const [sectors, setSectors] = useState<string[]>([]);
+
+  // Load agents data
+  useEffect(() => {
+    fetch("/data/agents.json")
+      .then((res) => res.json())
+      .then((data: AgentsData) => {
+        setAgents(data.agents);
+
+        // Extract unique values for filters
+        const cats = Array.from(new Set(data.agents.map((a) => a.category)));
+        const deps = Array.from(
+          new Set(data.agents.flatMap((a) => a.deployment))
+        );
+        const secs = Array.from(
+          new Set(data.agents.flatMap((a) => a.sectors))
+        );
+
+        setCategories(cats.sort());
+        setDeployments(deps.sort());
+        setSectors(secs.sort());
+      });
+  }, []);
+
+  // Filter and sort agents
+  useEffect(() => {
+    let filtered = agents;
+
+    // Search filter
+    if (search) {
+      const q = search.toLowerCase();
+      filtered = filtered.filter(
+        (a) =>
+          a.name.toLowerCase().includes(q) ||
+          a.category.toLowerCase().includes(q) ||
+          a.sectors.some((s) => s.toLowerCase().includes(q))
+      );
+    }
+
+    // Category filter
+    if (categoryFilter && categoryFilter !== "all") {
+      filtered = filtered.filter((a) => a.category === categoryFilter);
+    }
+
+    // Deployment filter
+    if (deploymentFilter && deploymentFilter !== "all") {
+      filtered = filtered.filter((a) => a.deployment.includes(deploymentFilter));
+    }
+
+    // Sector filter
+    if (sectorFilter && sectorFilter !== "all") {
+      filtered = filtered.filter((a) => a.sectors.includes(sectorFilter));
+    }
+
+    // GCC compliance filter
+    if (gccFilter && gccFilter !== "any") {
+      filtered = filtered.filter((a) => {
+        if (gccFilter === "uae") return a.gcc.uae_compliant;
+        if (gccFilter === "saudi") return a.gcc.saudi_compliant;
+        if (gccFilter === "qatar") return a.gcc.qatar_sovereign_cloud_compatible;
+        return true;
+      });
+    }
+
+    // Sorting
+    filtered.sort((a, b) => {
+      const scoreA = Object.values(a.scores).reduce((sum, val) => sum + val, 0);
+      const scoreB = Object.values(b.scores).reduce((sum, val) => sum + val, 0);
+
+      if (sortBy === "score_desc") return scoreB - scoreA;
+      if (sortBy === "score_asc") return scoreA - scoreB;
+      if (sortBy === "name_asc") return a.name.localeCompare(b.name);
+      if (sortBy === "name_desc") return b.name.localeCompare(a.name);
+      return 0;
+    });
+
+    setFilteredAgents(filtered);
+  }, [agents, search, categoryFilter, deploymentFilter, sectorFilter, gccFilter, sortBy]);
+
+  const getStatusColor = (outlook: string) => {
+    if (outlook === "Enterprise-Ready") return "bg-status-ready text-white";
+    if (outlook === "Emerging") return "bg-status-emerging text-black";
+    return "bg-status-not-ready text-white";
+  };
+
+  const getTotalScore = (agent: Agent) => {
+    return Object.values(agent.scores).reduce((sum, val) => sum + val, 0);
+  };
+
+  return (
+    <div className="min-h-screen bg-background">
+      <div className="max-w-6xl mx-auto px-4 py-12">
+        {/* Header */}
+        <div className="mb-12">
+          <h1 className="text-4xl font-bold mb-2">AI Players Directory</h1>
+          <p className="text-muted-foreground text-lg">
+            Strategic intelligence directory of AI agents and enterprise tools with GCC readiness
+            scoring.
+          </p>
+        </div>
+
+        {/* Filters */}
+        <div className="bg-card border border-border rounded-lg p-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+            <div>
+              <label className="text-sm font-medium text-muted-foreground block mb-2">
+                Search
+              </label>
+              <Input
+                placeholder="Search by name, category, sector..."
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                className="bg-input border-border"
+              />
+            </div>
+
+            <div>
+              <label className="text-sm font-medium text-muted-foreground block mb-2">
+                Category
+              </label>
+              <Select value={categoryFilter} onValueChange={setCategoryFilter}>
+                <SelectTrigger className="bg-input border-border">
+                  <SelectValue placeholder="All categories" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="all">All categories</SelectItem>
+                  {categories.map((cat) => (
+                    <SelectItem key={cat} value={cat}>
+                      {cat}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+
+            <div>
+              <label className="text-sm font-medium text-muted-foreground block mb-2">
+                Deployment
+              </label>
+              <Select value={deploymentFilter} onValueChange={setDeploymentFilter}>
+                <SelectTrigger className="bg-input border-border">
+                  <SelectValue placeholder="All deployments" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="all">All deployments</SelectItem>
+                  {deployments.map((dep) => (
+                    <SelectItem key={dep} value={dep}>
+                      {dep}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+
+            <div>
+              <label className="text-sm font-medium text-muted-foreground block mb-2">
+                Sector
+              </label>
+              <Select value={sectorFilter} onValueChange={setSectorFilter}>
+                <SelectTrigger className="bg-input border-border">
+                  <SelectValue placeholder="All sectors" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="all">All sectors</SelectItem>
+                  {sectors.map((sec) => (
+                    <SelectItem key={sec} value={sec}>
+                      {sec}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+
+            <div>
+              <label className="text-sm font-medium text-muted-foreground block mb-2">
+                GCC Compliance
+              </label>
+              <Select value={gccFilter} onValueChange={setGccFilter}>
+                <SelectTrigger className="bg-input border-border">
+                  <SelectValue placeholder="Any" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="any">Any</SelectItem>
+                  <SelectItem value="uae">UAE-compliant</SelectItem>
+                  <SelectItem value="saudi">Saudi-compliant</SelectItem>
+                  <SelectItem value="qatar">Qatar sovereign cloud</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+
+            <div>
+              <label className="text-sm font-medium text-muted-foreground block mb-2">
+                Sort By
+              </label>
+              <Select value={sortBy} onValueChange={setSortBy}>
+                <SelectTrigger className="bg-input border-border">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="score_desc">Score (High → Low)</SelectItem>
+                  <SelectItem value="score_asc">Score (Low → High)</SelectItem>
+                  <SelectItem value="name_asc">Name (A → Z)</SelectItem>
+                  <SelectItem value="name_desc">Name (Z → A)</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+          </div>
+
+          {/* Info pills */}
+          <div className="flex flex-wrap gap-2 items-center">
+            <Badge variant="outline" className="text-xs">
+              0–10: Not Ready
+            </Badge>
+            <Badge variant="outline" className="text-xs">
+              11–17: Emerging
+            </Badge>
+            <Badge variant="outline" className="text-xs">
+              18–25: Enterprise-Ready
+            </Badge>
+            <div className="ml-auto text-sm text-muted-foreground">
+              {filteredAgents.length} of {agents.length} agents
+            </div>
+          </div>
+        </div>
+
+        {/* Agent Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredAgents.map((agent) => {
+            const totalScore = getTotalScore(agent);
+            return (
+              <div
+                key={agent.slug}
+                className="bg-card border border-border rounded-lg p-6 hover:border-accent/50 transition-all hover:shadow-lg"
+              >
+                {/* Header */}
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className="text-lg font-bold text-foreground">{agent.name}</h3>
+                    <p className="text-sm text-muted-foreground">{agent.category}</p>
+                  </div>
+                  <Badge className={`${getStatusColor(agent.adoption_outlook)} text-xs`}>
+                    {agent.adoption_outlook}
+                  </Badge>
+                </div>
+
+                {/* Score Bar */}
+                <div className="mb-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-xs font-medium text-muted-foreground">Readiness</span>
+                    <span className="text-sm font-bold text-accent">{totalScore}/25</span>
+                  </div>
+                  <div className="w-full h-2 bg-secondary rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-accent rounded-full transition-all"
+                      style={{ width: `${(totalScore / 25) * 100}%` }}
+                    />
+                  </div>
+                </div>
+
+                {/* Sectors & Deployment */}
+                <div className="mb-4 space-y-2">
+                  <div className="flex flex-wrap gap-1">
+                    {agent.sectors.map((sector) => (
+                      <Badge key={sector} variant="secondary" className="text-xs">
+                        {sector}
+                      </Badge>
+                    ))}
+                  </div>
+                  <div className="flex flex-wrap gap-1">
+                    {agent.deployment.map((dep) => (
+                      <Badge key={dep} variant="outline" className="text-xs">
+                        {dep}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Brief */}
+                <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
+                  {agent.sentinel_brief}
+                </p>
+
+                {/* GCC Compliance */}
+                <div className="mb-4 p-3 bg-secondary rounded-md">
+                  <p className="text-xs font-medium text-muted-foreground mb-2">GCC Status</p>
+                  <div className="space-y-1 text-xs">
+                    {agent.gcc.uae_compliant && (
+                      <div className="text-accent">✓ UAE-compliant</div>
+                    )}
+                    {agent.gcc.saudi_compliant && (
+                      <div className="text-accent">✓ Saudi-compliant</div>
+                    )}
+                    {agent.gcc.qatar_sovereign_cloud_compatible && (
+                      <div className="text-accent">✓ Qatar sovereign cloud</div>
+                    )}
+                    {!agent.gcc.uae_compliant &&
+                      !agent.gcc.saudi_compliant &&
+                      !agent.gcc.qatar_sovereign_cloud_compatible && (
+                        <div className="text-muted-foreground">No GCC compliance verified</div>
+                      )}
+                  </div>
+                </div>
+
+                {/* Website Link */}
+                <a
+                  href={agent.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-accent hover:text-accent/80 text-sm font-medium transition-colors"
+                >
+                  Visit Website
+                  <ExternalLink size={14} />
+                </a>
+              </div>
+            );
+          })}
+        </div>
+
+        {filteredAgents.length === 0 && (
+          <div className="text-center py-12">
+            <p className="text-muted-foreground text-lg">No agents found matching your filters.</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
