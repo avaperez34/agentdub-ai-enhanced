@@ -9,6 +9,9 @@ import Home from "./pages/Home";
 import Directory from "./pages/Directory";
 import Sentinel from "./pages/Sentinel";
 import Intelligence from "./pages/Intelligence";
+import Signal001 from "./pages/Signal001";
+import Signal002 from "./pages/Signal002";
+import Signal003 from "./pages/Signal003";
 import Investors from "./pages/Investors";
 
 function Router() {
@@ -20,6 +23,9 @@ function Router() {
         <Route path={"/directory"} component={Directory} />
         <Route path={"/sentinel"} component={Sentinel} />
         <Route path={"/intelligence"} component={Intelligence} />
+        <Route path={"/signals/001"} component={Signal001} />
+        <Route path={"/signals/002"} component={Signal002} />
+        <Route path={"/signals/003"} component={Signal003} />
         <Route path={"/investors"} component={Investors} />
         <Route path={"/404"} component={NotFound} />
         {/* Final fallback route */}
