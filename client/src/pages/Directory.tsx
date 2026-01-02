@@ -161,7 +161,7 @@ export default function Directory() {
             <div>
               <h3 className="text-lg font-bold mb-2">Free Preview — 3 Results Shown</h3>
               <p className="text-muted-foreground">
-                Access the complete directory with 50+ AI agents, detailed GCC compliance data, and monthly updates.
+                Access the complete directory with 500+ AI agents across GCC, detailed compliance data, and monthly updates.
               </p>
             </div>
             <a
