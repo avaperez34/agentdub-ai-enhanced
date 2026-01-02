@@ -155,6 +155,28 @@ export default function Directory() {
           </p>
         </div>
 
+        {/* Free Version Notice & Buy Button */}
+        <div className="bg-accent/10 border border-accent/30 rounded-lg p-6 mb-8">
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div>
+              <h3 className="text-lg font-bold mb-2">Free Preview — 3 Results Shown</h3>
+              <p className="text-muted-foreground">
+                Access the complete directory with 50+ AI agents, detailed GCC compliance data, and monthly updates.
+              </p>
+            </div>
+            <a
+              href="https://gumroad.com/your-product-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0"
+            >
+              <button className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors whitespace-nowrap">
+                Buy Full Report →
+              </button>
+            </a>
+          </div>
+        </div>
+
         {/* Filters */}
         <div className="bg-card border border-border rounded-lg p-6 mb-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
