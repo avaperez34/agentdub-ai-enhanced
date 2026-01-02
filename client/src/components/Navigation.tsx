@@ -19,9 +19,11 @@ export default function Navigation() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 font-bold text-lg">
-            <div className="w-8 h-8 rounded-full bg-accent flex items-center justify-center text-accent-foreground text-sm font-bold">
-              AD
-            </div>
+            <img 
+              src="/logo-green.png" 
+              alt="AgentDub Logo" 
+              className="h-8 w-auto"
+            />
             <span className="hidden sm:inline">AgentDub</span>
           </Link>
 
