@@ -44,9 +44,94 @@ interface AgentsData {
   agents: Agent[];
 }
 
+// Hardcoded 3 real companies from the full report
+const STATIC_AGENTS: Agent[] = [
+  {
+    name: "G42",
+    slug: "g42",
+    website: "https://www.g42.ai/",
+    category: "Enterprise AI",
+    sectors: ["Technology", "Healthcare", "Government"],
+    deployment: ["Cloud", "Hybrid"],
+    gcc: {
+      uae_compliant: true,
+      saudi_compliant: true,
+      qatar_sovereign_cloud_compatible: true,
+      arabic_nlp_quality: "High",
+      local_support: "Available"
+    },
+    scores: {
+      residency_hosting: 5,
+      arabic_support: 4,
+      deployment_model: 5,
+      security_enterprise: 5,
+      sector_fit: 4
+    },
+    badges: ["Enterprise", "GovTech"],
+    sentinel_brief: "National technology holding group, AI and cloud computing leader in UAE",
+    risk_snapshot: "Tier 1 national champion with government backing",
+    adoption_outlook: "Enterprise-Ready",
+    recommended_use_case: "Large-scale AI infrastructure, government projects, healthcare AI"
+  },
+  {
+    name: "SDAIA (Saudi Data & AI Authority)",
+    slug: "sdaia",
+    website: "https://sdaia.gov.sa/",
+    category: "Government AI",
+    sectors: ["Government", "Technology"],
+    deployment: ["Hybrid", "On-Premise"],
+    gcc: {
+      uae_compliant: false,
+      saudi_compliant: true,
+      qatar_sovereign_cloud_compatible: false,
+      arabic_nlp_quality: "Excellent",
+      local_support: "Available"
+    },
+    scores: {
+      residency_hosting: 5,
+      arabic_support: 5,
+      deployment_model: 5,
+      security_enterprise: 5,
+      sector_fit: 5
+    },
+    badges: ["Government", "Regulated"],
+    sentinel_brief: "Saudi Data and AI Authority, national AI strategy and governance",
+    risk_snapshot: "Government entity driving Vision 2030 AI initiatives",
+    adoption_outlook: "Enterprise-Ready",
+    recommended_use_case: "Government AI projects, national data governance, smart city initiatives"
+  },
+  {
+    name: "Core42",
+    slug: "core42",
+    website: "https://core42.ai/",
+    category: "Enterprise AI",
+    sectors: ["Technology", "Cloud Services"],
+    deployment: ["Cloud", "Hybrid"],
+    gcc: {
+      uae_compliant: true,
+      saudi_compliant: true,
+      qatar_sovereign_cloud_compatible: false,
+      arabic_nlp_quality: "Medium",
+      local_support: "Available"
+    },
+    scores: {
+      residency_hosting: 5,
+      arabic_support: 3,
+      deployment_model: 5,
+      security_enterprise: 5,
+      sector_fit: 3
+    },
+    badges: ["Enterprise", "Cloud"],
+    sentinel_brief: "G42's national-scale AI enablement and sovereign cloud services",
+    risk_snapshot: "Tier 1 company, part of G42 ecosystem",
+    adoption_outlook: "Enterprise-Ready",
+    recommended_use_case: "Sovereign cloud infrastructure, AI model deployment, enterprise AI solutions"
+  }
+];
+
 export default function Directory() {
   const { trackButtonClick, trackPurchaseIntent } = useAnalytics();
-  const [agents, setAgents] = useState<Agent[]>([]);
+  const [agents] = useState<Agent[]>(STATIC_AGENTS);
   const [filteredAgents, setFilteredAgents] = useState<Agent[]>([]);
   const [search, setSearch] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("");
@@ -54,42 +139,11 @@ export default function Directory() {
   const [sectorFilter, setSectorFilter] = useState("");
   const [gccFilter, setGccFilter] = useState("");
   const [sortBy, setSortBy] = useState("score_desc");
-  const [categories, setCategories] = useState<string[]>([]);
-  const [deployments, setDeployments] = useState<string[]>([]);
-  const [sectors, setSectors] = useState<string[]>([]);
+  const [categories] = useState<string[]>(["Enterprise AI", "Government AI"]);
+  const [deployments] = useState<string[]>(["Cloud", "Hybrid", "On-Premise"]);
+  const [sectors] = useState<string[]>(["Technology", "Government", "Healthcare", "Cloud Services"]);
 
-  // Load agents data
-  useEffect(() => {
-    console.log('Fetching agents data...');
-    fetch("/data/agents.json")
-      .then((res) => {
-        console.log('Fetch response:', res.status);
-        if (!res.ok) {
-          throw new Error(`HTTP error! status: ${res.status}`);
-        }
-        return res.json();
-      })
-      .then((data: AgentsData) => {
-        console.log('Agents data loaded:', data.agents.length, 'agents');
-        setAgents(data.agents);
-
-        // Extract unique values for filters
-        const cats = Array.from(new Set(data.agents.map((a) => a.category)));
-        const deps = Array.from(
-          new Set(data.agents.flatMap((a) => a.deployment))
-        );
-        const secs = Array.from(
-          new Set(data.agents.flatMap((a) => a.sectors))
-        );
-
-        setCategories(cats.sort());
-        setDeployments(deps.sort());
-        setSectors(secs.sort());
-      })
-      .catch((error) => {
-        console.error('Error loading agents:', error);
-      });
-  }, []);
+  // No need to load data - using static agents
 
   // Filter and sort agents
   useEffect(() => {
