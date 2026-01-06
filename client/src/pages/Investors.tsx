@@ -237,14 +237,14 @@ export default function Investors() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-emerald-500 hover:bg-emerald-600" asChild>
-              <a href="https://gumroad.com/your-product-link" target="_blank" rel="noopener noreferrer">
+              <a href="https://agentdubai.gumroad.com/l/gcc-ai-directory" target="_blank" rel="noopener noreferrer">
                 Buy Full Report - $299
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>
             
             <Button size="lg" variant="outline" className="border-emerald-500 text-emerald-500 hover:bg-emerald-500/10" asChild>
-              <a href="https://gumroad.com/your-subscription-link" target="_blank" rel="noopener noreferrer">
+              <a href="https://agentdubai.gumroad.com/l/gcc-ai-directory" target="_blank" rel="noopener noreferrer">
                 Subscribe - $29/month
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>

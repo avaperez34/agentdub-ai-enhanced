@@ -165,7 +165,7 @@ export default function Directory() {
               </p>
             </div>
             <a
-              href="https://gumroad.com/your-product-link"
+              href="https://agentdubai.gumroad.com/l/gcc-ai-directory"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-shrink-0"
