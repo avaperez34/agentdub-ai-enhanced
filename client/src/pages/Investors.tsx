@@ -238,7 +238,7 @@ export default function Investors() {
             Make informed investment decisions with the most complete GCC AI intelligence available.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Button size="lg" className="bg-emerald-500 hover:bg-emerald-600" asChild>
               <a 
                 href="https://agentdubai.gumroad.com/l/gcc-ai-directory" 
@@ -253,25 +253,10 @@ export default function Investors() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>
-            
-            <Button size="lg" variant="outline" className="border-emerald-500 text-emerald-500 hover:bg-emerald-500/10" asChild>
-              <a 
-                href="https://agentdubai.gumroad.com/l/gcc-ai-directory" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                onClick={() => {
-                  trackButtonClick('subscribe_monthly_investors', 'gumroad');
-                  trackPurchaseIntent('GCC AI Directory - Monthly Subscription', 29);
-                }}
-              >
-                Subscribe - $29/month
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
-            </Button>
           </div>
           
           <p className="text-sm text-muted-foreground mt-6">
-            Both options include monthly updates with new companies and refreshed data
+            Includes lifetime access with monthly updates featuring new companies and refreshed data
           </p>
         </div>
       </section>
