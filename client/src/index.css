@@ -157,11 +157,18 @@
   
   .goog-te-gadget {
     font-family: inherit !important;
-    font-size: 0 !important;
   }
   
   .goog-te-gadget span {
     display: none !important;
+  }
+  
+  .goog-te-gadget .goog-te-combo {
+    font-size: 0.875rem !important;
+  }
+  
+  .goog-te-gadget .goog-te-combo option {
+    font-size: 0.875rem !important;
   }
   
   .goog-te-combo {

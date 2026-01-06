@@ -5,7 +5,6 @@
  * - Professional presentation for institutional investors
  */
 
-import { Navigation } from "@/components/Navigation";
 import { useAnalytics } from "@/hooks/useAnalytics";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -16,7 +15,6 @@ export default function Investors() {
   
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
       
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-4">
