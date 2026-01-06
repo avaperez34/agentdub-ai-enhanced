@@ -6,7 +6,7 @@ import { ArrowRight, Share2 } from "lucide-react";
 export default function Sentinel() {
   const shareUrl = typeof window !== "undefined" ? encodeURIComponent(window.location.href) : "";
   const shareText = encodeURIComponent(
-    "AgentDub Sentinel — strategic AI intelligence on Dubai & GCC transformation."
+    "AgentDubai Sentinel — strategic AI intelligence on Dubai & GCC transformation."
   );
 
   return (
@@ -20,7 +20,7 @@ export default function Sentinel() {
             </Badge>
           </div>
 
-          <h1 className="text-5xl font-bold mb-6">AgentDub Sentinel</h1>
+          <h1 className="text-5xl font-bold mb-6">AgentDubai Sentinel</h1>
 
           <p className="text-xl text-muted-foreground mb-8 leading-relaxed max-w-3xl">
             Sentinel is a strategic AI intelligence agent designed to monitor and interpret Dubai's
@@ -171,7 +171,7 @@ export default function Sentinel() {
           <div className="bg-card border border-border rounded-lg p-6">
             <h2 className="text-2xl font-bold mb-4">Positioning</h2>
             <p className="text-muted-foreground">
-              AgentDub.ai is built as a <strong>strategic intelligence asset</strong>, not mass
+              AgentDubai is built as a <strong>strategic intelligence asset</strong>, not mass
               media. Sentinel creates a compounding advantage: continuous analysis on one of the
               world's most aggressive AI economies.
             </p>
@@ -179,7 +179,7 @@ export default function Sentinel() {
         </section>
 
         <footer className="text-center text-sm text-muted-foreground pt-8 border-t border-border">
-          © {new Date().getFullYear()} AgentDub.ai • Sentinel is a strategic intelligence layer.
+          © {new Date().getFullYear()} AgentDubai • Sentinel is a strategic intelligence layer.
           Signal, not noise.
         </footer>
       </div>

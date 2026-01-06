@@ -60,7 +60,7 @@ export default function Home() {
       {/* Why AgentDub Section */}
       <section className="py-20 px-4 bg-card border-t border-border">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">Why AgentDub.ai</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center">Why AgentDubai</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="p-6 rounded-lg bg-background border border-border hover:border-accent/50 transition-all">
@@ -97,7 +97,7 @@ export default function Home() {
               raises fundamental questions around trust, control, scalability, and economic impact.
             </p>
             <p className="text-muted-foreground">
-              AgentDub.ai exists to document this shift—clearly, independently, and with a regional
+              AgentDubai exists to document this shift—clearly, independently, and with a regional
               lens aligned with Dubai's ambition to lead in applied AI.
             </p>
           </div>
@@ -160,7 +160,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h4 className="font-bold mb-4">AgentDub.ai</h4>
+              <h4 className="font-bold mb-4">AgentDubai</h4>
               <p className="text-sm text-muted-foreground">
                 Independent intelligence on AI agents and digital transformation.
               </p>
@@ -215,7 +215,7 @@ export default function Home() {
           </div>
 
           <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()} AgentDub.ai. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} AgentDubai. All rights reserved.</p>
           </div>
         </div>
       </footer>

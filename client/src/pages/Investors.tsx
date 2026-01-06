@@ -183,7 +183,7 @@ export default function Investors() {
       {/* Why AgentDub Intelligence */}
       <section className="py-16 px-4">
         <div className="container max-w-6xl">
-          <h2 className="text-3xl font-bold mb-8 text-center">Why AgentDub Intelligence?</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Why AgentDubai Intelligence?</h2>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <Card className="border-emerald-500/20">
@@ -262,7 +262,7 @@ export default function Investors() {
       {/* Footer */}
       <footer className="py-8 px-4 border-t border-border">
         <div className="container max-w-6xl text-center text-sm text-muted-foreground">
-          <p>© 2025 AgentDub.ai - GCC AI Intelligence Platform</p>
+          <p>© 2025 AgentDubai - GCC AI Intelligence Platform</p>
         </div>
       </footer>
     </div>

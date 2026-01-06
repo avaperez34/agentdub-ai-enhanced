@@ -7,7 +7,7 @@ export default function Signal001() {
   const shareUrl =
     typeof window !== "undefined" ? encodeURIComponent(window.location.href) : "";
   const shareText = encodeURIComponent(
-    "Sentinel Signal #001 — Agentic AI deployed at scale in Abu Dhabi logistics (AgentDub.ai)"
+    "Sentinel Signal #001 — Agentic AI deployed at scale in Abu Dhabi logistics (AgentDubai)"
   );
 
   return (
@@ -128,7 +128,7 @@ export default function Signal001() {
         </section>
 
         <footer className="text-center text-sm text-muted-foreground pt-8 border-t border-border">
-          © {new Date().getFullYear()} AgentDub.ai — Sentinel Signal #001
+          © {new Date().getFullYear()} AgentDubai — Sentinel Signal #001
         </footer>
       </div>
     </div>

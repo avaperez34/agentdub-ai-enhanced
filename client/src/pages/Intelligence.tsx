@@ -60,7 +60,7 @@ export default function Intelligence() {
   const shareUrl =
     typeof window !== "undefined" ? encodeURIComponent(window.location.href) : "";
   const shareText = encodeURIComponent(
-    "AgentDub.ai — Intelligence feed (Sentinel Signals)."
+    "AgentDubai — Intelligence feed (Sentinel Signals)."
   );
 
   return (
@@ -70,7 +70,7 @@ export default function Intelligence() {
         <section className="mb-12">
           <h1 className="text-5xl font-bold mb-4">Intelligence</h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl leading-relaxed">
-            The live feed of <strong>AgentDub Sentinel Signals</strong> — structured, repeatable
+            The live feed of <strong>AgentDubai Sentinel Signals</strong> — structured, repeatable
             analysis designed for decision-makers. Each signal provides clear intelligence on
             Dubai & GCC AI transformation.
           </p>
@@ -155,7 +155,7 @@ export default function Intelligence() {
         </section>
 
         <footer className="text-center text-sm text-muted-foreground pt-8 border-t border-border">
-          © {new Date().getFullYear()} AgentDub.ai • Intelligence feed powered by Sentinel
+          © {new Date().getFullYear()} AgentDubai • Intelligence feed powered by Sentinel
           Signals.
         </footer>
       </div>

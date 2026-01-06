@@ -7,7 +7,7 @@ export default function Signal003() {
   const shareUrl =
     typeof window !== "undefined" ? encodeURIComponent(window.location.href) : "";
   const shareText = encodeURIComponent(
-    "Sentinel Signal #003 — Saudi government service delivery goes agentic (AgentDub.ai)."
+    "Sentinel Signal #003 — Saudi government service delivery goes agentic (AgentDubai)."
   );
 
   return (
@@ -159,7 +159,7 @@ export default function Signal003() {
         </section>
 
         <footer className="text-center text-sm text-muted-foreground pt-8 border-t border-border">
-          © {new Date().getFullYear()} AgentDub.ai • Sentinel Signals are structured intelligence:
+          © {new Date().getFullYear()} AgentDubai • Sentinel Signals are structured intelligence:
           signal, not noise.
         </footer>
       </div>
