@@ -302,14 +302,14 @@ export default function Directory() {
               18–25: Enterprise-Ready
             </Badge>
             <div className="ml-auto text-sm text-muted-foreground">
-              {filteredAgents.length} of {agents.length} agents
+              3 of {agents.length} agents
             </div>
           </div>
         </div>
 
         {/* Agent Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredAgents.map((agent) => {
+          {filteredAgents.slice(0, 3).map((agent) => {
             const totalScore = getTotalScore(agent);
             return (
               <div
