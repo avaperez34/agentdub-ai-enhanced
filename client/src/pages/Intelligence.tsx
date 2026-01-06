@@ -34,6 +34,26 @@ const signals = [
     horizon: "3–7y",
     country: "Saudi Arabia",
   },
+  {
+    id: "004",
+    title: "NEOM's AI-Powered Cognitive City Infrastructure",
+    description:
+      "Saudi Arabia's $500B NEOM project deploys unprecedented AI infrastructure, positioning the Kingdom as a global leader in cognitive city development with implications for the entire GCC.",
+    sector: "Smart Cities",
+    impact: 9.2,
+    horizon: "5–10y",
+    country: "Saudi Arabia",
+  },
+  {
+    id: "005",
+    title: "Qatar's AI-Driven Legacy Infrastructure Post-World Cup",
+    description:
+      "Qatar repurposes $200B World Cup infrastructure with AI systems for stadium management, transportation, and smart city operations, creating an event-driven AI blueprint.",
+    sector: "Smart Infrastructure",
+    impact: 7.2,
+    horizon: "3–5y",
+    country: "Qatar",
+  },
 ];
 
 export default function Intelligence() {

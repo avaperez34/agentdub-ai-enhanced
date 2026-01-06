@@ -12,6 +12,8 @@ import Intelligence from "./pages/Intelligence";
 import Signal001 from "./pages/Signal001";
 import Signal002 from "./pages/Signal002";
 import Signal003 from "./pages/Signal003";
+import Signal004 from "./pages/Signal004";
+import Signal005 from "./pages/Signal005";
 import Investors from "./pages/Investors";
 
 function Router() {
@@ -26,6 +28,8 @@ function Router() {
         <Route path={"/signals/001"} component={Signal001} />
         <Route path={"/signals/002"} component={Signal002} />
         <Route path={"/signals/003"} component={Signal003} />
+      <Route path={"/signals/004"} component={Signal004} />
+      <Route path={"/signals/005"} component={Signal005} />
         <Route path={"/investors"} component={Investors} />
         <Route path={"/404"} component={NotFound} />
         {/* Final fallback route */}
