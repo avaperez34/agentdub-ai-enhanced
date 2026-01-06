@@ -282,7 +282,7 @@ export default function Signal005() {
         <section className="p-8 bg-accent/10 border border-accent/30 rounded-lg text-center">
           <h3 className="text-2xl font-bold mb-4">Access the Full GCC AI Intelligence Report</h3>
           <p className="text-muted-foreground mb-6">
-            Get detailed analysis of 633 AI companies across all 6 GCC countries, including Qatar's AI ecosystem 
+            Get detailed analysis of 500+ AI companies across all 6 GCC countries, including Qatar's AI ecosystem 
             and QCRI research partnerships.
           </p>
           <a

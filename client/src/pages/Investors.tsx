@@ -24,7 +24,7 @@ export default function Investors() {
               Invest in the Future of GCC AI
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Access exclusive intelligence on 633 AI companies across the Gulf Cooperation Council. 
+              Access exclusive intelligence on 500+ AI companies across the Gulf Cooperation Council. 
               Make data-driven investment decisions in the world's fastest-growing AI market.
             </p>
           </div>
@@ -212,7 +212,7 @@ export default function Investors() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  633 verified AI companies across all 6 GCC countries with:
+                  500+ verified AI companies across all 6 GCC countries with:
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• Detailed business descriptions</li>
@@ -232,7 +232,7 @@ export default function Investors() {
         <div className="container max-w-4xl text-center">
           <h2 className="text-3xl font-bold mb-4">Get the Full Intelligence Report</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            328-page comprehensive analysis with individual compliance scoring for all 633 companies. 
+            280-page comprehensive analysis with individual compliance scoring for all 500+ companies. 
             Make informed investment decisions with the most complete GCC AI intelligence available.
           </p>
           
