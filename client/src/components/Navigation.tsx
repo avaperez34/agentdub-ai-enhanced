@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { LanguageToggle } from "./LanguageToggle";
 
 export function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -38,6 +39,7 @@ export function Navigation() {
                 {item.label}
               </Link>
             ))}
+            <LanguageToggle />
           </div>
 
           {/* Mobile Menu Button */}
@@ -63,6 +65,9 @@ export function Navigation() {
                 {item.label}
               </Link>
             ))}
+            <div className="px-3 py-2">
+              <LanguageToggle />
+            </div>
           </div>
         )}
       </div>

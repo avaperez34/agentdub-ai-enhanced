@@ -125,9 +125,18 @@
   * {
     @apply border-border outline-ring/50;
   }
+  
   body {
     @apply bg-background text-foreground;
     font-family: 'DM Sans', system-ui, sans-serif;
+    top: 0 !important;
+  }
+
+  /* Hide Google Translate branding */
+  .goog-te-banner-frame,
+  .goog-te-balloon-frame,
+  .goog-logo-link {
+    display: none !important;
   }
   h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
