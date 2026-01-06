@@ -3,7 +3,6 @@
  * Design Philosophy: Data-Driven Modernism with semantic color coding
  */
 
-import { Navigation } from "@/components/Navigation";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, MapPin, Calendar, TrendingUp } from "lucide-react";
 import { Link } from "wouter";
@@ -11,7 +10,6 @@ import { Link } from "wouter";
 export default function Signal004() {
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
       
       <article className="max-w-4xl mx-auto px-4 py-12">
         {/* Back Link */}
