@@ -22,10 +22,10 @@ export function Navigation() {
           <Link href="/" className="flex items-center gap-2 font-bold text-lg">
             <img 
               src="/logo-green.png" 
-              alt="AgentDub Logo" 
+              alt="AgentDubai Logo" 
               className="h-8 w-auto"
             />
-            <span className="hidden sm:inline">AgentDub</span>
+            <span className="hidden sm:inline">AgentDubai</span>
           </Link>
 
           {/* Desktop Navigation */}

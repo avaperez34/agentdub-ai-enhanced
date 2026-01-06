@@ -13,9 +13,17 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Intelligence on AI Agents & Digital Transformation
-              </h1>
+              <div className="mb-4">
+                <h1 className="text-5xl lg:text-6xl font-bold mb-2 leading-tight">
+                  AgentDubai
+                </h1>
+                <p className="text-lg text-muted-foreground mb-1">
+                  Intelligence on AI Agents & Digital Transformation in the Gulf Cooperation Council
+                </p>
+                <p className="text-sm text-muted-foreground/70">
+                  Platform: agentdub.ai
+                </p>
+              </div>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
                 Independent editorial platform dedicated to the rise of AI agents, autonomous
                 systems, and applied artificial intelligence shaping the next phase of digital
