@@ -126,6 +126,33 @@ const STATIC_AGENTS: Agent[] = [
     risk_snapshot: "Tier 1 company, part of G42 ecosystem",
     adoption_outlook: "Enterprise-Ready",
     recommended_use_case: "Sovereign cloud infrastructure, AI model deployment, enterprise AI solutions"
+  },
+  {
+    name: "HUMAIN",
+    slug: "humain",
+    website: "https://www.humain.com/",
+    category: "Enterprise AI",
+    sectors: ["Technology", "Government", "Cloud Services", "AI Infrastructure"],
+    deployment: ["Cloud", "Hybrid", "On-Premise"],
+    gcc: {
+      uae_compliant: true,
+      saudi_compliant: true,
+      qatar_sovereign_cloud_compatible: true,
+      arabic_nlp_quality: "Excellent",
+      local_support: "Available"
+    },
+    scores: {
+      residency_hosting: 5,
+      arabic_support: 5,
+      deployment_model: 5,
+      security_enterprise: 5,
+      sector_fit: 5
+    },
+    badges: ["Enterprise", "GovTech", "National Champion"],
+    sentinel_brief: "Saudi Arabia's sovereign AI powerhouse, full-stack AI ecosystem from data centers to applications",
+    risk_snapshot: "Tier 0 national champion, PIF-owned, $23B+ partnerships",
+    adoption_outlook: "Enterprise-Ready",
+    recommended_use_case: "Sovereign AI infrastructure, government AI projects, enterprise intelligence platforms"
   }
 ];
 
@@ -141,7 +168,7 @@ export default function Directory() {
   const [sortBy, setSortBy] = useState("score_desc");
   const [categories] = useState<string[]>(["Enterprise AI", "Government AI"]);
   const [deployments] = useState<string[]>(["Cloud", "Hybrid", "On-Premise"]);
-  const [sectors] = useState<string[]>(["Technology", "Government", "Healthcare", "Cloud Services"]);
+  const [sectors] = useState<string[]>(["Technology", "Government", "Healthcare", "Cloud Services", "AI Infrastructure"]);
 
   // No need to load data - using static agents
 
@@ -226,7 +253,7 @@ export default function Directory() {
         <div className="bg-accent/10 border border-accent/30 rounded-lg p-6 mb-8">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <div>
-              <h3 className="text-lg font-bold mb-2">Free Preview — 3 Results Shown</h3>
+              <h3 className="text-lg font-bold mb-2">Free Preview — 4 Results Shown</h3>
               <p className="text-muted-foreground">
                 Access the complete directory with 500+ AI agents across GCC, detailed compliance data, and monthly updates.
               </p>
@@ -374,7 +401,7 @@ export default function Directory() {
 
         {/* Agent Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredAgents.slice(0, 3).map((agent) => {
+          {filteredAgents.slice(0, 4).map((agent) => {
             const totalScore = getTotalScore(agent);
             return (
               <div
