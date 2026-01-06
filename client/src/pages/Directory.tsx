@@ -60,9 +60,17 @@ export default function Directory() {
 
   // Load agents data
   useEffect(() => {
+    console.log('Fetching agents data...');
     fetch("/data/agents.json")
-      .then((res) => res.json())
+      .then((res) => {
+        console.log('Fetch response:', res.status);
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        return res.json();
+      })
       .then((data: AgentsData) => {
+        console.log('Agents data loaded:', data.agents.length, 'agents');
         setAgents(data.agents);
 
         // Extract unique values for filters
@@ -77,6 +85,9 @@ export default function Directory() {
         setCategories(cats.sort());
         setDeployments(deps.sort());
         setSectors(secs.sort());
+      })
+      .catch((error) => {
+        console.error('Error loading agents:', error);
       });
   }, []);
 
