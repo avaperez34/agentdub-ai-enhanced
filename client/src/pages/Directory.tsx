@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useAnalytics } from "@/hooks/useAnalytics";
 import { Input } from "@/components/ui/input";
 import {
   Select,
@@ -44,6 +45,7 @@ interface AgentsData {
 }
 
 export default function Directory() {
+  const { trackButtonClick, trackPurchaseIntent } = useAnalytics();
   const [agents, setAgents] = useState<Agent[]>([]);
   const [filteredAgents, setFilteredAgents] = useState<Agent[]>([]);
   const [search, setSearch] = useState("");
@@ -169,6 +171,10 @@ export default function Directory() {
               target="_blank"
               rel="noopener noreferrer"
               className="flex-shrink-0"
+              onClick={() => {
+                trackButtonClick('buy_full_report_directory', 'gumroad');
+                trackPurchaseIntent('GCC AI Directory - Full Report', 299);
+              }}
             >
               <button className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors whitespace-nowrap">
                 Buy Full Report →

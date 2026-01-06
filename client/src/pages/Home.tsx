@@ -1,8 +1,11 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import { useAnalytics } from "@/hooks/useAnalytics";
 import { ArrowRight, Zap, Shield, TrendingUp } from "lucide-react";
 
 export default function Home() {
+  const { trackButtonClick } = useAnalytics();
+  
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -20,7 +23,11 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/directory">
-                  <Button size="lg" className="w-full sm:w-auto">
+                  <Button 
+                    size="lg" 
+                    className="w-full sm:w-auto"
+                    onClick={() => trackButtonClick('explore_directory_home', '/directory')}
+                  >
                     Explore Directory
                     <ArrowRight className="ml-2" size={18} />
                   </Button>

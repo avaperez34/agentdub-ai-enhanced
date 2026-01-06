@@ -6,11 +6,14 @@
  */
 
 import { Navigation } from "@/components/Navigation";
+import { useAnalytics } from "@/hooks/useAnalytics";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, TrendingUp, Globe, Shield, Zap, Users, DollarSign } from "lucide-react";
 
 export default function Investors() {
+  const { trackButtonClick, trackPurchaseIntent } = useAnalytics();
+  
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -237,14 +240,30 @@ export default function Investors() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-emerald-500 hover:bg-emerald-600" asChild>
-              <a href="https://agentdubai.gumroad.com/l/gcc-ai-directory" target="_blank" rel="noopener noreferrer">
+              <a 
+                href="https://agentdubai.gumroad.com/l/gcc-ai-directory" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={() => {
+                  trackButtonClick('buy_full_report_investors', 'gumroad');
+                  trackPurchaseIntent('GCC AI Directory - Lifetime Access', 299);
+                }}
+              >
                 Buy Full Report - $299
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>
             
             <Button size="lg" variant="outline" className="border-emerald-500 text-emerald-500 hover:bg-emerald-500/10" asChild>
-              <a href="https://agentdubai.gumroad.com/l/gcc-ai-directory" target="_blank" rel="noopener noreferrer">
+              <a 
+                href="https://agentdubai.gumroad.com/l/gcc-ai-directory" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={() => {
+                  trackButtonClick('subscribe_monthly_investors', 'gumroad');
+                  trackPurchaseIntent('GCC AI Directory - Monthly Subscription', 29);
+                }}
+              >
                 Subscribe - $29/month
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
