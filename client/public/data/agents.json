@@ -1,90 +1,1025 @@
-
 {
-  "updated": "2025-12-27",
+  "updated": "2025-01-06",
   "agents": [
     {
-      "name": "AgentOps",
-      "slug": "agentops",
-      "website": "https://agentops.ai",
-      "category": "Monitoring",
-      "sectors": ["Enterprise", "GovTech"],
-      "deployment": ["SaaS"],
-      "gcc": {
-        "uae_compliant": false,
-        "saudi_compliant": false,
-        "qatar_sovereign_cloud_compatible": false,
-        "arabic_nlp_quality": "N/A",
-        "local_support": "Unknown"
-      },
-      "scores": {
-        "residency_hosting": 2,
-        "arabic_support": 0,
-        "deployment_model": 3,
-        "security_enterprise": 4,
-        "sector_fit": 3
-      },
-      "badges": ["High-Potential Emerging"],
-      "sentinel_brief": "AgentOps provides monitoring and observability for agent-based systems. Strong value for enterprise governance and reliability. GCC fit depends on hosting, compliance posture, and local support.",
-      "risk_snapshot": "Risk: limited verified GCC compliance signals. Opportunity: deploy in enterprise teams building internal agents.",
-      "adoption_outlook": "Emerging",
-      "recommended_use_case": "Enterprise agent monitoring & auditability for internal AI workflows.",
-      "profile_url": ""
-    },
-    {
-      "name": "UiPath",
-      "slug": "uipath",
-      "website": "https://www.uipath.com",
-      "category": "Automation",
-      "sectors": ["Enterprise", "Regulated"],
-      "deployment": ["Cloud", "On-Prem", "Hybrid"],
+      "name": "G42",
+      "slug": "g42",
+      "website": "https://www.g42.ai/",
+      "category": "Enterprise AI",
+      "sectors": [
+        "Technology"
+      ],
+      "deployment": [
+        "Cloud"
+      ],
       "gcc": {
         "uae_compliant": true,
         "saudi_compliant": true,
         "qatar_sovereign_cloud_compatible": true,
         "arabic_nlp_quality": "Medium",
-        "local_support": "Yes"
+        "local_support": "Available"
+      },
+      "scores": {
+        "residency_hosting": 3,
+        "arabic_support": 3,
+        "deployment_model": 4,
+        "security_enterprise": 5,
+        "sector_fit": 3
+      },
+      "badges": [
+        "Enterprise",
+        "GovTech"
+      ],
+      "sentinel_brief": "National technology holding group, AI and cloud computing",
+      "risk_snapshot": "Tier 1 company in UAE",
+      "adoption_outlook": "Emerging",
+      "recommended_use_case": "Suitable for Technology sector applications"
+    },
+    {
+      "name": "Core42",
+      "slug": "core42",
+      "website": "https://core42.ai/",
+      "category": "Enterprise AI",
+      "sectors": [
+        "Technology"
+      ],
+      "deployment": [
+        "Cloud"
+      ],
+      "gcc": {
+        "uae_compliant": true,
+        "saudi_compliant": true,
+        "qatar_sovereign_cloud_compatible": false,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Available"
+      },
+      "scores": {
+        "residency_hosting": 3,
+        "arabic_support": 3,
+        "deployment_model": 4,
+        "security_enterprise": 5,
+        "sector_fit": 3
+      },
+      "badges": [
+        "Enterprise",
+        "GovTech"
+      ],
+      "sentinel_brief": "G42's national-scale AI enablement and cloud services",
+      "risk_snapshot": "Tier 1 company in UAE",
+      "adoption_outlook": "Emerging",
+      "recommended_use_case": "Suitable for Technology sector applications"
+    },
+    {
+      "name": "Presight AI",
+      "slug": "presight-ai",
+      "website": "https://presight.ai/",
+      "category": "Data Analytics",
+      "sectors": [
+        "Analytics"
+      ],
+      "deployment": [
+        "Cloud"
+      ],
+      "gcc": {
+        "uae_compliant": true,
+        "saudi_compliant": true,
+        "qatar_sovereign_cloud_compatible": true,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Available"
+      },
+      "scores": {
+        "residency_hosting": 3,
+        "arabic_support": 3,
+        "deployment_model": 4,
+        "security_enterprise": 5,
+        "sector_fit": 3
+      },
+      "badges": [
+        "Enterprise",
+        "GovTech"
+      ],
+      "sentinel_brief": "Big data analytics and AI for public and private sectors",
+      "risk_snapshot": "Tier 1 company in UAE",
+      "adoption_outlook": "Emerging",
+      "recommended_use_case": "Suitable for Analytics sector applications"
+    },
+    {
+      "name": "MBZUAI",
+      "slug": "mbzuai",
+      "website": "https://mbzuai.ac.ae/",
+      "category": "Research",
+      "sectors": [
+        "Education"
+      ],
+      "deployment": [
+        "On-Premise"
+      ],
+      "gcc": {
+        "uae_compliant": true,
+        "saudi_compliant": false,
+        "qatar_sovereign_cloud_compatible": false,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Available"
+      },
+      "scores": {
+        "residency_hosting": 5,
+        "arabic_support": 3,
+        "deployment_model": 4,
+        "security_enterprise": 5,
+        "sector_fit": 3
+      },
+      "badges": [
+        "Enterprise",
+        "Regulated"
+      ],
+      "sentinel_brief": "World's first graduate-level, research-based AI university",
+      "risk_snapshot": "Tier 1 company in UAE",
+      "adoption_outlook": "Enterprise-Ready",
+      "recommended_use_case": "Suitable for Education sector applications"
+    },
+    {
+      "name": "Derq",
+      "slug": "derq",
+      "website": "https://derq.com/",
+      "category": "Computer Vision",
+      "sectors": [
+        "Transportation"
+      ],
+      "deployment": [
+        "Edge"
+      ],
+      "gcc": {
+        "uae_compliant": true,
+        "saudi_compliant": true,
+        "qatar_sovereign_cloud_compatible": false,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Available"
       },
       "scores": {
         "residency_hosting": 4,
-        "arabic_support": 2,
+        "arabic_support": 3,
+        "deployment_model": 4,
+        "security_enterprise": 5,
+        "sector_fit": 3
+      },
+      "badges": [
+        "Enterprise",
+        "GovTech"
+      ],
+      "sentinel_brief": "AI for intelligent transportation systems and road safety",
+      "risk_snapshot": "Tier 1 company in UAE",
+      "adoption_outlook": "Emerging",
+      "recommended_use_case": "Suitable for Transportation sector applications"
+    },
+    {
+      "name": "Microsoft UAE AI Hub",
+      "slug": "microsoft-uae-ai-hub",
+      "website": "https://www.microsoft.com/en-ae",
+      "category": "Enterprise AI",
+      "sectors": [
+        "Technology"
+      ],
+      "deployment": [
+        "Cloud"
+      ],
+      "gcc": {
+        "uae_compliant": true,
+        "saudi_compliant": true,
+        "qatar_sovereign_cloud_compatible": true,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Available"
+      },
+      "scores": {
+        "residency_hosting": 3,
+        "arabic_support": 3,
+        "deployment_model": 4,
+        "security_enterprise": 4,
+        "sector_fit": 3
+      },
+      "badges": [
+        "Enterprise",
+        "GovTech"
+      ],
+      "sentinel_brief": "Global technology firm, regional AI development",
+      "risk_snapshot": "Tier 2 company in UAE",
+      "adoption_outlook": "Emerging",
+      "recommended_use_case": "Suitable for Technology sector applications"
+    },
+    {
+      "name": "AWS UAE AI Practice",
+      "slug": "aws-uae-ai-practice",
+      "website": "https://aws.amazon.com/",
+      "category": "Enterprise AI",
+      "sectors": [
+        "Technology"
+      ],
+      "deployment": [
+        "Cloud"
+      ],
+      "gcc": {
+        "uae_compliant": true,
+        "saudi_compliant": true,
+        "qatar_sovereign_cloud_compatible": true,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Available"
+      },
+      "scores": {
+        "residency_hosting": 3,
+        "arabic_support": 3,
+        "deployment_model": 4,
+        "security_enterprise": 4,
+        "sector_fit": 3
+      },
+      "badges": [
+        "Enterprise",
+        "GovTech"
+      ],
+      "sentinel_brief": "Cloud computing and AI services",
+      "risk_snapshot": "Tier 2 company in UAE",
+      "adoption_outlook": "Emerging",
+      "recommended_use_case": "Suitable for Technology sector applications"
+    },
+    {
+      "name": "Accenture Applied Intelligence UAE",
+      "slug": "accenture-applied-intelligence-uae",
+      "website": "https://www.accenture.com/ae-en",
+      "category": "Enterprise AI",
+      "sectors": [
+        "Consulting"
+      ],
+      "deployment": [
+        "Hybrid"
+      ],
+      "gcc": {
+        "uae_compliant": true,
+        "saudi_compliant": true,
+        "qatar_sovereign_cloud_compatible": true,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Available"
+      },
+      "scores": {
+        "residency_hosting": 5,
+        "arabic_support": 3,
+        "deployment_model": 5,
+        "security_enterprise": 4,
+        "sector_fit": 3
+      },
+      "badges": [
+        "Enterprise",
+        "Regulated"
+      ],
+      "sentinel_brief": "Consulting, applied AI for business transformation",
+      "risk_snapshot": "Tier 2 company in UAE",
+      "adoption_outlook": "Enterprise-Ready",
+      "recommended_use_case": "Suitable for Consulting sector applications"
+    },
+    {
+      "name": "Emirates AI Lab",
+      "slug": "emirates-ai-lab",
+      "website": "https://www.emirates.com/",
+      "category": "Operations AI",
+      "sectors": [
+        "Aviation"
+      ],
+      "deployment": [
+        "Cloud"
+      ],
+      "gcc": {
+        "uae_compliant": true,
+        "saudi_compliant": false,
+        "qatar_sovereign_cloud_compatible": false,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Available"
+      },
+      "scores": {
+        "residency_hosting": 3,
+        "arabic_support": 3,
+        "deployment_model": 4,
+        "security_enterprise": 4,
+        "sector_fit": 4
+      },
+      "badges": [
+        "Enterprise",
+        "GovTech"
+      ],
+      "sentinel_brief": "Aviation and airline operations AI",
+      "risk_snapshot": "Tier 2 company in UAE",
+      "adoption_outlook": "Emerging",
+      "recommended_use_case": "Suitable for Aviation sector applications"
+    },
+    {
+      "name": "Emirates NBD AI",
+      "slug": "emirates-nbd-ai",
+      "website": "https://www.emiratesnbd.com/",
+      "category": "FinTech",
+      "sectors": [
+        "Finance"
+      ],
+      "deployment": [
+        "Hybrid"
+      ],
+      "gcc": {
+        "uae_compliant": true,
+        "saudi_compliant": true,
+        "qatar_sovereign_cloud_compatible": false,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Available"
+      },
+      "scores": {
+        "residency_hosting": 5,
+        "arabic_support": 3,
+        "deployment_model": 5,
+        "security_enterprise": 4,
+        "sector_fit": 5
+      },
+      "badges": [
+        "Enterprise",
+        "Regulated"
+      ],
+      "sentinel_brief": "Banking and financial services AI",
+      "risk_snapshot": "Tier 2 company in UAE",
+      "adoption_outlook": "Enterprise-Ready",
+      "recommended_use_case": "Suitable for Finance sector applications"
+    },
+    {
+      "name": "AIDirections",
+      "slug": "aidirections",
+      "website": "https://www.google.com/search?q=AIDirections+UAE",
+      "category": "Data Analytics",
+      "sectors": [
+        "Analytics"
+      ],
+      "deployment": [
+        "Cloud"
+      ],
+      "gcc": {
+        "uae_compliant": true,
+        "saudi_compliant": true,
+        "qatar_sovereign_cloud_compatible": true,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Limited"
+      },
+      "scores": {
+        "residency_hosting": 3,
+        "arabic_support": 3,
+        "deployment_model": 4,
+        "security_enterprise": 3,
+        "sector_fit": 3
+      },
+      "badges": [
+        "Enterprise",
+        "GovTech"
+      ],
+      "sentinel_brief": "AI-driven business intelligence and strategy",
+      "risk_snapshot": "Tier 3 company in UAE",
+      "adoption_outlook": "Emerging",
+      "recommended_use_case": "Suitable for Analytics sector applications"
+    },
+    {
+      "name": "VisionLabs MENA",
+      "slug": "visionlabs-mena",
+      "website": "https://www.visionlabs.ai/",
+      "category": "Computer Vision",
+      "sectors": [
+        "Security"
+      ],
+      "deployment": [
+        "Edge"
+      ],
+      "gcc": {
+        "uae_compliant": true,
+        "saudi_compliant": true,
+        "qatar_sovereign_cloud_compatible": false,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Limited"
+      },
+      "scores": {
+        "residency_hosting": 4,
+        "arabic_support": 3,
+        "deployment_model": 4,
+        "security_enterprise": 3,
+        "sector_fit": 3
+      },
+      "badges": [
+        "Enterprise",
+        "GovTech"
+      ],
+      "sentinel_brief": "Computer vision and facial recognition",
+      "risk_snapshot": "Tier 3 company in UAE",
+      "adoption_outlook": "Emerging",
+      "recommended_use_case": "Suitable for Security sector applications"
+    },
+    {
+      "name": "Hala AI",
+      "slug": "hala-ai",
+      "website": "https://www.google.com/search?q=Hala+AI+UAE",
+      "category": "Conversational AI",
+      "sectors": [
+        "Customer Service"
+      ],
+      "deployment": [
+        "Cloud"
+      ],
+      "gcc": {
+        "uae_compliant": true,
+        "saudi_compliant": false,
+        "qatar_sovereign_cloud_compatible": false,
+        "arabic_nlp_quality": "High",
+        "local_support": "Limited"
+      },
+      "scores": {
+        "residency_hosting": 3,
+        "arabic_support": 5,
+        "deployment_model": 4,
+        "security_enterprise": 3,
+        "sector_fit": 3
+      },
+      "badges": [
+        "Enterprise",
+        "GovTech"
+      ],
+      "sentinel_brief": "AI-powered virtual assistant and automation",
+      "risk_snapshot": "Tier 3 company in UAE",
+      "adoption_outlook": "Emerging",
+      "recommended_use_case": "Suitable for Customer Service sector applications"
+    },
+    {
+      "name": "GrubTech AI",
+      "slug": "grubtech-ai",
+      "website": "https://www.grubtech.com/",
+      "category": "Operations AI",
+      "sectors": [
+        "Hospitality"
+      ],
+      "deployment": [
+        "Cloud"
+      ],
+      "gcc": {
+        "uae_compliant": true,
+        "saudi_compliant": true,
+        "qatar_sovereign_cloud_compatible": true,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Limited"
+      },
+      "scores": {
+        "residency_hosting": 3,
+        "arabic_support": 3,
+        "deployment_model": 4,
+        "security_enterprise": 3,
+        "sector_fit": 3
+      },
+      "badges": [
+        "Enterprise",
+        "GovTech"
+      ],
+      "sentinel_brief": "Restaurant and cloud kitchen management",
+      "risk_snapshot": "Tier 3 company in UAE",
+      "adoption_outlook": "Emerging",
+      "recommended_use_case": "Suitable for Hospitality sector applications"
+    },
+    {
+      "name": "Asteria AI",
+      "slug": "asteria-ai",
+      "website": "https://www.google.com/search?q=Asteria+AI+UAE",
+      "category": "Computer Vision",
+      "sectors": [
+        "Logistics"
+      ],
+      "deployment": [
+        "Edge"
+      ],
+      "gcc": {
+        "uae_compliant": true,
+        "saudi_compliant": false,
+        "qatar_sovereign_cloud_compatible": false,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Limited"
+      },
+      "scores": {
+        "residency_hosting": 4,
+        "arabic_support": 3,
+        "deployment_model": 4,
+        "security_enterprise": 3,
+        "sector_fit": 3
+      },
+      "badges": [
+        "Enterprise",
+        "GovTech"
+      ],
+      "sentinel_brief": "Drone technology and aerial data analysis",
+      "risk_snapshot": "Tier 3 company in UAE",
+      "adoption_outlook": "Emerging",
+      "recommended_use_case": "Suitable for Logistics sector applications"
+    },
+    {
+      "name": "SDAIA",
+      "slug": "sdaia",
+      "website": "https://sdaia.gov.sa/",
+      "category": "Government AI",
+      "sectors": [
+        "Government"
+      ],
+      "deployment": [
+        "Hybrid"
+      ],
+      "gcc": {
+        "uae_compliant": false,
+        "saudi_compliant": true,
+        "qatar_sovereign_cloud_compatible": false,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Available"
+      },
+      "scores": {
+        "residency_hosting": 5,
+        "arabic_support": 3,
         "deployment_model": 5,
         "security_enterprise": 5,
         "sector_fit": 5
       },
-      "badges": ["Sentinel-Approved for GCC Enterprise"],
-      "sentinel_brief": "UiPath is a mature automation platform with strong enterprise controls and flexible deployment. Frequently relevant for GCC shared services and regulated workflows. Works well as the ‘execution layer’ alongside AI copilots.",
-      "risk_snapshot": "Risk: adoption can stall without process ownership. Opportunity: fast ROI in high-volume back-office workflows.",
+      "badges": [
+        "Enterprise",
+        "Regulated"
+      ],
+      "sentinel_brief": "Saudi Data and AI Authority, national AI strategy and governance",
+      "risk_snapshot": "Tier 1 company in Saudi Arabia",
       "adoption_outlook": "Enterprise-Ready",
-      "recommended_use_case": "Gov/enterprise automation: claims, onboarding, approvals, compliance workflows.",
-      "profile_url": ""
+      "recommended_use_case": "Suitable for Government sector applications"
     },
     {
-      "name": "Early-stage Agent (Example)",
-      "slug": "example-agent",
-      "website": "https://example.com",
-      "category": "Customer Support",
-      "sectors": ["SMB"],
-      "deployment": ["SaaS"],
+      "name": "Elm",
+      "slug": "elm",
+      "website": "https://www.elm.sa/",
+      "category": "Enterprise AI",
+      "sectors": [
+        "Government"
+      ],
+      "deployment": [
+        "Cloud"
+      ],
+      "gcc": {
+        "uae_compliant": true,
+        "saudi_compliant": true,
+        "qatar_sovereign_cloud_compatible": false,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Available"
+      },
+      "scores": {
+        "residency_hosting": 3,
+        "arabic_support": 3,
+        "deployment_model": 4,
+        "security_enterprise": 5,
+        "sector_fit": 5
+      },
+      "badges": [
+        "Enterprise",
+        "Regulated"
+      ],
+      "sentinel_brief": "Digital solutions and AI for government and enterprise",
+      "risk_snapshot": "Tier 1 company in Saudi Arabia",
+      "adoption_outlook": "Enterprise-Ready",
+      "recommended_use_case": "Suitable for Government sector applications"
+    },
+    {
+      "name": "STC AI",
+      "slug": "stc-ai",
+      "website": "https://www.stc.com.sa/",
+      "category": "Telecom AI",
+      "sectors": [
+        "Telecommunications"
+      ],
+      "deployment": [
+        "Cloud"
+      ],
+      "gcc": {
+        "uae_compliant": false,
+        "saudi_compliant": true,
+        "qatar_sovereign_cloud_compatible": false,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Available"
+      },
+      "scores": {
+        "residency_hosting": 3,
+        "arabic_support": 3,
+        "deployment_model": 4,
+        "security_enterprise": 5,
+        "sector_fit": 4
+      },
+      "badges": [
+        "Enterprise",
+        "GovTech"
+      ],
+      "sentinel_brief": "Telecommunications AI and digital services",
+      "risk_snapshot": "Tier 1 company in Saudi Arabia",
+      "adoption_outlook": "Emerging",
+      "recommended_use_case": "Suitable for Telecommunications sector applications"
+    },
+    {
+      "name": "NEOM Tech & Digital",
+      "slug": "neom-tech-&-digital",
+      "website": "https://www.neom.com/",
+      "category": "Smart City",
+      "sectors": [
+        "Infrastructure"
+      ],
+      "deployment": [
+        "Edge"
+      ],
+      "gcc": {
+        "uae_compliant": false,
+        "saudi_compliant": true,
+        "qatar_sovereign_cloud_compatible": false,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Available"
+      },
+      "scores": {
+        "residency_hosting": 4,
+        "arabic_support": 3,
+        "deployment_model": 4,
+        "security_enterprise": 5,
+        "sector_fit": 4
+      },
+      "badges": [
+        "Enterprise",
+        "Regulated"
+      ],
+      "sentinel_brief": "Cognitive city infrastructure and AI systems",
+      "risk_snapshot": "Tier 1 company in Saudi Arabia",
+      "adoption_outlook": "Enterprise-Ready",
+      "recommended_use_case": "Suitable for Infrastructure sector applications"
+    },
+    {
+      "name": "Lucidya",
+      "slug": "lucidya",
+      "website": "https://lucidya.com/",
+      "category": "NLP",
+      "sectors": [
+        "Analytics"
+      ],
+      "deployment": [
+        "Cloud"
+      ],
+      "gcc": {
+        "uae_compliant": true,
+        "saudi_compliant": true,
+        "qatar_sovereign_cloud_compatible": true,
+        "arabic_nlp_quality": "High",
+        "local_support": "Available"
+      },
+      "scores": {
+        "residency_hosting": 3,
+        "arabic_support": 5,
+        "deployment_model": 4,
+        "security_enterprise": 5,
+        "sector_fit": 3
+      },
+      "badges": [
+        "Enterprise",
+        "Regulated"
+      ],
+      "sentinel_brief": "Arabic NLP and social media analytics",
+      "risk_snapshot": "Tier 1 company in Saudi Arabia",
+      "adoption_outlook": "Enterprise-Ready",
+      "recommended_use_case": "Suitable for Analytics sector applications"
+    },
+    {
+      "name": "Qatar Computing Research Institute",
+      "slug": "qatar-computing-research-institute",
+      "website": "https://www.hbku.edu.qa/en/qcri",
+      "category": "Research",
+      "sectors": [
+        "Research"
+      ],
+      "deployment": [
+        "On-Premise"
+      ],
+      "gcc": {
+        "uae_compliant": false,
+        "saudi_compliant": false,
+        "qatar_sovereign_cloud_compatible": true,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Available"
+      },
+      "scores": {
+        "residency_hosting": 5,
+        "arabic_support": 3,
+        "deployment_model": 4,
+        "security_enterprise": 5,
+        "sector_fit": 3
+      },
+      "badges": [
+        "Enterprise",
+        "Regulated"
+      ],
+      "sentinel_brief": "AI research and Arabic language processing",
+      "risk_snapshot": "Tier 1 company in Qatar",
+      "adoption_outlook": "Enterprise-Ready",
+      "recommended_use_case": "Suitable for Research sector applications"
+    },
+    {
+      "name": "Ooredoo AI",
+      "slug": "ooredoo-ai",
+      "website": "https://www.ooredoo.qa/",
+      "category": "Telecom AI",
+      "sectors": [
+        "Telecommunications"
+      ],
+      "deployment": [
+        "Cloud"
+      ],
+      "gcc": {
+        "uae_compliant": false,
+        "saudi_compliant": false,
+        "qatar_sovereign_cloud_compatible": true,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Available"
+      },
+      "scores": {
+        "residency_hosting": 3,
+        "arabic_support": 3,
+        "deployment_model": 4,
+        "security_enterprise": 4,
+        "sector_fit": 4
+      },
+      "badges": [
+        "Enterprise",
+        "GovTech"
+      ],
+      "sentinel_brief": "Telecommunications AI and digital services",
+      "risk_snapshot": "Tier 2 company in Qatar",
+      "adoption_outlook": "Emerging",
+      "recommended_use_case": "Suitable for Telecommunications sector applications"
+    },
+    {
+      "name": "Qatar Airways AI",
+      "slug": "qatar-airways-ai",
+      "website": "https://www.qatarairways.com/",
+      "category": "Operations AI",
+      "sectors": [
+        "Aviation"
+      ],
+      "deployment": [
+        "Cloud"
+      ],
+      "gcc": {
+        "uae_compliant": false,
+        "saudi_compliant": false,
+        "qatar_sovereign_cloud_compatible": true,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Available"
+      },
+      "scores": {
+        "residency_hosting": 3,
+        "arabic_support": 3,
+        "deployment_model": 4,
+        "security_enterprise": 4,
+        "sector_fit": 4
+      },
+      "badges": [
+        "Enterprise",
+        "GovTech"
+      ],
+      "sentinel_brief": "Aviation operations and customer experience AI",
+      "risk_snapshot": "Tier 2 company in Qatar",
+      "adoption_outlook": "Emerging",
+      "recommended_use_case": "Suitable for Aviation sector applications"
+    },
+    {
+      "name": "Msheireb Properties AI",
+      "slug": "msheireb-properties-ai",
+      "website": "https://msheireb.com/",
+      "category": "Smart City",
+      "sectors": [
+        "Real Estate"
+      ],
+      "deployment": [
+        "Edge"
+      ],
+      "gcc": {
+        "uae_compliant": false,
+        "saudi_compliant": false,
+        "qatar_sovereign_cloud_compatible": true,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Limited"
+      },
+      "scores": {
+        "residency_hosting": 4,
+        "arabic_support": 3,
+        "deployment_model": 4,
+        "security_enterprise": 3,
+        "sector_fit": 3
+      },
+      "badges": [
+        "Enterprise",
+        "GovTech"
+      ],
+      "sentinel_brief": "Smart building and urban development AI",
+      "risk_snapshot": "Tier 3 company in Qatar",
+      "adoption_outlook": "Emerging",
+      "recommended_use_case": "Suitable for Real Estate sector applications"
+    },
+    {
+      "name": "Sidra Medicine AI",
+      "slug": "sidra-medicine-ai",
+      "website": "https://www.sidra.org/",
+      "category": "HealthTech",
+      "sectors": [
+        "Healthcare"
+      ],
+      "deployment": [
+        "On-Premise"
+      ],
+      "gcc": {
+        "uae_compliant": false,
+        "saudi_compliant": false,
+        "qatar_sovereign_cloud_compatible": true,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Available"
+      },
+      "scores": {
+        "residency_hosting": 5,
+        "arabic_support": 3,
+        "deployment_model": 4,
+        "security_enterprise": 4,
+        "sector_fit": 5
+      },
+      "badges": [
+        "Enterprise",
+        "Regulated"
+      ],
+      "sentinel_brief": "Healthcare AI and medical research",
+      "risk_snapshot": "Tier 2 company in Qatar",
+      "adoption_outlook": "Enterprise-Ready",
+      "recommended_use_case": "Suitable for Healthcare sector applications"
+    },
+    {
+      "name": "Bahrain FinTech Bay AI",
+      "slug": "bahrain-fintech-bay-ai",
+      "website": "https://www.bahrainfintechbay.com/",
+      "category": "FinTech",
+      "sectors": [
+        "Finance"
+      ],
+      "deployment": [
+        "Cloud"
+      ],
+      "gcc": {
+        "uae_compliant": true,
+        "saudi_compliant": true,
+        "qatar_sovereign_cloud_compatible": false,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Available"
+      },
+      "scores": {
+        "residency_hosting": 3,
+        "arabic_support": 2,
+        "deployment_model": 4,
+        "security_enterprise": 4,
+        "sector_fit": 5
+      },
+      "badges": [
+        "Enterprise",
+        "GovTech"
+      ],
+      "sentinel_brief": "FinTech innovation hub and AI solutions",
+      "risk_snapshot": "Tier 2 company in Bahrain",
+      "adoption_outlook": "Emerging",
+      "recommended_use_case": "Suitable for Finance sector applications"
+    },
+    {
+      "name": "Batelco AI",
+      "slug": "batelco-ai",
+      "website": "https://www.batelco.com/",
+      "category": "Telecom AI",
+      "sectors": [
+        "Telecommunications"
+      ],
+      "deployment": [
+        "Cloud"
+      ],
       "gcc": {
         "uae_compliant": false,
         "saudi_compliant": false,
         "qatar_sovereign_cloud_compatible": false,
-        "arabic_nlp_quality": "Low",
-        "local_support": "No"
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Available"
       },
       "scores": {
-        "residency_hosting": 1,
-        "arabic_support": 1,
-        "deployment_model": 2,
-        "security_enterprise": 1,
-        "sector_fit": 1
+        "residency_hosting": 3,
+        "arabic_support": 2,
+        "deployment_model": 4,
+        "security_enterprise": 4,
+        "sector_fit": 4
       },
-      "badges": ["Not Ready for GCC Deployment"],
-      "sentinel_brief": "Early-stage support agent with limited enterprise controls. Not yet positioned for regulated GCC environments. Could be viable for SMB experiments if data sensitivity is low.",
-      "risk_snapshot": "Risk: compliance + security gaps. Opportunity: pilot in non-sensitive, low-risk support flows.",
-      "adoption_outlook": "Not Ready",
-      "recommended_use_case": "Non-sensitive FAQ automation for SMBs (pilot only).",
-      "profile_url": ""
+      "badges": [
+        "Enterprise",
+        "GovTech"
+      ],
+      "sentinel_brief": "Telecommunications AI and digital services",
+      "risk_snapshot": "Tier 2 company in Bahrain",
+      "adoption_outlook": "Emerging",
+      "recommended_use_case": "Suitable for Telecommunications sector applications"
+    },
+    {
+      "name": "Omantel AI",
+      "slug": "omantel-ai",
+      "website": "https://www.omantel.om/",
+      "category": "Telecom AI",
+      "sectors": [
+        "Telecommunications"
+      ],
+      "deployment": [
+        "Cloud"
+      ],
+      "gcc": {
+        "uae_compliant": false,
+        "saudi_compliant": false,
+        "qatar_sovereign_cloud_compatible": false,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Available"
+      },
+      "scores": {
+        "residency_hosting": 3,
+        "arabic_support": 2,
+        "deployment_model": 4,
+        "security_enterprise": 4,
+        "sector_fit": 4
+      },
+      "badges": [
+        "Enterprise",
+        "GovTech"
+      ],
+      "sentinel_brief": "Telecommunications AI and network optimization",
+      "risk_snapshot": "Tier 2 company in Oman",
+      "adoption_outlook": "Emerging",
+      "recommended_use_case": "Suitable for Telecommunications sector applications"
+    },
+    {
+      "name": "Zain Kuwait AI",
+      "slug": "zain-kuwait-ai",
+      "website": "https://www.kw.zain.com/",
+      "category": "Telecom AI",
+      "sectors": [
+        "Telecommunications"
+      ],
+      "deployment": [
+        "Cloud"
+      ],
+      "gcc": {
+        "uae_compliant": false,
+        "saudi_compliant": true,
+        "qatar_sovereign_cloud_compatible": false,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Available"
+      },
+      "scores": {
+        "residency_hosting": 3,
+        "arabic_support": 2,
+        "deployment_model": 4,
+        "security_enterprise": 4,
+        "sector_fit": 4
+      },
+      "badges": [
+        "Enterprise",
+        "GovTech"
+      ],
+      "sentinel_brief": "Telecommunications AI and digital services",
+      "risk_snapshot": "Tier 2 company in Kuwait",
+      "adoption_outlook": "Emerging",
+      "recommended_use_case": "Suitable for Telecommunications sector applications"
+    },
+    {
+      "name": "Kuwait Finance House AI",
+      "slug": "kuwait-finance-house-ai",
+      "website": "https://www.kfh.com/",
+      "category": "FinTech",
+      "sectors": [
+        "Finance"
+      ],
+      "deployment": [
+        "Hybrid"
+      ],
+      "gcc": {
+        "uae_compliant": true,
+        "saudi_compliant": true,
+        "qatar_sovereign_cloud_compatible": false,
+        "arabic_nlp_quality": "Medium",
+        "local_support": "Available"
+      },
+      "scores": {
+        "residency_hosting": 5,
+        "arabic_support": 2,
+        "deployment_model": 5,
+        "security_enterprise": 4,
+        "sector_fit": 5
+      },
+      "badges": [
+        "Enterprise",
+        "Regulated"
+      ],
+      "sentinel_brief": "Islamic banking and financial services AI",
+      "risk_snapshot": "Tier 2 company in Kuwait",
+      "adoption_outlook": "Enterprise-Ready",
+      "recommended_use_case": "Suitable for Finance sector applications"
     }
   ]
 }

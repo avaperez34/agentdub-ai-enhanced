@@ -1,0 +1,494 @@
+{
+  "agents": [
+    {
+      "name": "G42",
+      "country": "UAE",
+      "tier": "Tier 1",
+      "description": "National technology holding group, AI and cloud computing",
+      "category": "Enterprise AI",
+      "deployment": "Cloud",
+      "sector": "Technology",
+      "gcc_compliant": [
+        "UAE",
+        "Saudi Arabia",
+        "Qatar"
+      ],
+      "website": "https://www.g42.ai/",
+      "readiness_score": 18,
+      "readiness_status": "Emerging"
+    },
+    {
+      "name": "Core42",
+      "country": "UAE",
+      "tier": "Tier 1",
+      "description": "G42's national-scale AI enablement and cloud services",
+      "category": "Enterprise AI",
+      "deployment": "Cloud",
+      "sector": "Technology",
+      "gcc_compliant": [
+        "UAE",
+        "Saudi Arabia"
+      ],
+      "website": "https://core42.ai/",
+      "readiness_score": 18,
+      "readiness_status": "Emerging"
+    },
+    {
+      "name": "Presight AI",
+      "country": "UAE",
+      "tier": "Tier 1",
+      "description": "Big data analytics and AI for public and private sectors",
+      "category": "Data Analytics",
+      "deployment": "Cloud",
+      "sector": "Analytics",
+      "gcc_compliant": [
+        "UAE",
+        "Saudi Arabia",
+        "Qatar"
+      ],
+      "website": "https://presight.ai/",
+      "readiness_score": 18,
+      "readiness_status": "Emerging"
+    },
+    {
+      "name": "MBZUAI",
+      "country": "UAE",
+      "tier": "Tier 1",
+      "description": "World's first graduate-level, research-based AI university",
+      "category": "Research",
+      "deployment": "On-Premise",
+      "sector": "Education",
+      "gcc_compliant": [
+        "UAE"
+      ],
+      "website": "https://mbzuai.ac.ae/",
+      "readiness_score": 19,
+      "readiness_status": "Emerging"
+    },
+    {
+      "name": "Derq",
+      "country": "UAE",
+      "tier": "Tier 1",
+      "description": "AI for intelligent transportation systems and road safety",
+      "category": "Computer Vision",
+      "deployment": "Edge",
+      "sector": "Transportation",
+      "gcc_compliant": [
+        "UAE",
+        "Saudi Arabia"
+      ],
+      "website": "https://derq.com/",
+      "readiness_score": 19,
+      "readiness_status": "Emerging"
+    },
+    {
+      "name": "Microsoft UAE AI Hub",
+      "country": "UAE",
+      "tier": "Tier 2",
+      "description": "Global technology firm, regional AI development",
+      "category": "Enterprise AI",
+      "deployment": "Cloud",
+      "sector": "Technology",
+      "gcc_compliant": [
+        "UAE",
+        "Saudi Arabia",
+        "Qatar",
+        "Oman",
+        "Kuwait",
+        "Bahrain"
+      ],
+      "website": "https://www.microsoft.com/en-ae",
+      "readiness_score": 17,
+      "readiness_status": "Emerging"
+    },
+    {
+      "name": "AWS UAE AI Practice",
+      "country": "UAE",
+      "tier": "Tier 2",
+      "description": "Cloud computing and AI services",
+      "category": "Enterprise AI",
+      "deployment": "Cloud",
+      "sector": "Technology",
+      "gcc_compliant": [
+        "UAE",
+        "Saudi Arabia",
+        "Qatar",
+        "Oman",
+        "Kuwait",
+        "Bahrain"
+      ],
+      "website": "https://aws.amazon.com/",
+      "readiness_score": 17,
+      "readiness_status": "Emerging"
+    },
+    {
+      "name": "Accenture Applied Intelligence UAE",
+      "country": "UAE",
+      "tier": "Tier 2",
+      "description": "Consulting, applied AI for business transformation",
+      "category": "Enterprise AI",
+      "deployment": "Hybrid",
+      "sector": "Consulting",
+      "gcc_compliant": [
+        "UAE",
+        "Saudi Arabia",
+        "Qatar",
+        "Kuwait",
+        "Bahrain"
+      ],
+      "website": "https://www.accenture.com/ae-en",
+      "readiness_score": 20,
+      "readiness_status": "Enterprise-Ready"
+    },
+    {
+      "name": "Emirates AI Lab",
+      "country": "UAE",
+      "tier": "Tier 2",
+      "description": "Aviation and airline operations AI",
+      "category": "Operations AI",
+      "deployment": "Cloud",
+      "sector": "Aviation",
+      "gcc_compliant": [
+        "UAE"
+      ],
+      "website": "https://www.emirates.com/",
+      "readiness_score": 18,
+      "readiness_status": "Emerging"
+    },
+    {
+      "name": "Emirates NBD AI",
+      "country": "UAE",
+      "tier": "Tier 2",
+      "description": "Banking and financial services AI",
+      "category": "FinTech",
+      "deployment": "Hybrid",
+      "sector": "Finance",
+      "gcc_compliant": [
+        "UAE",
+        "Saudi Arabia"
+      ],
+      "website": "https://www.emiratesnbd.com/",
+      "readiness_score": 22,
+      "readiness_status": "Enterprise-Ready"
+    },
+    {
+      "name": "AIDirections",
+      "country": "UAE",
+      "tier": "Tier 3",
+      "description": "AI-driven business intelligence and strategy",
+      "category": "Data Analytics",
+      "deployment": "Cloud",
+      "sector": "Analytics",
+      "gcc_compliant": [
+        "UAE",
+        "Saudi Arabia",
+        "Qatar"
+      ],
+      "website": "https://www.google.com/search?q=AIDirections+UAE",
+      "readiness_score": 16,
+      "readiness_status": "Emerging"
+    },
+    {
+      "name": "VisionLabs MENA",
+      "country": "UAE",
+      "tier": "Tier 3",
+      "description": "Computer vision and facial recognition",
+      "category": "Computer Vision",
+      "deployment": "Edge",
+      "sector": "Security",
+      "gcc_compliant": [
+        "UAE",
+        "Saudi Arabia"
+      ],
+      "website": "https://www.visionlabs.ai/",
+      "readiness_score": 17,
+      "readiness_status": "Emerging"
+    },
+    {
+      "name": "Hala AI",
+      "country": "UAE",
+      "tier": "Tier 3",
+      "description": "AI-powered virtual assistant and automation",
+      "category": "Conversational AI",
+      "deployment": "Cloud",
+      "sector": "Customer Service",
+      "gcc_compliant": [
+        "UAE"
+      ],
+      "website": "https://www.google.com/search?q=Hala+AI+UAE",
+      "readiness_score": 18,
+      "readiness_status": "Emerging"
+    },
+    {
+      "name": "GrubTech AI",
+      "country": "UAE",
+      "tier": "Tier 3",
+      "description": "Restaurant and cloud kitchen management",
+      "category": "Operations AI",
+      "deployment": "Cloud",
+      "sector": "Hospitality",
+      "gcc_compliant": [
+        "UAE",
+        "Saudi Arabia",
+        "Qatar"
+      ],
+      "website": "https://www.grubtech.com/",
+      "readiness_score": 16,
+      "readiness_status": "Emerging"
+    },
+    {
+      "name": "Asteria AI",
+      "country": "UAE",
+      "tier": "Tier 3",
+      "description": "Drone technology and aerial data analysis",
+      "category": "Computer Vision",
+      "deployment": "Edge",
+      "sector": "Logistics",
+      "gcc_compliant": [
+        "UAE"
+      ],
+      "website": "https://www.google.com/search?q=Asteria+AI+UAE",
+      "readiness_score": 17,
+      "readiness_status": "Emerging"
+    },
+    {
+      "name": "SDAIA",
+      "country": "Saudi Arabia",
+      "tier": "Tier 1",
+      "description": "Saudi Data and AI Authority, national AI strategy and governance",
+      "category": "Government AI",
+      "deployment": "Hybrid",
+      "sector": "Government",
+      "gcc_compliant": [
+        "Saudi Arabia"
+      ],
+      "website": "https://sdaia.gov.sa/",
+      "readiness_score": 23,
+      "readiness_status": "Enterprise-Ready"
+    },
+    {
+      "name": "Elm",
+      "country": "Saudi Arabia",
+      "tier": "Tier 1",
+      "description": "Digital solutions and AI for government and enterprise",
+      "category": "Enterprise AI",
+      "deployment": "Cloud",
+      "sector": "Government",
+      "gcc_compliant": [
+        "Saudi Arabia",
+        "UAE"
+      ],
+      "website": "https://www.elm.sa/",
+      "readiness_score": 20,
+      "readiness_status": "Enterprise-Ready"
+    },
+    {
+      "name": "STC AI",
+      "country": "Saudi Arabia",
+      "tier": "Tier 1",
+      "description": "Telecommunications AI and digital services",
+      "category": "Telecom AI",
+      "deployment": "Cloud",
+      "sector": "Telecommunications",
+      "gcc_compliant": [
+        "Saudi Arabia",
+        "Bahrain",
+        "Kuwait"
+      ],
+      "website": "https://www.stc.com.sa/",
+      "readiness_score": 19,
+      "readiness_status": "Emerging"
+    },
+    {
+      "name": "NEOM Tech & Digital",
+      "country": "Saudi Arabia",
+      "tier": "Tier 1",
+      "description": "Cognitive city infrastructure and AI systems",
+      "category": "Smart City",
+      "deployment": "Edge",
+      "sector": "Infrastructure",
+      "gcc_compliant": [
+        "Saudi Arabia"
+      ],
+      "website": "https://www.neom.com/",
+      "readiness_score": 20,
+      "readiness_status": "Enterprise-Ready"
+    },
+    {
+      "name": "Lucidya",
+      "country": "Saudi Arabia",
+      "tier": "Tier 1",
+      "description": "Arabic NLP and social media analytics",
+      "category": "NLP",
+      "deployment": "Cloud",
+      "sector": "Analytics",
+      "gcc_compliant": [
+        "Saudi Arabia",
+        "UAE",
+        "Qatar",
+        "Kuwait"
+      ],
+      "website": "https://lucidya.com/",
+      "readiness_score": 20,
+      "readiness_status": "Enterprise-Ready"
+    },
+    {
+      "name": "Qatar Computing Research Institute",
+      "country": "Qatar",
+      "tier": "Tier 1",
+      "description": "AI research and Arabic language processing",
+      "category": "Research",
+      "deployment": "On-Premise",
+      "sector": "Research",
+      "gcc_compliant": [
+        "Qatar"
+      ],
+      "website": "https://www.hbku.edu.qa/en/qcri",
+      "readiness_score": 19,
+      "readiness_status": "Emerging"
+    },
+    {
+      "name": "Ooredoo AI",
+      "country": "Qatar",
+      "tier": "Tier 2",
+      "description": "Telecommunications AI and digital services",
+      "category": "Telecom AI",
+      "deployment": "Cloud",
+      "sector": "Telecommunications",
+      "gcc_compliant": [
+        "Qatar",
+        "Oman",
+        "Kuwait"
+      ],
+      "website": "https://www.ooredoo.qa/",
+      "readiness_score": 18,
+      "readiness_status": "Emerging"
+    },
+    {
+      "name": "Qatar Airways AI",
+      "country": "Qatar",
+      "tier": "Tier 2",
+      "description": "Aviation operations and customer experience AI",
+      "category": "Operations AI",
+      "deployment": "Cloud",
+      "sector": "Aviation",
+      "gcc_compliant": [
+        "Qatar"
+      ],
+      "website": "https://www.qatarairways.com/",
+      "readiness_score": 18,
+      "readiness_status": "Emerging"
+    },
+    {
+      "name": "Msheireb Properties AI",
+      "country": "Qatar",
+      "tier": "Tier 3",
+      "description": "Smart building and urban development AI",
+      "category": "Smart City",
+      "deployment": "Edge",
+      "sector": "Real Estate",
+      "gcc_compliant": [
+        "Qatar"
+      ],
+      "website": "https://msheireb.com/",
+      "readiness_score": 17,
+      "readiness_status": "Emerging"
+    },
+    {
+      "name": "Sidra Medicine AI",
+      "country": "Qatar",
+      "tier": "Tier 2",
+      "description": "Healthcare AI and medical research",
+      "category": "HealthTech",
+      "deployment": "On-Premise",
+      "sector": "Healthcare",
+      "gcc_compliant": [
+        "Qatar"
+      ],
+      "website": "https://www.sidra.org/",
+      "readiness_score": 20,
+      "readiness_status": "Enterprise-Ready"
+    },
+    {
+      "name": "Bahrain FinTech Bay AI",
+      "country": "Bahrain",
+      "tier": "Tier 2",
+      "description": "FinTech innovation hub and AI solutions",
+      "category": "FinTech",
+      "deployment": "Cloud",
+      "sector": "Finance",
+      "gcc_compliant": [
+        "Bahrain",
+        "UAE",
+        "Saudi Arabia"
+      ],
+      "website": "https://www.bahrainfintechbay.com/",
+      "readiness_score": 18,
+      "readiness_status": "Emerging"
+    },
+    {
+      "name": "Batelco AI",
+      "country": "Bahrain",
+      "tier": "Tier 2",
+      "description": "Telecommunications AI and digital services",
+      "category": "Telecom AI",
+      "deployment": "Cloud",
+      "sector": "Telecommunications",
+      "gcc_compliant": [
+        "Bahrain"
+      ],
+      "website": "https://www.batelco.com/",
+      "readiness_score": 17,
+      "readiness_status": "Emerging"
+    },
+    {
+      "name": "Omantel AI",
+      "country": "Oman",
+      "tier": "Tier 2",
+      "description": "Telecommunications AI and network optimization",
+      "category": "Telecom AI",
+      "deployment": "Cloud",
+      "sector": "Telecommunications",
+      "gcc_compliant": [
+        "Oman"
+      ],
+      "website": "https://www.omantel.om/",
+      "readiness_score": 17,
+      "readiness_status": "Emerging"
+    },
+    {
+      "name": "Zain Kuwait AI",
+      "country": "Kuwait",
+      "tier": "Tier 2",
+      "description": "Telecommunications AI and digital services",
+      "category": "Telecom AI",
+      "deployment": "Cloud",
+      "sector": "Telecommunications",
+      "gcc_compliant": [
+        "Kuwait",
+        "Saudi Arabia",
+        "Bahrain"
+      ],
+      "website": "https://www.kw.zain.com/",
+      "readiness_score": 17,
+      "readiness_status": "Emerging"
+    },
+    {
+      "name": "Kuwait Finance House AI",
+      "country": "Kuwait",
+      "tier": "Tier 2",
+      "description": "Islamic banking and financial services AI",
+      "category": "FinTech",
+      "deployment": "Hybrid",
+      "sector": "Finance",
+      "gcc_compliant": [
+        "Kuwait",
+        "Saudi Arabia",
+        "UAE"
+      ],
+      "website": "https://www.kfh.com/",
+      "readiness_score": 21,
+      "readiness_status": "Enterprise-Ready"
+    }
+  ]
+}
