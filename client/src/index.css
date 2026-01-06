@@ -132,11 +132,40 @@
     top: 0 !important;
   }
 
-  /* Hide Google Translate branding */
-  .goog-te-banner-frame,
-  .goog-te-balloon-frame,
-  .goog-logo-link {
+  /* Style Google Translate widget */
+  .goog-te-banner-frame {
     display: none !important;
+  }
+  
+  #google_translate_element {
+    display: inline-block;
+  }
+  
+  #google_translate_element select {
+    background-color: transparent;
+    border: 1px solid hsl(var(--border));
+    color: hsl(var(--foreground));
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+  
+  #google_translate_element select:hover {
+    background-color: hsl(var(--secondary));
+  }
+  
+  .goog-te-gadget {
+    font-family: inherit !important;
+    font-size: 0 !important;
+  }
+  
+  .goog-te-gadget span {
+    display: none !important;
+  }
+  
+  .goog-te-combo {
+    margin: 0 !important;
   }
   h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
