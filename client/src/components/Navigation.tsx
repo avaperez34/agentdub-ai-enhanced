@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
-export default function Navigation() {
+export function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const navItems = [
