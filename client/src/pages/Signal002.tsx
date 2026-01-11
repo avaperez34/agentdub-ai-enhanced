@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { ReadingProgress } from "@/components/ReadingProgress";
 import { ArrowLeft, Share2 } from "lucide-react";
 
 export default function Signal002() {
@@ -12,6 +13,7 @@ export default function Signal002() {
 
   return (
     <div className="min-h-screen bg-background">
+      <ReadingProgress />
       <div className="max-w-4xl mx-auto px-4 py-12">
         {/* Header */}
         <section className="mb-12">

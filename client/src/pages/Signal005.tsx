@@ -4,12 +4,14 @@
  */
 
 import { Badge } from "@/components/ui/badge";
+import { ReadingProgress } from "@/components/ReadingProgress";
 import { ArrowLeft, MapPin, Calendar, TrendingUp } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Signal005() {
   return (
     <div className="min-h-screen bg-background">
+      <ReadingProgress />
       
       <article className="max-w-4xl mx-auto px-4 py-12">
         {/* Back Link */}
