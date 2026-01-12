@@ -33,6 +33,23 @@ const domains = [
   { name: "rizqbank.com", category: "Islamic Finance" },
   { name: "halalmasraf.com", category: "Islamic Finance" },
   { name: "tamweela.com", category: "Islamic Finance" },
+  { name: "ultraDubai.ae", category: "Dubai Premium" },
+  { name: "dubai7.ae", category: "Dubai Premium" },
+  { name: "elitesdubai.com", category: "Dubai Premium" },
+  { name: "dubaiapex.com", category: "Dubai Premium" },
+  { name: "reserved.ae", category: "Premium" },
+  { name: "hurr.ae", category: "Premium" },
+  { name: "marc.ae", category: "Premium" },
+  { name: "royalties.ae", category: "Premium" },
+  { name: "laban.ae", category: "Premium" },
+  { name: "dubaiebet.com", category: "Dubai Real Estate" },
+  { name: "dubaiebets.com", category: "Dubai Real Estate" },
+  { name: "burjestate.com", category: "Dubai Real Estate" },
+  { name: "zabeelestate.com", category: "Dubai Real Estate" },
+  { name: "sindalahestate.com", category: "Real Estate" },
+  { name: "sindalahinvest.com", category: "Investment" },
+  { name: "sindalahyakht.com", category: "Luxury" },
+  { name: "dubaiyakht.com", category: "Luxury" },
 ];
 
 export function DomainBanner() {
