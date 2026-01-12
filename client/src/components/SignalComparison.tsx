@@ -20,22 +20,16 @@ interface Signal {
 }
 
 interface SignalComparisonProps {
-  signals: Signal[];
+  selectedIds: string[];
+  allSignals: Signal[];
+  onRemove: (id: string) => void;
+  onClear: () => void;
 }
 
-export function SignalComparison({ signals }: SignalComparisonProps) {
-  const [selectedSignals, setSelectedSignals] = useState<string[]>([]);
+export function SignalComparison({ selectedIds, allSignals, onRemove, onClear }: SignalComparisonProps) {
   const [showComparison, setShowComparison] = useState(false);
 
-  const toggleSignal = (id: string) => {
-    if (selectedSignals.includes(id)) {
-      setSelectedSignals(selectedSignals.filter((s) => s !== id));
-    } else if (selectedSignals.length < 3) {
-      setSelectedSignals([...selectedSignals, id]);
-    }
-  };
-
-  const comparedSignals = signals.filter((s) => selectedSignals.includes(s.id));
+  const comparedSignals = allSignals.filter((s) => selectedIds.includes(s.id));
 
   const getCategoryColor = (category: string) => {
     switch (category) {
@@ -67,54 +61,65 @@ export function SignalComparison({ signals }: SignalComparisonProps) {
     }
   };
 
+  if (selectedIds.length === 0) {
+    return (
+      <div className="bg-accent/5 border border-accent/20 rounded-lg p-6 text-center mb-12">
+        <GitCompare className="mx-auto mb-3 text-accent" size={32} />
+        <h3 className="font-bold mb-2">Compare Signals Side-by-Side</h3>
+        <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
+          Click the compare icon (⚏) on any signal card to add it to comparison (up to 3 signals).
+          Analyze differences in impact, timeline, geography, and strategic focus across multiple signals.
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div className="mb-12">
       {/* Comparison Bar */}
-      {selectedSignals.length > 0 && (
-        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-card border-2 border-accent rounded-lg shadow-2xl p-4 max-w-2xl w-full mx-4">
-          <div className="flex items-center justify-between mb-3">
-            <div className="flex items-center gap-2">
-              <GitCompare className="text-accent" size={20} />
-              <span className="font-bold">
-                {selectedSignals.length} signal{selectedSignals.length > 1 ? "s" : ""} selected
-              </span>
-            </div>
-            <button
-              onClick={() => setSelectedSignals([])}
-              className="text-muted-foreground hover:text-foreground"
-            >
-              <X size={20} />
-            </button>
+      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-card border-2 border-accent rounded-lg shadow-2xl p-4 max-w-2xl w-full mx-4">
+        <div className="flex items-center justify-between mb-3">
+          <div className="flex items-center gap-2">
+            <GitCompare className="text-accent" size={20} />
+            <span className="font-bold">
+              {selectedIds.length} signal{selectedIds.length > 1 ? "s" : ""} selected
+            </span>
           </div>
-          
-          <div className="flex gap-2 mb-3 flex-wrap">
-            {comparedSignals.map((signal) => (
-              <Badge key={signal.id} variant="outline" className="flex items-center gap-1">
-                Signal #{signal.id}
-                <button
-                  onClick={() => toggleSignal(signal.id)}
-                  className="ml-1 hover:text-destructive"
-                >
-                  <X size={12} />
-                </button>
-              </Badge>
-            ))}
-          </div>
-
-          <Button
-            onClick={() => setShowComparison(true)}
-            disabled={selectedSignals.length < 2}
-            className="w-full bg-accent hover:bg-accent/90"
+          <button
+            onClick={onClear}
+            className="text-muted-foreground hover:text-foreground"
           >
-            Compare {selectedSignals.length} Signals
-          </Button>
-          {selectedSignals.length < 2 && (
-            <p className="text-xs text-muted-foreground text-center mt-2">
-              Select at least 2 signals to compare
-            </p>
-          )}
+            <X size={20} />
+          </button>
         </div>
-      )}
+        
+        <div className="flex gap-2 mb-3 flex-wrap">
+          {comparedSignals.map((signal) => (
+            <Badge key={signal.id} variant="outline" className="flex items-center gap-1">
+              Signal #{signal.id}
+              <button
+                onClick={() => onRemove(signal.id)}
+                className="ml-1 hover:text-destructive"
+              >
+                <X size={12} />
+              </button>
+            </Badge>
+          ))}
+        </div>
+
+        <Button
+          onClick={() => setShowComparison(true)}
+          disabled={selectedIds.length < 2}
+          className="w-full bg-accent hover:bg-accent/90"
+        >
+          Compare {selectedIds.length} Signals
+        </Button>
+        {selectedIds.length < 2 && (
+          <p className="text-xs text-muted-foreground text-center mt-2">
+            Select at least 2 signals to compare
+          </p>
+        )}
+      </div>
 
       {/* Comparison Modal */}
       {showComparison && comparedSignals.length >= 2 && (
@@ -228,18 +233,6 @@ export function SignalComparison({ signals }: SignalComparisonProps) {
               </div>
             </div>
           </div>
-        </div>
-      )}
-
-      {/* Selection Instructions */}
-      {selectedSignals.length === 0 && (
-        <div className="bg-accent/5 border border-accent/20 rounded-lg p-6 text-center">
-          <GitCompare className="mx-auto mb-3 text-accent" size={32} />
-          <h3 className="font-bold mb-2">Compare Signals Side-by-Side</h3>
-          <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
-            Click the "Compare" button on any signal card to add it to comparison (up to 3 signals).
-            Analyze differences in impact, timeline, geography, and strategic focus across multiple signals.
-          </p>
         </div>
       )}
     </div>

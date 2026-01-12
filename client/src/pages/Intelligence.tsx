@@ -265,7 +265,12 @@ export default function Intelligence() {
         </section>
 
         {/* Signal Comparison Tool */}
-        <SignalComparison signals={signals.filter((s) => selectedForComparison.includes(s.id))} />
+        <SignalComparison 
+          selectedIds={selectedForComparison}
+          allSignals={signals}
+          onRemove={(id) => setSelectedForComparison(selectedForComparison.filter((sid) => sid !== id))}
+          onClear={() => setSelectedForComparison([])}
+        />
 
         {/* Signals Grid */}
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
