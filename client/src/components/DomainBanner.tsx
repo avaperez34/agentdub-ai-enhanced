@@ -24,6 +24,15 @@ const domains = [
   { name: "jepa.ae", category: "AI/Tech" },
   { name: "asil.ae", category: "Premium" },
   { name: "hormuz.ae", category: "Geographic" },
+  { name: "aswad.ae", category: "Premium" },
+  { name: "rih.ae", category: "Premium" },
+  { name: "k7.ae", category: "Premium" },
+  { name: "xdx.ae", category: "Premium" },
+  { name: "islamiceconomy.ae", category: "Islamic Finance" },
+  { name: "halalbankaccount.com", category: "Islamic Finance" },
+  { name: "rizqbank.com", category: "Islamic Finance" },
+  { name: "halalmasraf.com", category: "Islamic Finance" },
+  { name: "tamweela.com", category: "Islamic Finance" },
 ];
 
 export function DomainBanner() {
