@@ -1,8 +1,9 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Share2, Building2, Users, AlertTriangle, TrendingUp } from "lucide-react";
+import { ArrowRight, Share2, Building2, Users, AlertTriangle, TrendingUp, GitCompare } from "lucide-react";
 import { useState } from "react";
+import { SignalComparison } from "@/components/SignalComparison";
 
 const signals = [
   // Execution & Sovereign Grade (By Country)
@@ -154,6 +155,7 @@ const categories = [
 
 export default function Intelligence() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [selectedForComparison, setSelectedForComparison] = useState<string[]>([]);
   
   const shareUrl =
     typeof window !== "undefined" ? encodeURIComponent(window.location.href) : "";
@@ -262,6 +264,9 @@ export default function Intelligence() {
           )}
         </section>
 
+        {/* Signal Comparison Tool */}
+        <SignalComparison signals={signals.filter((s) => selectedForComparison.includes(s.id))} />
+
         {/* Signals Grid */}
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {filteredSignals.map((signal) => (
@@ -287,11 +292,25 @@ export default function Intelligence() {
 
               <div className="flex gap-2 pt-4 border-t border-border">
                 <Link href={`/signals/${signal.id}`}>
-                  <Button size="sm" className="w-full">
+                  <Button size="sm" className="flex-1">
                     Read Signal
                     <ArrowRight size={14} className="ml-2" />
                   </Button>
                 </Link>
+                <Button
+                  size="sm"
+                  variant={selectedForComparison.includes(signal.id) ? "default" : "outline"}
+                  onClick={() => {
+                    if (selectedForComparison.includes(signal.id)) {
+                      setSelectedForComparison(selectedForComparison.filter((id) => id !== signal.id));
+                    } else if (selectedForComparison.length < 3) {
+                      setSelectedForComparison([...selectedForComparison, signal.id]);
+                    }
+                  }}
+                  disabled={!selectedForComparison.includes(signal.id) && selectedForComparison.length >= 3}
+                >
+                  <GitCompare size={14} />
+                </Button>
               </div>
             </div>
           ))}
