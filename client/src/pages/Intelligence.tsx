@@ -54,6 +54,16 @@ const signals = [
     horizon: "3–5y",
     country: "Qatar",
   },
+  {
+    id: "006",
+    title: "Kuwait's Quiet AI Transformation - $1.1B Digital Infrastructure Play",
+    description:
+      "Kuwait deploys $1.1B in digital infrastructure and leverages sovereign wealth partnerships to build AI-first government services and energy optimization systems, demonstrating a pragmatic alternative to UAE/Saudi AI strategies.",
+    sector: "Government AI",
+    impact: 8.4,
+    horizon: "2–4y",
+    country: "Kuwait",
+  },
 ];
 
 export default function Intelligence() {
