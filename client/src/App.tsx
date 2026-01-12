@@ -5,6 +5,7 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { Navigation } from "./components/Navigation";
+import { DomainBanner } from "./components/DomainBanner";
 import Home from "./pages/Home";
 import Directory from "./pages/Directory";
 import Sentinel from "./pages/Sentinel";
@@ -21,6 +22,7 @@ function Router() {
   return (
     <>
       <Navigation />
+      <DomainBanner />
       <Switch>
         <Route path={"/"} component={Home} />
         <Route path={"/directory"} component={Directory} />
