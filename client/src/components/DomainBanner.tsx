@@ -81,6 +81,22 @@ const domains = [
   { name: "cloudc.ai", category: "Cloud/Tech" },
   { name: "10ai.ai", category: "AI/Tech" },
   { name: "gooddoctor.ai", category: "HealthTech" },
+  { name: "TSXX.com", category: "Premium" },
+  { name: "HLA.io", category: "Premium" },
+  { name: "MME.io", category: "Premium" },
+  { name: "LMV.xyz", category: "Premium" },
+  { name: "vevi.ai", category: "AI/Tech" },
+  { name: "vevi.io", category: "Tech" },
+  { name: "d-r.ai", category: "HealthTech" },
+  { name: "ebaby.ai", category: "AI/Tech" },
+  { name: "playsout.ai", category: "Gaming" },
+  { name: "tophotels.ai", category: "Hospitality" },
+  { name: "fbz.ai", category: "Premium" },
+  { name: "mqz.ai", category: "Premium" },
+  { name: "ioffchain.com", category: "Crypto/Web3" },
+  { name: "kryptex.ai", category: "Crypto/Web3" },
+  { name: "kily.org", category: "Tech" },
+  { name: "blockchain.organic", category: "Crypto/Web3" },
 ];
 
 export function DomainBanner() {
