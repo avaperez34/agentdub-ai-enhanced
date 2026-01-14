@@ -487,9 +487,13 @@ export default function NewsArticle() {
                 );
               }
               if (paragraph.startsWith("- ")) {
+                const content = paragraph.replace("- ", "");
+                const parts = content.split(/\*\*(.*?)\*\*/);
                 return (
                   <li key={index} className="ml-6">
-                    {paragraph.replace("- ", "").replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")}
+                    {parts.map((part, i) => 
+                      i % 2 === 1 ? <strong key={i}>{part}</strong> : part
+                    )}
                   </li>
                 );
               }
