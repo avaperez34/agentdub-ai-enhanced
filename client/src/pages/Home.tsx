@@ -30,19 +30,26 @@ export default function Home() {
                 transformation across Dubai and the Gulf.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/premium">
+                  <Button 
+                    size="lg" 
+                    className="w-full sm:w-auto bg-accent hover:bg-accent/90"
+                    onClick={() => trackButtonClick('view_premium_home', '/premium')}
+                  >
+                    View Premium Plans
+                    <ArrowRight className="ml-2" size={18} />
+                  </Button>
+                </Link>
                 <Link href="/directory">
                   <Button 
                     size="lg" 
+                    variant="outline"
                     className="w-full sm:w-auto"
                     onClick={() => trackButtonClick('explore_directory_home', '/directory')}
                   >
                     Explore Directory
-                    <ArrowRight className="ml-2" size={18} />
                   </Button>
                 </Link>
-                <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                  Learn More
-                </Button>
               </div>
             </div>
 
