@@ -695,7 +695,7 @@ export default function NewsArticle() {
               <p className="text-muted-foreground mb-6">
                 Get unlimited access to premium articles, full Signal reports, company deep dives, and weekly executive briefings.
               </p>
-              <Link href="/directory">
+              <Link href="/premium">
                 <Button className="bg-accent hover:bg-accent/90">
                   Upgrade to Premium
                 </Button>

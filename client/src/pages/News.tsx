@@ -226,7 +226,7 @@ export default function News() {
                     <p className="text-sm text-muted-foreground mb-2">
                       🔒 Full analysis available for Premium subscribers
                     </p>
-                    <Link href="/directory">
+                    <Link href="/premium">
                       <Button size="sm" className="bg-accent hover:bg-accent/90">
                         Upgrade to Premium
                       </Button>
@@ -267,7 +267,7 @@ export default function News() {
                   <span>Weekly executive briefing</span>
                 </li>
               </ul>
-              <Link href="/directory">
+              <Link href="/premium">
                 <Button className="w-full" variant="outline">
                   View Plans
                 </Button>

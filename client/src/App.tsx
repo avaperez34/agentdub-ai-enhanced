@@ -23,6 +23,7 @@ import Signal010 from "./pages/Signal010";
 import Investors from "./pages/Investors";
 import News from "./pages/News";
 import NewsArticle from "./pages/NewsArticle";
+import Premium from "./pages/Premium";
 
 function Router() {
   return (
@@ -47,6 +48,7 @@ function Router() {
         <Route path={"/investors"} component={Investors} />
         <Route path={"/news"} component={News} />
         <Route path={"/news/:id"} component={NewsArticle} />
+        <Route path={"/premium"} component={Premium} />
         <Route path={"/404"} component={NotFound} />
         {/* Final fallback route */}
         <Route component={NotFound} />
