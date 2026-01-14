@@ -80,11 +80,13 @@ export default function About() {
             
             <div className="bg-card border border-border rounded-lg p-8 md:p-12">
               <div className="grid md:grid-cols-3 gap-8 items-start">
-                {/* Profile Image Placeholder */}
+                {/* Profile Image */}
                 <div className="md:col-span-1">
-                  <div className="aspect-square bg-gradient-to-br from-accent/20 to-accent/5 rounded-lg flex items-center justify-center border border-accent/20">
-                    <Users size={64} className="text-accent/40" />
-                  </div>
+                  <img
+                    src="/images/charles-damien.jpg"
+                    alt="Charles Damien - Founder & CEO"
+                    className="aspect-square object-cover rounded-lg border border-accent/20 shadow-lg"
+                  />
                 </div>
 
                 {/* Profile Content */}

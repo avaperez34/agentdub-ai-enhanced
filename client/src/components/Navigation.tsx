@@ -12,6 +12,7 @@ export function Navigation() {
     { label: "Sentinel", href: "/sentinel" },
     { label: "Intelligence", href: "/intelligence" },
     { label: "News", href: "/news" },
+    { label: "Premium", href: "/premium" },
     { label: "About", href: "/about" },
   ];
 
