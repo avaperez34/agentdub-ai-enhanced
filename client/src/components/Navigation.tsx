@@ -12,7 +12,7 @@ export function Navigation() {
     { label: "Sentinel", href: "/sentinel" },
     { label: "Intelligence", href: "/intelligence" },
     { label: "News", href: "/news" },
-    { label: "Investors", href: "/investors" },
+    { label: "About", href: "/about" },
   ];
 
   return (

@@ -174,9 +174,10 @@ export default function Intelligence() {
         <section className="mb-12">
           <h1 className="text-5xl font-bold mb-4">Intelligence</h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl leading-relaxed">
-            The live feed of <strong>AgentDubai Sentinel Signals</strong> — structured, repeatable
-            analysis designed for decision-makers. Each signal provides clear intelligence on
-            Dubai & GCC AI transformation.
+            The live feed of <strong>AgentDubai Sentinel Signals</strong> — deep strategic analysis
+            designed for decision-makers. Unlike daily news, these signals provide structured,
+            repeatable intelligence frameworks on Dubai & GCC AI transformation with long-term
+            implications, impact scores, and investment theses.
           </p>
 
           <div className="flex flex-wrap gap-3 mb-6">

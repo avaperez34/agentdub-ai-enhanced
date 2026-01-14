@@ -128,8 +128,10 @@ export default function News() {
             </div>
             <h1 className="text-5xl font-bold mb-4">GCC AI News & Insights</h1>
             <p className="text-xl text-muted-foreground mb-6">
-              Daily intelligence on AI agents, digital transformation, and autonomous systems across the Gulf.
-              Fresh analysis every morning.
+              Daily breaking news and rapid analysis on AI developments across the Gulf. Unlike our
+              <Link href="/intelligence" className="text-accent hover:underline mx-1">Intelligence Signals</Link>
+              (deep strategic analysis), News provides timely updates on funding, hiring, M&A, regulations,
+              and deployments as they happen.
             </p>
             <div className="flex gap-4">
               <Link href="/directory">
