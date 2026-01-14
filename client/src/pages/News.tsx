@@ -114,11 +114,8 @@ export default function News() {
               Fresh analysis every morning.
             </p>
             <div className="flex gap-4">
-              <Button className="bg-accent hover:bg-accent/90">
-                Subscribe to Newsletter
-              </Button>
               <Link href="/directory">
-                <Button variant="outline">
+                <Button className="bg-accent hover:bg-accent/90">
                   Explore Directory
                 </Button>
               </Link>
@@ -231,17 +228,6 @@ export default function News() {
 
           {/* Sidebar */}
           <div className="space-y-6">
-            {/* Newsletter CTA */}
-            <div className="bg-gradient-to-br from-accent/10 to-accent/5 border border-accent/20 rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-2">Daily GCC AI Brief</h3>
-              <p className="text-sm text-muted-foreground mb-4">
-                Get the top 5 GCC AI stories delivered to your inbox every morning at 8 AM GST.
-              </p>
-              <Button className="w-full bg-accent hover:bg-accent/90">
-                Subscribe Free
-              </Button>
-            </div>
-
             {/* Premium CTA */}
             <div className="bg-card border border-border rounded-lg p-6">
               <h3 className="font-bold text-lg mb-2">Upgrade to Premium</h3>
