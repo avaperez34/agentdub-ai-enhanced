@@ -1,8 +1,10 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Share2, Building2, Users, AlertTriangle, TrendingUp, GitCompare } from "lucide-react";
-import { useState } from "react";
+import { Input } from "@/components/ui/input";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { ArrowRight, Share2, Building2, Users, AlertTriangle, TrendingUp, GitCompare, Search, Filter, ChevronLeft, ChevronRight } from "lucide-react";
+import { useState, useMemo } from "react";
 import { SignalComparison } from "@/components/SignalComparison";
 
 const signals = [
@@ -17,6 +19,7 @@ const signals = [
     horizon: "3–7y",
     country: "UAE",
     category: "execution",
+    date: "2025-01-10",
   },
   {
     id: "003",
@@ -28,6 +31,7 @@ const signals = [
     horizon: "3–7y",
     country: "Saudi Arabia",
     category: "execution",
+    date: "2025-01-08",
   },
   {
     id: "004",
@@ -39,6 +43,7 @@ const signals = [
     horizon: "5–10y",
     country: "Saudi Arabia",
     category: "execution",
+    date: "2025-01-05",
   },
   {
     id: "005",
@@ -50,6 +55,7 @@ const signals = [
     horizon: "3–5y",
     country: "Qatar",
     category: "execution",
+    date: "2025-01-03",
   },
   {
     id: "006",
@@ -61,6 +67,7 @@ const signals = [
     horizon: "2–4y",
     country: "Kuwait",
     category: "execution",
+    date: "2024-12-28",
   },
   // Leadership Intelligence (By Company)
   {
@@ -73,6 +80,7 @@ const signals = [
     horizon: "1–3y",
     country: "UAE",
     category: "leadership",
+    date: "2025-01-09",
   },
   {
     id: "007",
@@ -84,6 +92,7 @@ const signals = [
     horizon: "1–2y",
     country: "UAE",
     category: "leadership",
+    date: "2024-12-20",
   },
   // Failure Analysis
   {
@@ -96,6 +105,7 @@ const signals = [
     horizon: "0–1y",
     country: "GCC-Wide",
     category: "failure",
+    date: "2024-12-15",
   },
   // Capital & Announcements
   {
@@ -108,6 +118,7 @@ const signals = [
     horizon: "0–1y",
     country: "GCC-Wide",
     category: "capital",
+    date: "2024-12-10",
   },
   {
     id: "010",
@@ -119,6 +130,7 @@ const signals = [
     horizon: "3–7y",
     country: "GCC-Wide",
     category: "capital",
+    date: "2024-12-05",
   },
 ];
 
@@ -153,9 +165,19 @@ const categories = [
   },
 ];
 
+const countries = ["All Countries", "UAE", "Saudi Arabia", "Qatar", "Kuwait", "Bahrain", "Oman", "GCC-Wide"];
+const sectors = ["All Sectors", "Infrastructure", "GovTech", "Smart Cities", "Smart Infrastructure", "Government AI", "Regulation", "Leadership", "Failure Analysis", "Venture Capital"];
+
+const ITEMS_PER_PAGE = 6;
+
 export default function Intelligence() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [selectedForComparison, setSelectedForComparison] = useState<string[]>([]);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedCountry, setSelectedCountry] = useState("All Countries");
+  const [selectedSector, setSelectedSector] = useState("All Sectors");
+  const [sortBy, setSortBy] = useState("date");
+  const [currentPage, setCurrentPage] = useState(1);
   
   const shareUrl =
     typeof window !== "undefined" ? encodeURIComponent(window.location.href) : "";
@@ -163,9 +185,57 @@ export default function Intelligence() {
     "AgentDubai — Intelligence feed (Sentinel Signals)."
   );
 
-  const filteredSignals = selectedCategory
-    ? signals.filter((s) => s.category === selectedCategory)
-    : signals;
+  // Advanced filtering and search
+  const filteredSignals = useMemo(() => {
+    let result = signals;
+
+    // Category filter
+    if (selectedCategory) {
+      result = result.filter((s) => s.category === selectedCategory);
+    }
+
+    // Country filter
+    if (selectedCountry !== "All Countries") {
+      result = result.filter((s) => s.country === selectedCountry);
+    }
+
+    // Sector filter
+    if (selectedSector !== "All Sectors") {
+      result = result.filter((s) => s.sector === selectedSector);
+    }
+
+    // Search filter
+    if (searchQuery) {
+      const query = searchQuery.toLowerCase();
+      result = result.filter(
+        (s) =>
+          s.title.toLowerCase().includes(query) ||
+          s.description.toLowerCase().includes(query) ||
+          s.sector.toLowerCase().includes(query)
+      );
+    }
+
+    // Sorting
+    if (sortBy === "date") {
+      result = [...result].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    } else if (sortBy === "impact") {
+      result = [...result].sort((a, b) => b.impact - a.impact);
+    }
+
+    return result;
+  }, [selectedCategory, selectedCountry, selectedSector, searchQuery, sortBy]);
+
+  // Pagination
+  const totalPages = Math.ceil(filteredSignals.length / ITEMS_PER_PAGE);
+  const paginatedSignals = filteredSignals.slice(
+    (currentPage - 1) * ITEMS_PER_PAGE,
+    currentPage * ITEMS_PER_PAGE
+  );
+
+  // Reset to page 1 when filters change
+  useMemo(() => {
+    setCurrentPage(1);
+  }, [selectedCategory, selectedCountry, selectedSector, searchQuery, sortBy]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -205,127 +275,235 @@ export default function Intelligence() {
               className="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-secondary hover:bg-secondary/80 transition-colors text-sm"
             >
               <Share2 size={16} />
-              X
-            </a>
-            <a
-              href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-secondary hover:bg-secondary/80 transition-colors text-sm"
-            >
-              <Share2 size={16} />
-              Facebook
+              X / Twitter
             </a>
           </div>
         </section>
 
-        {/* Categories */}
+        {/* Filters & Search */}
+        <section className="mb-8 bg-card border border-border rounded-lg p-6">
+          <div className="flex items-center gap-2 mb-4">
+            <Filter size={20} className="text-accent" />
+            <h2 className="text-lg font-semibold">Filter & Search</h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+            {/* Search */}
+            <div className="relative">
+              <Search size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
+              <Input
+                placeholder="Search signals..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="pl-10"
+              />
+            </div>
+
+            {/* Country Filter */}
+            <Select value={selectedCountry} onValueChange={setSelectedCountry}>
+              <SelectTrigger>
+                <SelectValue placeholder="Select country" />
+              </SelectTrigger>
+              <SelectContent>
+                {countries.map((country) => (
+                  <SelectItem key={country} value={country}>
+                    {country}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+
+            {/* Sector Filter */}
+            <Select value={selectedSector} onValueChange={setSelectedSector}>
+              <SelectTrigger>
+                <SelectValue placeholder="Select sector" />
+              </SelectTrigger>
+              <SelectContent>
+                {sectors.map((sector) => (
+                  <SelectItem key={sector} value={sector}>
+                    {sector}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+
+            {/* Sort By */}
+            <Select value={sortBy} onValueChange={setSortBy}>
+              <SelectTrigger>
+                <SelectValue placeholder="Sort by" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="date">Latest First</SelectItem>
+                <SelectItem value="impact">Highest Impact</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+
+          {/* Results Count */}
+          <div className="text-sm text-muted-foreground">
+            Showing <span className="font-semibold text-foreground">{filteredSignals.length}</span> of{" "}
+            <span className="font-semibold text-foreground">{signals.length}</span> signals
+          </div>
+        </section>
+
+        {/* Category Filters */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-6">Intelligence Categories</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <button
+              onClick={() => setSelectedCategory(null)}
+              className={`p-6 rounded-lg border-2 transition-all text-left ${
+                selectedCategory === null
+                  ? "border-accent bg-accent/5"
+                  : "border-border hover:border-accent/50"
+              }`}
+            >
+              <div className="text-accent mb-2">
+                <TrendingUp size={24} />
+              </div>
+              <h3 className="font-bold mb-2">All Signals</h3>
+              <p className="text-sm text-muted-foreground">View all intelligence signals</p>
+            </button>
+
             {categories.map((category) => {
               const Icon = category.icon;
-              const isSelected = selectedCategory === category.id;
-              
               return (
                 <button
                   key={category.id}
-                  onClick={() => setSelectedCategory(isSelected ? null : category.id)}
-                  className={`text-left p-6 rounded-lg border-2 transition-all ${
-                    isSelected
+                  onClick={() => setSelectedCategory(category.id)}
+                  className={`p-6 rounded-lg border-2 transition-all text-left ${
+                    selectedCategory === category.id
                       ? "border-accent bg-accent/5"
-                      : "border-border hover:border-accent/50 bg-card"
+                      : "border-border hover:border-accent/50"
                   }`}
                 >
-                  <Icon className={`${category.color} mb-3`} size={24} />
+                  <div className={`${category.color} mb-2`}>
+                    <Icon size={24} />
+                  </div>
                   <h3 className="font-bold mb-2">{category.name}</h3>
                   <p className="text-sm text-muted-foreground">{category.description}</p>
-                  <div className="mt-3 text-xs text-accent">
-                    {signals.filter((s) => s.category === category.id).length} signals
-                  </div>
                 </button>
               );
             })}
           </div>
+        </section>
 
-          {selectedCategory && (
-            <div className="flex items-center gap-3 mb-6">
-              <span className="text-sm text-muted-foreground">Filtered by:</span>
-              <Badge variant="default" className="text-sm">
-                {categories.find((c) => c.id === selectedCategory)?.name}
-              </Badge>
-              <button
-                onClick={() => setSelectedCategory(null)}
-                className="text-sm text-accent hover:underline"
+        {/* Signals Grid */}
+        <section className="mb-8">
+          <div className="grid grid-cols-1 gap-6">
+            {paginatedSignals.map((signal) => (
+              <div
+                key={signal.id}
+                className="bg-card border border-border rounded-lg p-6 hover:border-accent/50 transition-all"
               >
-                Clear filter
-              </button>
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex-1">
+                    <div className="flex items-center gap-3 mb-3">
+                      <Badge variant="outline" className="text-xs">
+                        Signal {signal.id}
+                      </Badge>
+                      <Badge variant="outline" className="text-xs">
+                        {signal.country}
+                      </Badge>
+                      <Badge variant="outline" className="text-xs">
+                        {signal.sector}
+                      </Badge>
+                      <Badge
+                        className={`text-xs ${
+                          signal.impact >= 9
+                            ? "bg-red-500/10 text-red-500 border-red-500/20"
+                            : signal.impact >= 8
+                            ? "bg-amber-500/10 text-amber-500 border-amber-500/20"
+                            : "bg-blue-500/10 text-blue-500 border-blue-500/20"
+                        }`}
+                      >
+                        Impact {signal.impact}
+                      </Badge>
+                    </div>
+                    <h3 className="text-2xl font-bold mb-3">{signal.title}</h3>
+                    <p className="text-muted-foreground mb-4 leading-relaxed">{signal.description}</p>
+                    <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                      <span>Horizon: {signal.horizon}</span>
+                      <span>•</span>
+                      <span>{new Date(signal.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3 pt-4 border-t border-border">
+                  <Link href={`/signal${signal.id}`}>
+                    <Button size="sm">
+                      Read Full Analysis
+                      <ArrowRight className="ml-2" size={16} />
+                    </Button>
+                  </Link>
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    onClick={() => {
+                      if (selectedForComparison.includes(signal.id)) {
+                        setSelectedForComparison(selectedForComparison.filter((id) => id !== signal.id));
+                      } else if (selectedForComparison.length < 3) {
+                        setSelectedForComparison([...selectedForComparison, signal.id]);
+                      }
+                    }}
+                    disabled={selectedForComparison.length >= 3 && !selectedForComparison.includes(signal.id)}
+                  >
+                    <GitCompare size={16} className="mr-2" />
+                    {selectedForComparison.includes(signal.id) ? "Remove from Compare" : "Compare"}
+                  </Button>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Pagination */}
+          {totalPages > 1 && (
+            <div className="flex items-center justify-center gap-2 mt-8">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                disabled={currentPage === 1}
+              >
+                <ChevronLeft size={16} />
+                Previous
+              </Button>
+
+              <div className="flex items-center gap-2">
+                {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                  <Button
+                    key={page}
+                    variant={currentPage === page ? "default" : "outline"}
+                    size="sm"
+                    onClick={() => setCurrentPage(page)}
+                    className="w-10"
+                  >
+                    {page}
+                  </Button>
+                ))}
+              </div>
+
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                disabled={currentPage === totalPages}
+              >
+                Next
+                <ChevronRight size={16} />
+              </Button>
             </div>
           )}
         </section>
 
-        {/* Signal Comparison Tool */}
-        <SignalComparison 
-          selectedIds={selectedForComparison}
-          allSignals={signals}
-          onRemove={(id) => setSelectedForComparison(selectedForComparison.filter((sid) => sid !== id))}
-          onClear={() => setSelectedForComparison([])}
-        />
-
-        {/* Signals Grid */}
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {filteredSignals.map((signal) => (
-            <div
-              key={signal.id}
-              className="bg-card border border-border rounded-lg p-6 hover:border-accent/50 transition-all hover:shadow-lg flex flex-col"
-            >
-              <div className="flex flex-wrap gap-2 mb-4">
-                <Badge variant="secondary" className="text-xs">
-                  Signal #{signal.id}
-                </Badge>
-                <Badge variant="outline" className="text-xs">
-                  {signal.sector}
-                </Badge>
-                <Badge variant="outline" className="text-xs">
-                  Impact: {signal.impact}/10
-                </Badge>
-              </div>
-
-              <h2 className="text-lg font-bold mb-3 leading-tight">{signal.title}</h2>
-
-              <p className="text-muted-foreground mb-6 flex-grow text-sm">{signal.description}</p>
-
-              <div className="flex gap-2 pt-4 border-t border-border">
-                <Link href={`/signals/${signal.id}`}>
-                  <Button size="sm" className="flex-1">
-                    Read Signal
-                    <ArrowRight size={14} className="ml-2" />
-                  </Button>
-                </Link>
-                <Button
-                  size="sm"
-                  variant={selectedForComparison.includes(signal.id) ? "default" : "outline"}
-                  onClick={() => {
-                    if (selectedForComparison.includes(signal.id)) {
-                      setSelectedForComparison(selectedForComparison.filter((id) => id !== signal.id));
-                    } else if (selectedForComparison.length < 3) {
-                      setSelectedForComparison([...selectedForComparison, signal.id]);
-                    }
-                  }}
-                  disabled={!selectedForComparison.includes(signal.id) && selectedForComparison.length >= 3}
-                >
-                  <GitCompare size={14} />
-                </Button>
-              </div>
-            </div>
-          ))}
-        </section>
-
-        <footer className="text-center text-sm text-muted-foreground pt-8 border-t border-border">
-          © {new Date().getFullYear()} AgentDubai • Intelligence feed powered by Sentinel
-          Signals.
-        </footer>
+        {/* Comparison Tool */}
+        {selectedForComparison.length > 0 && (
+          <SignalComparison
+            selectedIds={selectedForComparison}
+            allSignals={signals}
+            onRemove={(id) => setSelectedForComparison(selectedForComparison.filter((sid) => sid !== id))}
+            onClear={() => setSelectedForComparison([])}
+          />
+        )}
       </div>
     </div>
   );

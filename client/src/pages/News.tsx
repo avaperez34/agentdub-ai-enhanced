@@ -2,11 +2,13 @@
  * News - Daily GCC AI insights and analysis
  */
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Link } from "wouter";
-import { Calendar, Clock, ArrowRight, TrendingUp } from "lucide-react";
+import { Calendar, Clock, ArrowRight, TrendingUp, Search, Filter, ChevronLeft, ChevronRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 interface Article {
   id: string;
@@ -17,6 +19,7 @@ interface Article {
   readTime: string;
   isPremium: boolean;
   image?: string;
+  tags: string[];
 }
 
 // Sample articles - in production, these would come from a CMS or API
@@ -29,6 +32,7 @@ const articles: Article[] = [
     date: "2026-01-14",
     readTime: "3 min",
     isPremium: false,
+    tags: ["Saudi Arabia", "Talent", "Employment"],
   },
   {
     id: "002",
@@ -38,6 +42,7 @@ const articles: Article[] = [
     date: "2026-01-13",
     readTime: "4 min",
     isPremium: true,
+    tags: ["UAE", "M&A", "G42"],
   },
   {
     id: "003",
@@ -47,6 +52,7 @@ const articles: Article[] = [
     date: "2026-01-12",
     readTime: "5 min",
     isPremium: false,
+    tags: ["UAE", "Regulation", "Data Privacy"],
   },
   {
     id: "004",
@@ -56,6 +62,7 @@ const articles: Article[] = [
     date: "2026-01-11",
     readTime: "6 min",
     isPremium: true,
+    tags: ["Qatar", "LLM", "Open Source"],
   },
   {
     id: "005",
@@ -65,6 +72,7 @@ const articles: Article[] = [
     date: "2026-01-10",
     readTime: "4 min",
     isPremium: false,
+    tags: ["Kuwait", "Telecom", "AI Agents"],
   },
   {
     id: "006",
@@ -74,6 +82,7 @@ const articles: Article[] = [
     date: "2026-01-09",
     readTime: "5 min",
     isPremium: false,
+    tags: ["Saudi Arabia", "Funding", "Startups"],
   },
   {
     id: "007",
@@ -83,218 +92,331 @@ const articles: Article[] = [
     date: "2026-01-08",
     readTime: "4 min",
     isPremium: true,
+    tags: ["UAE", "Funding", "Startups"],
+  },
+  {
+    id: "008",
+    title: "Bahrain FinTech Bay Launches AI Accelerator - 12 Startups Selected",
+    excerpt: "Bahrain's leading fintech hub launches dedicated AI accelerator program with $5M fund. 12 startups from 8 countries selected for 6-month program. Focus on Islamic finance AI, regulatory compliance automation, and fraud detection.",
+    category: "Startups",
+    date: "2026-01-07",
+    readTime: "3 min",
+    isPremium: false,
+    tags: ["Bahrain", "FinTech", "Accelerator"],
+  },
+  {
+    id: "009",
+    title: "Oman Vision 2040 Allocates $2.3B for AI Infrastructure Development",
+    excerpt: "Oman announces $2.3B investment in AI infrastructure as part of Vision 2040 digital transformation strategy. Focus on smart cities, government services automation, and energy sector AI. Partnership with Microsoft Azure and local universities.",
+    category: "Government",
+    date: "2026-01-06",
+    readTime: "4 min",
+    isPremium: false,
+    tags: ["Oman", "Government", "Infrastructure"],
+  },
+  {
+    id: "010",
+    title: "Dubai AI Campus Opens with 3,000 Students - Largest AI Education Hub in MENA",
+    excerpt: "Dubai launches AI Campus in Dubai Silicon Oasis, enrolling 3,000 students in inaugural semester. Partnership with MIT, Stanford, and local universities. Curriculum covers LLMs, computer vision, robotics, and AI governance. Tuition subsidized 70% by government.",
+    category: "Education",
+    date: "2026-01-05",
+    readTime: "5 min",
+    isPremium: false,
+    tags: ["UAE", "Education", "Training"],
   },
 ];
 
+const ITEMS_PER_PAGE = 9;
+
 export default function News() {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [sortBy, setSortBy] = useState("date");
+  const [currentPage, setCurrentPage] = useState(1);
 
-  const categories = ["All", "Hiring", "Funding", "M&A", "Regulation", "Technology", "Deployment"];
-
-  const filteredArticles = selectedCategory === "All" 
-    ? articles 
-    : articles.filter(a => a.category === selectedCategory);
+  const categories = ["All", "Hiring", "Funding", "M&A", "Regulation", "Technology", "Deployment", "Startups", "Government", "Education"];
 
   const getCategoryColor = (category: string) => {
     switch (category) {
       case "Hiring":
-        return "bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300";
+        return "bg-blue-500/10 text-blue-500 border-blue-500/20";
       case "Funding":
-        return "bg-purple-100 text-purple-700 dark:bg-purple-950 dark:text-purple-300";
+        return "bg-emerald-500/10 text-emerald-500 border-emerald-500/20";
       case "M&A":
-        return "bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300";
+        return "bg-purple-500/10 text-purple-500 border-purple-500/20";
       case "Regulation":
-        return "bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-300";
+        return "bg-amber-500/10 text-amber-500 border-amber-500/20";
       case "Technology":
-        return "bg-cyan-100 text-cyan-700 dark:bg-cyan-950 dark:text-cyan-300";
+        return "bg-cyan-500/10 text-cyan-500 border-cyan-500/20";
       case "Deployment":
-        return "bg-pink-100 text-pink-700 dark:bg-pink-950 dark:text-pink-300";
+        return "bg-indigo-500/10 text-indigo-500 border-indigo-500/20";
+      case "Startups":
+        return "bg-pink-500/10 text-pink-500 border-pink-500/20";
+      case "Government":
+        return "bg-slate-500/10 text-slate-500 border-slate-500/20";
+      case "Education":
+        return "bg-teal-500/10 text-teal-500 border-teal-500/20";
       default:
-        return "bg-gray-100 text-gray-700 dark:bg-gray-950 dark:text-gray-300";
+        return "bg-accent/10 text-accent border-accent/20";
     }
   };
+
+  // Advanced filtering and search
+  const filteredArticles = useMemo(() => {
+    let result = articles;
+
+    // Category filter
+    if (selectedCategory !== "All") {
+      result = result.filter((a) => a.category === selectedCategory);
+    }
+
+    // Search filter
+    if (searchQuery) {
+      const query = searchQuery.toLowerCase();
+      result = result.filter(
+        (a) =>
+          a.title.toLowerCase().includes(query) ||
+          a.excerpt.toLowerCase().includes(query) ||
+          a.tags.some((tag) => tag.toLowerCase().includes(query))
+      );
+    }
+
+    // Sorting
+    if (sortBy === "date") {
+      result = [...result].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    }
+
+    return result;
+  }, [selectedCategory, searchQuery, sortBy]);
+
+  // Pagination
+  const totalPages = Math.ceil(filteredArticles.length / ITEMS_PER_PAGE);
+  const paginatedArticles = filteredArticles.slice(
+    (currentPage - 1) * ITEMS_PER_PAGE,
+    currentPage * ITEMS_PER_PAGE
+  );
+
+  // Reset to page 1 when filters change
+  useMemo(() => {
+    setCurrentPage(1);
+  }, [selectedCategory, searchQuery, sortBy]);
 
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-accent/5 via-background to-background border-b border-border py-16">
-        <div className="container">
+      <section className="border-b border-border bg-gradient-to-b from-purple-500/5 to-background">
+        <div className="container py-16">
           <div className="max-w-3xl">
-            <div className="flex items-center gap-2 mb-4">
-              <TrendingUp className="text-accent" size={24} />
-              <Badge variant="outline" className="border-accent text-accent">
-                Daily Updates
-              </Badge>
-            </div>
-            <h1 className="text-5xl font-bold mb-4">GCC AI News & Insights</h1>
-            <p className="text-xl text-muted-foreground mb-6">
-              Daily breaking news and rapid analysis on AI developments across the Gulf. Unlike our
-              <Link href="/intelligence" className="text-accent hover:underline mx-1">Intelligence Signals</Link>
-              (deep strategic analysis), News provides timely updates on funding, hiring, M&A, regulations,
-              and deployments as they happen.
+            <Badge className="mb-4 bg-purple-500/10 text-purple-500 border-purple-500/20">
+              Daily Intelligence
+            </Badge>
+            <h1 className="text-5xl font-bold mb-6">News</h1>
+            <p className="text-xl text-muted-foreground leading-relaxed">
+              Daily breaking updates on GCC AI ecosystem — funding rounds, hiring trends, M&A activity,
+              regulatory changes, and technology deployments. Fast-moving intelligence for decision-makers
+              who need to stay ahead of the market.
             </p>
-            <div className="flex gap-4">
-              <Link href="/directory">
-                <Button className="bg-accent hover:bg-accent/90">
-                  Explore Directory
-                </Button>
-              </Link>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Category Filter */}
-      <section className="border-b border-border bg-card/50 sticky top-0 z-10 backdrop-blur-sm">
-        <div className="container py-4">
-          <div className="flex gap-2 overflow-x-auto">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setSelectedCategory(category)}
-                className={`px-4 py-2 rounded-lg whitespace-nowrap transition-colors ${
-                  selectedCategory === category
-                    ? "bg-accent text-accent-foreground"
-                    : "bg-muted hover:bg-muted/80"
-                }`}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Articles Grid */}
-      <section className="container py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="container py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Main Content */}
-          <div className="lg:col-span-2 space-y-8">
-            {filteredArticles.map((article) => (
-              <article
-                key={article.id}
-                className="bg-card border border-border rounded-lg p-6 hover:border-accent/50 transition-colors"
-              >
-                <div className="flex items-start justify-between mb-4">
-                  <Badge className={getCategoryColor(article.category)}>
-                    {article.category}
-                  </Badge>
-                  {article.isPremium && (
-                    <Badge variant="outline" className="border-accent text-accent">
-                      Premium
-                    </Badge>
-                  )}
+          <div className="lg:col-span-3">
+            {/* Filters & Search */}
+            <div className="mb-8 bg-card border border-border rounded-lg p-6">
+              <div className="flex items-center gap-2 mb-4">
+                <Filter size={20} className="text-accent" />
+                <h2 className="text-lg font-semibold">Filter & Search</h2>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                {/* Search */}
+                <div className="relative">
+                  <Search size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
+                  <Input
+                    placeholder="Search news..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="pl-10"
+                  />
                 </div>
 
-                <h2 className="text-2xl font-bold mb-3 hover:text-accent transition-colors">
-                  <Link href={`/news/${article.id}`}>
-                    {article.title}
-                  </Link>
-                </h2>
+                {/* Sort By */}
+                <Select value={sortBy} onValueChange={setSortBy}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Sort by" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="date">Latest First</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
 
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  {article.excerpt}
-                </p>
-
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                    <div className="flex items-center gap-1">
-                      <Calendar size={14} />
-                      {new Date(article.date).toLocaleDateString("en-US", {
-                        month: "short",
-                        day: "numeric",
-                        year: "numeric",
-                      })}
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Clock size={14} />
-                      {article.readTime}
-                    </div>
-                  </div>
-
-                  <Link href={`/news/${article.id}`}>
-                    <Button variant="ghost" className="group">
-                      Read More
-                      <ArrowRight
-                        size={16}
-                        className="ml-2 group-hover:translate-x-1 transition-transform"
-                      />
-                    </Button>
-                  </Link>
-                </div>
-
-                {article.isPremium && (
-                  <div className="mt-4 pt-4 border-t border-border">
-                    <p className="text-sm text-muted-foreground mb-2">
-                      🔒 Full analysis available for Premium subscribers
-                    </p>
-                    <Link href="/premium">
-                      <Button size="sm" className="bg-accent hover:bg-accent/90">
-                        Upgrade to Premium
-                      </Button>
-                    </Link>
-                  </div>
-                )}
-              </article>
-            ))}
-
-            {/* Load More */}
-            <div className="text-center py-8">
-              <Button variant="outline" size="lg">
-                Load More Articles
-              </Button>
+              {/* Results Count */}
+              <div className="text-sm text-muted-foreground">
+                Showing <span className="font-semibold text-foreground">{filteredArticles.length}</span> of{" "}
+                <span className="font-semibold text-foreground">{articles.length}</span> articles
+              </div>
             </div>
+
+            {/* Category Pills */}
+            <div className="flex flex-wrap gap-2 mb-8">
+              {categories.map((category) => (
+                <button
+                  key={category}
+                  onClick={() => setSelectedCategory(category)}
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                    selectedCategory === category
+                      ? "bg-accent text-accent-foreground"
+                      : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                  }`}
+                >
+                  {category}
+                </button>
+              ))}
+            </div>
+
+            {/* Articles Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              {paginatedArticles.map((article) => (
+                <article
+                  key={article.id}
+                  className="bg-card border border-border rounded-lg overflow-hidden hover:border-accent/50 transition-all group"
+                >
+                  <div className="p-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <Badge className={getCategoryColor(article.category)}>
+                        {article.category}
+                      </Badge>
+                      {article.isPremium && (
+                        <Badge variant="outline" className="bg-amber-500/10 text-amber-500 border-amber-500/20">
+                          Premium
+                        </Badge>
+                      )}
+                    </div>
+
+                    <h3 className="text-xl font-bold mb-3 group-hover:text-accent transition-colors">
+                      {article.title}
+                    </h3>
+
+                    <p className="text-muted-foreground mb-4 line-clamp-3 leading-relaxed">
+                      {article.excerpt}
+                    </p>
+
+                    <div className="flex items-center justify-between pt-4 border-t border-border">
+                      <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                        <div className="flex items-center gap-1">
+                          <Calendar size={14} />
+                          <span>{new Date(article.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <Clock size={14} />
+                          <span>{article.readTime}</span>
+                        </div>
+                      </div>
+
+                      <Link href={`/news/${article.id}`}>
+                        <Button size="sm" variant="ghost" className="group-hover:text-accent">
+                          Read
+                          <ArrowRight className="ml-1" size={14} />
+                        </Button>
+                      </Link>
+                    </div>
+
+                    {/* Tags */}
+                    <div className="flex flex-wrap gap-2 mt-4">
+                      {article.tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="text-xs px-2 py-1 rounded bg-accent/5 text-accent border border-accent/10"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            {/* Pagination */}
+            {totalPages > 1 && (
+              <div className="flex items-center justify-center gap-2">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                  disabled={currentPage === 1}
+                >
+                  <ChevronLeft size={16} />
+                  Previous
+                </Button>
+
+                <div className="flex items-center gap-2">
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                    <Button
+                      key={page}
+                      variant={currentPage === page ? "default" : "outline"}
+                      size="sm"
+                      onClick={() => setCurrentPage(page)}
+                      className="w-10"
+                    >
+                      {page}
+                    </Button>
+                  ))}
+                </div>
+
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                  disabled={currentPage === totalPages}
+                >
+                  Next
+                  <ChevronRight size={16} />
+                </Button>
+              </div>
+            )}
           </div>
 
           {/* Sidebar */}
-          <div className="space-y-6">
+          <aside className="lg:col-span-1">
             {/* Premium CTA */}
-            <div className="bg-card border border-border rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-2">Upgrade to Premium</h3>
-              <ul className="space-y-2 text-sm mb-4">
-                <li className="flex items-start gap-2">
-                  <span className="text-accent">✓</span>
-                  <span>Unlimited premium articles</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent">✓</span>
-                  <span>Full Signal reports</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent">✓</span>
-                  <span>Company deep dives</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent">✓</span>
-                  <span>Weekly executive briefing</span>
-                </li>
-              </ul>
+            <div className="bg-gradient-to-br from-accent/10 to-accent/5 border border-accent/20 rounded-lg p-6 mb-6">
+              <div className="flex items-center gap-2 mb-3">
+                <TrendingUp className="text-accent" size={24} />
+                <h3 className="font-bold text-lg">Upgrade to Premium</h3>
+              </div>
+              <p className="text-sm text-muted-foreground mb-4">
+                Get access to exclusive deep-dive analysis, full GCC AI Directory, and premium intelligence reports.
+              </p>
               <Link href="/premium">
-                <Button className="w-full" variant="outline">
+                <Button className="w-full bg-accent hover:bg-accent/90">
                   View Plans
+                  <ArrowRight className="ml-2" size={16} />
                 </Button>
               </Link>
             </div>
 
-            {/* Trending Topics */}
+            {/* Newsletter Signup */}
             <div className="bg-card border border-border rounded-lg p-6">
-              <h3 className="font-bold text-lg mb-4">Trending Topics</h3>
-              <div className="space-y-3">
-                {["AI Talent War", "Data Sovereignty", "Arabic LLMs", "Sovereign Compute", "Vision 2030"].map(
-                  (topic) => (
-                    <button
-                      key={topic}
-                      className="w-full text-left px-3 py-2 rounded-lg hover:bg-accent/10 transition-colors text-sm"
-                    >
-                      # {topic}
-                    </button>
-                  )
-                )}
-              </div>
+              <h3 className="font-bold mb-3">Stay Updated</h3>
+              <p className="text-sm text-muted-foreground mb-4">
+                Get daily GCC AI intelligence delivered to your inbox.
+              </p>
+              <Input placeholder="Your email" className="mb-3" />
+              <Button className="w-full" variant="outline">
+                Subscribe
+              </Button>
+              <p className="text-xs text-muted-foreground mt-3">
+                No spam. Unsubscribe anytime.
+              </p>
             </div>
-          </div>
+          </aside>
         </div>
-      </section>
+      </div>
     </div>
   );
 }
