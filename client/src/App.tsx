@@ -6,6 +6,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { Navigation } from "./components/Navigation";
 import { DomainBanner } from "./components/DomainBanner";
+import { NewsletterPopup } from "./components/NewsletterPopup";
 import Home from "./pages/Home";
 import Directory from "./pages/Directory";
 import Sentinel from "./pages/Sentinel";
@@ -21,12 +22,14 @@ import Signal008 from "./pages/Signal008";
 import Signal009 from "./pages/Signal009";
 import Signal010 from "./pages/Signal010";
 import Investors from "./pages/Investors";
+import News from "./pages/News";
 
 function Router() {
   return (
     <>
       <Navigation />
       <DomainBanner />
+      <NewsletterPopup />
       <Switch>
         <Route path={"/"} component={Home} />
         <Route path={"/directory"} component={Directory} />
@@ -43,6 +46,7 @@ function Router() {
       <Route path={"/signals/009"} component={Signal009} />
       <Route path={"/signals/010"} component={Signal010} />
         <Route path={"/investors"} component={Investors} />
+        <Route path={"/news"} component={News} />
         <Route path={"/404"} component={NotFound} />
         {/* Final fallback route */}
         <Route component={NotFound} />
