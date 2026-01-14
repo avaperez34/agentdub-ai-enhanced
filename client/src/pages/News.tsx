@@ -66,6 +66,24 @@ const articles: Article[] = [
     readTime: "4 min",
     isPremium: false,
   },
+  {
+    id: "006",
+    title: "Saudi AI Startup Mozn Raises $150M Series C Led by STV - Valuation Hits $850M",
+    excerpt: "Riyadh-based Mozn secures $150M Series C at $850M valuation, led by STV with participation from Wa'ed Ventures and Aramco's Prosperity7. Funds will expand Arabic conversational AI platform across GCC and MENA. 340% revenue growth in 2025.",
+    category: "Funding",
+    date: "2026-01-09",
+    readTime: "5 min",
+    isPremium: false,
+  },
+  {
+    id: "007",
+    title: "UAE's Inception AI Closes $87M Seed Round - Largest MENA AI Seed Ever",
+    excerpt: "Abu Dhabi stealth startup Inception AI raises $87M seed from G42, Mubadala, and Sequoia Capital Middle East. Building sovereign AI infrastructure for Arabic language models. Team includes ex-OpenAI, DeepMind researchers. Record-breaking MENA seed round.",
+    category: "Funding",
+    date: "2026-01-08",
+    readTime: "4 min",
+    isPremium: true,
+  },
 ];
 
 export default function News() {
