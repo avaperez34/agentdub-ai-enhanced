@@ -11,6 +11,7 @@ export function Navigation() {
     { label: "Directory", href: "/directory" },
     { label: "Sentinel", href: "/sentinel" },
     { label: "Intelligence", href: "/intelligence" },
+    { label: "GCC Map", href: "/gcc-map" },
     { label: "News", href: "/news" },
     { label: "Premium", href: "/premium" },
     { label: "About", href: "/about" },
