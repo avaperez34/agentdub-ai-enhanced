@@ -14,7 +14,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="mb-4">
-                <h1 className="text-5xl lg:text-6xl font-bold mb-2 leading-tight">
+                <h1 className="text-5xl lg:text-6xl font-bold mb-2 leading-tight bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-700 bg-clip-text text-transparent">
                   AgentDubai
                 </h1>
                 <p className="text-lg text-muted-foreground mb-1">
