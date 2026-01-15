@@ -4,8 +4,10 @@
  */
 
 import { useEffect, useRef, useState } from "react";
+import { Link } from "wouter";
 import { Card } from "@/components/ui/card";
-import { Cpu, Zap, TrendingUp } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Cpu, Zap, TrendingUp, ArrowRight } from "lucide-react";
 
 interface ComputeMetric {
   entity: string;
@@ -167,7 +169,14 @@ export function AIComputeTracker() {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-12 text-center space-y-6">
+          <Link href="/premium">
+            <Button size="lg" className="bg-accent hover:bg-accent/90">
+              Access Premium Compute Data
+              <ArrowRight className="ml-2" size={18} />
+            </Button>
+          </Link>
+          
           <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
             <strong>Note:</strong> Metrics are estimates based on publicly announced
             infrastructure investments and deployment reports. AgentDubai's 2026 target reflects

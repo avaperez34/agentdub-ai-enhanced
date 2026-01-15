@@ -9,3 +9,4 @@
 - [x] Add compute metrics data (TFLOPS, Tokens/day, GPU count)
 - [x] Integrate tracker section into homepage
 - [x] Add progress bar animations on scroll
+- [x] Add premium CTA button to GCC AI Compute Landscape section
