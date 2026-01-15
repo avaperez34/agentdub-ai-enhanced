@@ -13,7 +13,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { Cpu, Zap, TrendingUp, ArrowRight } from "lucide-react";
+import { Cpu, Zap, TrendingUp, ArrowRight, Users } from "lucide-react";
 
 interface ComputeMetric {
   entity: string;
@@ -175,12 +175,22 @@ export function AIComputeTracker() {
           ))}
         </div>
 
-        <div className="mt-12 text-center space-y-6">
+        <div className="mt-12 text-center space-y-4">
+          {/* Social Proof Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/10 border border-accent/20 rounded-full text-sm text-accent">
+            <Users size={16} />
+            <span className="font-medium">Join 50+ early subscribers</span>
+          </div>
+
+          {/* Premium CTA with Pulsation */}
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
                 <Link href="/premium">
-                  <Button size="lg" className="bg-accent hover:bg-accent/90">
+                  <Button 
+                    size="lg" 
+                    className="bg-accent hover:bg-accent/90 animate-pulse-subtle"
+                  >
                     Access Premium Compute Data
                     <ArrowRight className="ml-2" size={18} />
                   </Button>
