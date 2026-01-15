@@ -1545,15 +1545,7 @@ export default function NewsArticle() {
             </div>
           )}
 
-          {/* Share Section */}
-          <div className="mt-12 pt-8 border-t border-border">
-            <p className="text-sm text-muted-foreground mb-4">Share this article:</p>
-            <div className="flex gap-3">
-              <Button variant="outline" size="sm">LinkedIn</Button>
-              <Button variant="outline" size="sm">Twitter</Button>
-              <Button variant="outline" size="sm">Copy Link</Button>
-            </div>
-          </div>
+
         </div>
       </article>
     </div>
