@@ -26,6 +26,7 @@ import News from "./pages/News";
 import NewsArticle from "./pages/NewsArticle";
 import Premium from "./pages/Premium";
 import GCCMap from "./pages/GCCMap";
+import Changelog from "./pages/Changelog";
 
 function Router() {
   return (
@@ -53,8 +54,9 @@ function Router() {
         <Route path={"/news"} component={News} />
         <Route path={"/news/:id"} component={NewsArticle} />
          <Route path="/premium" component={Premium} />
-        <Route path="/gcc-map" component={GCCMap} />
-        <Route path={"/404"} component={NotFound} />
+         <Route path={"/gcc-map"} component={GCCMap} />
+        <Route path={"/changelog"} component={Changelog} />
+        <Route path={"*"} component={NotFound} />
         {/* Final fallback route */}
         <Route component={NotFound} />
       </Switch>

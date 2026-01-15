@@ -129,7 +129,35 @@ export default function About() {
       <section className="py-20">
         <div className="container">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-12 text-center">Product Roadmap</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Product Roadmap</h2>
+            
+            {/* Progress Indicator */}
+            <div className="bg-gradient-to-r from-emerald-500/10 to-teal-500/10 border border-emerald-500/30 rounded-lg p-6 mb-12">
+              <div className="flex items-center justify-between mb-4">
+                <div className="text-center flex-1">
+                  <div className="w-12 h-12 mx-auto rounded-full bg-emerald-500 flex items-center justify-center text-white font-bold mb-2">✓</div>
+                  <p className="font-semibold">Beta</p>
+                  <p className="text-xs text-muted-foreground">Q4 2025 - Q2 2026</p>
+                </div>
+                <div className="flex-1 h-1 bg-border relative">
+                  <div className="absolute left-0 top-0 h-full w-0 bg-emerald-500"></div>
+                </div>
+                <div className="text-center flex-1">
+                  <div className="w-12 h-12 mx-auto rounded-full bg-muted border-2 border-border flex items-center justify-center font-bold mb-2">2</div>
+                  <p className="font-semibold">Pre-Seed</p>
+                  <p className="text-xs text-muted-foreground">Q3 2026 - Q2 2027</p>
+                </div>
+                <div className="flex-1 h-1 bg-border"></div>
+                <div className="text-center flex-1">
+                  <div className="w-12 h-12 mx-auto rounded-full bg-muted border-2 border-border flex items-center justify-center font-bold mb-2">3</div>
+                  <p className="font-semibold">Seed</p>
+                  <p className="text-xs text-muted-foreground">Q3 2027+</p>
+                </div>
+              </div>
+              <p className="text-sm text-center text-muted-foreground italic">
+                Timeline estimates are conservative to allow for fundraising. We aim to deliver ahead of schedule.
+              </p>
+            </div>
             
             <div className="space-y-8">
               {/* Beta - Current */}
@@ -143,7 +171,7 @@ export default function About() {
                   </div>
                   
                   <p className="text-muted-foreground mb-4">
-                    Q4 2025 - Q1 2026
+                    Q4 2025 - Q2 2026 (Current)
                   </p>
 
                   <ul className="space-y-2">
@@ -178,7 +206,7 @@ export default function About() {
                   </div>
                   
                   <p className="text-muted-foreground mb-4">
-                    Q2 2026 - Q3 2026
+                    Q3 2026 - Q2 2027 (Target)
                   </p>
 
                   <div className="space-y-4">
@@ -232,7 +260,7 @@ export default function About() {
                   </div>
                   
                   <p className="text-muted-foreground mb-4">
-                    Q4 2026 - Q2 2027
+                    Q3 2027+ (Target)
                   </p>
 
                   <div className="space-y-4">

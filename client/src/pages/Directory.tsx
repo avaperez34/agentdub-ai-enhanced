@@ -265,9 +265,28 @@ export default function Directory() {
               <p className="text-muted-foreground mb-3 leading-relaxed">
                 <strong>Full automation is coming.</strong> According to our <a href="/about" className="text-emerald-600 dark:text-emerald-400 underline hover:no-underline">roadmap</a>, we will develop our proprietary AI scraping agent during the Seed phase (post-MVP traction). This agent will automatically discover, verify, and score 500+ companies across the GCC, with real-time updates.
               </p>
-              <p className="text-sm text-muted-foreground italic">
+              <p className="text-sm text-muted-foreground italic mb-4">
                 AgentDubai grows alongside our funding milestones: <strong>Beta</strong> (manual curation) → <strong>Pre-seed</strong> (team building, subscription launch) → <strong>Seed</strong> (proprietary AI agent, full automation).
               </p>
+              
+              {/* Early Access Waitlist */}
+              <div className="mt-4 pt-4 border-t border-emerald-500/30">
+                <p className="text-sm font-semibold mb-2 text-emerald-600 dark:text-emerald-400">Get Notified When Full Directory Launches</p>
+                <form className="flex gap-2" onSubmit={(e) => { e.preventDefault(); alert('Thank you! We\'ll notify you when the full 500+ directory launches. For now, join our LinkedIn community for updates.'); }}>
+                  <input 
+                    type="email" 
+                    placeholder="your@email.com" 
+                    required
+                    className="flex-1 px-4 py-2 rounded-lg border border-emerald-500/30 bg-background/50 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm"
+                  />
+                  <button 
+                    type="submit"
+                    className="px-6 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-sm transition-colors whitespace-nowrap"
+                  >
+                    Notify Me
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
