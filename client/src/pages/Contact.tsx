@@ -156,21 +156,6 @@ export default function Contact() {
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
-                    <Mail className="text-accent" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold mb-1">Email</h3>
-                    <a
-                      href="mailto:contact@domainelysee.com"
-                      className="text-muted-foreground hover:text-accent transition-colors"
-                    >
-                      contact@domainelysee.com
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
                     <MapPin className="text-accent" size={24} />
                   </div>
                   <div>

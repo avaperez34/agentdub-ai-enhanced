@@ -40,3 +40,5 @@
 - [x] Add Contact link to Navigation component
 - [x] Add Contact link to footer sections
 - [x] Test Contact navigation from all pages
+- [x] Remove contact@domainelysee.com email display from Contact page
+- [x] Keep Formspree backend sending to contact@domainelysee.com
