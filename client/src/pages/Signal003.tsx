@@ -41,6 +41,10 @@ export default function Signal003() {
             <Badge variant="outline">Sector: GovTech</Badge>
             <Badge variant="outline">Impact: 8.0/10</Badge>
             <Badge variant="outline">Horizon: 3–7y</Badge>
+            <ShareButton 
+              url="https://agentdub.ai/signals/003"
+              title="Signal #003: Agentic AI Embedded into Saudi Government Service Delivery"
+            />
           </div>
         </section>
 
@@ -127,37 +131,7 @@ export default function Signal003() {
               announcement.
             </p>
 
-            {/* Share */}
-            <div className="flex flex-wrap gap-3 pt-6 border-t border-border">
-              <span className="text-sm text-muted-foreground py-2">Share:</span>
-              <a
-                href={`https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-secondary hover:bg-secondary/80 transition-colors text-sm"
-              >
-                <Share2 size={16} />
-                LinkedIn
-              </a>
-              <a
-                href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-secondary hover:bg-secondary/80 transition-colors text-sm"
-              >
-                <Share2 size={16} />
-                X
-              </a>
-              <a
-                href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-secondary hover:bg-secondary/80 transition-colors text-sm"
-              >
-                <Share2 size={16} />
-                Facebook
-              </a>
-            </div>
+
           </div>
         </section>
 
