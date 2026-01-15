@@ -25,6 +25,106 @@ interface Article {
 // Sample articles - in production, these would come from a CMS or API
 const articles: Article[] = [
   {
+    id: "011",
+    title: "UAE Joins Pax Silica Initiative to Secure AI Supply Chains",
+    excerpt: "UAE formally joins US-led Pax Silica program to secure AI and semiconductor supply chains, strengthening economic ties with Washington. Initiative aims to build resilient tech infrastructure alongside Qatar and other strategic partners.",
+    category: "Government",
+    date: "2026-01-15",
+    readTime: "4 min",
+    isPremium: false,
+    tags: ["UAE", "Government", "Infrastructure"],
+  },
+  {
+    id: "012",
+    title: "TII Launches ACE: Arabic AI Model Outperforms Systems Twice Its Size",
+    excerpt: "UAE's Technology Innovation Institute unveils ACE, specialized Arabic Large Language Model that consistently outperforms global systems twice its size. Breakthrough in Arabic NLP positions UAE as leader in sovereign AI capabilities.",
+    category: "Technology",
+    date: "2026-01-15",
+    readTime: "5 min",
+    isPremium: false,
+    tags: ["UAE", "LLM", "Technology"],
+  },
+  {
+    id: "013",
+    title: "64% of UAE Residents Use Generative AI - Highest Adoption Rate Globally",
+    excerpt: "UAE leads world in generative AI adoption alongside Singapore, with 64% of residents actively using AI tools. Developed countries outpace developing nations in AI use, signaling digital divide in emerging technology access.",
+    category: "Technology",
+    date: "2026-01-14",
+    readTime: "3 min",
+    isPremium: false,
+    tags: ["UAE", "AI Adoption", "Society"],
+  },
+  {
+    id: "014",
+    title: "Governata Raises $4M Seed to Accelerate Saudi Enterprise AI Adoption",
+    excerpt: "Saudi AI startup Governata secures $4M seed funding to support enterprise AI adoption across the Kingdom. 'Turning Saudi Arabia's AI vision into reality' with governance platform for responsible AI deployment at scale.",
+    category: "Funding",
+    date: "2026-01-14",
+    readTime: "4 min",
+    isPremium: false,
+    tags: ["Saudi Arabia", "Funding", "Startups"],
+  },
+  {
+    id: "015",
+    title: "NEOM Unveils $5B Net-Zero AI Data Center in Oxagon",
+    excerpt: "DataVolt developing $5 billion net-zero AI data center in NEOM's Oxagon industrial city. Powered entirely by renewable energy, facility represents Saudi Arabia's commitment to sustainable AI infrastructure at massive scale.",
+    category: "Infrastructure",
+    date: "2026-01-15",
+    readTime: "5 min",
+    isPremium: true,
+    tags: ["Saudi Arabia", "NEOM", "Data Centers"],
+  },
+  {
+    id: "016",
+    title: "Saudi Arabia Orders 300,000 NVIDIA Blackwell Chips After Export Ban Lifted",
+    excerpt: "Following lift of export restrictions, Saudi Arabia orders 300,000 NVIDIA Blackwell chips as part of 2.5 million unit regional procurement. Riyadh alone accounts for 12% of global Blackwell allocation, signaling massive AI infrastructure buildout.",
+    category: "Infrastructure",
+    date: "2026-01-14",
+    readTime: "4 min",
+    isPremium: false,
+    tags: ["Saudi Arabia", "Hardware", "Infrastructure"],
+  },
+  {
+    id: "017",
+    title: "Qatar Joins Pax Silica - US Says Qatar 'Central to AI-Era Economic Order'",
+    excerpt: "Qatar formally joins US-led Pax Silica initiative on January 12, 2026. Undersecretary of State declares Qatar will play central role in shaping AI-era economic order, citing strategic energy resources and tech investments.",
+    category: "Government",
+    date: "2026-01-14",
+    readTime: "4 min",
+    isPremium: false,
+    tags: ["Qatar", "Government", "Geopolitics"],
+  },
+  {
+    id: "018",
+    title: "19% of GCC Organizations Deploy Agentic AI in Production - Leads Global Implementation",
+    excerpt: "World Economic Forum reports 19% of GCC organizations have moved agentic AI from pilots to production implementation, significantly ahead of global averages. Centralized decision-making and sovereign AI strategies drive rapid deployment.",
+    category: "Deployment",
+    date: "2026-01-15",
+    readTime: "5 min",
+    isPremium: false,
+    tags: ["GCC-Wide", "AI Agents", "Implementation"],
+  },
+  {
+    id: "019",
+    title: "SolvFast AI Platform Expands to Saudi Arabia and Egypt",
+    excerpt: "AI-powered digital transformation platform SolvFast announces 2026 launch in Saudi Arabia and Egypt, aiming to accelerate enterprise digital transformation across MENA region with automated workflow solutions.",
+    category: "Startups",
+    date: "2026-01-15",
+    readTime: "3 min",
+    isPremium: false,
+    tags: ["Saudi Arabia", "Startups", "Enterprise"],
+  },
+  {
+    id: "020",
+    title: "NEOM Advances 5 Saudi Game Studios in Largest Level Up Accelerator Cycle",
+    excerpt: "NEOM selects five KSA-based game studios for funding in latest Level Up accelerator cycle. Investment supports Saudi Arabia's growing gaming and entertainment sector as part of Vision 2030 economic diversification strategy.",
+    category: "Startups",
+    date: "2026-01-12",
+    readTime: "3 min",
+    isPremium: false,
+    tags: ["Saudi Arabia", "Gaming", "NEOM"],
+  },
+  {
     id: "001",
     title: "Saudi AI Hiring Surges 340% in Q1 2026 - Talent War Intensifies",
     excerpt: "Saudi Arabia's AI sector added 2,847 positions in Q1 2026, a 340% increase YoY. SDAIA, NEOM, and Aramco lead hiring spree as Vision 2030 execution accelerates. Average salaries up 45% to $180k for senior roles.",
@@ -134,7 +234,7 @@ export default function News() {
   const [sortBy, setSortBy] = useState("date");
   const [currentPage, setCurrentPage] = useState(1);
 
-  const categories = ["All", "Hiring", "Funding", "M&A", "Regulation", "Technology", "Deployment", "Startups", "Government", "Education"];
+  const categories = ["All", "Hiring", "Funding", "M&A", "Regulation", "Technology", "Deployment", "Startups", "Government", "Education", "Infrastructure"];
 
   const getCategoryColor = (category: string) => {
     switch (category) {
@@ -156,6 +256,8 @@ export default function News() {
         return "bg-slate-500/10 text-slate-500 border-slate-500/20";
       case "Education":
         return "bg-teal-500/10 text-teal-500 border-teal-500/20";
+      case "Infrastructure":
+        return "bg-orange-500/10 text-orange-500 border-orange-500/20";
       default:
         return "bg-accent/10 text-accent border-accent/20";
     }
