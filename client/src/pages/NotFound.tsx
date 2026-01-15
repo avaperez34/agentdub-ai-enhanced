@@ -1,14 +1,36 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { AlertCircle, Home } from "lucide-react";
+import { AlertCircle, Home, ArrowRight } from "lucide-react";
 import { useLocation } from "wouter";
+import { Link } from "wouter";
 
 export default function NotFound() {
-  const [, setLocation] = useLocation();
+  const [location, setLocation] = useLocation();
 
   const handleGoHome = () => {
     setLocation("/");
   };
+
+  // Detect malformed URLs and suggest corrections
+  const getSuggestedUrl = () => {
+    // Handle duplicated path segments like /signals/009/signals/009
+    const duplicatePattern = /^(\/[^\/]+\/\d+)\1$/;
+    const match = location.match(duplicatePattern);
+    if (match) {
+      return match[1]; // Return the first occurrence
+    }
+
+    // Handle /signals/signals/009 pattern
+    const signalDuplicatePattern = /^\/signals\/signals\/(\d+)$/;
+    const signalMatch = location.match(signalDuplicatePattern);
+    if (signalMatch) {
+      return `/signals/${signalMatch[1]}`;
+    }
+
+    return null;
+  };
+
+  const suggestedUrl = getSuggestedUrl();
 
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100">
@@ -27,11 +49,28 @@ export default function NotFound() {
             Page Not Found
           </h2>
 
-          <p className="text-slate-600 mb-8 leading-relaxed">
+          <p className="text-slate-600 mb-6 leading-relaxed">
             Sorry, the page you are looking for doesn't exist.
             <br />
             It may have been moved or deleted.
           </p>
+
+          {suggestedUrl && (
+            <div className="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+              <p className="text-sm text-slate-700 mb-3">
+                <strong>Did you mean:</strong>
+              </p>
+              <Link href={suggestedUrl}>
+                <Button
+                  variant="outline"
+                  className="w-full sm:w-auto border-blue-300 text-blue-700 hover:bg-blue-100"
+                >
+                  {suggestedUrl}
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </Link>
+            </div>
+          )}
 
           <div
             id="not-found-button-group"
