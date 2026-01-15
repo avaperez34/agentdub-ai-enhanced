@@ -249,6 +249,29 @@ export default function Directory() {
           </p>
         </div>
 
+        {/* Beta Version Notice */}
+        <div className="bg-gradient-to-r from-emerald-500/10 via-teal-500/10 to-cyan-500/10 border-l-4 border-emerald-500 rounded-lg p-6 mb-8">
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0 mt-1">
+              <div className="w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center">
+                <span className="text-2xl">🚧</span>
+              </div>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-lg font-bold mb-2 text-emerald-600 dark:text-emerald-400">Beta Version — Manual Curation</h3>
+              <p className="text-muted-foreground mb-3 leading-relaxed">
+                This directory is currently <strong>manually curated</strong> with a limited selection of verified AI companies. We're showcasing 4 entries as a preview of our intelligence methodology and scoring framework.
+              </p>
+              <p className="text-muted-foreground mb-3 leading-relaxed">
+                <strong>Full automation is coming.</strong> According to our <a href="/about" className="text-emerald-600 dark:text-emerald-400 underline hover:no-underline">roadmap</a>, we will develop our proprietary AI scraping agent during the Seed phase (post-MVP traction). This agent will automatically discover, verify, and score 500+ companies across the GCC, with real-time updates.
+              </p>
+              <p className="text-sm text-muted-foreground italic">
+                AgentDubai grows alongside our funding milestones: <strong>Beta</strong> (manual curation) → <strong>Pre-seed</strong> (team building, subscription launch) → <strong>Seed</strong> (proprietary AI agent, full automation).
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Free Version Notice & Buy Button */}
         <div className="bg-accent/10 border border-accent/30 rounded-lg p-6 mb-8">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
