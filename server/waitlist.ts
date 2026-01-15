@@ -9,7 +9,7 @@ export const waitlistRouter = router({
     .input(
       z.object({
         email: z.string().email(),
-        source: z.enum(["directory", "premium"]),
+        source: z.enum(["directory", "premium", "news"]),
       })
     )
     .mutation(async ({ input }) => {

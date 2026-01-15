@@ -24,6 +24,7 @@ describe("Waitlist Router", () => {
     // Clean up test data
     await db.delete(waitlist).where(eq(waitlist.email, "test@example.com"));
     await db.delete(waitlist).where(eq(waitlist.email, "test2@example.com"));
+    await db.delete(waitlist).where(eq(waitlist.email, "test3@example.com"));
   });
 
   afterAll(async () => {
@@ -31,6 +32,7 @@ describe("Waitlist Router", () => {
     if (db) {
       await db.delete(waitlist).where(eq(waitlist.email, "test@example.com"));
       await db.delete(waitlist).where(eq(waitlist.email, "test2@example.com"));
+      await db.delete(waitlist).where(eq(waitlist.email, "test3@example.com"));
     }
   });
 
@@ -103,5 +105,21 @@ describe("Waitlist Router", () => {
         source: "invalid",
       })
     ).rejects.toThrow();
+  });
+
+  it("should add email to waitlist with news source", async () => {
+    const result = await caller.waitlist.add({
+      email: "test3@example.com",
+      source: "news",
+    });
+
+    expect(result.success).toBe(true);
+    expect(result.message).toContain("Added to waitlist");
+
+    // Verify in database
+    const entries = await db!.select().from(waitlist).where(eq(waitlist.email, "test3@example.com"));
+    expect(entries.length).toBe(1);
+    expect(entries[0].email).toBe("test3@example.com");
+    expect(entries[0].source).toBe("news");
   });
 });

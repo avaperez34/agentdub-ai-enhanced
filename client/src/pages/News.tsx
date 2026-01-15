@@ -3,6 +3,7 @@
  */
 
 import { useState, useMemo } from "react";
+import { WaitlistForm } from "@/components/WaitlistForm";
 import { Link } from "wouter";
 import { Calendar, Clock, ArrowRight, TrendingUp, Search, Filter, ChevronLeft, ChevronRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -508,10 +509,7 @@ export default function News() {
               <p className="text-sm text-muted-foreground mb-4">
                 Get daily GCC AI intelligence delivered to your inbox.
               </p>
-              <Input placeholder="Your email" className="mb-3" />
-              <Button className="w-full" variant="outline">
-                Subscribe
-              </Button>
+              <WaitlistForm source="news" />
               <p className="text-xs text-muted-foreground mt-3">
                 No spam. Unsubscribe anytime.
               </p>

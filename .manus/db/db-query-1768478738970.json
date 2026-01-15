@@ -1,0 +1,28 @@
+{
+  "query": "SELECT * FROM waitlist ORDER BY createdAt DESC;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3ovhWS2TeFcXA7g.cfb5f1c8f478 --database eDJcJZKVVfHaA8q3xWztkP --execute SELECT * FROM waitlist ORDER BY createdAt DESC;",
+  "rows": [
+    {
+      "id": "5",
+      "email": "newstest@agentdubai.com",
+      "source": "news",
+      "createdAt": "2026-01-15 12:05:18"
+    },
+    {
+      "id": "4",
+      "email": "contact@domainelysee.com",
+      "source": "premium",
+      "createdAt": "2026-01-15 12:00:28"
+    },
+    {
+      "id": "3",
+      "email": "newtest@agentdubai.com",
+      "source": "premium",
+      "createdAt": "2026-01-15 11:56:02"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\temail\tsource\tcreatedAt\n5\tnewstest@agentdubai.com\tnews\t2026-01-15 12:05:18\n4\tcontact@domainelysee.com\tpremium\t2026-01-15 12:00:28\n3\tnewtest@agentdubai.com\tpremium\t2026-01-15 11:56:02\n",
+  "stderr": "",
+  "execution_time_ms": 72
+}
