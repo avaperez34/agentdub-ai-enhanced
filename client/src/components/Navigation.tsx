@@ -15,6 +15,7 @@ export function Navigation() {
     { label: "News", href: "/news", accent: "purple" },
     { label: "Premium", href: "/premium", accent: "amber" },
     { label: "About", href: "/about", accent: "slate" },
+    { label: "Contact", href: "/contact", accent: "emerald" },
   ];
 
   const getAccentClass = (accent: string) => {

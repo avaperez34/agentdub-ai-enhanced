@@ -213,6 +213,9 @@ export default function Home() {
               <h4 className="font-bold mb-4">Connect</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>
+                  <Link href="/contact">Contact Us</Link>
+                </li>
+                <li>
                   <a href="https://x.com/agentdub_ai" target="_blank" rel="noopener noreferrer">
                     X / Twitter
                   </a>

@@ -37,3 +37,6 @@
 - [x] Create dedicated Contact page at /contact
 - [x] Integrate Formspree with Form ID meeqqrbo
 - [x] Add Contact route to App.tsx
+- [x] Add Contact link to Navigation component
+- [x] Add Contact link to footer sections
+- [x] Test Contact navigation from all pages
