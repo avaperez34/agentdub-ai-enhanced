@@ -7,6 +7,12 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { Cpu, Zap, TrendingUp, ArrowRight } from "lucide-react";
 
 interface ComputeMetric {
@@ -170,12 +176,27 @@ export function AIComputeTracker() {
         </div>
 
         <div className="mt-12 text-center space-y-6">
-          <Link href="/premium">
-            <Button size="lg" className="bg-accent hover:bg-accent/90">
-              Access Premium Compute Data
-              <ArrowRight className="ml-2" size={18} />
-            </Button>
-          </Link>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Link href="/premium">
+                  <Button size="lg" className="bg-accent hover:bg-accent/90">
+                    Access Premium Compute Data
+                    <ArrowRight className="ml-2" size={18} />
+                  </Button>
+                </Link>
+              </TooltipTrigger>
+              <TooltipContent className="max-w-xs">
+                <p className="font-semibold mb-1">Premium Intelligence Includes:</p>
+                <ul className="text-sm space-y-1">
+                  <li>• Historical compute trends & forecasts</li>
+                  <li>• Infrastructure investment roadmaps</li>
+                  <li>• Detailed GCC AI readiness analysis</li>
+                  <li>• Exclusive market intelligence reports</li>
+                </ul>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
           
           <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
             <strong>Note:</strong> Metrics are estimates based on publicly announced
