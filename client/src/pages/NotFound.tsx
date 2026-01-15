@@ -3,6 +3,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { AlertCircle, Home, ArrowRight } from "lucide-react";
 import { useLocation } from "wouter";
 import { Link } from "wouter";
+import { trpc } from "@/lib/trpc";
+import { useEffect } from "react";
 
 export default function NotFound() {
   const [location, setLocation] = useLocation();
@@ -10,6 +12,9 @@ export default function NotFound() {
   const handleGoHome = () => {
     setLocation("/");
   };
+
+  const logMutation = trpc.analytics404.log.useMutation();
+  const markRedirectedMutation = trpc.analytics404.markRedirected.useMutation();
 
   // Detect malformed URLs and suggest corrections
   const getSuggestedUrl = () => {
@@ -31,6 +36,23 @@ export default function NotFound() {
   };
 
   const suggestedUrl = getSuggestedUrl();
+
+  // Log 404 error on mount
+  useEffect(() => {
+    logMutation.mutate({
+      requestedUrl: location,
+      referrer: document.referrer,
+      userAgent: navigator.userAgent,
+      suggestedUrl: suggestedUrl || undefined,
+    });
+  }, [location, suggestedUrl]);
+
+  // Handle suggestion click
+  const handleSuggestionClick = () => {
+    if (suggestedUrl) {
+      markRedirectedMutation.mutate({ requestedUrl: location });
+    }
+  };
 
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100">
@@ -64,6 +86,7 @@ export default function NotFound() {
                 <Button
                   variant="outline"
                   className="w-full sm:w-auto border-blue-300 text-blue-700 hover:bg-blue-100"
+                  onClick={handleSuggestionClick}
                 >
                   {suggestedUrl}
                   <ArrowRight className="w-4 h-4 ml-2" />

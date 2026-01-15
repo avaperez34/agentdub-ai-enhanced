@@ -27,6 +27,9 @@ import NewsArticle from "./pages/NewsArticle";
 import Premium from "./pages/Premium";
 import GCCMap from "./pages/GCCMap";
 import Changelog from "./pages/Changelog";
+import ShortLinkRedirect from "./pages/ShortLinkRedirect";
+import ShortLinksManager from "./pages/ShortLinksManager";
+import AnalyticsDashboard from "./pages/AnalyticsDashboard";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -56,6 +59,9 @@ function Router() {
          <Route path="/premium" component={Premium} />
          <Route path={"/gcc-map"} component={GCCMap} />
         <Route path={"/changelog"} component={Changelog} />
+        <Route path={"/s/:slug"} component={ShortLinkRedirect} />
+        <Route path={"/admin/short-links"} component={ShortLinksManager} />
+        <Route path={"/admin/analytics"} component={AnalyticsDashboard} />
         <Route path={"*"} component={NotFound} />
         {/* Final fallback route */}
         <Route component={NotFound} />

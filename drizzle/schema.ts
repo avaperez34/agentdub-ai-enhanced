@@ -39,3 +39,39 @@ export const waitlist = mysqlTable("waitlist", {
 
 export type Waitlist = typeof waitlist.$inferSelect;
 export type InsertWaitlist = typeof waitlist.$inferInsert;
+
+/**
+ * Short links table for custom URL shortener (agentdub.ai/s/[slug])
+ * Enables tracking and control of shared links on social media
+ */
+export const shortLinks = mysqlTable("short_links", {
+  id: int("id").autoincrement().primaryKey(),
+  slug: varchar("slug", { length: 32 }).notNull().unique(), // Short identifier (e.g., "gcc-ai")
+  targetUrl: text("target_url").notNull(), // Full destination URL
+  title: varchar("title", { length: 255 }), // Optional title for management UI
+  description: text("description"), // Optional description
+  clicks: int("clicks").default(0).notNull(), // Click counter
+  createdBy: int("created_by"), // User ID who created the link (optional)
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export type ShortLink = typeof shortLinks.$inferSelect;
+export type InsertShortLink = typeof shortLinks.$inferInsert;
+
+/**
+ * 404 error logs for analytics and debugging
+ * Tracks broken links to identify patterns and fix issues
+ */
+export const error404Logs = mysqlTable("error_404_logs", {
+  id: int("id").autoincrement().primaryKey(),
+  requestedUrl: text("requested_url").notNull(), // The URL that returned 404
+  referrer: text("referrer"), // Where the user came from
+  userAgent: text("user_agent"), // Browser/device info
+  suggestedUrl: text("suggested_url"), // Auto-suggested correction (if any)
+  wasRedirected: int("was_redirected").default(0).notNull(), // 1 if user clicked suggestion, 0 otherwise
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+});
+
+export type Error404Log = typeof error404Logs.$inferSelect;
+export type InsertError404Log = typeof error404Logs.$inferInsert;
