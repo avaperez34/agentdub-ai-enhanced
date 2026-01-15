@@ -4,7 +4,7 @@
  */
 
 import { useState } from "react";
-import { ExternalLink, Sparkles } from "lucide-react";
+import { ExternalLink, Sparkles, ChevronDown, ChevronUp } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -103,6 +103,7 @@ export function DomainBanner() {
   const [currentGroup, setCurrentGroup] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
   const [selectedDomain, setSelectedDomain] = useState("");
+  const [isCollapsed, setIsCollapsed] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -143,95 +144,117 @@ export function DomainBanner() {
     <>
       {/* Desktop Sidebar */}
       <div className="hidden xl:block fixed right-6 top-1/2 -translate-y-1/2 z-40">
-        <div className="w-64 bg-card border border-border rounded-lg p-4 shadow-lg">
-          <div className="flex items-center gap-2 mb-3">
-            <Sparkles size={16} className="text-accent" />
-            <h3 className="text-sm font-bold text-foreground">Premium Domains</h3>
-          </div>
+        <div className="w-64 bg-card border border-border rounded-lg shadow-lg overflow-hidden">
+          {/* Collapsible Header */}
+          <button
+            onClick={() => setIsCollapsed(!isCollapsed)}
+            className="w-full p-4 flex items-center justify-between hover:bg-accent/5 transition-colors"
+          >
+            <div className="flex items-center gap-2">
+              <Sparkles size={16} className="text-accent" />
+              <h3 className="text-sm font-bold text-foreground">Premium Domains</h3>
+            </div>
+            {isCollapsed ? <ChevronDown size={16} /> : <ChevronUp size={16} />}
+          </button>
           
-          <p className="text-xs text-muted-foreground mb-4">
-            Exclusive AI & GCC domains for sale
-          </p>
+          {/* Collapsible Content */}
+          <div className={`transition-all duration-300 overflow-hidden ${isCollapsed ? 'max-h-0 opacity-0' : 'max-h-96 opacity-100'}`}>
+            <div className="px-4 pb-4">
+              <p className="text-xs text-muted-foreground mb-4">
+                Exclusive AI & GCC domains for sale
+              </p>
 
-          <div className="space-y-2 mb-4">
-            {currentDomains.map((domain) => (
-              <button
-                key={domain.name}
-                onClick={() => handleInquire(domain.name)}
-                className="w-full text-left p-2 rounded-md bg-accent/5 hover:bg-accent/10 transition-colors group"
-              >
-                <div className="flex items-center justify-between">
-                  <div>
-                    <div className="text-sm font-semibold text-foreground group-hover:text-accent transition-colors">
-                      {domain.name}
+              <div className="space-y-2 mb-4">
+                {currentDomains.map((domain) => (
+                  <button
+                    key={domain.name}
+                    onClick={() => handleInquire(domain.name)}
+                    className="w-full text-left p-2 rounded-md bg-accent/5 hover:bg-accent/10 transition-colors group"
+                  >
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <div className="text-sm font-semibold text-foreground group-hover:text-accent transition-colors">
+                          {domain.name}
+                        </div>
+                        <div className="text-xs text-muted-foreground">{domain.category}</div>
+                      </div>
+                      <ExternalLink size={14} className="text-muted-foreground group-hover:text-accent transition-colors" />
                     </div>
-                    <div className="text-xs text-muted-foreground">{domain.category}</div>
-                  </div>
-                  <ExternalLink size={14} className="text-muted-foreground group-hover:text-accent transition-colors" />
-                </div>
-              </button>
-            ))}
-          </div>
+                  </button>
+                ))}
+              </div>
 
-          <div className="flex items-center justify-between text-xs text-muted-foreground border-t border-border pt-3">
-            <button
-              onClick={handlePrevious}
-              className="hover:text-foreground transition-colors"
-            >
-              ← Previous
-            </button>
-            <span>
-              {currentGroup + 1} / {totalGroups}
-            </span>
-            <button
-              onClick={handleNext}
-              className="hover:text-foreground transition-colors"
-            >
-              Next →
-            </button>
+              <div className="flex items-center justify-between text-xs text-muted-foreground border-t border-border pt-3">
+                <button
+                  onClick={handlePrevious}
+                  className="hover:text-foreground transition-colors"
+                >
+                  ← Previous
+                </button>
+                <span>
+                  {currentGroup + 1} / {totalGroups}
+                </span>
+                <button
+                  onClick={handleNext}
+                  className="hover:text-foreground transition-colors"
+                >
+                  Next →
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Mobile Bottom Banner */}
-      <div className="xl:hidden fixed bottom-0 left-0 right-0 z-40 bg-card border-t border-border p-3 shadow-lg">
-        <div className="max-w-4xl mx-auto">
-          <div className="flex items-center justify-between mb-2">
-            <div className="flex items-center gap-2">
-              <Sparkles size={14} className="text-accent" />
-              <h3 className="text-xs font-bold text-foreground">Premium Domains</h3>
+      <div className={`xl:hidden fixed bottom-0 left-0 right-0 z-40 bg-card border-t border-border shadow-lg transition-transform duration-300 ${isCollapsed ? 'translate-y-full' : 'translate-y-0'}`}>
+        {/* Collapse Toggle Button */}
+        <button
+          onClick={() => setIsCollapsed(!isCollapsed)}
+          className="absolute -top-8 right-4 bg-card border border-border rounded-t-lg px-3 py-1 hover:bg-accent/5 transition-colors"
+        >
+          {isCollapsed ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+        </button>
+        
+        <div className="p-3">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center justify-between mb-2">
+              <div className="flex items-center gap-2">
+                <Sparkles size={14} className="text-accent" />
+                <h3 className="text-xs font-bold text-foreground">Premium Domains</h3>
+              </div>
+              <div className="flex gap-2">
+                <button
+                  onClick={handlePrevious}
+                  className="text-xs text-muted-foreground hover:text-foreground"
+                >
+                  ←
+                </button>
+                <span className="text-xs text-muted-foreground">
+                  {currentGroup + 1}/{totalGroups}
+                </span>
+                <button
+                  onClick={handleNext}
+                  className="text-xs text-muted-foreground hover:text-foreground"
+                >
+                  →
+                </button>
+              </div>
             </div>
-            <div className="flex gap-2">
-              <button
-                onClick={handlePrevious}
-                className="text-xs text-muted-foreground hover:text-foreground"
-              >
-                ←
-              </button>
-              <span className="text-xs text-muted-foreground">
-                {currentGroup + 1}/{totalGroups}
-              </span>
-              <button
-                onClick={handleNext}
-                className="text-xs text-muted-foreground hover:text-foreground"
-              >
-                →
-              </button>
+            
+            <div className="flex gap-2 overflow-x-auto">
+              {currentDomains.map((domain) => (
+                <button
+                  key={domain.name}
+                  onClick={() => handleInquire(domain.name)}
+                  className="flex-shrink-0 px-3 py-1.5 rounded-md bg-accent/5 hover:bg-accent/10 transition-colors"
+                >
+                  <div className="text-xs font-semibold text-foreground whitespace-nowrap">
+                    {domain.name}
+                  </div>
+                </button>
+              ))}
             </div>
-          </div>
-          
-          <div className="flex gap-2 overflow-x-auto">
-            {currentDomains.map((domain) => (
-              <button
-                key={domain.name}
-                onClick={() => handleInquire(domain.name)}
-                className="flex-shrink-0 px-3 py-1.5 rounded-md bg-accent/5 hover:bg-accent/10 transition-colors"
-              >
-                <div className="text-xs font-semibold text-foreground whitespace-nowrap">
-                  {domain.name}
-                </div>
-              </button>
-            ))}
           </div>
         </div>
       </div>
