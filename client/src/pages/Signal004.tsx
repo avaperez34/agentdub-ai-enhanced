@@ -44,7 +44,7 @@ export default function Signal004() {
               <MapPin size={16} />
               <span>NEOM, Saudi Arabia</span>
             </div>
-            $1
+
             <ShareButton 
               url="https://agentdub.ai/signals/008"
               title="Signal #008: GCC AI Adoption Paradox: 84% Use, 11% Value"

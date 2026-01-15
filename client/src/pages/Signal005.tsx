@@ -44,7 +44,7 @@ export default function Signal005() {
               <MapPin size={16} />
               <span>Doha, Qatar</span>
             </div>
-            $1
+
             <ShareButton 
               url="https://agentdub.ai/signals/008"
               title="Signal #008: Dubai Appoints 22 Chief AI Officers Across Government"

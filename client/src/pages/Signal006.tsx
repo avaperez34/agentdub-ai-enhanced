@@ -44,7 +44,7 @@ export default function Signal006() {
               <MapPin size={16} />
               <span>Kuwait City, Kuwait</span>
             </div>
-            $1
+
             <ShareButton 
               url="https://agentdub.ai/signals/008"
               title="Signal #008: Saudi SDAIA Mandates AI Governance for All Ministries"
