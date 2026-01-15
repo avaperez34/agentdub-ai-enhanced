@@ -46,3 +46,8 @@
 - [x] Fix Gumroad links to point to https://agentdubai.gumroad.com/l/gcc-ai-directory
 - [x] Create first X/Twitter post for AgentDubai launch
 - [x] Test all Gumroad links after fix
+- [ ] Research Al Maktoum Airport Red Carpet system details
+- [ ] Draft Signal #012 content in English
+- [ ] Create Signal012.tsx component
+- [ ] Add Signal #012 to Intelligence page
+- [ ] Test Signal #012 page and links

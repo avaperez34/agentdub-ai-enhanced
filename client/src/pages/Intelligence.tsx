@@ -144,6 +144,18 @@ const signals = [
     category: "capital",
     date: "2026-01-15",
   },
+  {
+    id: "012",
+    title: "Dubai's Red Carpet Eliminates Border Friction — AI Redefines Immigration at Scale",
+    description:
+      "Dubai launches the Red Carpet Smart Corridor at Dubai International Airport, a world-first AI-powered immigration system that eliminates physical passport checks. Passengers clear immigration in 6 seconds without stopping, documents, or counters.",
+    sector: "Infrastructure",
+    impact: 8.7,
+    horizon: "3–7y",
+    country: "UAE",
+    category: "execution",
+    date: "2026-01-15",
+  },
 ];
 
 const categories = [

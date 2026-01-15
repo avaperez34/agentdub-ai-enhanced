@@ -21,6 +21,7 @@ import Signal008 from "./pages/Signal008";
 import Signal009 from "./pages/Signal009";
 import Signal010 from "./pages/Signal010";
 import Signal011 from "./pages/Signal011";
+import Signal012 from "./pages/Signal012";
 import About from "./pages/About";
 import News from "./pages/News";
 import NewsArticle from "./pages/NewsArticle";
@@ -53,7 +54,8 @@ function Router() {
       <Route path={"/signals/008"} component={Signal008} />
       <Route path={"/signals/009"} component={Signal009} />
       <Route path={"/signals/010"} component={Signal010} />
-      <Route path={"/signals/011"} component={Signal011} />        <Route path={"/about"} component={About} />
+      <Route path={"/signals/011"} component={Signal011} />
+      <Route path={"/signals/012"} component={Signal012} />        <Route path={"/about"} component={About} />
         <Route path={"/contact"} component={Contact} />        <Route path="/investors" component={About} />
         <Route path={"/news"} component={News} />
         <Route path={"/news/:id"} component={NewsArticle} />
