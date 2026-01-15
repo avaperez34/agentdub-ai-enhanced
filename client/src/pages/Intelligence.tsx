@@ -132,6 +132,18 @@ const signals = [
     category: "capital",
     date: "2024-12-05",
   },
+  {
+    id: "011",
+    title: "Abu Dhabi Creates Fourth Sovereign Wealth Engine — L'IMAD Signals Capital Reallocation Era",
+    description:
+      "Abu Dhabi launches L'IMAD Holding as its fourth sovereign investment platform alongside ADIA ($1.1T), Mubadala ($330B), and ADQ ($263B). The new fund targets infrastructure, financial services, advanced technology, and urban mobility with Crown Prince Sheikh Khaled as chairman.",
+    sector: "Sovereign Wealth",
+    impact: 8.9,
+    horizon: "3–7y",
+    country: "UAE",
+    category: "capital",
+    date: "2026-01-15",
+  },
 ];
 
 const categories = [
@@ -166,7 +178,7 @@ const categories = [
 ];
 
 const countries = ["All Countries", "UAE", "Saudi Arabia", "Qatar", "Kuwait", "Bahrain", "Oman", "GCC-Wide"];
-const sectors = ["All Sectors", "Infrastructure", "GovTech", "Smart Cities", "Smart Infrastructure", "Government AI", "Regulation", "Leadership", "Failure Analysis", "Venture Capital"];
+const sectors = ["All Sectors", "Infrastructure", "GovTech", "Smart Cities", "Smart Infrastructure", "Government AI", "Regulation", "Leadership", "Failure Analysis", "Venture Capital", "Sovereign Wealth"];
 
 const ITEMS_PER_PAGE = 6;
 
