@@ -3,6 +3,7 @@
  */
 
 import { Link } from "wouter";
+import { WaitlistForm } from "@/components/WaitlistForm";
 import { Check, Sparkles, TrendingUp, FileText, Bell, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -279,17 +280,9 @@ export default function Premium() {
               <p className="text-muted-foreground mb-6">
                 Be the first to know when premium subscription plans launch. We'll send you early access and special launch pricing.
               </p>
-              <form className="flex gap-3 max-w-md mx-auto" onSubmit={(e) => { e.preventDefault(); alert('Thank you! We\'ll notify you when premium subscriptions launch (Q3 2026 - Q2 2027). Follow us on LinkedIn for updates.'); }}>
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-4 py-2 rounded-md border border-border bg-background focus:outline-none focus:ring-2 focus:ring-accent"
-                  required
-                />
-                <Button type="submit">
-                  Notify Me
-                </Button>
-              </form>
+              <div className="max-w-md mx-auto">
+                <WaitlistForm source="premium" />
+              </div>
               <p className="text-xs text-muted-foreground mt-3">
                 Expected launch: Q3 2026 - Q2 2027 (Pre-seed phase)
               </p>

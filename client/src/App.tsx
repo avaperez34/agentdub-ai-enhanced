@@ -27,8 +27,8 @@ import NewsArticle from "./pages/NewsArticle";
 import Premium from "./pages/Premium";
 import GCCMap from "./pages/GCCMap";
 import Changelog from "./pages/Changelog";
-
 function Router() {
+  // make sure to consider if you need authentication for certain routes
   return (
     <>
       <Navigation />

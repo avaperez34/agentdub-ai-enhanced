@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { WaitlistForm } from "@/components/WaitlistForm";
 import { useAnalytics } from "@/hooks/useAnalytics";
 import { Input } from "@/components/ui/input";
 import {
@@ -272,20 +273,7 @@ export default function Directory() {
               {/* Early Access Waitlist */}
               <div className="mt-4 pt-4 border-t border-emerald-500/30">
                 <p className="text-sm font-semibold mb-2 text-emerald-600 dark:text-emerald-400">Get Notified When Full Directory Launches</p>
-                <form className="flex gap-2" onSubmit={(e) => { e.preventDefault(); alert('Thank you! We\'ll notify you when the full 500+ directory launches. For now, join our LinkedIn community for updates.'); }}>
-                  <input 
-                    type="email" 
-                    placeholder="your@email.com" 
-                    required
-                    className="flex-1 px-4 py-2 rounded-lg border border-emerald-500/30 bg-background/50 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm"
-                  />
-                  <button 
-                    type="submit"
-                    className="px-6 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-sm transition-colors whitespace-nowrap"
-                  >
-                    Notify Me
-                  </button>
-                </form>
+                <WaitlistForm source="directory" />
               </div>
             </div>
           </div>
