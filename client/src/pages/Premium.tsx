@@ -99,7 +99,7 @@ export default function Premium() {
                   </div>
 
                   <a 
-                    href="https://agentdub.gumroad.com/l/gcc-ai-directory" 
+                    href="https://agentdubai.gumroad.com/l/gcc-ai-directory" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-full"
@@ -302,7 +302,7 @@ export default function Premium() {
           </p>
           <div className="flex gap-4 justify-center">
             <a 
-              href="https://agentdub.gumroad.com/l/gcc-ai-directory" 
+              href="https://agentdubai.gumroad.com/l/gcc-ai-directory" 
               target="_blank" 
               rel="noopener noreferrer"
             >

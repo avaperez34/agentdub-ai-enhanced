@@ -253,7 +253,7 @@ export default function Signal007() {
                 </button>
               </Link>
               <a
-                href="https://agentdub.gumroad.com/l/gcc-ai-directory"
+                href="https://agentdubai.gumroad.com/l/gcc-ai-directory"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 bg-card border-2 border-accent text-accent rounded-lg font-semibold hover:bg-accent/10 transition-colors inline-block"

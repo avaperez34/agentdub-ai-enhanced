@@ -42,3 +42,7 @@
 - [x] Test Contact navigation from all pages
 - [x] Remove contact@domainelysee.com email display from Contact page
 - [x] Keep Formspree backend sending to contact@domainelysee.com
+- [x] Find all incorrect Gumroad links in the codebase
+- [x] Fix Gumroad links to point to https://agentdubai.gumroad.com/l/gcc-ai-directory
+- [x] Create first X/Twitter post for AgentDubai launch
+- [x] Test all Gumroad links after fix
