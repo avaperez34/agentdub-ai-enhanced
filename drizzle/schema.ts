@@ -75,3 +75,20 @@ export const error404Logs = mysqlTable("error_404_logs", {
 
 export type Error404Log = typeof error404Logs.$inferSelect;
 export type InsertError404Log = typeof error404Logs.$inferInsert;
+
+/**
+ * Domain inquiries table for premium domain purchase requests
+ * Stores contact information from users interested in buying domains
+ */
+export const domainInquiries = mysqlTable("domain_inquiries", {
+  id: int("id").autoincrement().primaryKey(),
+  domain: varchar("domain", { length: 255 }).notNull(), // Domain name (e.g., "ksaudi.com")
+  name: varchar("name", { length: 255 }).notNull(), // Inquirer's name
+  email: varchar("email", { length: 320 }).notNull(), // Inquirer's email
+  message: text("message"), // Optional message from inquirer
+  status: mysqlEnum("status", ["new", "contacted", "negotiating", "sold", "declined"]).default("new").notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+});
+
+export type DomainInquiry = typeof domainInquiries.$inferSelect;
+export type InsertDomainInquiry = typeof domainInquiries.$inferInsert;

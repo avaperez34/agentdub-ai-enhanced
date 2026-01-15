@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
+import { trpc } from "@/lib/trpc";
 
 const domains = [
   { name: "ksaudi.com", category: "Geographic" },
@@ -132,12 +133,25 @@ export function DomainBanner() {
     setIsOpen(true);
   };
 
+  const createInquiry = trpc.domainInquiries.create.useMutation({
+    onSuccess: () => {
+      toast.success(`Inquiry sent for ${formData.domain}! We'll contact you soon.`);
+      setIsOpen(false);
+      setFormData({ name: "", email: "", domain: "", message: "" });
+    },
+    onError: (error) => {
+      toast.error(`Failed to send inquiry: ${error.message}`);
+    },
+  });
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real app, this would send to your backend
-    toast.success(`Inquiry sent for ${formData.domain}! We'll contact you soon.`);
-    setIsOpen(false);
-    setFormData({ name: "", email: "", domain: "", message: "" });
+    createInquiry.mutate({
+      domain: formData.domain,
+      name: formData.name,
+      email: formData.email,
+      message: formData.message || undefined,
+    });
   };
 
   return (

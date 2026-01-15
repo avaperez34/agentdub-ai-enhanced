@@ -23,3 +23,11 @@
 - [x] Create URL shortener management UI
 - [x] Implement 404 analytics tracking system
 - [x] Create analytics dashboard for 404 errors and short links
+- [x] Investigate Premium Domains banner implementation
+- [x] Add contact functionality for domain purchase inquiries
+- [x] Test domain inquiry email delivery
+- [x] Create domain_inquiries database table
+- [x] Implement domain inquiries tRPC API
+- [x] Integrate DomainBanner with backend API
+- [x] Create domain inquiries admin dashboard
+- [x] Add owner notifications for new inquiries
