@@ -31,6 +31,7 @@ import ShortLinkRedirect from "./pages/ShortLinkRedirect";
 import ShortLinksManager from "./pages/ShortLinksManager";
 import AnalyticsDashboard from "./pages/AnalyticsDashboard";
 import DomainInquiries from "./pages/DomainInquiries";
+import Contact from "./pages/Contact";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -52,9 +53,8 @@ function Router() {
       <Route path={"/signals/008"} component={Signal008} />
       <Route path={"/signals/009"} component={Signal009} />
       <Route path={"/signals/010"} component={Signal010} />
-      <Route path={"/signals/011"} component={Signal011} />
-        <Route path="/about" component={About} />
-        <Route path="/investors" component={About} />
+      <Route path={"/signals/011"} component={Signal011} />        <Route path={"/about"} component={About} />
+        <Route path={"/contact"} component={Contact} />        <Route path="/investors" component={About} />
         <Route path={"/news"} component={News} />
         <Route path={"/news/:id"} component={NewsArticle} />
          <Route path="/premium" component={Premium} />
