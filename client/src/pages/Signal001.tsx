@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ReadingProgress } from "@/components/ReadingProgress";
+import { ShareButton } from "@/components/ShareButton";
 import { ArrowLeft, Share2 } from "lucide-react";
 
 export default function Signal001() {
@@ -39,6 +40,10 @@ export default function Signal001() {
             <Badge variant="outline">Scope: Abu Dhabi, UAE</Badge>
             <Badge variant="outline">Impact: 8.5 / 10</Badge>
             <Badge variant="outline">Horizon: Immediate → 1–3y</Badge>
+            <ShareButton 
+              url="https://agentdub.ai/signals/007"
+              title="Signal #007: AD Ports Group Deploys World's Largest Agentic AI Fleet"
+            />
           </div>
         </section>
 

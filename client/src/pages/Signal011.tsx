@@ -5,6 +5,7 @@
 
 import { Badge } from "@/components/ui/badge";
 import { ReadingProgress } from "@/components/ReadingProgress";
+import { ShareButton } from "@/components/ShareButton";
 import { ArrowLeft, MapPin, Calendar, TrendingUp, ExternalLink } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
@@ -48,6 +49,11 @@ export default function Signal011() {
               <TrendingUp size={16} />
               <span>Impact Score: 8.9/10</span>
             </div>
+            <ShareButton 
+              url="https://agentdub.ai/signals/011"
+              title="Signal #011: Abu Dhabi Creates Fourth Sovereign Wealth Engine — L'IMAD"
+              description="Abu Dhabi launches L'IMAD Holding as its fourth sovereign investment platform alongside ADIA, Mubadala, and ADQ."
+            />
           </div>
           
           <p className="text-xl text-muted-foreground leading-relaxed">

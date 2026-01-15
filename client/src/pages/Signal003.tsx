@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ReadingProgress } from "@/components/ReadingProgress";
+import { ShareButton } from "@/components/ShareButton";
 import { ArrowLeft, Share2 } from "lucide-react";
 
 export default function Signal003() {

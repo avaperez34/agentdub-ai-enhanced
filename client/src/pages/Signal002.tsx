@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ReadingProgress } from "@/components/ReadingProgress";
+import { ShareButton } from "@/components/ShareButton";
 import { ArrowLeft, Share2 } from "lucide-react";
 
 export default function Signal002() {
@@ -39,6 +40,10 @@ export default function Signal002() {
             <Badge variant="outline">Scope: Dubai, UAE</Badge>
             <Badge variant="outline">Impact: 7.9 / 10</Badge>
             <Badge variant="outline">Horizon: Immediate → 1–3y</Badge>
+            <ShareButton 
+              url="https://agentdub.ai/signals/007"
+              title="Signal #007: DEWA Deploys AI Service Agents via Rammas Platform"
+            />
           </div>
         </section>
 

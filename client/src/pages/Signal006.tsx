@@ -5,6 +5,7 @@
 
 import { Badge } from "@/components/ui/badge";
 import { ReadingProgress } from "@/components/ReadingProgress";
+import { ShareButton } from "@/components/ShareButton";
 import { ArrowLeft, MapPin, Calendar, TrendingUp } from "lucide-react";
 import { Link } from "wouter";
 
@@ -43,10 +44,11 @@ export default function Signal006() {
               <MapPin size={16} />
               <span>Kuwait City, Kuwait</span>
             </div>
-            <div className="flex items-center gap-2">
-              <TrendingUp size={16} />
-              <span>Impact Score: 21/25</span>
-            </div>
+            $1
+            <ShareButton 
+              url="https://agentdub.ai/signals/008"
+              title="Signal #008: Saudi SDAIA Mandates AI Governance for All Ministries"
+            />
           </div>
           
           <p className="text-xl text-muted-foreground leading-relaxed">

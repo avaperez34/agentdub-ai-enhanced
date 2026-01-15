@@ -5,6 +5,7 @@
 
 import { Badge } from "@/components/ui/badge";
 import { ReadingProgress } from "@/components/ReadingProgress";
+import { ShareButton } from "@/components/ShareButton";
 import { ArrowLeft, MapPin, Calendar, TrendingUp } from "lucide-react";
 import { Link } from "wouter";
 
@@ -43,10 +44,11 @@ export default function Signal010() {
               <MapPin size={16} />
               <span>GCC Region</span>
             </div>
-            <div className="flex items-center gap-2">
-              <TrendingUp size={16} />
-              <span>Impact Score: 24/25</span>
-            </div>
+            $1
+            <ShareButton 
+              url="https://agentdub.ai/signals/010"
+              title="Signal #010: Saudi Arabia Orders 200,000 NVIDIA H100 GPUs"
+            />
           </div>
           
           <p className="text-xl text-muted-foreground leading-relaxed">

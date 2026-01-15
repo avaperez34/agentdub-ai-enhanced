@@ -3,10 +3,11 @@
  */
 
 import { useRoute, Link } from "wouter";
-import { Calendar, Clock, ArrowLeft, Share2 } from "lucide-react";
+import { Calendar, Clock, ArrowLeft } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ReadingProgress } from "@/components/ReadingProgress";
+import { ShareButton } from "@/components/ShareButton";
 
 // Sample articles data - in production, this would come from a CMS or API
 const articles: Record<string, any> = {
@@ -1482,10 +1483,11 @@ export default function NewsArticle() {
                 <Clock size={14} />
                 {article.readTime}
               </div>
-              <button className="flex items-center gap-1 hover:text-accent transition-colors">
-                <Share2 size={14} />
-                Share
-              </button>
+              <ShareButton 
+                url={`https://agentdub.ai/news/${article.id}`}
+                title={article.title}
+                description={article.excerpt || article.content.substring(0, 200)}
+              />
             </div>
           </div>
 
@@ -1557,3 +1559,5 @@ export default function NewsArticle() {
     </div>
   );
 }
+
+
