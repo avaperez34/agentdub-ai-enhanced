@@ -5,3 +5,7 @@
 - [x] Connect frontend forms to backend API
 - [x] Fix News page "Stay Updated" subscription form
 - [x] Verify waitlist emails from contact@domainelysee.com
+- [x] Create AI Compute Power Tracker component
+- [x] Add compute metrics data (TFLOPS, Tokens/day, GPU count)
+- [x] Integrate tracker section into homepage
+- [x] Add progress bar animations on scroll

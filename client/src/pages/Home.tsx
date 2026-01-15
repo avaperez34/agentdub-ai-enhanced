@@ -3,6 +3,7 @@ import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
 import { useAnalytics } from "@/hooks/useAnalytics";
 import { ArrowRight, Zap, Shield, TrendingUp } from "lucide-react";
+import { AIComputeTracker } from "@/components/AIComputeTracker";
 
 export default function Home() {
   // The userAuth hooks provides authentication state
@@ -68,6 +69,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* AI Compute Power Tracker */}
+      <AIComputeTracker />
 
       {/* Why AgentDub Section */}
       <section className="py-20 px-4 bg-card border-t border-border">
