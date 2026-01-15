@@ -441,7 +441,7 @@ export default function Intelligence() {
                   </div>
                 </div>
                 <div className="flex items-center gap-3 pt-4 border-t border-border">
-                  <Link href={`/signal${signal.id}`}>
+                  <Link href={`/signals/${signal.id}`}>
                     <Button size="sm">
                       Read Full Analysis
                       <ArrowRight className="ml-2" size={16} />
