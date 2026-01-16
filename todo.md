@@ -84,4 +84,18 @@
 - [x] Add social share buttons to Signal #020
 - [x] Add social share buttons to Signal #021
 - [x] Test social share functionality
-- [ ] Save checkpoint for social share buttons
+- [x] Save checkpoint for social share buttons
+## Fresh News Articles for 6 GCC Countries (January 2026)
+
+- [x] Research latest news for UAE
+- [x] Research latest news for Saudi Arabia
+- [x] Research latest news for Qatar
+- [x] Research latest news for Kuwait
+- [x] Research latest news for Bahrain
+- [x] Research latest news for Oman
+- [x] Create news article pages (9 articles total)
+- [x] Add ShareButton to all new articles
+- [x] Update News page with new articles
+- [x] Update App.tsx routing for new articles
+- [x] Test all new article pages
+- [ ] Save checkpoint for fresh news articles

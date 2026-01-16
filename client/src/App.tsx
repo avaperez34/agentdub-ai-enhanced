@@ -34,6 +34,15 @@ import Signal021 from "./pages/Signal021";
 import About from "./pages/About";
 import News from "./pages/News";
 import NewsArticle from "./pages/NewsArticle";
+import NewsArticle001 from "./pages/NewsArticle001";
+import NewsArticle002 from "./pages/NewsArticle002";
+import NewsArticle003 from "./pages/NewsArticle003";
+import NewsArticle004 from "./pages/NewsArticle004";
+import NewsArticle005 from "./pages/NewsArticle005";
+import NewsArticle006 from "./pages/NewsArticle006";
+import NewsArticle007 from "./pages/NewsArticle007";
+import NewsArticle008 from "./pages/NewsArticle008";
+import NewsArticle009 from "./pages/NewsArticle009";
 import Premium from "./pages/Premium";
 import GCCMap from "./pages/GCCMap";
 import Changelog from "./pages/Changelog";
@@ -75,8 +84,16 @@ function Router() {
       <Route path={"/signals/020"} component={Signal020} />
       <Route path={"/signals/021"} component={Signal021} />
         <Route path={"/about"} component={About} />
-        <Route path={"/contact"} component={Contact} />        <Route path="/investors" component={About} />
-        <Route path={"/news"} component={News} />
+        <Route path={"/contact"} component={Contact} />        <Route path="/investors" component={About} />        <Route path={"/news"} component={News} />
+        <Route path={"/news/001"} component={NewsArticle001} />
+        <Route path={"/news/002"} component={NewsArticle002} />
+        <Route path={"/news/003"} component={NewsArticle003} />
+        <Route path={"/news/004"} component={NewsArticle004} />
+        <Route path={"/news/005"} component={NewsArticle005} />
+        <Route path={"/news/006"} component={NewsArticle006} />
+        <Route path={"/news/007"} component={NewsArticle007} />
+        <Route path={"/news/008"} component={NewsArticle008} />
+        <Route path={"/news/009"} component={NewsArticle009} />
         <Route path={"/news/:id"} component={NewsArticle} />
          <Route path="/premium" component={Premium} />
          <Route path={"/gcc-map"} component={GCCMap} />
