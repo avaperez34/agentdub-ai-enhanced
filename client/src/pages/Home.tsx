@@ -77,9 +77,12 @@ export default function Home() {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Latest Intelligence</h2>
-            <p className="text-xl text-muted-foreground">
+            <h2 className="text-4xl font-bold mb-2">Latest Intelligence</h2>
+            <p className="text-xl text-muted-foreground mb-2">
               Fresh signals and breaking news from the GCC AI ecosystem
+            </p>
+            <p className="text-sm text-muted-foreground/70">
+              Last updated: January 16, 2026
             </p>
           </div>
 
@@ -94,9 +97,9 @@ export default function Home() {
                 </Button>
               </Link>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0">
               {/* Signal #013 */}
-              <Link href="/signals/013">
+              <Link href="/signals/013" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">SIGNAL #013</span>
@@ -115,7 +118,7 @@ export default function Home() {
               </Link>
 
               {/* Signal #015 */}
-              <Link href="/signals/015">
+              <Link href="/signals/015" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">SIGNAL #015</span>
@@ -134,7 +137,7 @@ export default function Home() {
               </Link>
 
               {/* Signal #018 */}
-              <Link href="/signals/018">
+              <Link href="/signals/018" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">SIGNAL #018</span>
@@ -165,9 +168,9 @@ export default function Home() {
                 </Button>
               </Link>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0">
               {/* News Article #001 */}
-              <Link href="/news/001">
+              <Link href="/news/001" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>
@@ -186,7 +189,7 @@ export default function Home() {
               </Link>
 
               {/* News Article #002 */}
-              <Link href="/news/002">
+              <Link href="/news/002" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>
@@ -205,7 +208,7 @@ export default function Home() {
               </Link>
 
               {/* News Article #005 */}
-              <Link href="/news/005">
+              <Link href="/news/005" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>

@@ -106,4 +106,11 @@
 - [x] Add latest 3 signals to homepage
 - [x] Add "View All News" and "View All Signals" CTAs
 - [x] Test homepage Latest Intelligence section
-- [ ] Save checkpoint for homepage updates
+- [x] Save checkpoint for homepage updates
+
+## Latest Intelligence UX Improvements
+- [x] Add "Last Updated" timestamp to Latest Intelligence section header
+- [x] Implement horizontal scroll carousel for Latest Signals on mobile
+- [x] Implement horizontal scroll carousel for Latest News on mobile
+- [x] Test timestamp display and mobile carousel functionality
+- [ ] Save checkpoint for Latest Intelligence UX improvements
