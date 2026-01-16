@@ -98,4 +98,12 @@
 - [x] Update News page with new articles
 - [x] Update App.tsx routing for new articles
 - [x] Test all new article pages
-- [ ] Save checkpoint for fresh news articles
+- [x] Save checkpoint for fresh news articles
+
+## Add Latest Intelligence Section to Homepage
+- [x] Design Latest Intelligence section layout (news + signals)
+- [x] Add latest 3 news articles to homepage
+- [x] Add latest 3 signals to homepage
+- [x] Add "View All News" and "View All Signals" CTAs
+- [x] Test homepage Latest Intelligence section
+- [ ] Save checkpoint for homepage updates

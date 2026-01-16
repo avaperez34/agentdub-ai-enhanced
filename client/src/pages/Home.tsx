@@ -73,6 +73,160 @@ export default function Home() {
       {/* AI Compute Power Tracker */}
       <AIComputeTracker />
 
+      {/* Latest Intelligence Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4">Latest Intelligence</h2>
+            <p className="text-xl text-muted-foreground">
+              Fresh signals and breaking news from the GCC AI ecosystem
+            </p>
+          </div>
+
+          {/* Latest Signals */}
+          <div className="mb-16">
+            <div className="flex items-center justify-between mb-6">
+              <h3 className="text-2xl font-bold">Latest Signals</h3>
+              <Link href="/intelligence">
+                <Button variant="outline" size="sm">
+                  View All Signals
+                  <ArrowRight className="ml-2" size={16} />
+                </Button>
+              </Link>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Signal #013 */}
+              <Link href="/signals/013">
+                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent">SIGNAL #013</span>
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Jan 15, 2026</span>
+                  </div>
+                  <h4 className="text-lg font-bold mb-2">Saudi Arabia Launches 480-MW Hexagon Data Center</h4>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    World's largest government-owned data center positions Kingdom in global compute race
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Saudi Arabia</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">Impact: 9.0</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Signal #015 */}
+              <Link href="/signals/015">
+                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent">SIGNAL #015</span>
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Jan 15, 2026</span>
+                  </div>
+                  <h4 className="text-lg font-bold mb-2">UAE Joins US-Led Pax Silica Alliance</h4>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Strategic partnership secures AI supply chains and strengthens UAE-US technology cooperation
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">UAE</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">Impact: 8.9</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Signal #018 */}
+              <Link href="/signals/018">
+                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent">SIGNAL #018</span>
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Jan 14, 2026</span>
+                  </div>
+                  <h4 className="text-lg font-bold mb-2">Qatar Joins Pax Silica - Central Role in AI Economic Order</h4>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    US declares Qatar will shape emerging AI-era economic order through strategic energy and tech positioning
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Qatar</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">Impact: 8.7</span>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+
+          {/* Latest News */}
+          <div>
+            <div className="flex items-center justify-between mb-6">
+              <h3 className="text-2xl font-bold">Latest News</h3>
+              <Link href="/news">
+                <Button variant="outline" size="sm">
+                  View All News
+                  <ArrowRight className="ml-2" size={16} />
+                </Button>
+              </Link>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* News Article #001 */}
+              <Link href="/news/001">
+                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent">NEWS</span>
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Jan 15, 2026</span>
+                  </div>
+                  <h4 className="text-lg font-bold mb-2">19% of GCC Organizations Deploy Agentic AI in Production</h4>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    World Economic Forum reports GCC leads global agentic AI implementation
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">GCC-Wide</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">5 min read</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* News Article #002 */}
+              <Link href="/news/002">
+                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent">NEWS</span>
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Jan 15, 2026</span>
+                  </div>
+                  <h4 className="text-lg font-bold mb-2">IHC Partners with US Investment Arm for AI Boom</h4>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Abu Dhabi's IHC strengthens UAE-US bilateral relations in AI-led technology sector
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">UAE</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">4 min read</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* News Article #005 */}
+              <Link href="/news/005">
+                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent">NEWS</span>
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Jan 15, 2026</span>
+                  </div>
+                  <h4 className="text-lg font-bold mb-2">ITC Infotech Launches Digital & AI Engineering Hub in Riyadh</h4>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    15 years of Middle East operations culminates in new AI capabilities hub for Saudi Arabia
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Saudi Arabia</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">3 min read</span>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why AgentDub Section */}
       <section className="py-20 px-4 bg-card border-t border-border">
         <div className="max-w-6xl mx-auto">
