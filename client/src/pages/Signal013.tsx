@@ -1,19 +1,10 @@
-import { ArrowLeft, Share2 } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { ShareButton } from "@/components/ShareButton";
 
 export default function Signal013() {
-  const handleShare = () => {
-    if (navigator.share) {
-      navigator
-        .share({
-          title: "Signal #013 - Saudi Arabia Launches World's Largest Government Data Center",
-          url: window.location.href,
-        })
-        .catch(() => {});
-    }
-  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -43,9 +34,11 @@ export default function Signal013() {
                 <span>•</span>
                 <span className="font-semibold text-accent">Impact: 9.0/10</span>
               </div>
-              <Button variant="ghost" size="sm" onClick={handleShare}>
-                <Share2 className="h-4 w-4" />
-              </Button>
+              <ShareButton 
+                url="https://agentdub.ai/signals/013"
+                title="Signal #013: Saudi Arabia Launches 480-MW Hexagon Data Center"
+                description="Saudi Arabia's SDAIA unveils the world's largest government-owned data center"
+              />
             </div>
           </div>
 

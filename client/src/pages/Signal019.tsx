@@ -1,19 +1,10 @@
-import { ArrowLeft, Share2 } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { ShareButton } from "@/components/ShareButton";
 
 export default function Signal019() {
-  const handleShare = () => {
-    if (navigator.share) {
-      navigator
-        .share({
-          title: "Signal #019 - Oman AI Investment Surge",
-          url: window.location.href,
-        })
-        .catch(() => {});
-    }
-  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -43,9 +34,11 @@ export default function Signal019() {
                 <span>•</span>
                 <span className="font-semibold text-accent">Impact: 7.8/10</span>
               </div>
-              <Button variant="ghost" size="sm" onClick={handleShare}>
-                <Share2 className="h-4 w-4" />
-              </Button>
+              <ShareButton 
+                url="https://agentdub.ai/signals/019"
+                title="Signal #019: Oman AI Ecosystem Reaches $169M Investment"
+                description="Oman AI sector attracts $169M across 46 companies"
+              />
             </div>
           </div>
 

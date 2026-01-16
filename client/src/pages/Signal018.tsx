@@ -1,19 +1,10 @@
-import { ArrowLeft, Share2 } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { ShareButton } from "@/components/ShareButton";
 
 export default function Signal018() {
-  const handleShare = () => {
-    if (navigator.share) {
-      navigator
-        .share({
-          title: "Signal #018 - Qatar Joins Pax Silica Alliance",
-          url: window.location.href,
-        })
-        .catch(() => {});
-    }
-  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -43,9 +34,11 @@ export default function Signal018() {
                 <span>•</span>
                 <span className="font-semibold text-accent">Impact: 8.7/10</span>
               </div>
-              <Button variant="ghost" size="sm" onClick={handleShare}>
-                <Share2 className="h-4 w-4" />
-              </Button>
+              <ShareButton 
+                url="https://agentdub.ai/signals/018"
+                title="Signal #018: Qatar Joins Pax Silica"
+                description="Qatar joins Pax Silica to play central role in AI-era economic order"
+              />
             </div>
           </div>
 

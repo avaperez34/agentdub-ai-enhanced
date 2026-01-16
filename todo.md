@@ -71,4 +71,17 @@
 - [x] Update Intelligence page with new signals
 - [x] Update App.tsx routing for new signals
 - [x] Test all new signal pages
-- [ ] Save checkpoint for fresh signals batch
+- [x] Save checkpoint for fresh signals batch
+
+## Add Social Share Buttons to New Signals
+- [x] Add social share buttons to Signal #013
+- [x] Add social share buttons to Signal #014
+- [x] Add social share buttons to Signal #015
+- [x] Add social share buttons to Signal #016
+- [x] Add social share buttons to Signal #017
+- [x] Add social share buttons to Signal #018
+- [x] Add social share buttons to Signal #019
+- [x] Add social share buttons to Signal #020
+- [x] Add social share buttons to Signal #021
+- [x] Test social share functionality
+- [ ] Save checkpoint for social share buttons

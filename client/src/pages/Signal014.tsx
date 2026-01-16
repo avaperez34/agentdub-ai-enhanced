@@ -1,19 +1,10 @@
-import { ArrowLeft, Share2 } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { ShareButton } from "@/components/ShareButton";
 
 export default function Signal014() {
-  const handleShare = () => {
-    if (navigator.share) {
-      navigator
-        .share({
-          title: "Signal #014 - Saudi Arabia Ranks 5th Globally in AI Growth",
-          url: window.location.href,
-        })
-        .catch(() => {});
-    }
-  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -43,9 +34,11 @@ export default function Signal014() {
                 <span>•</span>
                 <span className="font-semibold text-accent">Impact: 8.8/10</span>
               </div>
-              <Button variant="ghost" size="sm" onClick={handleShare}>
-                <Share2 className="h-4 w-4" />
-              </Button>
+              <ShareButton 
+                url="https://agentdub.ai/signals/014"
+                title="Signal #014: Saudi Arabia Ranks 5th Globally in AI Growth, 3rd in Model Development"
+                description="Saudi Arabia ranks 3rd worldwide in advanced AI model development, trailing only the US and China"
+              />
             </div>
           </div>
 

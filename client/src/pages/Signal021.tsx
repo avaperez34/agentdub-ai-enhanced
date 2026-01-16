@@ -1,19 +1,10 @@
-import { ArrowLeft, Share2 } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { ShareButton } from "@/components/ShareButton";
 
 export default function Signal021() {
-  const handleShare = () => {
-    if (navigator.share) {
-      navigator
-        .share({
-          title: "Signal #021 - Kuwait International AI Conference",
-          url: window.location.href,
-        })
-        .catch(() => {});
-    }
-  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -43,9 +34,11 @@ export default function Signal021() {
                 <span>•</span>
                 <span className="font-semibold text-accent">Impact: 6.5/10</span>
               </div>
-              <Button variant="ghost" size="sm" onClick={handleShare}>
-                <Share2 className="h-4 w-4" />
-              </Button>
+              <ShareButton 
+                url="https://agentdub.ai/signals/021"
+                title="Signal #021: Kuwait International AI Conference"
+                description="Kuwait hosts International AI Conference as regional convening hub"
+              />
             </div>
           </div>
 
