@@ -17,6 +17,7 @@ export default function Home() {
   const [signalsScrollIndex, setSignalsScrollIndex] = useState(0);
   const [newsScrollIndex, setNewsScrollIndex] = useState(0);
   const [showSwipeHint, setShowSwipeHint] = useState(false);
+  const [isAutoPlayPaused, setIsAutoPlayPaused] = useState(false);
   
   const signalsScrollRef = useRef<HTMLDivElement>(null);
   const newsScrollRef = useRef<HTMLDivElement>(null);
@@ -75,6 +76,61 @@ export default function Home() {
       }
     };
   }, []);
+  
+  // Auto-play carousel
+  useEffect(() => {
+    if (isAutoPlayPaused) return;
+    
+    const interval = setInterval(() => {
+      // Auto-advance signals carousel
+      if (signalsScrollRef.current) {
+        const nextIndex = (signalsScrollIndex + 1) % 3;
+        scrollToCard(signalsScrollRef.current, nextIndex);
+      }
+      
+      // Auto-advance news carousel
+      if (newsScrollRef.current) {
+        const nextIndex = (newsScrollIndex + 1) % 3;
+        scrollToCard(newsScrollRef.current, nextIndex);
+      }
+    }, 5000); // 5 seconds
+    
+    return () => clearInterval(interval);
+  }, [signalsScrollIndex, newsScrollIndex, isAutoPlayPaused]);
+  
+  // Function to scroll to specific card
+  const scrollToCard = (container: HTMLDivElement, index: number) => {
+    const cardWidth = container.offsetWidth * 0.85; // 85vw per card
+    const gap = 24; // gap-6 = 24px
+    const scrollLeft = index * (cardWidth + gap);
+    container.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+  };
+  
+  // Handle dot click
+  const handleDotClick = (index: number, type: 'signals' | 'news') => {
+    setIsAutoPlayPaused(true);
+    if (type === 'signals' && signalsScrollRef.current) {
+      scrollToCard(signalsScrollRef.current, index);
+    } else if (type === 'news' && newsScrollRef.current) {
+      scrollToCard(newsScrollRef.current, index);
+    }
+    // Resume auto-play after 10 seconds of inactivity
+    setTimeout(() => setIsAutoPlayPaused(false), 10000);
+  };
+  
+  // Pause auto-play on user interaction
+  const handleUserInteraction = () => {
+    setIsAutoPlayPaused(true);
+    setTimeout(() => setIsAutoPlayPaused(false), 10000);
+  };
+  
+  // Helper to check if content is new (within 48 hours)
+  const isNewContent = (dateString: string) => {
+    const contentDate = new Date(dateString);
+    const now = new Date();
+    const diffHours = (now.getTime() - contentDate.getTime()) / (1000 * 60 * 60);
+    return diffHours <= 48;
+  };
   
   return (
     <div className="min-h-screen bg-background">
@@ -161,7 +217,7 @@ export default function Home() {
                 </Button>
               </Link>
             </div>
-            <div ref={signalsScrollRef} className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 relative">
+            <div ref={signalsScrollRef} onTouchStart={handleUserInteraction} onScroll={handleUserInteraction} className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 relative">
               {showSwipeHint && (
                 <div className="absolute left-0 top-1/2 -translate-y-1/2 z-10 md:hidden animate-pulse pointer-events-none">
                   <div className="bg-accent text-accent-foreground px-3 py-2 rounded-r-lg shadow-lg flex items-center gap-2">
@@ -175,6 +231,9 @@ export default function Home() {
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">SIGNAL #013</span>
+                    {isNewContent('2026-01-15') && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
+                    )}
                     <span className="text-xs text-muted-foreground">•</span>
                     <span className="text-xs text-muted-foreground">Jan 15, 2026</span>
                   </div>
@@ -194,6 +253,9 @@ export default function Home() {
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">SIGNAL #015</span>
+                    {isNewContent('2026-01-15') && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
+                    )}
                     <span className="text-xs text-muted-foreground">•</span>
                     <span className="text-xs text-muted-foreground">Jan 15, 2026</span>
                   </div>
@@ -213,6 +275,9 @@ export default function Home() {
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">SIGNAL #018</span>
+                    {isNewContent('2026-01-14') && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
+                    )}
                     <span className="text-xs text-muted-foreground">•</span>
                     <span className="text-xs text-muted-foreground">Jan 14, 2026</span>
                   </div>
@@ -230,11 +295,13 @@ export default function Home() {
             {/* Scroll indicators for mobile */}
             <div className="flex justify-center gap-2 mt-4 md:hidden">
               {[0, 1, 2].map((index) => (
-                <div
+                <button
                   key={index}
-                  className={`h-2 w-2 rounded-full transition-all ${
+                  onClick={() => handleDotClick(index, 'signals')}
+                  className={`h-2 w-2 rounded-full transition-all cursor-pointer ${
                     index === signalsScrollIndex ? 'bg-accent w-4' : 'bg-muted-foreground/30'
                   }`}
+                  aria-label={`Go to signal ${index + 1}`}
                 />
               ))}
             </div>
@@ -251,12 +318,15 @@ export default function Home() {
                 </Button>
               </Link>
             </div>
-            <div ref={newsScrollRef} className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0">
+            <div ref={newsScrollRef} onTouchStart={handleUserInteraction} onScroll={handleUserInteraction} className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0">
               {/* News Article #001 */}
               <Link href="/news/001" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>
+                    {isNewContent('2026-01-15') && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
+                    )}
                     <span className="text-xs text-muted-foreground">•</span>
                     <span className="text-xs text-muted-foreground">Jan 15, 2026</span>
                   </div>
@@ -276,6 +346,9 @@ export default function Home() {
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>
+                    {isNewContent('2026-01-15') && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
+                    )}
                     <span className="text-xs text-muted-foreground">•</span>
                     <span className="text-xs text-muted-foreground">Jan 15, 2026</span>
                   </div>
@@ -295,6 +368,9 @@ export default function Home() {
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>
+                    {isNewContent('2026-01-15') && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
+                    )}
                     <span className="text-xs text-muted-foreground">•</span>
                     <span className="text-xs text-muted-foreground">Jan 15, 2026</span>
                   </div>
@@ -312,11 +388,13 @@ export default function Home() {
             {/* Scroll indicators for mobile */}
             <div className="flex justify-center gap-2 mt-4 md:hidden">
               {[0, 1, 2].map((index) => (
-                <div
+                <button
                   key={index}
-                  className={`h-2 w-2 rounded-full transition-all ${
+                  onClick={() => handleDotClick(index, 'news')}
+                  className={`h-2 w-2 rounded-full transition-all cursor-pointer ${
                     index === newsScrollIndex ? 'bg-accent w-4' : 'bg-muted-foreground/30'
                   }`}
+                  aria-label={`Go to news ${index + 1}`}
                 />
               ))}
             </div>

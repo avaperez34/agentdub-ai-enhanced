@@ -121,4 +121,13 @@
 - [x] Implement swipe hint animation for first-time mobile visitors
 - [x] Create dynamic timestamp system that computes from latest content date
 - [x] Test scroll indicators, swipe hint, and dynamic timestamp
-- [ ] Save checkpoint for carousel enhancements
+- [x] Save checkpoint for carousel enhancements
+
+## Advanced Carousel Enhancements
+- [x] Implement clickable dot navigation for Latest Signals carousel
+- [x] Implement clickable dot navigation for Latest News carousel
+- [x] Add auto-play carousel with 5-second intervals
+- [x] Implement pause on user interaction (touch/scroll)
+- [x] Add "New" badges for content published within 48 hours
+- [x] Test clickable dots, auto-play, and New badges
+- [ ] Save checkpoint for advanced carousel enhancements
