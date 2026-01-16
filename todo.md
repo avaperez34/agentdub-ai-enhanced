@@ -46,8 +46,29 @@
 - [x] Fix Gumroad links to point to https://agentdubai.gumroad.com/l/gcc-ai-directory
 - [x] Create first X/Twitter post for AgentDubai launch
 - [x] Test all Gumroad links after fix
-- [ ] Research Al Maktoum Airport Red Carpet system details
-- [ ] Draft Signal #012 content in English
-- [ ] Create Signal012.tsx component
-- [ ] Add Signal #012 to Intelligence page
-- [ ] Test Signal #012 page and links
+- [x] Research Al Maktoum Airport Red Carpet system details
+- [x] Draft Signal #012 content in English
+- [x] Create Signal012.tsx component
+- [x] Add Signal #012 to Intelligence page
+- [x] Test Signal #012 page and links
+
+## Fresh Signals for 6 GCC Countries (January 2026)
+- [x] Research latest AI/digital transformation news for UAE
+- [x] Research latest AI/digital transformation news for Saudi Arabia
+- [x] Research latest AI/digital transformation news for Qatar
+- [x] Research latest AI/digital transformation news for Kuwait
+- [x] Research latest AI/digital transformation news for Bahrain
+- [x] Research latest AI/digital transformation news for Oman
+- [x] Create Signal #013 (Saudi Arabia - Hexagon Data Center)
+- [x] Create Signal #014 (Saudi Arabia - AI Rankings)
+- [x] Create Signal #015 (UAE - Pax Silica)
+- [x] Create Signal #016 (UAE - AI Energy Corridor)
+- [x] Create Signal #017 (Qatar - Digital Agenda UN Recognition)
+- [x] Create Signal #018 (Qatar - Pax Silica)
+- [x] Create Signal #019 (Oman - AI Investment)
+- [x] Create Signal #020 (Bahrain - stc-Huawei TechCo)
+- [x] Create Signal #021 (Kuwait - AI Conference)
+- [x] Update Intelligence page with new signals
+- [x] Update App.tsx routing for new signals
+- [x] Test all new signal pages
+- [ ] Save checkpoint for fresh signals batch
