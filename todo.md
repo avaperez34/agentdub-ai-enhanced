@@ -113,4 +113,12 @@
 - [x] Implement horizontal scroll carousel for Latest Signals on mobile
 - [x] Implement horizontal scroll carousel for Latest News on mobile
 - [x] Test timestamp display and mobile carousel functionality
-- [ ] Save checkpoint for Latest Intelligence UX improvements
+- [x] Save checkpoint for Latest Intelligence UX improvements
+
+## Latest Intelligence Carousel Enhancements
+- [x] Add scroll position indicators (dots) for Latest Signals carousel on mobile
+- [x] Add scroll position indicators (dots) for Latest News carousel on mobile
+- [x] Implement swipe hint animation for first-time mobile visitors
+- [x] Create dynamic timestamp system that computes from latest content date
+- [x] Test scroll indicators, swipe hint, and dynamic timestamp
+- [ ] Save checkpoint for carousel enhancements

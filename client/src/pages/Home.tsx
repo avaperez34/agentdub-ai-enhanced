@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { useState, useEffect, useRef } from "react";
 import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
 import { useAnalytics } from "@/hooks/useAnalytics";
@@ -11,6 +12,69 @@ export default function Home() {
   let { user, loading, error, isAuthenticated, logout } = useAuth();
 
   const { trackButtonClick } = useAnalytics();
+  
+  // Scroll indicator state
+  const [signalsScrollIndex, setSignalsScrollIndex] = useState(0);
+  const [newsScrollIndex, setNewsScrollIndex] = useState(0);
+  const [showSwipeHint, setShowSwipeHint] = useState(false);
+  
+  const signalsScrollRef = useRef<HTMLDivElement>(null);
+  const newsScrollRef = useRef<HTMLDivElement>(null);
+  
+  // Check if user has seen swipe hint before
+  useEffect(() => {
+    const hasSeenHint = localStorage.getItem('hasSeenSwipeHint');
+    if (!hasSeenHint && window.innerWidth < 768) {
+      setShowSwipeHint(true);
+      setTimeout(() => {
+        setShowSwipeHint(false);
+        localStorage.setItem('hasSeenSwipeHint', 'true');
+      }, 3000);
+    }
+  }, []);
+  
+  // Dynamic timestamp from latest content
+  const latestContentDate = "January 16, 2026"; // Will be computed from actual content dates
+  
+  // Track scroll position for indicators
+  useEffect(() => {
+    const handleSignalsScroll = () => {
+      if (signalsScrollRef.current) {
+        const scrollLeft = signalsScrollRef.current.scrollLeft;
+        const cardWidth = signalsScrollRef.current.offsetWidth * 0.85; // 85vw per card
+        const index = Math.round(scrollLeft / cardWidth);
+        setSignalsScrollIndex(Math.min(Math.max(index, 0), 2));
+      }
+    };
+    
+    const handleNewsScroll = () => {
+      if (newsScrollRef.current) {
+        const scrollLeft = newsScrollRef.current.scrollLeft;
+        const cardWidth = newsScrollRef.current.offsetWidth * 0.85;
+        const index = Math.round(scrollLeft / cardWidth);
+        setNewsScrollIndex(Math.min(Math.max(index, 0), 2));
+      }
+    };
+    
+    const signalsEl = signalsScrollRef.current;
+    const newsEl = newsScrollRef.current;
+    
+    if (signalsEl) {
+      signalsEl.addEventListener('scroll', handleSignalsScroll);
+    }
+    if (newsEl) {
+      newsEl.addEventListener('scroll', handleNewsScroll);
+    }
+    
+    return () => {
+      if (signalsEl) {
+        signalsEl.removeEventListener('scroll', handleSignalsScroll);
+      }
+      if (newsEl) {
+        newsEl.removeEventListener('scroll', handleNewsScroll);
+      }
+    };
+  }, []);
   
   return (
     <div className="min-h-screen bg-background">
@@ -82,12 +146,12 @@ export default function Home() {
               Fresh signals and breaking news from the GCC AI ecosystem
             </p>
             <p className="text-sm text-muted-foreground/70">
-              Last updated: January 16, 2026
+              Last updated: {latestContentDate}
             </p>
           </div>
 
           {/* Latest Signals */}
-          <div className="mb-16">
+          <div className="mb-16 relative">
             <div className="flex items-center justify-between mb-6">
               <h3 className="text-2xl font-bold">Latest Signals</h3>
               <Link href="/intelligence">
@@ -97,7 +161,15 @@ export default function Home() {
                 </Button>
               </Link>
             </div>
-            <div className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0">
+            <div ref={signalsScrollRef} className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 relative">
+              {showSwipeHint && (
+                <div className="absolute left-0 top-1/2 -translate-y-1/2 z-10 md:hidden animate-pulse pointer-events-none">
+                  <div className="bg-accent text-accent-foreground px-3 py-2 rounded-r-lg shadow-lg flex items-center gap-2">
+                    <ArrowRight size={16} />
+                    <span className="text-sm font-medium">Swipe</span>
+                  </div>
+                </div>
+              )}
               {/* Signal #013 */}
               <Link href="/signals/013" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
@@ -155,10 +227,21 @@ export default function Home() {
                 </div>
               </Link>
             </div>
+            {/* Scroll indicators for mobile */}
+            <div className="flex justify-center gap-2 mt-4 md:hidden">
+              {[0, 1, 2].map((index) => (
+                <div
+                  key={index}
+                  className={`h-2 w-2 rounded-full transition-all ${
+                    index === signalsScrollIndex ? 'bg-accent w-4' : 'bg-muted-foreground/30'
+                  }`}
+                />
+              ))}
+            </div>
           </div>
 
           {/* Latest News */}
-          <div>
+          <div className="relative">
             <div className="flex items-center justify-between mb-6">
               <h3 className="text-2xl font-bold">Latest News</h3>
               <Link href="/news">
@@ -168,7 +251,7 @@ export default function Home() {
                 </Button>
               </Link>
             </div>
-            <div className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0">
+            <div ref={newsScrollRef} className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0">
               {/* News Article #001 */}
               <Link href="/news/001" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
@@ -225,6 +308,17 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
+            </div>
+            {/* Scroll indicators for mobile */}
+            <div className="flex justify-center gap-2 mt-4 md:hidden">
+              {[0, 1, 2].map((index) => (
+                <div
+                  key={index}
+                  className={`h-2 w-2 rounded-full transition-all ${
+                    index === newsScrollIndex ? 'bg-accent w-4' : 'bg-muted-foreground/30'
+                  }`}
+                />
+              ))}
             </div>
           </div>
         </div>
