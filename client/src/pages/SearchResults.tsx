@@ -12,24 +12,32 @@ export default function SearchResults() {
   const query = searchParams.get('q') || '';
   const [searchInput, setSearchInput] = useState(query);
 
-  // Search across signals and news
+  // Search across signals and news with improved word-level matching
   const searchResults = useMemo(() => {
     if (!query.trim()) return { signals: [], articles: [], total: 0 };
 
     const lowerQuery = query.toLowerCase();
+    // Split query into individual words for partial matching
+    const queryWords = lowerQuery.split(/\s+/).filter(word => word.length > 0);
+    
+    // Helper function to check if any query word matches the text
+    const matchesAnyWord = (text: string) => {
+      const lowerText = text.toLowerCase();
+      return queryWords.some(word => lowerText.includes(word));
+    };
     
     const matchedSignals = allSignals.filter(signal =>
-      signal.title.toLowerCase().includes(lowerQuery) ||
-      signal.description.toLowerCase().includes(lowerQuery) ||
-      signal.sector.toLowerCase().includes(lowerQuery) ||
-      signal.country.toLowerCase().includes(lowerQuery)
+      matchesAnyWord(signal.title) ||
+      matchesAnyWord(signal.description) ||
+      matchesAnyWord(signal.sector) ||
+      matchesAnyWord(signal.country)
     );
 
     const matchedArticles = allArticles.filter(article =>
-      article.title.toLowerCase().includes(lowerQuery) ||
-      article.excerpt.toLowerCase().includes(lowerQuery) ||
-      article.category.toLowerCase().includes(lowerQuery) ||
-      article.country.toLowerCase().includes(lowerQuery)
+      matchesAnyWord(article.title) ||
+      matchesAnyWord(article.excerpt) ||
+      matchesAnyWord(article.category) ||
+      matchesAnyWord(article.country)
     );
 
     return {
