@@ -1437,7 +1437,7 @@ export default function NewsArticle() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <ReadingProgress />
 
       {/* Back Button */}

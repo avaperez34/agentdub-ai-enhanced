@@ -14,7 +14,7 @@ export default function Investors() {
   const { trackButtonClick, trackPurchaseIntent } = useAnalytics();
   
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-4">

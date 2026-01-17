@@ -5,7 +5,7 @@ import { ShareButton } from "@/components/ShareButton";
 
 export default function Signal022() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <Link href="/intelligence">
           <Button variant="ghost" className="mb-6">

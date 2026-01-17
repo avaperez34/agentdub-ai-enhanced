@@ -11,7 +11,7 @@ import { Link } from "wouter";
 
 export default function Signal009() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <ReadingProgress />
       
       <article className="max-w-4xl mx-auto px-4 py-12">

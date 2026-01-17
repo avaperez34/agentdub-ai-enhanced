@@ -44,7 +44,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <section className="border-b border-border bg-gradient-to-b from-accent/5 to-background">
         <div className="container py-20">

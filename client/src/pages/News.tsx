@@ -401,7 +401,7 @@ export default function News() {
   }, [selectedCategory, searchQuery, sortBy]);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <section className="border-b border-border bg-gradient-to-b from-purple-500/5 to-background">
         <div className="container py-16">

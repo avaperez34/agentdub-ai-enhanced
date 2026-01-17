@@ -401,7 +401,7 @@ export default function Intelligence() {
   }, [selectedCategory, selectedCountry, selectedSector, searchQuery, sortBy]);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Header */}
         <section className="mb-12">

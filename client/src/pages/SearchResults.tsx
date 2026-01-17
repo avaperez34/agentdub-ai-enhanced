@@ -105,7 +105,7 @@ export default function SearchResults() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       {/* Dark Navy Hero Section with Search */}
       <section className="relative py-12 px-4 overflow-hidden bg-[#0a1628]">
         {/* Animated Particles */}

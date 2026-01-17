@@ -9,7 +9,7 @@ export default function NewsArticle017() {
   const articleUrl = `${window.location.origin}/news/017`;
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <div className="max-w-4xl mx-auto px-4 py-12">
         <Link href="/news">
           <Button variant="ghost" size="sm" className="mb-6">
