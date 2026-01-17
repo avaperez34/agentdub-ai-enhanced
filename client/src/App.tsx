@@ -33,6 +33,7 @@ import Signal020 from "./pages/Signal020";
 import Signal021 from "./pages/Signal021";
 import Signal022 from "./pages/Signal022";
 import Signal023 from "./pages/Signal023";
+import SearchResults from "./pages/SearchResults";
 import About from "./pages/About";
 import News from "./pages/News";
 import NewsArticle from "./pages/NewsArticle";
@@ -67,7 +68,8 @@ function Router() {
       <Navigation />
       <DomainBanner />
       <Switch>
-        <Route path={"/"} component={Home} />
+          <Route path="/" component={Home} />
+          <Route path="/search" component={SearchResults} />
         <Route path={"/directory"} component={Directory} />
         <Route path={"/sentinel"} component={Sentinel} />
         <Route path={"/intelligence"} component={Intelligence} />

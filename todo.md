@@ -173,4 +173,14 @@
 - [x] Add "Updated Today" badge to News page header
 - [x] Test automation scripts with sample signal and news article
 - [x] Test Updated Today badge visibility logic
-- [ ] Save checkpoint for automation and badges
+- [x] Save checkpoint for automation and badges
+
+## Homepage Search Bar
+- [x] Design search bar component for homepage hero section
+- [x] Add search input with icon and placeholder text
+- [x] Create unified search results page (SearchResults.tsx)
+- [x] Implement search logic across signals and news arrays
+- [x] Add routing for /search?q=keyword
+- [x] Style search results with signal/news type indicators
+- [x] Test search functionality with various keywords
+- [ ] Save checkpoint for homepage search feature

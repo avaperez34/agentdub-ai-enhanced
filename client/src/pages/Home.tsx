@@ -3,7 +3,8 @@ import { useState, useEffect, useRef } from "react";
 import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
 import { useAnalytics } from "@/hooks/useAnalytics";
-import { ArrowRight, Zap, Shield, TrendingUp } from "lucide-react";
+import { ArrowRight, Zap, Shield, TrendingUp, Search } from "lucide-react";
+import { useLocation } from "wouter";
 import { AIComputeTracker } from "@/components/AIComputeTracker";
 
 export default function Home() {
@@ -12,6 +13,15 @@ export default function Home() {
   let { user, loading, error, isAuthenticated, logout } = useAuth();
 
   const { trackButtonClick } = useAnalytics();
+  const [, setLocation] = useLocation();
+  const [searchQuery, setSearchQuery] = useState("");
+  
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      setLocation(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+    }
+  };
   
   // Scroll indicator state
   const [signalsScrollIndex, setSignalsScrollIndex] = useState(0);
@@ -155,6 +165,20 @@ export default function Home() {
                 systems, and applied artificial intelligence shaping the next phase of digital
                 transformation across Dubai and the Gulf.
               </p>
+              
+              {/* Search Bar */}
+              <form onSubmit={handleSearch} className="mb-8">
+                <div className="relative">
+                  <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground" size={20} />
+                  <input
+                    type="text"
+                    placeholder="Search signals and news..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="w-full pl-12 pr-4 py-4 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
+                  />
+                </div>
+              </form>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/premium">
                   <Button 
