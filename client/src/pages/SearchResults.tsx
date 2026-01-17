@@ -56,52 +56,77 @@ export default function SearchResults() {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="max-w-7xl mx-auto px-4 py-12">
-        {/* Search Header */}
-        <div className="mb-12">
+      {/* Dark Navy Hero Section with Search */}
+      <section className="relative py-12 px-4 overflow-hidden bg-[#0a1628]">
+        {/* Tech circuit board background pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="circuit-search" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+                <path d="M10 10h20M30 10v20M30 30h20M50 30v20M50 50h20" stroke="#3b82f6" strokeWidth="1" fill="none"/>
+                <circle cx="30" cy="10" r="2" fill="#10b981"/>
+                <circle cx="30" cy="30" r="2" fill="#10b981"/>
+                <circle cx="50" cy="30" r="2" fill="#10b981"/>
+                <circle cx="50" cy="50" r="2" fill="#10b981"/>
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#circuit-search)"/>
+          </svg>
+        </div>
+
+        <div className="max-w-4xl mx-auto relative z-10">
           <Link href="/">
-            <Button variant="ghost" size="sm" className="mb-6">
+            <Button variant="ghost" size="sm" className="mb-6 text-gray-300 hover:text-white hover:bg-blue-500/10">
               ← Back to Home
             </Button>
           </Link>
 
-          <h1 className="text-4xl font-bold mb-6">Search Results</h1>
+          <h1 className="text-4xl font-bold mb-6 text-white">Search Results</h1>
 
-          {/* Search Bar - Matching Homepage Design */}
+          {/* Search Bar with glowing effect - Matching Homepage */}
           <div className="mb-6">
             <div className="mb-3">
               <h2 className="text-lg font-semibold">
                 <span className="bg-gradient-to-r from-blue-500 via-emerald-500 to-amber-500 bg-clip-text text-transparent">
                   AgentDubai
                 </span>
-                <span className="text-muted-foreground ml-2">Search</span>
+                <span className="text-gray-400 ml-2">Search</span>
               </h2>
             </div>
-            <form onSubmit={handleSearch} className="relative group">
-              <input
-                type="text"
-                placeholder="Search signals and news across the GCC..."
-                value={searchInput}
-                onChange={(e) => setSearchInput(e.target.value)}
-                className="w-full px-6 py-4 rounded-full border-2 border-border bg-background/50 backdrop-blur-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all group-hover:shadow-lg group-hover:shadow-accent/20"
-              />
-              <button
-                type="submit"
-                className="absolute right-2 top-1/2 -translate-y-1/2 px-6 py-2 rounded-full bg-gradient-to-r from-blue-500 via-emerald-500 to-teal-500 text-white font-medium hover:shadow-lg hover:shadow-accent/30 transition-all"
-              >
-                Search
-              </button>
+            <form onSubmit={handleSearch}>
+              <div className="relative group">
+                {/* Glowing border effect */}
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-emerald-500 to-teal-500 rounded-full opacity-75 blur group-hover:opacity-100 transition duration-300"></div>
+                
+                <div className="relative">
+                  <input
+                    type="text"
+                    placeholder="Search signals and news across the GCC..."
+                    value={searchInput}
+                    onChange={(e) => setSearchInput(e.target.value)}
+                    className="w-full px-8 py-4 text-lg rounded-full border-2 border-blue-500/50 bg-[#1a2942] text-white placeholder:text-gray-400 focus:outline-none focus:border-blue-400 hover:border-blue-400 transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.3)]"
+                  />
+                  <button
+                    type="submit"
+                    className="absolute right-3 top-1/2 -translate-y-1/2 px-6 py-2 bg-gradient-to-r from-blue-500 via-emerald-500 to-teal-500 text-white rounded-full hover:shadow-[0_0_20px_rgba(59,130,246,0.6)] hover:scale-105 transition-all duration-200 font-medium"
+                  >
+                    Search
+                  </button>
+                </div>
+              </div>
             </form>
           </div>
 
           {query && (
-            <p className="text-muted-foreground">
-              Found <strong>{searchResults.total}</strong> results for "<strong>{query}</strong>"
+            <p className="text-gray-300">
+              Found <strong className="text-white">{searchResults.total}</strong> results for "<strong className="text-white">{query}</strong>"
             </p>
           )}
         </div>
+      </section>
 
-        {/* Results */}
+      {/* Results Section */}
+      <div className="max-w-7xl mx-auto px-4 py-12">
         {!query.trim() ? (
           <div className="text-center py-12">
             <Search className="mx-auto mb-4 text-muted-foreground" size={48} />

@@ -144,43 +144,64 @@ export default function Home() {
   
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section - Google-style centered search */}
-      <section className="relative py-20 px-4 overflow-hidden">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* AgentDubai Title */}
+      {/* Hero Section - Dark navy with tech aesthetic */}
+      <section className="relative py-20 px-4 overflow-hidden bg-[#0a1628]">
+        {/* Tech circuit board background pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="circuit" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+                <path d="M10 10h20M30 10v20M30 30h20M50 30v20M50 50h20" stroke="#3b82f6" strokeWidth="1" fill="none"/>
+                <circle cx="30" cy="10" r="2" fill="#10b981"/>
+                <circle cx="30" cy="30" r="2" fill="#10b981"/>
+                <circle cx="50" cy="30" r="2" fill="#10b981"/>
+                <circle cx="50" cy="50" r="2" fill="#10b981"/>
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#circuit)"/>
+          </svg>
+        </div>
+
+        <div className="max-w-4xl mx-auto text-center relative z-10">
+          {/* AgentDubai Title with glow */}
           <div className="mb-12">
-            <h1 className="text-6xl lg:text-7xl font-bold mb-4 leading-tight bg-gradient-to-r from-blue-500 via-emerald-500 to-amber-500 bg-clip-text text-transparent">
+            <h1 className="text-6xl lg:text-7xl font-bold mb-4 leading-tight bg-gradient-to-r from-blue-500 via-emerald-500 to-amber-500 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(59,130,246,0.5)]">
               AgentDubai
             </h1>
           </div>
           
-          {/* Big Search Bar - Google-style */}
+          {/* Big Search Bar with glowing effect */}
           <div className="mb-8">
             <form onSubmit={handleSearch}>
               <div className="relative group max-w-3xl mx-auto">
-                <input
-                  type="text"
-                  placeholder="Search signals and news across the GCC..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full px-8 py-6 text-lg rounded-full border-2 border-border bg-card/50 backdrop-blur-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 hover:shadow-2xl transition-all duration-300"
-                />
-                <button
-                  type="submit"
-                  className="absolute right-3 top-1/2 -translate-y-1/2 px-8 py-3 bg-gradient-to-r from-blue-500 via-emerald-500 to-teal-500 text-white rounded-full hover:shadow-lg hover:scale-105 transition-all duration-200 font-medium text-lg"
-                >
-                  Search
-                </button>
+                {/* Glowing border effect */}
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-emerald-500 to-teal-500 rounded-full opacity-75 blur group-hover:opacity-100 transition duration-300"></div>
+                
+                <div className="relative">
+                  <input
+                    type="text"
+                    placeholder="Search signals and news across the GCC..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="w-full px-8 py-6 text-lg rounded-full border-2 border-blue-500/50 bg-[#1a2942] text-white placeholder:text-gray-400 focus:outline-none focus:border-blue-400 hover:border-blue-400 transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.3)]"
+                  />
+                  <button
+                    type="submit"
+                    className="absolute right-3 top-1/2 -translate-y-1/2 px-8 py-3 bg-gradient-to-r from-blue-500 via-emerald-500 to-teal-500 text-white rounded-full hover:shadow-[0_0_20px_rgba(59,130,246,0.6)] hover:scale-105 transition-all duration-200 font-medium text-lg"
+                  >
+                    Search
+                  </button>
+                </div>
               </div>
             </form>
           </div>
 
           {/* Description Text - Under Search Bar */}
           <div className="mb-12">
-            <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+            <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
               Intelligence on AI Agents & Digital Transformation in the Gulf Cooperation Council
             </p>
-            <p className="text-sm text-muted-foreground/70 mt-2">
+            <p className="text-sm text-gray-400 mt-2">
               Platform: agentdub.ai
             </p>
           </div>
@@ -190,7 +211,7 @@ export default function Home() {
             <Link href="/premium">
               <Button 
                 size="lg" 
-                className="w-full sm:w-auto bg-accent hover:bg-accent/90"
+                className="w-full sm:w-auto bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white border-0"
                 onClick={() => trackButtonClick('view_premium_home', '/premium')}
               >
                 View Premium Plans
@@ -201,7 +222,7 @@ export default function Home() {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="w-full sm:w-auto"
+                className="w-full sm:w-auto border-2 border-blue-500/50 text-white hover:bg-blue-500/10 hover:border-blue-400"
                 onClick={() => trackButtonClick('explore_directory_home', '/directory')}
               >
                 Explore Directory
