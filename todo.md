@@ -291,3 +291,10 @@
 - [x] Add interactive hover effects to map
 - [x] Extend map background to SearchResults page
 - [x] Test all changes and save checkpoint
+
+## Remove Gulf Region Map
+- [x] Remove map from Home.tsx
+- [x] Remove map from SearchResults.tsx
+- [x] Delete gulf-map.svg file
+- [x] Test pages without map
+- [x] Save checkpoint
