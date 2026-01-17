@@ -166,19 +166,31 @@ export default function Home() {
                 transformation across Dubai and the Gulf.
               </p>
               
-              {/* Search Bar */}
-              <form onSubmit={handleSearch} className="mb-8">
-                <div className="relative">
-                  <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground" size={20} />
-                  <input
-                    type="text"
-                    placeholder="Search signals and news..."
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full pl-12 pr-4 py-4 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
-                  />
+              {/* Search Bar - Google-inspired design */}
+              <div className="mb-8">
+                <div className="mb-3 flex items-center gap-2">
+                  <span className="text-2xl font-bold bg-gradient-to-r from-blue-500 via-emerald-500 to-amber-500 bg-clip-text text-transparent">AgentDubai</span>
+                  <span className="text-sm text-muted-foreground">Search</span>
                 </div>
-              </form>
+                <form onSubmit={handleSearch}>
+                  <div className="relative group">
+                    <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground group-hover:text-accent transition-colors" size={20} />
+                    <input
+                      type="text"
+                      placeholder="Search signals and news across the GCC..."
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      className="w-full pl-12 pr-16 py-4 rounded-full border-2 border-border bg-card/50 backdrop-blur-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 hover:shadow-lg transition-all duration-200"
+                    />
+                    <button
+                      type="submit"
+                      className="absolute right-2 top-1/2 -translate-y-1/2 px-4 py-2 bg-gradient-to-r from-blue-500 via-emerald-500 to-teal-500 text-white rounded-full hover:shadow-md hover:scale-105 transition-all duration-200 font-medium"
+                    >
+                      Search
+                    </button>
+                  </div>
+                </form>
+              </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/premium">
                   <Button 
