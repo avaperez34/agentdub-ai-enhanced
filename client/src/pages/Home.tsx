@@ -150,6 +150,16 @@ export default function Home() {
         {/* Animated Particles */}
         <AnimatedParticles />
         
+        {/* Gulf Region Map Background */}
+        <div className="absolute inset-0 flex items-center justify-center opacity-5">
+          <img 
+            src="/gulf-map.svg" 
+            alt="Gulf Region Map" 
+            className="w-[600px] h-[600px] text-blue-400"
+            style={{ filter: 'drop-shadow(0 0 40px rgba(59, 130, 246, 0.3))' }}
+          />
+        </div>
+        
         {/* Tech circuit board background pattern */}
         <div className="absolute inset-0 opacity-10">
           <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">

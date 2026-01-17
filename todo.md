@@ -275,3 +275,10 @@
 - [x] Add gradient effects to SearchResults page
 - [x] Test gradient effects across all pages
 - [x] Save checkpoint for gradient overlay effects
+
+## Add Gulf Region Map Background
+- [x] Create SVG map outline of Gulf region (GCC countries)
+- [x] Add map as subtle background element behind AgentDubai logo
+- [x] Style map with low opacity and shadow effect
+- [x] Test map visibility and positioning
+- [x] Save checkpoint for Gulf region map background
