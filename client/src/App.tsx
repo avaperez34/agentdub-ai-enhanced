@@ -31,6 +31,8 @@ import Signal018 from "./pages/Signal018";
 import Signal019 from "./pages/Signal019";
 import Signal020 from "./pages/Signal020";
 import Signal021 from "./pages/Signal021";
+import Signal022 from "./pages/Signal022";
+import Signal023 from "./pages/Signal023";
 import About from "./pages/About";
 import News from "./pages/News";
 import NewsArticle from "./pages/NewsArticle";
@@ -43,6 +45,13 @@ import NewsArticle006 from "./pages/NewsArticle006";
 import NewsArticle007 from "./pages/NewsArticle007";
 import NewsArticle008 from "./pages/NewsArticle008";
 import NewsArticle009 from "./pages/NewsArticle009";
+import NewsArticle010 from "./pages/NewsArticle010";
+import NewsArticle011 from "./pages/NewsArticle011";
+import NewsArticle012 from "./pages/NewsArticle012";
+import NewsArticle013 from "./pages/NewsArticle013";
+import NewsArticle014 from "./pages/NewsArticle014";
+import NewsArticle015 from "./pages/NewsArticle015";
+import NewsArticle016 from "./pages/NewsArticle016";
 import Premium from "./pages/Premium";
 import GCCMap from "./pages/GCCMap";
 import Changelog from "./pages/Changelog";
@@ -82,7 +91,9 @@ function Router() {
       <Route path={"/signals/018"} component={Signal018} />
       <Route path={"/signals/019"} component={Signal019} />
       <Route path={"/signals/020"} component={Signal020} />
-      <Route path={"/signals/021"} component={Signal021} />
+      <Route path={"signals/021"} component={Signal021} />
+      <Route path={"signals/022"} component={Signal022} />
+      <Route path={"signals/023"} component={Signal023} />
         <Route path={"/about"} component={About} />
         <Route path={"/contact"} component={Contact} />        <Route path="/investors" component={About} />        <Route path={"/news"} component={News} />
         <Route path={"/news/001"} component={NewsArticle001} />
@@ -94,6 +105,13 @@ function Router() {
         <Route path={"/news/007"} component={NewsArticle007} />
         <Route path={"/news/008"} component={NewsArticle008} />
         <Route path={"/news/009"} component={NewsArticle009} />
+        <Route path={"/news/010"} component={NewsArticle010} />
+        <Route path={"/news/011"} component={NewsArticle011} />
+        <Route path={"/news/012"} component={NewsArticle012} />
+        <Route path={"/news/013"} component={NewsArticle013} />
+        <Route path={"/news/014"} component={NewsArticle014} />
+        <Route path={"/news/015"} component={NewsArticle015} />
+        <Route path={"/news/016"} component={NewsArticle016} />
         <Route path={"/news/:id"} component={NewsArticle} />
          <Route path="/premium" component={Premium} />
          <Route path={"/gcc-map"} component={GCCMap} />
