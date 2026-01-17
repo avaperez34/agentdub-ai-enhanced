@@ -282,3 +282,12 @@
 - [x] Style map with low opacity and shadow effect
 - [x] Test map visibility and positioning
 - [x] Save checkpoint for Gulf region map background
+
+## Fix Gulf Map Visibility
+- [x] Increase map opacity to make it visible (from 5% to 20%)
+- [x] Verify SVG is rendering correctly
+- [x] Adjust map styling for better visibility (increased stroke width, explicit blue colors)
+- [x] Add country labels to map (SA, UAE, QA, KW, BH, OM)
+- [x] Add interactive hover effects to map
+- [x] Extend map background to SearchResults page
+- [x] Test all changes and save checkpoint

@@ -151,11 +151,11 @@ export default function Home() {
         <AnimatedParticles />
         
         {/* Gulf Region Map Background */}
-        <div className="absolute inset-0 flex items-center justify-center opacity-5">
+        <div className="absolute inset-0 flex items-center justify-center opacity-35">
           <img 
             src="/gulf-map.svg" 
             alt="Gulf Region Map" 
-            className="w-[600px] h-[600px] text-blue-400"
+            className="w-[800px] h-[800px] text-blue-400 transition-transform duration-700 hover:scale-110"
             style={{ filter: 'drop-shadow(0 0 40px rgba(59, 130, 246, 0.3))' }}
           />
         </div>
