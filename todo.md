@@ -155,4 +155,13 @@
 - [x] Update Intelligence and News pages
 - [x] Update App.tsx routing
 - [x] Test new content
-- [ ] Save checkpoint
+- [x] Save checkpoint
+
+## Update Latest Intelligence Display and Sorting
+- [x] Update homepage Latest Signals carousel to show Signal #022, #023, #021
+- [x] Update homepage Latest News carousel to show NewsArticle010, 001, 002
+- [x] Update Intelligence page to sort signals by newest first (descending order)
+- [x] Update News page to sort articles by newest first (descending order)
+- [x] Create automatic sorting system that maintains newest-first order
+- [x] Test homepage carousel and Intelligence/News page sorting
+- [ ] Save checkpoint for automatic sorting updates

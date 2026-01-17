@@ -91,11 +91,13 @@ function Router() {
       <Route path={"/signals/018"} component={Signal018} />
       <Route path={"/signals/019"} component={Signal019} />
       <Route path={"/signals/020"} component={Signal020} />
-      <Route path={"signals/021"} component={Signal021} />
-      <Route path={"signals/022"} component={Signal022} />
-      <Route path={"signals/023"} component={Signal023} />
-        <Route path={"/about"} component={About} />
-        <Route path={"/contact"} component={Contact} />        <Route path="/investors" component={About} />        <Route path={"/news"} component={News} />
+      <Route path={"/signals/021"} component={Signal021} />
+      <Route path={"/signals/022"} component={Signal022} />
+      <Route path={"/signals/023"} component={Signal023} />
+      <Route path={"/about"} component={About} />
+      <Route path={"/contact"} component={Contact} />
+      <Route path="/investors" component={About} />
+      <Route path={"/news"} component={News} />
         <Route path={"/news/001"} component={NewsArticle001} />
         <Route path={"/news/002"} component={NewsArticle002} />
         <Route path={"/news/003"} component={NewsArticle003} />

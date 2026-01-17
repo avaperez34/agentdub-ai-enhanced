@@ -8,6 +8,31 @@ import { useState, useMemo } from "react";
 import { SignalComparison } from "@/components/SignalComparison";
 
 const signals = [
+  // Latest Signals (Jan 16, 2026)
+  {
+    id: "022",
+    title: "UAE Retains #1 Global AI Adoption Ranking — Microsoft Report Validates Leadership",
+    description:
+      "Microsoft AI Diffusion Report January 2026 confirms UAE as world leader in AI adoption, providing third-party validation of strategic infrastructure investments and policy frameworks.",
+    sector: "Leadership",
+    impact: 8.8,
+    horizon: "1–3y",
+    country: "UAE",
+    category: "leadership",
+    date: "2026-01-16",
+  },
+  {
+    id: "023",
+    title: "World Government Summit 2026 — Dubai as Global AI Governance Hub",
+    description:
+      "35 heads of state, 150+ ministers, and CEOs from Airbus, IBM, Google DeepMind convene in Dubai for AI governance dialogue, positioning Emirates as neutral ground for global technology policy.",
+    sector: "Governance",
+    impact: 8.5,
+    horizon: "3–5y",
+    country: "UAE",
+    category: "leadership",
+    date: "2026-01-16",
+  },
   // Execution & Sovereign Grade (By Country)
   {
     id: "001",
@@ -261,30 +286,6 @@ const signals = [
     impact: 6.5,
     horizon: "3–5y",
     country: "Kuwait",
-    category: "leadership",
-    date: "2026-01-16",
-  },
-  {
-    id: "022",
-    title: "UAE Retains #1 Global AI Adoption Ranking — Microsoft Report Validates Leadership",
-    description:
-      "Microsoft AI Diffusion Report January 2026 confirms UAE as world leader in AI adoption, providing third-party validation of strategic infrastructure investments and policy frameworks.",
-    sector: "Leadership",
-    impact: 8.8,
-    horizon: "1–3y",
-    country: "UAE",
-    category: "leadership",
-    date: "2026-01-16",
-  },
-  {
-    id: "023",
-    title: "World Government Summit 2026 — Dubai as Global AI Governance Hub",
-    description:
-      "35 heads of state, 150+ ministers, and CEOs from Airbus, IBM, Google DeepMind convene in Dubai for AI governance dialogue, positioning Emirates as neutral ground for global technology policy.",
-    sector: "Governance",
-    impact: 8.5,
-    horizon: "3–5y",
-    country: "UAE",
     category: "leadership",
     date: "2026-01-16",
   },

@@ -226,68 +226,62 @@ export default function Home() {
                   </div>
                 </div>
               )}
-              {/* Signal #013 */}
-              <Link href="/signals/013" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* Signal #022 */}
+              <Link href="/signals/022" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent">SIGNAL #013</span>
+                    <span className="text-xs font-mono text-accent">SIGNAL #022</span>
+                    {isNewContent('2026-01-16') && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
+                    )}
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Jan 16, 2026</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">UAE Retains #1 Global AI Adoption</h3>
+                  <p className="text-muted-foreground mb-4">Microsoft AI Diffusion Report confirms UAE leads world in AI adoption with comprehensive infrastructure, policy framework, and deployment velocity.</p>
+                  <div className="flex items-center gap-4 text-sm">
+                    <span className="text-accent font-medium">Impact: 8.8/10</span>
+                    <span className="text-muted-foreground">🇦🇪 UAE</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Signal #023 */}
+              <Link href="/signals/023" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent">SIGNAL #023</span>
+                    {isNewContent('2026-01-16') && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
+                    )}
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Jan 16, 2026</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">World Government Summit 2026 Dubai</h3>
+                  <p className="text-muted-foreground mb-4">35 heads of state converge in Dubai for AI governance discussions with IBM, Google DeepMind CEOs—positioning UAE as global AI policy hub.</p>
+                  <div className="flex items-center gap-4 text-sm">
+                    <span className="text-accent font-medium">Impact: 8.5/10</span>
+                    <span className="text-muted-foreground">🇦🇪 UAE</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Signal #021 */}
+              <Link href="/signals/021" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent">SIGNAL #021</span>
                     {isNewContent('2026-01-15') && (
                       <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
                     )}
                     <span className="text-xs text-muted-foreground">•</span>
                     <span className="text-xs text-muted-foreground">Jan 15, 2026</span>
                   </div>
-                  <h4 className="text-lg font-bold mb-2">Saudi Arabia Launches 480-MW Hexagon Data Center</h4>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    World's largest government-owned data center positions Kingdom in global compute race
-                  </p>
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Saudi Arabia</span>
-                    <span className="text-xs px-2 py-1 rounded bg-secondary">Impact: 9.0</span>
-                  </div>
-                </div>
-              </Link>
-
-              {/* Signal #015 */}
-              <Link href="/signals/015" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent">SIGNAL #015</span>
-                    {isNewContent('2026-01-15') && (
-                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
-                    )}
-                    <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 15, 2026</span>
-                  </div>
-                  <h4 className="text-lg font-bold mb-2">UAE Joins US-Led Pax Silica Alliance</h4>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Strategic partnership secures AI supply chains and strengthens UAE-US technology cooperation
-                  </p>
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">UAE</span>
-                    <span className="text-xs px-2 py-1 rounded bg-secondary">Impact: 8.9</span>
-                  </div>
-                </div>
-              </Link>
-
-              {/* Signal #018 */}
-              <Link href="/signals/018" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent">SIGNAL #018</span>
-                    {isNewContent('2026-01-14') && (
-                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
-                    )}
-                    <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 14, 2026</span>
-                  </div>
-                  <h4 className="text-lg font-bold mb-2">Qatar Joins Pax Silica - Central Role in AI Economic Order</h4>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    US declares Qatar will shape emerging AI-era economic order through strategic energy and tech positioning
-                  </p>
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Qatar</span>
-                    <span className="text-xs px-2 py-1 rounded bg-secondary">Impact: 8.7</span>
+                  <h3 className="text-xl font-bold mb-2">Kuwait International AI Conference</h3>
+                  <p className="text-muted-foreground mb-4">First regional AI conference signals Kuwait's entry into GCC AI race with focus on education, healthcare, and government transformation.</p>
+                  <div className="flex items-center gap-4 text-sm">
+                    <span className="text-accent font-medium">Impact: 6.5/10</span>
+                    <span className="text-muted-foreground">🇰🇼 Kuwait</span>
                   </div>
                 </div>
               </Link>
@@ -319,6 +313,28 @@ export default function Home() {
               </Link>
             </div>
             <div ref={newsScrollRef} onTouchStart={handleUserInteraction} onScroll={handleUserInteraction} className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0">
+              {/* News Article #010 */}
+              <Link href="/news/010" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent">NEWS</span>
+                    {isNewContent('2026-01-16') && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
+                    )}
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Jan 16, 2026</span>
+                  </div>
+                  <h4 className="text-lg font-bold mb-2">UAE #1 in Global AI Adoption</h4>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Microsoft AI Diffusion Report confirms UAE leads world in AI adoption metrics
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">UAE</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">5 min read</span>
+                  </div>
+                </div>
+              </Link>
+
               {/* News Article #001 */}
               <Link href="/news/001" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
@@ -359,28 +375,6 @@ export default function Home() {
                   <div className="flex items-center gap-2">
                     <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">UAE</span>
                     <span className="text-xs px-2 py-1 rounded bg-secondary">4 min read</span>
-                  </div>
-                </div>
-              </Link>
-
-              {/* News Article #005 */}
-              <Link href="/news/005" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent">NEWS</span>
-                    {isNewContent('2026-01-15') && (
-                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
-                    )}
-                    <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 15, 2026</span>
-                  </div>
-                  <h4 className="text-lg font-bold mb-2">ITC Infotech Launches Digital & AI Engineering Hub in Riyadh</h4>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    15 years of Middle East operations culminates in new AI capabilities hub for Saudi Arabia
-                  </p>
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Saudi Arabia</span>
-                    <span className="text-xs px-2 py-1 rounded bg-secondary">3 min read</span>
                   </div>
                 </div>
               </Link>
