@@ -240,7 +240,9 @@ export default function Home() {
       <AIComputeTracker />
 
       {/* Latest Intelligence Section */}
-      <section className="py-20 px-4">
+      <section className="relative py-20 px-4 overflow-hidden">
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-radial from-teal-900/20 via-transparent to-transparent pointer-events-none" />
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-2">Latest Intelligence</h2>
@@ -443,7 +445,9 @@ export default function Home() {
       </section>
 
       {/* Why AgentDub Section */}
-      <section className="py-20 px-4 bg-card border-t border-border">
+      <section className="relative py-20 px-4 bg-card border-t border-border overflow-hidden">
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-radial from-emerald-900/15 via-transparent to-transparent pointer-events-none" />
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">Why AgentDubai</h2>
 
@@ -490,7 +494,9 @@ export default function Home() {
       </section>
 
       {/* Directory Preview Section */}
-      <section className="py-20 px-4">
+      <section className="relative py-20 px-4 overflow-hidden">
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-radial from-blue-900/15 via-transparent to-transparent pointer-events-none" />
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">AI Players Directory</h2>

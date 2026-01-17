@@ -179,7 +179,9 @@ export default function SearchResults() {
       </section>
 
       {/* Results Section */}
-      <div className="max-w-7xl mx-auto px-4 py-12">
+      <div className="relative max-w-7xl mx-auto px-4 py-12 overflow-hidden">
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-radial from-teal-900/10 via-transparent to-transparent pointer-events-none" />
         {!query.trim() ? (
           <div className="text-center py-12">
             <Search className="mx-auto mb-4 text-muted-foreground" size={48} />
