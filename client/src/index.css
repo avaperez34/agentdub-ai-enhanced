@@ -127,7 +127,8 @@
   }
   
   body {
-    @apply bg-background text-foreground;
+    background-color: #0a1628 !important;
+    @apply text-foreground;
     font-family: 'DM Sans', system-ui, sans-serif;
     top: 0 !important;
   }
