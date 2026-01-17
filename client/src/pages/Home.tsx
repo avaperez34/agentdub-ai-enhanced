@@ -6,6 +6,7 @@ import { useAnalytics } from "@/hooks/useAnalytics";
 import { ArrowRight, Zap, Shield, TrendingUp, Search } from "lucide-react";
 import { useLocation } from "wouter";
 import { AIComputeTracker } from "@/components/AIComputeTracker";
+import AnimatedParticles from "@/components/AnimatedParticles";
 
 export default function Home() {
   // The userAuth hooks provides authentication state
@@ -146,6 +147,9 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       {/* Hero Section - Dark navy with tech aesthetic */}
       <section className="relative py-20 px-4 overflow-hidden bg-[#0a1628]">
+        {/* Animated Particles */}
+        <AnimatedParticles />
+        
         {/* Tech circuit board background pattern */}
         <div className="absolute inset-0 opacity-10">
           <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">

@@ -240,3 +240,17 @@
 - [x] Add tech icons (AI chip, database, network) to homepage
 - [x] Test both pages for visual consistency
 - [x] Save checkpoint for design implementation
+
+## Site-Wide Design Enhancements
+- [x] Add animated floating particles to homepage hero section
+- [x] Add animated floating particles to search results hero section
+- [x] Update global theme colors to dark navy in index.css
+- [x] Apply dark navy design to Intelligence page
+- [x] Apply dark navy design to News page
+- [x] Apply dark navy design to Directory page
+- [x] Apply dark navy design to About page
+- [x] Apply dark navy design to Contact page
+- [x] Apply dark navy design to Premium page
+- [x] Implement keyword highlighting in search results
+- [x] Test all pages for visual consistency
+- [x] Save checkpoint for site-wide design enhancements

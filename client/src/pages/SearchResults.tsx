@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Search, ArrowRight, FileText, Newspaper } from "lucide-react";
 import { allSignals, allArticles } from "@/data/content";
+import AnimatedParticles from "@/components/AnimatedParticles";
 
 export default function SearchResults() {
   const [location] = useLocation();
@@ -54,10 +55,62 @@ export default function SearchResults() {
     }
   };
 
+  // Helper function to highlight matching keywords
+  const highlightText = (text: string, query: string) => {
+    if (!query.trim()) return text;
+    
+    const queryWords = query.toLowerCase().split(/\s+/).filter(word => word.length > 0);
+    const parts: { text: string; highlight: boolean }[] = [];
+    let currentIndex = 0;
+    
+    // Find all matches
+    const matches: { start: number; end: number; word: string }[] = [];
+    queryWords.forEach(word => {
+      const regex = new RegExp(word, 'gi');
+      let match;
+      while ((match = regex.exec(text)) !== null) {
+        matches.push({ start: match.index, end: match.index + match[0].length, word: match[0] });
+      }
+    });
+    
+    // Sort matches by start position
+    matches.sort((a, b) => a.start - b.start);
+    
+    // Build parts array
+    matches.forEach(match => {
+      if (match.start > currentIndex) {
+        parts.push({ text: text.slice(currentIndex, match.start), highlight: false });
+      }
+      parts.push({ text: match.word, highlight: true });
+      currentIndex = match.end;
+    });
+    
+    if (currentIndex < text.length) {
+      parts.push({ text: text.slice(currentIndex), highlight: false });
+    }
+    
+    return (
+      <>
+        {parts.map((part, index) => 
+          part.highlight ? (
+            <span key={index} className="bg-blue-500/30 text-blue-200 px-1 rounded">
+              {part.text}
+            </span>
+          ) : (
+            part.text
+          )
+        )}
+      </>
+    );
+  };
+
   return (
     <div className="min-h-screen bg-background">
       {/* Dark Navy Hero Section with Search */}
       <section className="relative py-12 px-4 overflow-hidden bg-[#0a1628]">
+        {/* Animated Particles */}
+        <AnimatedParticles />
+        
         {/* Tech circuit board background pattern */}
         <div className="absolute inset-0 opacity-10">
           <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -158,9 +211,9 @@ export default function SearchResults() {
                             Impact {signal.impact}
                           </Badge>
                         </div>
-                        <h3 className="text-lg font-bold mb-3 line-clamp-2">{signal.title}</h3>
+                        <h3 className="text-lg font-bold mb-3 line-clamp-2">{highlightText(signal.title, query)}</h3>
                         <p className="text-sm text-muted-foreground mb-4 line-clamp-3 flex-grow">
-                          {signal.description}
+                          {highlightText(signal.description, query)}
                         </p>
                         <div className="flex items-center justify-between text-xs text-muted-foreground">
                           <span>{signal.country}</span>
@@ -190,9 +243,9 @@ export default function SearchResults() {
                           </Badge>
                           <span className="text-xs text-muted-foreground">{article.readTime} min</span>
                         </div>
-                        <h3 className="text-lg font-bold mb-3 line-clamp-2">{article.title}</h3>
+                        <h3 className="text-lg font-bold mb-3 line-clamp-2">{highlightText(article.title, query)}</h3>
                         <p className="text-sm text-muted-foreground mb-4 line-clamp-3 flex-grow">
-                          {article.excerpt}
+                          {highlightText(article.excerpt, query)}
                         </p>
                         <div className="flex items-center justify-between text-xs text-muted-foreground">
                           <span>{article.country}</span>
