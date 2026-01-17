@@ -67,19 +67,32 @@ export default function SearchResults() {
 
           <h1 className="text-4xl font-bold mb-6">Search Results</h1>
 
-          {/* Search Bar */}
-          <form onSubmit={handleSearch} className="mb-6">
-            <div className="relative">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground" size={20} />
+          {/* Search Bar - Matching Homepage Design */}
+          <div className="mb-6">
+            <div className="mb-3">
+              <h2 className="text-lg font-semibold">
+                <span className="bg-gradient-to-r from-blue-500 via-emerald-500 to-amber-500 bg-clip-text text-transparent">
+                  AgentDubai
+                </span>
+                <span className="text-muted-foreground ml-2">Search</span>
+              </h2>
+            </div>
+            <form onSubmit={handleSearch} className="relative group">
               <input
                 type="text"
-                placeholder="Search signals and news..."
+                placeholder="Search signals and news across the GCC..."
                 value={searchInput}
                 onChange={(e) => setSearchInput(e.target.value)}
-                className="w-full pl-12 pr-4 py-4 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
+                className="w-full px-6 py-4 rounded-full border-2 border-border bg-background/50 backdrop-blur-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all group-hover:shadow-lg group-hover:shadow-accent/20"
               />
-            </div>
-          </form>
+              <button
+                type="submit"
+                className="absolute right-2 top-1/2 -translate-y-1/2 px-6 py-2 rounded-full bg-gradient-to-r from-blue-500 via-emerald-500 to-teal-500 text-white font-medium hover:shadow-lg hover:shadow-accent/30 transition-all"
+              >
+                Search
+              </button>
+            </form>
+          </div>
 
           {query && (
             <p className="text-muted-foreground">
