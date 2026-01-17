@@ -144,84 +144,69 @@ export default function Home() {
   
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section */}
+      {/* Hero Section - Google-style centered search */}
       <section className="relative py-20 px-4 overflow-hidden">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="mb-4">
-                <h1 className="text-5xl lg:text-6xl font-bold mb-2 leading-tight bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-700 bg-clip-text text-transparent">
-                  AgentDubai
-                </h1>
-                <p className="text-lg text-muted-foreground mb-1">
-                  Intelligence on AI Agents & Digital Transformation in the Gulf Cooperation Council
-                </p>
-                <p className="text-sm text-muted-foreground/70">
-                  Platform: agentdub.ai
-                </p>
+        <div className="max-w-4xl mx-auto text-center">
+          {/* AgentDubai Title */}
+          <div className="mb-12">
+            <h1 className="text-6xl lg:text-7xl font-bold mb-4 leading-tight bg-gradient-to-r from-blue-500 via-emerald-500 to-amber-500 bg-clip-text text-transparent">
+              AgentDubai
+            </h1>
+          </div>
+          
+          {/* Big Search Bar - Google-style */}
+          <div className="mb-8">
+            <form onSubmit={handleSearch}>
+              <div className="relative group max-w-3xl mx-auto">
+                <input
+                  type="text"
+                  placeholder="Search signals and news across the GCC..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full px-8 py-6 text-lg rounded-full border-2 border-border bg-card/50 backdrop-blur-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 hover:shadow-2xl transition-all duration-300"
+                />
+                <button
+                  type="submit"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 px-8 py-3 bg-gradient-to-r from-blue-500 via-emerald-500 to-teal-500 text-white rounded-full hover:shadow-lg hover:scale-105 transition-all duration-200 font-medium text-lg"
+                >
+                  Search
+                </button>
               </div>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Independent editorial platform dedicated to the rise of AI agents, autonomous
-                systems, and applied artificial intelligence shaping the next phase of digital
-                transformation across Dubai and the Gulf.
-              </p>
-              
-              {/* Search Bar - Google-inspired design */}
-              <div className="mb-8">
-                <div className="mb-3 flex items-center gap-2">
-                  <span className="text-2xl font-bold bg-gradient-to-r from-blue-500 via-emerald-500 to-amber-500 bg-clip-text text-transparent">AgentDubai</span>
-                  <span className="text-sm text-muted-foreground">Search</span>
-                </div>
-                <form onSubmit={handleSearch}>
-                  <div className="relative group">
-                    <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground group-hover:text-accent transition-colors" size={20} />
-                    <input
-                      type="text"
-                      placeholder="Search signals and news across the GCC..."
-                      value={searchQuery}
-                      onChange={(e) => setSearchQuery(e.target.value)}
-                      className="w-full pl-12 pr-16 py-4 rounded-full border-2 border-border bg-card/50 backdrop-blur-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 hover:shadow-lg transition-all duration-200"
-                    />
-                    <button
-                      type="submit"
-                      className="absolute right-2 top-1/2 -translate-y-1/2 px-4 py-2 bg-gradient-to-r from-blue-500 via-emerald-500 to-teal-500 text-white rounded-full hover:shadow-md hover:scale-105 transition-all duration-200 font-medium"
-                    >
-                      Search
-                    </button>
-                  </div>
-                </form>
-              </div>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/premium">
-                  <Button 
-                    size="lg" 
-                    className="w-full sm:w-auto bg-accent hover:bg-accent/90"
-                    onClick={() => trackButtonClick('view_premium_home', '/premium')}
-                  >
-                    View Premium Plans
-                    <ArrowRight className="ml-2" size={18} />
-                  </Button>
-                </Link>
-                <Link href="/directory">
-                  <Button 
-                    size="lg" 
-                    variant="outline"
-                    className="w-full sm:w-auto"
-                    onClick={() => trackButtonClick('explore_directory_home', '/directory')}
-                  >
-                    Explore Directory
-                  </Button>
-                </Link>
-              </div>
-            </div>
+            </form>
+          </div>
 
-            {/* Hero Visual */}
-            <div className="relative h-96 lg:h-full rounded-lg overflow-hidden bg-gradient-to-br from-accent/20 to-secondary/20 border border-border flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-6xl font-bold text-accent/30 mb-4">AI</div>
-                <p className="text-muted-foreground">Strategic Intelligence Platform</p>
-              </div>
-            </div>
+          {/* Description Text - Under Search Bar */}
+          <div className="mb-12">
+            <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+              Intelligence on AI Agents & Digital Transformation in the Gulf Cooperation Council
+            </p>
+            <p className="text-sm text-muted-foreground/70 mt-2">
+              Platform: agentdub.ai
+            </p>
+          </div>
+
+          {/* Action Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/premium">
+              <Button 
+                size="lg" 
+                className="w-full sm:w-auto bg-accent hover:bg-accent/90"
+                onClick={() => trackButtonClick('view_premium_home', '/premium')}
+              >
+                View Premium Plans
+                <ArrowRight className="ml-2" size={18} />
+              </Button>
+            </Link>
+            <Link href="/directory">
+              <Button 
+                size="lg" 
+                variant="outline"
+                className="w-full sm:w-auto"
+                onClick={() => trackButtonClick('explore_directory_home', '/directory')}
+              >
+                Explore Directory
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

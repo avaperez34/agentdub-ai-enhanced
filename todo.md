@@ -217,3 +217,11 @@
 - [x] Update App.tsx routing for new articles
 - [x] Test Kuwait search results
 - [x] Save checkpoint for Kuwait news additions
+
+## Homepage Redesign - Google-Style Search Focus
+- [x] Remove placeholder "AI Strategic Intelligence Platform" image
+- [x] Create big search bar spanning left to right at top
+- [x] Move description text under search bar
+- [x] Simplify homepage layout to focus on search
+- [x] Test homepage design and search functionality
+- [x] Save checkpoint for homepage redesign
