@@ -320,6 +320,12 @@ const articles: Article[] = [
 const ITEMS_PER_PAGE = 9;
 
 export default function News() {
+  // Check if content was updated today
+  const hasContentUpdatedToday = useMemo(() => {
+    const today = new Date().toISOString().split('T')[0];
+    return articles.some(article => article.date === today);
+  }, []);
+
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState("date");
@@ -403,7 +409,12 @@ export default function News() {
             <Badge className="mb-4 bg-purple-500/10 text-purple-500 border-purple-500/20">
               Daily Intelligence
             </Badge>
-            <h1 className="text-5xl font-bold mb-6">News</h1>
+            <div className="flex items-center gap-4 mb-6">
+              <h1 className="text-5xl font-bold">News</h1>
+              {hasContentUpdatedToday && (
+                <Badge className="bg-accent text-accent-foreground animate-pulse">Updated Today</Badge>
+              )}
+            </div>
             <p className="text-xl text-muted-foreground leading-relaxed">
               Daily breaking updates on GCC AI ecosystem — funding rounds, hiring trends, M&A activity,
               regulatory changes, and technology deployments. Fast-moving intelligence for decision-makers

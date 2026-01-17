@@ -328,6 +328,12 @@ const sectors = ["All Sectors", "Infrastructure", "GovTech", "Smart Cities", "Sm
 const ITEMS_PER_PAGE = 6;
 
 export default function Intelligence() {
+  // Check if content was updated today
+  const hasContentUpdatedToday = useMemo(() => {
+    const today = new Date().toISOString().split('T')[0];
+    return signals.some(signal => signal.date === today);
+  }, []);
+
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [selectedForComparison, setSelectedForComparison] = useState<string[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
@@ -399,7 +405,12 @@ export default function Intelligence() {
       <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Header */}
         <section className="mb-12">
-          <h1 className="text-5xl font-bold mb-4">Intelligence</h1>
+          <div className="flex items-center gap-4 mb-4">
+            <h1 className="text-5xl font-bold">Intelligence</h1>
+            {hasContentUpdatedToday && (
+              <Badge className="bg-accent text-accent-foreground animate-pulse">Updated Today</Badge>
+            )}
+          </div>
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl leading-relaxed">
             The live feed of <strong>AgentDubai Sentinel Signals</strong> — deep strategic analysis
             designed for decision-makers. Unlike daily news, these signals provide structured,

@@ -164,4 +164,13 @@
 - [x] Update News page to sort articles by newest first (descending order)
 - [x] Create automatic sorting system that maintains newest-first order
 - [x] Test homepage carousel and Intelligence/News page sorting
-- [ ] Save checkpoint for automatic sorting updates
+- [x] Save checkpoint for automatic sorting updates
+
+## Content Update Automation & Updated Today Badges
+- [x] Create Node.js script to add new signals to Intelligence.tsx
+- [x] Create Node.js script to add new news articles to News.tsx
+- [x] Add "Updated Today" badge to Intelligence page header
+- [x] Add "Updated Today" badge to News page header
+- [x] Test automation scripts with sample signal and news article
+- [x] Test Updated Today badge visibility logic
+- [ ] Save checkpoint for automation and badges
