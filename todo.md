@@ -318,3 +318,10 @@
 - [x] Add favicon links to index.html
 - [x] Test favicon display in browser
 - [x] Save checkpoint
+
+## Remove Premium Domain Blocks
+- [x] Find all premium domain components/pop-ups
+- [x] Remove DomainBanner import from App.tsx
+- [x] Remove DomainBanner component usage from App.tsx
+- [x] Test all pages to verify removal
+- [x] Save checkpoint
