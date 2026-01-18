@@ -23,7 +23,7 @@ export default function Sentinel() {
           <h1 className="text-5xl font-bold mb-6">AgentDubai Sentinel</h1>
 
           <p className="text-xl text-muted-foreground mb-8 leading-relaxed max-w-3xl">
-            Sentinel is a strategic AI intelligence agent designed to monitor and interpret Dubai's
+            Sentinel is a strategic AI intelligence agent designed to monitor and interpret the GCC's
             accelerating AI-driven transformation. It focuses on{" "}
             <span className="text-foreground font-medium">
               infrastructure, regulation, capital, and enterprise adoption
