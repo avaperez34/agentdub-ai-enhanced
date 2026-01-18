@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Search, ArrowRight, FileText, Newspaper } from "lucide-react";
-import { allSignals, allArticles } from "@/data/content";
+import { allSignals, allNews } from "@/data/content";
 import AnimatedParticles from "@/components/AnimatedParticles";
 
 export default function SearchResults() {
@@ -34,7 +34,7 @@ export default function SearchResults() {
       matchesAnyWord(signal.country)
     );
 
-    const matchedArticles = allArticles.filter(article =>
+    const matchedArticles = allNews.filter(article =>
       matchesAnyWord(article.title) ||
       matchesAnyWord(article.excerpt) ||
       matchesAnyWord(article.category) ||

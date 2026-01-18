@@ -329,3 +329,29 @@
 ## Fix Sentinel Page Header
 - [x] Change "Dubai's digital transformation" to "GCC's digital transformation" in Sentinel page header
 - [x] Save checkpoint
+
+## Add Fresh Signals and News
+- [ ] Research latest GCC AI developments (January 2026)
+- [ ] Create 3-5 new intelligence signals for highly relevant developments
+- [ ] Create 5-7 new news articles for recent events
+- [ ] Update content.ts with new signals and news
+- [ ] Update App.tsx routing for new content
+- [ ] Test new content pages
+- [ ] Save checkpoint
+
+## Add Fresh Intelligence Signals and News (Jan 17, 2026)
+- [x] Research latest GCC AI developments from Jan 12-16, 2026
+- [x] Add Signal #024 (GCC Agentic AI Implementation)
+- [x] Add Signal #025 (Saudi Arabia 5th Globally in AI Growth)
+- [x] Add Signal #026 (Qatar 10th Globally in AI Diffusion)
+- [x] Add Signal #027 (Oman Green AI Alliance)
+- [x] Add Signal #028 (Qatar & UAE Join Pax Silica)
+- [x] Add Signal #029 (Abu Dhabi AI Energy Corridor)
+- [x] Create NewsArticle020 (GCC Agentic AI)
+- [x] Create NewsArticle021 (Saudi Arabia AI Rankings)
+- [x] Create NewsArticle022 (Qatar AI Diffusion)
+- [x] Create NewsArticle023 (Oman Green AI Alliance)
+- [x] Create NewsArticle024 (Pax Silica Initiative)
+- [x] Create NewsArticle025 (Abu Dhabi AI Energy Corridor)
+- [x] Update App.tsx routing for new content
+- [x] Test new content pages

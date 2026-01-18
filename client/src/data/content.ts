@@ -2,6 +2,79 @@
 // This file exports all signals and news articles for use across the application
 
 export const allSignals = [
+  // Latest Signals (Jan 17, 2026)
+  {
+    id: "024",
+    title: "GCC Leads Global Agentic AI Implementation — 19% at Full-Scale Deployment",
+    description:
+      "World Economic Forum reports 19% of GCC organizations have moved agentic AI from pilots to full-scale implementation, significantly ahead of global average where only one-third have begun scaling traditional AI programs. Sovereign cloud infrastructure and unified national strategies drive rapid deployment.",
+    sector: "Leadership",
+    impact: 9.0,
+    horizon: "1–3y",
+    country: "GCC-Wide",
+    category: "execution",
+    date: "2026-01-15",
+  },
+  {
+    id: "025",
+    title: "Saudi Arabia Ranks 5th Globally in AI Growth, 3rd in Advanced Model Development",
+    description:
+      "2025 Global AI Index positions Saudi Arabia 5th globally and 1st in region for AI growth, 3rd globally in advanced AI model development behind only US and China. AI projected to contribute $235.2B (12.4% of GDP) by 2030. Humain initiative targets 1.8 GW data center capacity by 2030 and 100 GW AI compute by 2026.",
+    sector: "Infrastructure",
+    impact: 9.2,
+    horizon: "3–5y",
+    country: "Saudi Arabia",
+    category: "execution",
+    date: "2026-01-16",
+  },
+  {
+    id: "026",
+    title: "Qatar Ranks 10th Globally in AI Diffusion — Ahead of Australia, Canada, US",
+    description:
+      "Microsoft Global AI Adoption 2025 report positions Qatar 10th globally in AI diffusion with 38.3% adoption rate in H2 2025, ahead of Australia, Canada, and United States in population-normalized adoption. Exceeds global average of 16.3% and surpasses Saudi Arabia (26.2%), Oman (24.2%), and Jordan (27.0%) regionally.",
+    sector: "Leadership",
+    impact: 8.5,
+    horizon: "2–4y",
+    country: "Qatar",
+    category: "execution",
+    date: "2026-01-12",
+  },
+  {
+    id: "027",
+    title: "Oman Launches Green AI Alliance — First Regional Environmental AI Initiative",
+    description:
+      "Oman establishes Green AI Alliance, first initiative of its kind in the region bringing together government, private sector, and academia for environmentally sustainable AI development. Part of comprehensive strategy including Oman Digital Triangle Initiative, dedicated AI zone, AI Studio innovation platform, and indigenous language model 'Mueen'. AI sector attracts RO 65M+ investment with 46 companies and 38% startup growth.",
+    sector: "Sustainability",
+    impact: 8.0,
+    horizon: "3–5y",
+    country: "Oman",
+    category: "execution",
+    date: "2026-01-13",
+  },
+  {
+    id: "028",
+    title: "Qatar and UAE Join US-Led Pax Silica — Historic Shift from Hydrocarbon to Silicon Statecraft",
+    description:
+      "Qatar and UAE join US-led Pax Silica initiative to secure AI and semiconductor supply chains, marking strategic pivot from hydrocarbon-centric security to silicon statecraft. Members include Israel, Japan, South Korea, Singapore, UK, Australia. Initiative safeguards critical minerals, advanced manufacturing, computing capacity, and data infrastructure. Positions Gulf states as critical nodes in global AI economic order.",
+    sector: "Geopolitics",
+    impact: 9.3,
+    horizon: "5–10y",
+    country: "Qatar",
+    category: "execution",
+    date: "2026-01-12",
+  },
+  {
+    id: "029",
+    title: "Abu Dhabi Positions as 'Corridor to Future' — 65GW Renewable Capacity Powers AI Era",
+    description:
+      "Abu Dhabi Sustainability Week 2026 announcement positions UAE as global AI energy corridor with 65GW renewable capacity achieved (two-thirds of 100GW target). Masdar operates in 40+ countries, drove renewable costs down 90%+ over 20 years. New era of human progress defined by computational power requires integrated energy system combining carbon-efficient molecules and clean gigawatts. Data center power requirements set to rise over 500%.",
+    sector: "Infrastructure",
+    impact: 9.1,
+    horizon: "3–7y",
+    country: "UAE",
+    category: "execution",
+    date: "2026-01-13",
+  },
   // Latest Signals (Jan 16, 2026)
   {
     id: "022",
@@ -149,7 +222,61 @@ export const allSignals = [
   },
 ];
 
-export const allArticles = [
+export const allNews = [
+  {
+    id: "020",
+    title: "GCC Leads Global Agentic AI Implementation with 19% at Full-Scale Deployment",
+    excerpt: "World Economic Forum reports 19% of GCC organizations have moved agentic AI from pilots to full-scale implementation, significantly ahead of global averages. Sovereign cloud infrastructure and unified national strategies drive rapid deployment.",
+    category: "Implementation",
+    readTime: 6,
+    country: "GCC-Wide",
+    date: "2026-01-15",
+  },
+  {
+    id: "021",
+    title: "Saudi Arabia Ranks 5th Globally in AI Growth, 3rd in Advanced Model Development",
+    excerpt: "2025 Global AI Index positions Saudi Arabia 5th globally and 1st in region for AI growth, 3rd globally in advanced AI model development behind only US and China. AI projected to contribute $235.2 billion to GDP by 2030.",
+    category: "Infrastructure",
+    readTime: 6,
+    country: "Saudi Arabia",
+    date: "2026-01-16",
+  },
+  {
+    id: "022",
+    title: "Qatar Ranks 10th Globally in AI Diffusion, Ahead of Australia, Canada, and US",
+    excerpt: "Microsoft Global AI Adoption 2025 report positions Qatar 10th globally in AI diffusion with 38.3% adoption rate, ahead of Australia, Canada, and United States in population-normalized adoption.",
+    category: "Leadership",
+    readTime: 5,
+    country: "Qatar",
+    date: "2026-01-12",
+  },
+  {
+    id: "023",
+    title: "Oman Launches Green AI Alliance, First Regional Environmental AI Initiative",
+    excerpt: "Oman establishes Green AI Alliance, first initiative of its kind in the region bringing together government, private sector, and academia for environmentally sustainable AI development. Part of comprehensive national AI strategy with RO 65M+ investment.",
+    category: "Sustainability",
+    readTime: 6,
+    country: "Oman",
+    date: "2026-01-13",
+  },
+  {
+    id: "024",
+    title: "Qatar and UAE Join US-Led Pax Silica: Historic Shift from Hydrocarbon to Silicon Statecraft",
+    excerpt: "Qatar and UAE join US-led Pax Silica initiative to secure AI and semiconductor supply chains, marking strategic pivot from hydrocarbon-centric security to silicon statecraft. Positions Gulf states as critical nodes in global AI economic order.",
+    category: "Geopolitics",
+    readTime: 7,
+    country: "Qatar",
+    date: "2026-01-12",
+  },
+  {
+    id: "025",
+    title: "Abu Dhabi Positions as 'Corridor to Future' with 65GW Renewable Capacity Powering AI Era",
+    excerpt: "Abu Dhabi Sustainability Week 2026 announcement positions UAE as global AI energy corridor with 65GW renewable capacity achieved. New era of human progress defined by computational power requires integrated energy system.",
+    category: "Infrastructure",
+    readTime: 7,
+    country: "UAE",
+    date: "2026-01-13",
+  },
   {
     id: "010",
     title: "UAE Retains #1 Global AI Adoption Ranking in Microsoft Report",
