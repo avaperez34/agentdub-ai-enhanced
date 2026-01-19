@@ -390,3 +390,11 @@
 - [x] Verify signal count displays correctly (32/32)
 - [x] Test filtering and sorting with new signals
 - [x] Save checkpoint
+
+## Fix Signal Count Display
+- [x] Find where "21/21" is displayed in Intelligence page
+- [x] Identified root cause: allSignals array missing signals 001-011
+- [x] Added signals 001-011 to content.ts allSignals array
+- [x] Now allSignals has all 32 signals (001-032)
+- [x] Verify count displays correctly (32/32)
+- [x] Save checkpoint
