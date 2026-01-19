@@ -382,3 +382,11 @@
 - [x] Update timestamp to January 18, 2026
 - [x] Test homepage layout and links
 - [x] Save checkpoint
+
+## Fix Intelligence Page Signal Display
+- [x] Investigate why Intelligence page shows only 23 signals instead of 32
+- [x] Fix Intelligence page to display all signals including 024-032
+- [x] Replace hardcoded signals array with allSignals import from content.ts
+- [x] Verify signal count displays correctly (32/32)
+- [x] Test filtering and sorting with new signals
+- [x] Save checkpoint

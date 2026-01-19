@@ -6,8 +6,12 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { ArrowRight, Share2, Building2, Users, AlertTriangle, TrendingUp, GitCompare, Search, Filter, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useMemo } from "react";
 import { SignalComparison } from "@/components/SignalComparison";
+import { allSignals } from "@/data/content";
 
-const signals = [
+const signals = allSignals;
+
+/* Removed hardcoded signals array - now using centralized content.ts
+const oldSignals = [
   // Latest Signals (Jan 16, 2026)
   {
     id: "022",
@@ -290,6 +294,7 @@ const signals = [
     date: "2026-01-16",
   },
 ];
+*/
 
 const categories = [
   {
