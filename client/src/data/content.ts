@@ -2,7 +2,43 @@
 // This file exports all signals and news articles for use across the application
 
 export const allSignals = [
-  // Latest Signals (Jan 17, 2026)
+  // Latest Signals (Jan 18, 2026)
+  {
+    id: "030",
+    title: "TII Releases Falcon-H1R 7B & Falcon-H1 Arabic — UAE Asserts Sovereign AI Leadership",
+    description:
+      "Technology Innovation Institute releases two advanced language models: Falcon-H1R 7B (compact 7B model matching systems 2-7× larger) and Falcon-H1 Arabic (world's leading Arabic AI, tops Open Arabic LLM Leaderboard with 75.36%, outperforming 70B+ models). Both released as open source via Hugging Face, demonstrating UAE's sovereign AI capabilities competing at highest global levels.",
+    sector: "Infrastructure",
+    impact: 9.0,
+    horizon: "2–5y",
+    country: "UAE",
+    category: "execution",
+    date: "2026-01-18",
+  },
+  {
+    id: "031",
+    title: "Baidu Launches Fully Driverless Ride-Hailing Service in Abu Dhabi",
+    description:
+      "Baidu's Apollo Go and AutoGo officially launch fully autonomous commercial ride-hailing service in Abu Dhabi, marking first fully driverless commercial service in the emirate and international expansion of Chinese autonomous vehicle technology. Demonstrates Abu Dhabi's role as testing ground for next-generation mobility solutions.",
+    sector: "Mobility",
+    impact: 8.5,
+    horizon: "1–3y",
+    country: "UAE",
+    category: "execution",
+    date: "2026-01-18",
+  },
+  {
+    id: "032",
+    title: "SDAIA ICAN 2026 — Global Tech Leaders Converge in Riyadh for AI Capacity Building",
+    description:
+      "Saudi Data and AI Authority hosts International Conference on AI Capacity Building (ICAN 2026) January 28-29 with 50+ organizations including Google Cloud, IBM, AWS, PwC, Stanford University, KAUST, LinkedIn, and Humain. Workshops focus on practical AI applications: data agents, deep learning, analytics, AI-driven productivity. Academic partnership with King Saud University aligns with Vision 2030 goals for digital economy competitiveness.",
+    sector: "Leadership",
+    impact: 8.0,
+    horizon: "2–4y",
+    country: "Saudi Arabia",
+    category: "execution",
+    date: "2026-01-18",
+  },
   {
     id: "024",
     title: "GCC Leads Global Agentic AI Implementation — 19% at Full-Scale Deployment",
