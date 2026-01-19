@@ -373,3 +373,12 @@
 - [x] Update App.tsx routing
 - [x] Signal pages created with full analysis
 - [x] Test and save checkpoint
+
+## Feature Latest Intelligence on Homepage
+- [x] Update Home.tsx to feature Signal #030 (TII Falcon, 9.0 impact)
+- [x] Update Home.tsx to feature Signal #031 (Baidu Driverless, 8.5 impact)
+- [x] Update Home.tsx to feature Signal #032 (SDAIA ICAN 2026, 8.0 impact)
+- [x] Add "BREAKING" badges for Signal #030 and #031
+- [x] Update timestamp to January 18, 2026
+- [x] Test homepage layout and links
+- [x] Save checkpoint

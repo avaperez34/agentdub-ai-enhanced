@@ -46,7 +46,7 @@ export default function Home() {
   }, []);
   
   // Dynamic timestamp from latest content
-  const latestContentDate = "January 16, 2026"; // Will be computed from actual content dates
+  const latestContentDate = "January 18, 2026"; // Will be computed from actual content dates
   
   // Track scroll position for indicators
   useEffect(() => {
@@ -274,62 +274,60 @@ export default function Home() {
                   </div>
                 </div>
               )}
-              {/* Signal #022 */}
-              <Link href="/signals/022" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
+              {/* Signal #030 - BREAKING */}
+              <Link href="/signals/030" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
+                  <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent">SIGNAL #022</span>
-                    {isNewContent('2026-01-16') && (
-                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
-                    )}
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #030</span>
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-red-500 text-white font-bold animate-pulse">BREAKING</span>
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 16, 2026</span>
+                    <span className="text-xs text-muted-foreground">Jan 18, 2026</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2">UAE Retains #1 Global AI Adoption</h3>
-                  <p className="text-muted-foreground mb-4">Microsoft AI Diffusion Report confirms UAE leads world in AI adoption with comprehensive infrastructure, policy framework, and deployment velocity.</p>
+                  <h3 className="text-xl font-bold mb-2">TII Releases Falcon-H1R 7B & Falcon-H1 Arabic</h3>
+                  <p className="text-muted-foreground mb-4">UAE's Technology Innovation Institute releases dual models: compact 7B matching 2-7× larger systems, Falcon-H1 Arabic tops global leaderboard at 75.36%—sovereign AI breakthrough.</p>
                   <div className="flex items-center gap-4 text-sm">
-                    <span className="text-accent font-medium">Impact: 8.8/10</span>
+                    <span className="text-accent font-bold">Impact: 9.0/10</span>
                     <span className="text-muted-foreground">🇦🇪 UAE</span>
                   </div>
                 </div>
               </Link>
 
-              {/* Signal #023 */}
-              <Link href="/signals/023" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
+              {/* Signal #031 - BREAKING */}
+              <Link href="/signals/031" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
+                  <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent">SIGNAL #023</span>
-                    {isNewContent('2026-01-16') && (
-                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
-                    )}
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #031</span>
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-red-500 text-white font-bold animate-pulse">BREAKING</span>
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 16, 2026</span>
+                    <span className="text-xs text-muted-foreground">Jan 18, 2026</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2">World Government Summit 2026 Dubai</h3>
-                  <p className="text-muted-foreground mb-4">35 heads of state converge in Dubai for AI governance discussions with IBM, Google DeepMind CEOs—positioning UAE as global AI policy hub.</p>
+                  <h3 className="text-xl font-bold mb-2">Baidu Launches Fully Driverless Ride-Hailing</h3>
+                  <p className="text-muted-foreground mb-4">Apollo Go and AutoGo launch first fully autonomous commercial service in Abu Dhabi without safety drivers—demonstrating Emirates as testing ground for next-gen mobility.</p>
                   <div className="flex items-center gap-4 text-sm">
-                    <span className="text-accent font-medium">Impact: 8.5/10</span>
+                    <span className="text-accent font-bold">Impact: 8.5/10</span>
                     <span className="text-muted-foreground">🇦🇪 UAE</span>
                   </div>
                 </div>
               </Link>
 
-              {/* Signal #021 */}
-              <Link href="/signals/021" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* Signal #032 */}
+              <Link href="/signals/032" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent">SIGNAL #021</span>
-                    {isNewContent('2026-01-15') && (
+                    <span className="text-xs font-mono text-accent">SIGNAL #032</span>
+                    {isNewContent('2026-01-18') && (
                       <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
                     )}
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 15, 2026</span>
+                    <span className="text-xs text-muted-foreground">Jan 18, 2026</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Kuwait International AI Conference</h3>
-                  <p className="text-muted-foreground mb-4">First regional AI conference signals Kuwait's entry into GCC AI race with focus on education, healthcare, and government transformation.</p>
+                  <h3 className="text-xl font-bold mb-2">SDAIA ICAN 2026 — Global Tech Leaders in Riyadh</h3>
+                  <p className="text-muted-foreground mb-4">50+ organizations including Google Cloud, IBM, AWS, PwC, Stanford converge for AI capacity building workshops January 28-29—Vision 2030 talent acceleration.</p>
                   <div className="flex items-center gap-4 text-sm">
-                    <span className="text-accent font-medium">Impact: 6.5/10</span>
-                    <span className="text-muted-foreground">🇰🇼 Kuwait</span>
+                    <span className="text-accent font-medium">Impact: 8.0/10</span>
+                    <span className="text-muted-foreground">🇸🇦 Saudi Arabia</span>
                   </div>
                 </div>
               </Link>
