@@ -392,6 +392,33 @@ export const allSignals = [
 
 export const allNews = [
   {
+    id: "026",
+    title: "UAE Launches AI-Driven Foreign Trade Platform with Presight Partnership",
+    excerpt: "Ministry of Foreign Trade signs agreement with Abu Dhabi AI firm Presight to create world's first fully AI-driven trade ministry. Platform will analyze millions of data points in real time to forecast disruptions and identify opportunities.",
+    category: "Infrastructure",
+    readTime: 6,
+    country: "UAE",
+    date: "2026-01-19",
+  },
+  {
+    id: "027",
+    title: "e& and IBM Unveil Enterprise-Grade Agentic AI at Davos 2026",
+    excerpt: "UAE telecom giant e& and IBM announce strategic collaboration on enterprise-grade agentic AI for governance and compliance. Powered by IBM watsonx Orchestrate, marks move beyond chatbots to action-oriented AI in mission-critical systems.",
+    category: "Enterprise",
+    readTime: 5,
+    country: "UAE",
+    date: "2026-01-19",
+  },
+  {
+    id: "028",
+    title: "Saudi Arabia Showcases Vision 2030 AI Progress at Davos, Enters 'Third Phase'",
+    excerpt: "Saudi House at World Economic Forum 2026 spotlights AI and digital economy achievements. 2026 budget marks start of 'third phase' of Vision 2030, signaling shift from launching reforms to scaling execution.",
+    category: "Leadership",
+    readTime: 4,
+    country: "Saudi Arabia",
+    date: "2026-01-19",
+  },
+  {
     id: "020",
     title: "GCC Leads Global Agentic AI Implementation with 19% at Full-Scale Deployment",
     excerpt: "World Economic Forum reports 19% of GCC organizations have moved agentic AI from pilots to full-scale implementation, significantly ahead of global averages. Sovereign cloud infrastructure and unified national strategies drive rapid deployment.",
