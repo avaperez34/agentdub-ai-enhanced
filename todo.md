@@ -411,3 +411,14 @@
 - [x] Update App.tsx imports and routing
 - [x] Update homepage latest news section with articles 026-028
 - [x] Save checkpoint
+
+## Add 2 More News Articles (Jan 20, 2026)
+- [x] Search for 2 more fresh GCC AI news from today
+- [x] Selected: G42 Advanced AI Chips (Jan 20)
+- [x] Selected: SIRBAI Drone Swarm Technology (Jan 20)
+- [x] Add news articles to content.ts allNews array
+- [x] Create NewsArticle029.tsx (G42 Advanced AI Chips)
+- [x] Create NewsArticle030.tsx (SIRBAI Drone Swarm)
+- [x] Update App.tsx imports and routing
+- [x] Update homepage latest news section with articles 029, 030
+- [x] Save checkpoint for publishing

@@ -392,6 +392,26 @@ export const allSignals = [
 
 export const allNews = [
   {
+    id: "029",
+    title: "G42 to Receive Advanced AI Chips Within Months, Expands to 5GW Data Center",
+    excerpt: "UAE's G42 expects first shipments of Nvidia, AMD, and Cerebras chips within months. Abu Dhabi data center expansion from 200MW to 5GW signals massive AI infrastructure build-out as part of OpenAI Stargate initiative.",
+    date: "2026-01-20",
+    readTime: "5 min read",
+    country: "UAE",
+    category: "Infrastructure",
+    url: "/news/029"
+  },
+  {
+    id: "030",
+    title: "SIRBAI Launches Middle East's First AI-Powered Autonomous Drone Swarm at UMEX 2026",
+    excerpt: "UAE-based SIRBAI unveils region's first AI-powered autonomous drone swarm technology at UMEX 2026, developed by 40+ engineers with Technology Innovation Institute backing. Marks UAE's entry into defense AI sector.",
+    date: "2026-01-20",
+    readTime: "4 min read",
+    country: "UAE",
+    category: "Defense",
+    url: "/news/030"
+  },
+  {
     id: "026",
     title: "UAE Launches AI-Driven Foreign Trade Platform with Presight Partnership",
     excerpt: "Ministry of Foreign Trade signs agreement with Abu Dhabi AI firm Presight to create world's first fully AI-driven trade ministry. Platform will analyze millions of data points in real time to forecast disruptions and identify opportunities.",
