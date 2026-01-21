@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { allNews } from "@/data/content";
 
 interface Article {
   id: string;
@@ -23,8 +24,20 @@ interface Article {
   tags: string[];
 }
 
-// Sample articles - in production, these would come from a CMS or API
-const articles: Article[] = [
+// Import articles from centralized content.ts
+const articles = allNews.map(article => ({
+  id: article.id,
+  title: article.title,
+  excerpt: article.excerpt,
+  category: article.category,
+  date: article.date,
+  readTime: article.readTime,
+  isPremium: false,
+  tags: [article.country, article.category]
+}));
+
+// Keep old hardcoded articles as fallback (comment out)
+const oldArticles: Article[] = [
   {
     id: "001",
     title: "19% of GCC Organizations Deploy Agentic AI in Production - Leads Global Implementation",

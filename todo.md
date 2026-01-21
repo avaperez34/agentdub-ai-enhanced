@@ -422,3 +422,10 @@
 - [x] Update App.tsx imports and routing
 - [x] Update homepage latest news section with articles 029, 030
 - [x] Save checkpoint for publishing
+
+## Fix News Page to Display All Articles
+- [x] Investigate why News page doesn't show articles 029 and 030
+- [x] Fix News page to import and display all articles from content.ts
+- [x] Replace hardcoded articles array with allNews import
+- [x] Verify all 30 articles display correctly
+- [x] Save checkpoint
