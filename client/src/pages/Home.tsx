@@ -46,7 +46,7 @@ export default function Home() {
   }, []);
   
   // Dynamic timestamp from latest content
-  const latestContentDate = "January 18, 2026"; // Will be computed from actual content dates
+  const latestContentDate = "January 21, 2026"; // Will be computed from actual content dates
   
   // Track scroll position for indicators
   useEffect(() => {
@@ -274,60 +274,61 @@ export default function Home() {
                   </div>
                 </div>
               )}
-              {/* Signal #030 - BREAKING */}
-              <Link href="/signals/030" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* Signal #033 - BREAKING */}
+              <Link href="/signals/033" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
                   <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #030</span>
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #033</span>
                     <span className="text-xs px-2 py-0.5 rounded-full bg-red-500 text-white font-bold animate-pulse">BREAKING</span>
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 18, 2026</span>
+                    <span className="text-xs text-muted-foreground">Jan 21, 2026</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2">TII Releases Falcon-H1R 7B & Falcon-H1 Arabic</h3>
-                  <p className="text-muted-foreground mb-4">UAE's Technology Innovation Institute releases dual models: compact 7B matching 2-7× larger systems, Falcon-H1 Arabic tops global leaderboard at 75.36%—sovereign AI breakthrough.</p>
-                  <div className="flex items-center gap-4 text-sm">
-                    <span className="text-accent font-bold">Impact: 9.0/10</span>
-                    <span className="text-muted-foreground">🇦🇪 UAE</span>
-                  </div>
-                </div>
-              </Link>
-
-              {/* Signal #031 - BREAKING */}
-              <Link href="/signals/031" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
-                  <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #031</span>
-                    <span className="text-xs px-2 py-0.5 rounded-full bg-red-500 text-white font-bold animate-pulse">BREAKING</span>
-                    <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 18, 2026</span>
-                  </div>
-                  <h3 className="text-xl font-bold mb-2">Baidu Launches Fully Driverless Ride-Hailing</h3>
-                  <p className="text-muted-foreground mb-4">Apollo Go and AutoGo launch first fully autonomous commercial service in Abu Dhabi without safety drivers—demonstrating Emirates as testing ground for next-gen mobility.</p>
+                  <h3 className="text-xl font-bold mb-2">Beyon Cyber's Orryx AI Wins Deloitte Fast 50</h3>
+                  <p className="text-muted-foreground mb-4">Autonomous AI-driven security platform wins Deloitte's Fast Track Pitch Competition—validates Bahrain's emerging cybersecurity AI sector and GCC's competitive capabilities.</p>
                   <div className="flex items-center gap-4 text-sm">
                     <span className="text-accent font-bold">Impact: 8.5/10</span>
-                    <span className="text-muted-foreground">🇦🇪 UAE</span>
+                    <span className="text-muted-foreground">🇧🇭 Bahrain</span>
                   </div>
                 </div>
               </Link>
 
-              {/* Signal #032 */}
-              <Link href="/signals/032" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* Signal #034 */}
+              <Link href="/signals/034" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent">SIGNAL #032</span>
-                    {isNewContent('2026-01-18') && (
+                    <span className="text-xs font-mono text-accent">SIGNAL #034</span>
+                    {isNewContent('2026-01-21') && (
                       <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
                     )}
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 18, 2026</span>
+                    <span className="text-xs text-muted-foreground">Jan 21, 2026</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2">SDAIA ICAN 2026 — Global Tech Leaders in Riyadh</h3>
-                  <p className="text-muted-foreground mb-4">50+ organizations including Google Cloud, IBM, AWS, PwC, Stanford converge for AI capacity building workshops January 28-29—Vision 2030 talent acceleration.</p>
+                  <h3 className="text-xl font-bold mb-2">Oman Vision 2040 AI Investment Strategy</h3>
+                  <p className="text-muted-foreground mb-4">Oman elevates AI to core pillar of Vision 2040 with IMF backing. 60,000 new jobs in 2026 prioritize AI and digital skills for economic diversification beyond hydrocarbons.</p>
                   <div className="flex items-center gap-4 text-sm">
                     <span className="text-accent font-medium">Impact: 8.0/10</span>
-                    <span className="text-muted-foreground">🇸🇦 Saudi Arabia</span>
+                    <span className="text-muted-foreground">🇴🇲 Oman</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Signal #035 */}
+              <Link href="/signals/035" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent">SIGNAL #035</span>
+                    {isNewContent('2026-01-21') && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
+                    )}
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Jan 21, 2026</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">HBKU Launches HIKMA Project</h3>
+                  <p className="text-muted-foreground mb-4">Qatar's Hamad Bin Khalifa University launches comprehensive AI-powered research ecosystem integrating every stage of academic research in single continuous pipeline.</p>
+                  <div className="flex items-center gap-4 text-sm">
+                    <span className="text-accent font-medium">Impact: 8.5/10</span>
+                    <span className="text-muted-foreground">🇶🇦 Qatar</span>
                   </div>
                 </div>
               </Link>

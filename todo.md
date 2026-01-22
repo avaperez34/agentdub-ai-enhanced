@@ -429,3 +429,27 @@
 - [x] Replace hardcoded articles array with allNews import
 - [x] Verify all 30 articles display correctly
 - [x] Save checkpoint
+
+## Add 3 Fresh Intelligence Signals (Bahrain, Oman, Qatar)
+- [ ] Search for latest Bahrain AI developments
+- [ ] Search for latest Oman AI developments
+- [ ] Search for latest Qatar AI developments
+- [ ] Select 3 high-impact signals (one from each country)
+- [ ] Add signals to content.ts allSignals array
+- [ ] Create signal page components (Signal033, 034, 035)
+- [ ] Update homepage Latest Intelligence section
+- [ ] Update App.tsx routing
+- [ ] Save checkpoint
+
+## Add 3 Fresh Intelligence Signals (Bahrain, Oman, Qatar - Jan 21, 2026)
+- [x] Search for latest Bahrain AI developments
+- [x] Search for latest Oman AI developments
+- [x] Search for latest Qatar AI developments
+- [x] Add 3 new signals (033, 034, 035) to content.ts
+- [x] Create Signal033.tsx (Beyon Cyber Orryx AI - Bahrain)
+- [x] Create Signal034.tsx (Oman Vision 2040 AI Strategy)
+- [x] Create Signal035.tsx (HBKU HIKMA Project - Qatar)
+- [x] Update homepage latest intelligence section with new signals
+- [x] Update App.tsx imports and routing
+- [x] Update latestContentDate to January 21, 2026
+- [x] Save checkpoint

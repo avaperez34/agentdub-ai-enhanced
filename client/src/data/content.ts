@@ -2,6 +2,43 @@
 // This file exports all signals and news articles for use across the application
 
 export const allSignals = [
+  // Latest Signals (Jan 20-21, 2026)
+  {
+    id: "033",
+    title: "Beyon Cyber's Orryx AI Wins Deloitte Fast 50 Competition — Bahrain Cybersecurity AI Gains Recognition",
+    description:
+      "Beyon Cyber's Orryx AI, an autonomous AI-driven security platform, wins Deloitte's Fast Track Pitch Competition at Fast 50 event. Platform delivers autonomous threat detection, intelligent response capabilities, and real-time security orchestration. Victory validates Bahrain's emerging cybersecurity AI sector and demonstrates GCC's ability to develop globally competitive AI security solutions. Beyon Cyber is part of Beyon Group (formerly Batelco).",
+    sector: "Cybersecurity",
+    impact: 8.5,
+    horizon: "1–2y",
+    country: "Bahrain",
+    category: "execution",
+    date: "2026-01-21",
+  },
+  {
+    id: "034",
+    title: "Oman Vision 2040 AI Investment Strategy — IMF Backs AI Readiness for Economic Diversification",
+    description:
+      "Oman investing heavily in AI as core pillar of Vision 2040 strategy for economic diversification beyond hydrocarbons. IMF Executive Board recommends advancing digitalization and AI readiness to develop competitive nonhydrocarbon tradable sector. Government commits to creating 60,000 new jobs in 2026 with AI and digital skills as priority areas. Strategy emphasizes AI in healthcare, education, government services, and business processes.",
+    sector: "National Strategy",
+    impact: 8.0,
+    horizon: "3–5y",
+    country: "Oman",
+    category: "strategy",
+    date: "2026-01-21",
+  },
+  {
+    id: "035",
+    title: "HBKU Launches HIKMA Project — Qatar Builds AI-Powered Research Ecosystem",
+    description:
+      "Hamad Bin Khalifa University (HBKU) launches HIKMA Project, comprehensive AI-powered research ecosystem integrating every stage of academic research. Platform provides end-to-end pipeline: AI-driven topic generation, automated writing assistance, intelligent literature review, and AI-based peer review and revision—all in single continuous workflow. Positions Qatar as AI research hub in GCC and demonstrates Qatar Foundation's commitment to indigenous AI research infrastructure.",
+    sector: "Research & Development",
+    impact: 8.5,
+    horizon: "2–4y",
+    country: "Qatar",
+    category: "execution",
+    date: "2026-01-21",
+  },
   // Latest Signals (Jan 18, 2026)
   {
     id: "030",
