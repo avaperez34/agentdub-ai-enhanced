@@ -429,6 +429,36 @@ export const allSignals = [
 
 export const allNews = [
   {
+    id: "031",
+    title: "Saudi Humain Secures $1.2B for AI Data Center Expansion",
+    excerpt: "Humain, backed by Saudi sovereign wealth fund, secures up to $1.2 billion financing for 250MW AI data center capacity. Partnership with Nvidia and National Infrastructure Fund accelerates Kingdom's AI infrastructure strategy.",
+    date: "2026-01-22",
+    readTime: "5 min read",
+    country: "Saudi Arabia",
+    category: "Infrastructure",
+    url: "/news/031"
+  },
+  {
+    id: "032",
+    title: "WEF Launches Centre for Fourth Industrial Revolution in Abu Dhabi",
+    excerpt: "World Economic Forum establishes Abu Dhabi Centre for Frontier Technologies hosted by TII. Focus on quantum, robotics, space, and AI innovation reinforces UAE's position as global hub for responsible tech deployment.",
+    date: "2026-01-22",
+    readTime: "6 min read",
+    country: "UAE",
+    category: "Strategy",
+    url: "/news/032"
+  },
+  {
+    id: "033",
+    title: "IMF Warns of AI 'Tsunami' as UAE Hosts Davos Dialogue on Inclusive Growth",
+    excerpt: "IMF chief warns 40% of global jobs affected by AI as UAE hosts WEF dialogue. UAE attracted $45B FDI in 2025 (up 50%), demonstrating connectivity advantage. DoH Abu Dhabi and WEF announce intelligent health systems partnership.",
+    date: "2026-01-22",
+    readTime: "7 min read",
+    country: "UAE",
+    category: "Strategy",
+    url: "/news/033"
+  },
+  {
     id: "029",
     title: "G42 to Receive Advanced AI Chips Within Months, Expands to 5GW Data Center",
     excerpt: "UAE's G42 expects first shipments of Nvidia, AMD, and Cerebras chips within months. Abu Dhabi data center expansion from 200MW to 5GW signals massive AI infrastructure build-out as part of OpenAI Stargate initiative.",

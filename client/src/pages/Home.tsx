@@ -46,7 +46,7 @@ export default function Home() {
   }, []);
   
   // Dynamic timestamp from latest content
-  const latestContentDate = "January 21, 2026"; // Will be computed from actual content dates
+  const latestContentDate = "January 22, 2026"; // Will be computed from actual content dates
   
   // Track scroll position for indicators
   useEffect(() => {
@@ -360,68 +360,68 @@ export default function Home() {
               </Link>
             </div>
             <div ref={newsScrollRef} onTouchStart={handleUserInteraction} onScroll={handleUserInteraction} className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0">
-              {/* News Article #029 */}
-              <Link href="/news/029" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* News Article #031 */}
+              <Link href="/news/031" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>
-                    {isNewContent('2026-01-20') && (
+                    {isNewContent('2026-01-22') && (
                       <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
                     )}
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 20, 2026</span>
+                    <span className="text-xs text-muted-foreground">Jan 22, 2026</span>
                   </div>
-                  <h4 className="text-lg font-bold mb-2">G42 to Receive Advanced AI Chips Within Months</h4>
+                  <h4 className="text-lg font-bold mb-2">Saudi Humain Secures $1.2B for AI Data Center Expansion</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    UAE's G42 expects Nvidia, AMD, and Cerebras chips within months. Data center expansion to 5GW signals massive AI infrastructure build-out.
+                    Humain secures $1.2 billion financing for 250MW AI data center capacity with Nvidia partnership and National Infrastructure Fund backing.
                   </p>
                   <div className="flex items-center gap-2">
-                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">UAE</span>
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Saudi Arabia</span>
                     <span className="text-xs px-2 py-1 rounded bg-secondary">5 min read</span>
                   </div>
                 </div>
               </Link>
 
-              {/* News Article #030 */}
-              <Link href="/news/030" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* News Article #032 */}
+              <Link href="/news/032" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>
-                    {isNewContent('2026-01-20') && (
+                    {isNewContent('2026-01-22') && (
                       <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
                     )}
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 20, 2026</span>
+                    <span className="text-xs text-muted-foreground">Jan 22, 2026</span>
                   </div>
-                  <h4 className="text-lg font-bold mb-2">SIRBAI Launches Middle East's First AI Drone Swarm</h4>
+                  <h4 className="text-lg font-bold mb-2">WEF Launches Centre for Fourth Industrial Revolution in Abu Dhabi</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    UAE-based SIRBAI unveils region's first AI-powered autonomous drone swarm technology at UMEX 2026 with TII backing.
+                    World Economic Forum establishes Abu Dhabi Centre for Frontier Technologies hosted by TII, focusing on quantum, robotics, and AI.
                   </p>
                   <div className="flex items-center gap-2">
                     <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">UAE</span>
-                    <span className="text-xs px-2 py-1 rounded bg-secondary">4 min read</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">6 min read</span>
                   </div>
                 </div>
               </Link>
 
-              {/* News Article #026 */}
-              <Link href="/news/026" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* News Article #033 */}
+              <Link href="/news/033" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>
-                    {isNewContent('2026-01-19') && (
+                    {isNewContent('2026-01-22') && (
                       <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
                     )}
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 19, 2026</span>
+                    <span className="text-xs text-muted-foreground">Jan 22, 2026</span>
                   </div>
-                  <h4 className="text-lg font-bold mb-2">Saudi Arabia Enters Vision 2030 'Third Phase' at Davos</h4>
+                  <h4 className="text-lg font-bold mb-2">IMF Warns of AI 'Tsunami' as UAE Hosts Davos Dialogue</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Kingdom spotlights AI achievements and shifts focus from reforms to execution
+                    IMF chief warns 40% of jobs affected by AI as UAE hosts WEF dialogue. UAE attracted $45B FDI in 2025, up 50% YoY.
                   </p>
                   <div className="flex items-center gap-2">
-                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Saudi Arabia</span>
-                    <span className="text-xs px-2 py-1 rounded bg-secondary">4 min read</span>
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">UAE</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">7 min read</span>
                   </div>
                 </div>
               </Link>

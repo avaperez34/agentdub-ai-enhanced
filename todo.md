@@ -453,3 +453,12 @@
 - [x] Update App.tsx imports and routing
 - [x] Update latestContentDate to January 21, 2026
 - [x] Save checkpoint
+
+## Add 3 Fresh News Articles Only (Jan 22, 2026)
+- [ ] Search for 3 fresh GCC news from today
+- [ ] Add news articles to content.ts
+- [ ] Create news article page components (031, 032, 033)
+- [ ] Update homepage latest news section
+- [ ] Update News page
+- [ ] Update App.tsx routing
+- [ ] Save checkpoint
