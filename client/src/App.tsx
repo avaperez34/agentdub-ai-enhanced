@@ -38,7 +38,10 @@ import Signal031 from "./pages/Signal031";
 import Signal032 from "./pages/Signal032";
 import Signal033 from "./pages/Signal033";
 import Signal034 from "./pages/Signal034";
-import Signal035 from "./pages/Signal035";
+import Signal035 from "@/pages/Signal035";
+import Signal036 from "@/pages/Signal036";
+import Signal037 from "@/pages/Signal037";
+import Signal038 from "@/pages/Signal038";
 import SearchResults from "./pages/SearchResults";
 import About from "./pages/About";
 import News from "./pages/News";
@@ -124,6 +127,9 @@ function Router() {
       <Route path={"/signals/033"} component={Signal033} />
       <Route path={"/signals/034"} component={Signal034} />
       <Route path={"/signals/035"} component={Signal035} />
+      <Route path={"/signals/036"} component={Signal036} />
+      <Route path={"/signals/037"} component={Signal037} />
+      <Route path={"/signals/038"} component={Signal038} />
       <Route path={"/about"} component={About} />
       <Route path={"/contact"} component={Contact} />
       <Route path="/investors" component={About} />

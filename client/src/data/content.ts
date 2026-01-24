@@ -2,6 +2,43 @@
 // This file exports all signals and news articles for use across the application
 
 export const allSignals = [
+  // Latest Signals (Jan 22, 2026) - Sovereign AI
+  {
+    id: "036",
+    title: "Kuwait Investment Authority $6B AI Commitment — Sovereign Wealth Fund Enters AI Race",
+    description:
+      "Kuwait Investment Authority (KIA) committed $6 billion to AI and digitalization investments in 2025, third-largest sovereign AI commitment in GCC after Mubadala ($12.9B) and QIA ($4B). Part of broader Middle East sovereign wealth fund pivot to AI infrastructure, positioning Kuwait as major player in regional AI sovereignty race. Follows UAE ($15B Microsoft-G42) and Saudi Arabia ($10B PIF-Google Cloud) landmark partnerships.",
+    sector: "Infrastructure",
+    impact: 8.5,
+    horizon: "3–5y",
+    country: "Kuwait",
+    category: "strategy",
+    date: "2026-01-22",
+  },
+  {
+    id: "037",
+    title: "Bahrain's Data Embassy Law — World's Only AI Sovereignty Framework",
+    description:
+      "Bahrain remains the only country globally with a 'Data Embassy' law (enacted 2018), allowing foreign institutions to store data in Bahrain under home country jurisdiction. Finance Minister Sheikh Salman bin Khalifa Al-Khalifa at WEF Davos: 'Bahrain has led the world in regulation.' Connected to SeaMeWe-6 fiber-optic cable (Singapore-Middle East-Europe) launching 2026. Positions Bahrain as 'Switzerland of data' for AI-driven age.",
+    sector: "Policy & Regulation",
+    impact: 9.0,
+    horizon: "1–3y",
+    country: "Bahrain",
+    category: "strategy",
+    date: "2026-01-22",
+  },
+  {
+    id: "038",
+    title: "Qatar Investment Authority $4B AI Investment with 'Selective' Strategy — Smart Money Approach",
+    description:
+      "Qatar Investment Authority (QIA) committed $4 billion to AI/digitalization in 2025, announces 'more selective approach' for 2026. CEO Mohammed Al-Sowaidi at Davos warns against 'short-term heat' in AI innovation, focuses on companies with proven revenue generation, implementation capability, productivity gains after 5-6 years. Priority sectors: financial services, industrials. December 2025: Qai (Qatari state AI company) + Brookfield announced $20B joint venture for AI infrastructure. Contrasts with UAE/Saudi 'scale-first' approach.",
+    sector: "Infrastructure",
+    impact: 8.7,
+    horizon: "3–5y",
+    country: "Qatar",
+    category: "strategy",
+    date: "2026-01-22",
+  },
   // Latest Signals (Jan 20-21, 2026)
   {
     id: "033",

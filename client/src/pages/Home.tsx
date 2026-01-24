@@ -274,41 +274,60 @@ export default function Home() {
                   </div>
                 </div>
               )}
-              {/* Signal #033 - BREAKING */}
-              <Link href="/signals/033" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* Signal #036 - BREAKING */}
+              <Link href="/signals/036" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
                   <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #033</span>
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #036</span>
                     <span className="text-xs px-2 py-0.5 rounded-full bg-red-500 text-white font-bold animate-pulse">BREAKING</span>
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 21, 2026</span>
+                    <span className="text-xs text-muted-foreground">Jan 22, 2026</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Beyon Cyber's Orryx AI Wins Deloitte Fast 50</h3>
-                  <p className="text-muted-foreground mb-4">Autonomous AI-driven security platform wins Deloitte's Fast Track Pitch Competition—validates Bahrain's emerging cybersecurity AI sector and GCC's competitive capabilities.</p>
+                  <h3 className="text-xl font-bold mb-2">Kuwait Investment Authority $6B AI Commitment</h3>
+                  <p className="text-muted-foreground mb-4">KIA commits $6 billion to AI and digitalization, third-largest sovereign AI commitment in GCC after Mubadala ($12.9B) and QIA ($4B)—Kuwait enters regional AI sovereignty race.</p>
                   <div className="flex items-center gap-4 text-sm">
                     <span className="text-accent font-bold">Impact: 8.5/10</span>
+                    <span className="text-muted-foreground">🇰🇼 Kuwait</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Signal #037 - BREAKING */}
+              <Link href="/signals/037" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
+                  <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #037</span>
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-red-500 text-white font-bold animate-pulse">BREAKING</span>
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Jan 22, 2026</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">Bahrain's Data Embassy Law — World's Only AI Sovereignty Framework</h3>
+                  <p className="text-muted-foreground mb-4">World's only 'Data Embassy' law allows foreign institutions to store data in Bahrain under home country jurisdiction—positions Bahrain as 'Switzerland of data' for AI age.</p>
+                  <div className="flex items-center gap-4 text-sm">
+                    <span className="text-accent font-bold">Impact: 9.0/10</span>
                     <span className="text-muted-foreground">🇧🇭 Bahrain</span>
                   </div>
                 </div>
               </Link>
 
-              {/* Signal #034 */}
-              <Link href="/signals/034" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* Signal #038 */}
+              <Link href="/signals/038" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent">SIGNAL #034</span>
+                    <span className="text-xs font-mono text-accent">SIGNAL #038</span>
                     {isNewContent('2026-01-21') && (
                       <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
                     )}
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 21, 2026</span>
+                    <span className="text-xs text-muted-foreground">Jan 22, 2026</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Oman Vision 2040 AI Investment Strategy</h3>
-                  <p className="text-muted-foreground mb-4">Oman elevates AI to core pillar of Vision 2040 with IMF backing. 60,000 new jobs in 2026 prioritize AI and digital skills for economic diversification beyond hydrocarbons.</p>
+                  <h3 className="text-xl font-bold mb-2">Qatar Investment Authority $4B AI Investment with 'Selective' Strategy</h3>
+                  <p className="text-muted-foreground mb-4">QIA commits $4 billion to AI with disciplined 'selective' approach, focusing on proven revenue models and long-term productivity gains—contrasts with UAE/Saudi 'scale-first' strategies.</p>
                   <div className="flex items-center gap-4 text-sm">
-                    <span className="text-accent font-medium">Impact: 8.0/10</span>
-                    <span className="text-muted-foreground">🇴🇲 Oman</span>
+                    <span className="text-accent font-medium">Impact: 8.7/10</span>
+                    <span className="text-muted-foreground">🇶🇦 Qatar</span>
                   </div>
                 </div>
               </Link>

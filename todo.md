@@ -462,3 +462,19 @@
 - [ ] Update News page
 - [ ] Update App.tsx routing
 - [ ] Save checkpoint
+
+## Add 3 Sovereign Intelligence Signals (Kuwait, Bahrain, Qatar - Jan 22, 2026)
+- [x] Search for sovereign AI developments from Kuwait
+- [x] Search for sovereign AI developments from Bahrain
+- [x] Search for sovereign AI developments from Qatar
+- [x] Found Signal #036 (Kuwait IA $6B AI Investment)
+- [x] Found Signal #037 (Bahrain Data Embassy Law)
+- [x] Found Signal #038 (Qatar IA $4B Selective Strategy)
+- [x] Add 3 new signals (036, 037, 038) to content.ts
+- [x] Create Signal036.tsx (Kuwait IA $6B)
+- [x] Create Signal037.tsx (Bahrain Data Embassy)
+- [x] Create Signal038.tsx (Qatar IA $4B Selective)
+- [x] Update App.tsx imports and routing
+- [x] Update homepage latest intelligence section with signals 036, 037, 038
+- [x] latestContentDate already shows January 22, 2026
+- [ ] Save checkpoint for publishing
