@@ -478,3 +478,17 @@
 - [x] Update homepage latest intelligence section with signals 036, 037, 038
 - [x] latestContentDate already shows January 22, 2026
 - [ ] Save checkpoint for publishing
+
+## Add 3 Fresh News Articles (Jan 25, 2026)
+- [x] Search for 3 fresh GCC AI news from today
+- [x] Selected: Dubai Green AI Conference (034)
+- [x] Selected: Qatar Katara AI Healthcare Seminar (035)
+- [x] Selected: Bahrain Arab AI Council (036)
+- [x] Add news articles to content.ts allNews array
+- [x] Create NewsArticle034.tsx (Dubai Green AI Conference)
+- [x] Create NewsArticle035.tsx (Qatar Katara AI Healthcare)
+- [x] Create NewsArticle036.tsx (Bahrain Arab AI Council)
+- [x] Update App.tsx imports and routing
+- [x] Update homepage latest news section with articles 034, 035, 036
+- [x] Update latestContentDate to January 25, 2026
+- [ ] Save checkpoint for publishing

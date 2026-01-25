@@ -466,6 +466,36 @@ export const allSignals = [
 
 export const allNews = [
   {
+    id: "036",
+    title: "Bahrain Positions Itself at Forefront of Arab Digital Transformation",
+    excerpt: "Participants reviewed decision to establish Council of Arab Ministers for Artificial Intelligence, unifying Arab positions in regional and international forums.",
+    date: "2026-01-24",
+    readTime: "3 min read",
+    country: "Bahrain",
+    category: "Government",
+    url: "/news/036"
+  },
+  {
+    id: "035",
+    title: "Katara Seminar Highlights AI Role in Developing Healthcare Sector",
+    excerpt: "27th Katara Forum addresses AI's transforming role in healthcare systems, emphasizing smart partnership between doctors and AI, not replacement.",
+    date: "2026-01-25",
+    readTime: "4 min read",
+    country: "Qatar",
+    category: "Healthcare",
+    url: "/news/035"
+  },
+  {
+    id: "034",
+    title: "Dubai Launches First Green Artificial Intelligence Conference",
+    excerpt: "Zayed International Environment Foundation organizes inaugural Green AI Conference under theme 'Harnessing Technology for Environmental Sustainability.'",
+    date: "2026-01-24",
+    readTime: "4 min read",
+    country: "UAE",
+    category: "Sustainability",
+    url: "/news/034"
+  },
+  {
     id: "031",
     title: "Saudi Humain Secures $1.2B for AI Data Center Expansion",
     excerpt: "Humain, backed by Saudi sovereign wealth fund, secures up to $1.2 billion financing for 250MW AI data center capacity. Partnership with Nvidia and National Infrastructure Fund accelerates Kingdom's AI infrastructure strategy.",

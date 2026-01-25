@@ -46,7 +46,7 @@ export default function Home() {
   }, []);
   
   // Dynamic timestamp from latest content
-  const latestContentDate = "January 22, 2026"; // Will be computed from actual content dates
+  const latestContentDate = "January 25, 2026"; // Will be computed from actual content dates
   
   // Track scroll position for indicators
   useEffect(() => {
@@ -379,68 +379,68 @@ export default function Home() {
               </Link>
             </div>
             <div ref={newsScrollRef} onTouchStart={handleUserInteraction} onScroll={handleUserInteraction} className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0">
-              {/* News Article #031 */}
-              <Link href="/news/031" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* News Article #036 */}
+              <Link href="/news/036" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>
-                    {isNewContent('2026-01-22') && (
+                    {isNewContent('2026-01-24') && (
                       <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
                     )}
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 22, 2026</span>
+                    <span className="text-xs text-muted-foreground">Jan 24, 2026</span>
                   </div>
-                  <h4 className="text-lg font-bold mb-2">Saudi Humain Secures $1.2B for AI Data Center Expansion</h4>
+                  <h4 className="text-lg font-bold mb-2">Bahrain Positions Itself at Forefront of Arab Digital Transformation</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Humain secures $1.2 billion financing for 250MW AI data center capacity with Nvidia partnership and National Infrastructure Fund backing.
+                    Council of Arab Ministers for Artificial Intelligence established, unifying Arab positions in regional and international forums.
                   </p>
                   <div className="flex items-center gap-2">
-                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Saudi Arabia</span>
-                    <span className="text-xs px-2 py-1 rounded bg-secondary">5 min read</span>
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Bahrain</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">3 min read</span>
                   </div>
                 </div>
               </Link>
 
-              {/* News Article #032 */}
-              <Link href="/news/032" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* News Article #035 */}
+              <Link href="/news/035" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>
-                    {isNewContent('2026-01-22') && (
+                    {isNewContent('2026-01-25') && (
                       <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
                     )}
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 22, 2026</span>
+                    <span className="text-xs text-muted-foreground">Jan 25, 2026</span>
                   </div>
-                  <h4 className="text-lg font-bold mb-2">WEF Launches Centre for Fourth Industrial Revolution in Abu Dhabi</h4>
+                  <h4 className="text-lg font-bold mb-2">Katara Seminar Highlights AI Role in Developing Healthcare Sector</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    World Economic Forum establishes Abu Dhabi Centre for Frontier Technologies hosted by TII, focusing on quantum, robotics, and AI.
+                    27th Katara Forum emphasizes smart partnership between doctors and AI, not replacement. Focus on integrated digital healthcare system.
                   </p>
                   <div className="flex items-center gap-2">
-                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">UAE</span>
-                    <span className="text-xs px-2 py-1 rounded bg-secondary">6 min read</span>
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Qatar</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">4 min read</span>
                   </div>
                 </div>
               </Link>
 
-              {/* News Article #033 */}
-              <Link href="/news/033" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* News Article #034 */}
+              <Link href="/news/034" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>
-                    {isNewContent('2026-01-22') && (
+                    {isNewContent('2026-01-24') && (
                       <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
                     )}
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 22, 2026</span>
+                    <span className="text-xs text-muted-foreground">Jan 24, 2026</span>
                   </div>
-                  <h4 className="text-lg font-bold mb-2">IMF Warns of AI 'Tsunami' as UAE Hosts Davos Dialogue</h4>
+                  <h4 className="text-lg font-bold mb-2">Dubai Launches First Green Artificial Intelligence Conference</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    IMF chief warns 40% of jobs affected by AI as UAE hosts WEF dialogue. UAE attracted $45B FDI in 2025, up 50% YoY.
+                    Zayed International Environment Foundation organizes inaugural Green AI Conference under theme 'Harnessing Technology for Environmental Sustainability.'
                   </p>
                   <div className="flex items-center gap-2">
                     <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">UAE</span>
-                    <span className="text-xs px-2 py-1 rounded bg-secondary">7 min read</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">4 min read</span>
                   </div>
                 </div>
               </Link>
