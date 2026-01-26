@@ -2,6 +2,43 @@
 // This file exports all signals and news articles for use across the application
 
 export const allSignals = [
+  // Latest Signals (Jan 26, 2026) - Geopolitical Resilience & Compute Sovereignty
+  {
+    id: "041",
+    title: "GCC AI Adoption Leads Globally — 43% Extensive Use in Demand Generation",
+    description:
+      "GCC CEOs report highest AI adoption rates globally, with 43% extensively deploying AI in sales, marketing, and customer service (vs. <20% globally). More than 1/3 of Middle East leaders integrating AI directly into offerings. Nearly 40% deploying AI in support services. 72% planning major M&A in next 3 years focused on AI capabilities (skills, talent, data). 60% of CEOs already competing in new sectors enabled by AI. Combination of sovereign compute capacity + aggressive commercial deployment creates 'full-stack' AI ecosystem few regions can match.",
+    sector: "Enterprise AI",
+    impact: 8.0,
+    horizon: "1–2y",
+    country: "GCC-Wide",
+    category: "deployment",
+    date: "2026-01-23",
+  },
+  {
+    id: "040",
+    title: "GCC Compute Sovereignty Imperative — 400K-500K GPUs Required by 2028",
+    description:
+      "Strategy& (PwC) forecasts GCC will need 400,000-500,000 GPUs by 2028 for AI sovereignty—2-2.5x xAI's Colossus supercomputer (200K GPUs). Demand driven by real-time inference, local model training (Allam, Falcon, Fanar), and fine-tuning global models. Data sovereignty mandates require government, regulated industries, and critical infrastructure use local compute. Region on track to not only meet local demand but export compute power. Key risks: GPU supply vulnerable to export controls, technology refresh cycles renew external dependencies, volatile demand could create overcapacity/shortages.",
+    sector: "Infrastructure",
+    impact: 9.5,
+    horizon: "1–3y",
+    country: "GCC-Wide",
+    category: "infrastructure",
+    date: "2026-01-25",
+  },
+  {
+    id: "039",
+    title: "GCC Maintains Investment Momentum Despite Geopolitical Headwinds — 'Investing Through Uncertainty'",
+    description:
+      "93% of GCC CEOs expect economic growth to strengthen (vs. 55% globally) despite geopolitical tensions being #1 concern. Saudi Arabia and UAE rank among top 10 global investment destinations for CEOs over next 12 months. 88% of Middle East CEOs planning to invest outside domestic territories (highest globally), with 75% staying within Middle East—signaling deeper regional integration. 60% say they can lead effectively through disruption, 42% can create opportunities from disruptions. PwC: 'CEOs are investing with intention in AI, cybersecurity, and new capabilities because resilience today is built through action.'",
+    sector: "Investment",
+    impact: 8.5,
+    horizon: "1–2y",
+    country: "GCC-Wide",
+    category: "strategy",
+    date: "2026-01-23",
+  },
   // Latest Signals (Jan 22, 2026) - Sovereign AI
   {
     id: "036",

@@ -492,3 +492,18 @@
 - [x] Update homepage latest news section with articles 034, 035, 036
 - [x] Update latestContentDate to January 25, 2026
 - [ ] Save checkpoint for publishing
+
+## Add 3 Intelligence Signals Including Geopolitical Impact (Jan 26, 2026)
+- [x] Search for geopolitical tensions (US-Iran) impact on GCC digital transformation
+- [x] Search for 2 more relevant GCC AI intelligence signals
+- [x] Found Signal #039 (GCC Investment Momentum Despite Geopolitical Headwinds)
+- [x] Found Signal #040 (GCC Compute Sovereignty - 400K-500K GPUs by 2028)
+- [x] Found Signal #041 (AI Adoption Leads Globally - 39% Extensive Use)
+- [x] Add 3 new signals (039, 040, 041) to content.ts
+- [x] Create Signal039.tsx (GCC Investment Momentum)
+- [x] Create Signal040.tsx (Compute Sovereignty 400K-500K GPUs)
+- [x] Create Signal041.tsx (AI Adoption Leads Globally)
+- [x] Update App.tsx imports and routing
+- [x] Update homepage latest intelligence section with signals 039, 040, 041
+- [x] Update latestContentDate to January 26, 2026
+- [ ] Save checkpoint for publishing
