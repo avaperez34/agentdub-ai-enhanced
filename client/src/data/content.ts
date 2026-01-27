@@ -503,6 +503,36 @@ export const allSignals = [
 
 export const allNews = [
   {
+    id: "039",
+    title: "Rapid AI Growth Tests Regulation in the Gulf",
+    excerpt: "Saudi Arabia, UAE, and Qatar deploying AI across key sectors while regulators struggle to balance innovation with risk management. Narrowing window to establish effective frameworks.",
+    date: "2026-01-26",
+    readTime: "4 min read",
+    country: "GCC-Wide",
+    category: "Regulation",
+    url: "/news/039"
+  },
+  {
+    id: "038",
+    title: "Qatar General Customs Authority Launches Comprehensive AI Services Package",
+    excerpt: "GCA unveils HSsify classification tool, agentic AI services, and smart virtual assistant. First GCC entity to integrate with regional customs data exchange platform.",
+    date: "2026-01-26",
+    readTime: "5 min read",
+    country: "Qatar",
+    category: "Government",
+    url: "/news/038"
+  },
+  {
+    id: "037",
+    title: "UAE Stargate Data Centre to Cost More Than $30 Billion",
+    excerpt: "Stargate UAE campus larger than Monaco will cost $30B+, positioning Emirates as sovereign AI infrastructure provider for nations without capacity. First phase Q3 2026.",
+    date: "2026-01-26",
+    readTime: "5 min read",
+    country: "UAE",
+    category: "Infrastructure",
+    url: "/news/037"
+  },
+  {
     id: "036",
     title: "Bahrain Positions Itself at Forefront of Arab Digital Transformation",
     excerpt: "Participants reviewed decision to establish Council of Arab Ministers for Artificial Intelligence, unifying Arab positions in regional and international forums.",
