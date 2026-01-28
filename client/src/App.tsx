@@ -45,6 +45,9 @@ import Signal038 from "./pages/Signal038";
 import Signal039 from "./pages/Signal039";
 import Signal040 from "./pages/Signal040";
 import Signal041 from "./pages/Signal041";
+import Signal042 from "./pages/signals/Signal042";
+import Signal043 from "./pages/signals/Signal043";
+import Signal044 from "./pages/signals/Signal044";
 import SearchResults from "./pages/SearchResults";
 import About from "./pages/About";
 import News from "./pages/News";
@@ -142,6 +145,9 @@ function Router() {
       <Route path={"/signals/039"} component={Signal039} />
       <Route path={"/signals/040"} component={Signal040} />
       <Route path={"/signals/041"} component={Signal041} />
+      <Route path={"/signals/042"} component={Signal042} />
+      <Route path={"/signals/043"} component={Signal043} />
+      <Route path={"/signals/044"} component={Signal044} />
       <Route path={"/about"} component={About} />
       <Route path={"/contact"} component={Contact} />
       <Route path="/investors" component={About} />

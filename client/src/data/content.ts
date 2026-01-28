@@ -2,6 +2,43 @@
 // This file exports all signals and news articles for use across the application
 
 export const allSignals = [
+  // Latest Signals (Jan 28, 2026) - Yann LeCun, Gulf-India AI Infrastructure, Agentic AI
+  {
+    id: "044",
+    title: "GCC Agentic AI Adoption Accelerates — 83% Already Investing",
+    description:
+      "83% of Gulf organizations already investing in AI (AWS research), moving faster on agentic AI implementation than other regions. GCC's unified national AI strategies and centralized governance structures enabling rapid deployment speed advantage. Agentic AI positioned as 'nerve cell of technology, data, and computer networks.' Real-world systems shaping next phase of AI deployment. Contrast with Western markets: less regulatory friction, faster procurement cycles. GCC becoming testbed for autonomous systems deployment.",
+    sector: "Enterprise AI",
+    impact: 8.5,
+    horizon: "1–2y",
+    country: "GCC-Wide",
+    category: "deployment",
+    date: "2026-01-21",
+  },
+  {
+    id: "043",
+    title: "Gulf Capital Pivots to India's AI Power Infrastructure — Energy-to-Compute Value Chain",
+    description:
+      "Sultan Al Jaber (ADNOC CEO, UAE Minister) keynoted India Energy Week focusing on AI power requirements. Data centers account for 1.5% of global electricity demand (415 TWh in 2024), rising sharply through 2026. India has 1.4 GW operational data center capacity today, forecast to reach high-single-digit GW by end of decade. Gulf sovereign wealth funds investing in India's AI-grade power infrastructure. India approved ₹3.03 lakh crore ($36B+) Revamped Distribution Sector Scheme for grid modernization. Strategic shift: Gulf capital financing infrastructure that converts molecules into compute capacity. India positioning as 'testbed where energy infrastructure meets AI expansion.'",
+    sector: "Infrastructure",
+    impact: 8.8,
+    horizon: "2–4y",
+    country: "UAE",
+    category: "infrastructure",
+    date: "2026-01-27",
+  },
+  {
+    id: "042",
+    title: "Yann LeCun at Machines Can Think 2026 — Objective-Driven AI in Abu Dhabi",
+    description:
+      "Yann LeCun (Meta Chief AI Scientist, NYU Professor) keynoted Machines Can Think 2026 in Abu Dhabi on 'Objective-Driven AI: World Models, Reasoning, and Efficiency.' 1,500 global AI experts from 30+ countries attended, 6.6 million online viewers watched remotely. Event co-organized by Polynome and Mohamed bin Zayed University of Artificial Intelligence (MBZUAI). 50+ topics across 2-day agenda focusing on AI adoption at scale. Sessions covered: AI Factories at State Scale, Sovereign AI from Strategy to Practice, AI Safety governance. Aligned with UAE's 2031 AI Strategy to build world's first AI-native government. UAE positioning as global AI research hub attracting world's leading AI scientists. LeCun's focus on 'objective-driven AI' and world models signals shift from pattern recognition to goal-oriented reasoning—critical for autonomous systems and agentic AI deployment at scale.",
+    sector: "Research",
+    impact: 9.2,
+    horizon: "1–3y",
+    country: "UAE",
+    category: "research",
+    date: "2026-01-26",
+  },
   // Latest Signals (Jan 26, 2026) - Geopolitical Resilience & Compute Sovereignty
   {
     id: "041",
