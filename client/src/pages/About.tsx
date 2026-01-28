@@ -72,29 +72,28 @@ export default function About() {
         </div>
       </section>
 
-      {/* Founder Section */}
+      {/* Co-Founders Section */}
       <section className="py-20 border-b border-border bg-accent/5">
         <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-12 text-center">Founder & CEO</h2>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold mb-12 text-center">Co-Founders</h2>
             
-            <div className="bg-card border border-border rounded-lg p-8 md:p-12">
-              <div className="grid md:grid-cols-3 gap-8 items-start">
-                {/* Profile Image */}
-                <div className="md:col-span-1">
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Charles Damien */}
+              <div className="bg-card border border-border rounded-lg p-8">
+                <div className="flex flex-col items-center text-center">
+                  {/* Profile Image */}
                   <img
                     src="/images/charles-damien.jpg"
-                    alt="Charles Damien - Founder & CEO"
-                    className="aspect-square object-cover rounded-lg border border-accent/20 shadow-lg"
+                    alt="Charles Damien - Co-Founder & CEO"
+                    className="w-48 h-48 object-cover rounded-lg border border-accent/20 shadow-lg mb-6"
                   />
-                </div>
 
-                {/* Profile Content */}
-                <div className="md:col-span-2">
+                  {/* Profile Content */}
                   <h3 className="text-2xl font-bold mb-2">Charles Damien</h3>
-                  <p className="text-lg text-accent mb-4">Founder & CEO</p>
+                  <p className="text-lg text-accent mb-4">Co-Founder & CEO</p>
                   
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-muted-foreground mb-4 leading-relaxed text-left">
                     Charles founded AgentDubai to address the critical intelligence gap in GCC AI markets.
                     With deep expertise in AI transformation, digital strategy, and Gulf business ecosystems,
                     he recognized that decision-makers needed more than headlines — they needed structured,
@@ -102,7 +101,7 @@ export default function About() {
                     the broader GCC region.
                   </p>
 
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-muted-foreground mb-6 leading-relaxed text-left">
                     AgentDubai combines rigorous analysis with on-the-ground market knowledge to deliver
                     intelligence that matters: from sovereign AI strategies to venture capital flows,
                     from regulatory changes to executive hiring patterns.
@@ -118,6 +117,35 @@ export default function About() {
                       Connect on LinkedIn
                     </Button>
                   </a>
+                </div>
+              </div>
+
+              {/* Henri Chaktemer */}
+              <div className="bg-card border border-border rounded-lg p-8">
+                <div className="flex flex-col items-center text-center">
+                  {/* Profile Image */}
+                  <img
+                    src="/images/henri-chaktemer.jpg"
+                    alt="Henri Chaktemer - Co-Founder"
+                    className="w-48 h-48 object-cover rounded-lg border border-accent/20 shadow-lg mb-6"
+                  />
+
+                  {/* Profile Content */}
+                  <h3 className="text-2xl font-bold mb-2">Henri Chaktemer</h3>
+                  <p className="text-lg text-accent mb-4">Co-Founder</p>
+                  
+                  <div className="mb-6 text-left">
+                    <p className="text-muted-foreground mb-2 leading-relaxed">
+                      <strong>Expertise:</strong> AI Trainer specializing in Biotech and Bioinformatics
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      <strong>Education:</strong> Master's in Bioinformatics, University of Montpellier
+                    </p>
+                  </div>
+
+                  <p className="text-muted-foreground mb-6 leading-relaxed text-left">
+                    Henri brings deep technical expertise in AI applications for biotechnology and bioinformatics to AgentDubai. His background in training AI systems for life sciences provides unique insights into the intersection of artificial intelligence and healthcare innovation across the GCC region, where biotech AI is emerging as a strategic priority.
+                  </p>
                 </div>
               </div>
             </div>

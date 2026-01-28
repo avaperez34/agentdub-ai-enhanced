@@ -12,4 +12,9 @@
 - [x] Create Signal044.tsx
 - [x] Update homepage latest intelligence section
 - [x] Update App.tsx routing
-- [ ] Save checkpoint for publishing
+- [x] Save checkpoint for publishing
+## Add Co-Founder Henri Chaktemer (Jan 28, 2026)
+- [x] Copy Henri's photo to project public directory
+- [x] Review About page structure
+- [x] Add Henri Chaktemer to About page with photo and details
+- [ ] Save checkpoint
