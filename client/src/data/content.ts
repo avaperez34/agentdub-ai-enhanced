@@ -540,6 +540,36 @@ export const allSignals = [
 
 export const allNews = [
   {
+    id: "042",
+    title: "Gulf States Face AI Governance Dilemma as Regulation Struggles to Keep Pace",
+    excerpt: "Saudi Arabia, UAE, and Qatar investing heavily in AI infrastructure while facing same regulatory challenges as EU. Three structural obstacles: profound uncertainty, fast-moving technology, and cross-border complexity.",
+    date: "2026-01-26",
+    readTime: "6 min read",
+    country: "GCC-Wide",
+    category: "Regulation",
+    url: "/news/042"
+  },
+  {
+    id: "041",
+    title: "Saudi CEOs Lead Global AI Adoption with 94% Confidence in Economic Growth",
+    excerpt: "PwC survey reveals 94% of Saudi CEOs confident in domestic growth, 80% say culture supports AI adoption, 73% plan major acquisitions. Kingdom positioned as top 10 global investment destination.",
+    date: "2026-01-28",
+    readTime: "5 min read",
+    country: "Saudi Arabia",
+    category: "Business",
+    url: "/news/041"
+  },
+  {
+    id: "040",
+    title: "US Authorizes Export of 35,000 Advanced AI Chips to UAE and Saudi Arabia",
+    excerpt: "US Commerce Department approves export of Nvidia Blackwell-class chips to G42 and Humain. Major shift in technology diplomacy signals deepening Washington-Gulf ties in AI infrastructure.",
+    date: "2026-01-29",
+    readTime: "4 min read",
+    country: "UAE",
+    category: "Infrastructure",
+    url: "/news/040"
+  },
+  {
     id: "039",
     title: "Rapid AI Growth Tests Regulation in the Gulf",
     excerpt: "Saudi Arabia, UAE, and Qatar deploying AI across key sectors while regulators struggle to balance innovation with risk management. Narrowing window to establish effective frameworks.",

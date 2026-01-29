@@ -359,8 +359,8 @@ export default function Home() {
               </Link>
             </div>
             <div ref={newsScrollRef} onTouchStart={handleUserInteraction} onScroll={handleUserInteraction} className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0">
-              {/* News Article #039 */}
-              <Link href="/news/039" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* News Article #042 */}
+              <Link href="/news/042" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>
@@ -370,57 +370,57 @@ export default function Home() {
                     <span className="text-xs text-muted-foreground">•</span>
                     <span className="text-xs text-muted-foreground">Jan 26, 2026</span>
                   </div>
-                  <h4 className="text-lg font-bold mb-2">Rapid AI Growth Tests Regulation in the Gulf</h4>
+                  <h4 className="text-lg font-bold mb-2">Gulf States Face AI Governance Dilemma as Regulation Struggles to Keep Pace</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Saudi Arabia, UAE, and Qatar deploying AI across key sectors while regulators struggle to balance innovation with risk management. Narrowing window to establish effective frameworks.
+                    Saudi Arabia, UAE, and Qatar investing heavily in AI infrastructure while facing same regulatory challenges as EU. Three structural obstacles: profound uncertainty, fast-moving technology, and cross-border complexity.
                   </p>
                   <div className="flex items-center gap-2">
                     <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">GCC-Wide</span>
-                    <span className="text-xs px-2 py-1 rounded bg-secondary">4 min read</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">6 min read</span>
                   </div>
                 </div>
               </Link>
 
-              {/* News Article #038 */}
-              <Link href="/news/038" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* News Article #041 */}
+              <Link href="/news/041" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>
-                    {isNewContent('2026-01-26') && (
+                    {isNewContent('2026-01-28') && (
                       <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
                     )}
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 26, 2026</span>
+                    <span className="text-xs text-muted-foreground">Jan 28, 2026</span>
                   </div>
-                  <h4 className="text-lg font-bold mb-2">Qatar General Customs Authority Launches Comprehensive AI Services Package</h4>
+                  <h4 className="text-lg font-bold mb-2">Saudi CEOs Lead Global AI Adoption with 94% Confidence in Economic Growth</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    GCA unveils HSsify classification tool, agentic AI services, and smart virtual assistant. First GCC entity to integrate with regional customs data exchange platform.
+                    PwC survey reveals 94% of Saudi CEOs confident in domestic growth, 80% say culture supports AI adoption, 73% plan major acquisitions. Kingdom positioned as top 10 global investment destination.
                   </p>
                   <div className="flex items-center gap-2">
-                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Qatar</span>
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Saudi Arabia</span>
                     <span className="text-xs px-2 py-1 rounded bg-secondary">5 min read</span>
                   </div>
                 </div>
               </Link>
 
-              {/* News Article #037 */}
-              <Link href="/news/037" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* News Article #040 */}
+              <Link href="/news/040" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>
-                    {isNewContent('2026-01-26') && (
+                    {isNewContent('2026-01-29') && (
                       <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
                     )}
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 26, 2026</span>
+                    <span className="text-xs text-muted-foreground">Jan 29, 2026</span>
                   </div>
-                  <h4 className="text-lg font-bold mb-2">UAE Stargate Data Centre to Cost More Than $30 Billion</h4>
+                  <h4 className="text-lg font-bold mb-2">US Authorizes Export of 35,000 Advanced AI Chips to UAE and Saudi Arabia</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Stargate UAE campus larger than Monaco will cost $30B+, positioning Emirates as sovereign AI infrastructure provider for nations without capacity. First phase Q3 2026.
+                    US Commerce Department approves export of Nvidia Blackwell-class chips to G42 and Humain. Major shift in technology diplomacy signals deepening Washington-Gulf ties in AI infrastructure.
                   </p>
                   <div className="flex items-center gap-2">
                     <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">UAE</span>
-                    <span className="text-xs px-2 py-1 rounded bg-secondary">5 min read</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">4 min read</span>
                   </div>
                 </div>
               </Link>
