@@ -26,4 +26,8 @@
 - [x] Update homepage latest signals section
 - [x] Update Intelligence page
 - [x] Update App.tsx routing
-- [ ] Save checkpoint for publishing
+- [x] Save checkpoint for publishing
+## Update Henri's Photo (Jan 30, 2026)
+- [x] Copy new Henri photo to project public directory
+- [x] Update About page to use new photo
+- [ ] Save checkpoint
