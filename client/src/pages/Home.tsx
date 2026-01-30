@@ -274,60 +274,59 @@ export default function Home() {
                   </div>
                 </div>
               )}
-              {/* Signal #042 - BREAKING */}
-              <Link href="/signals/042" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* Signal #045 - BREAKING */}
+              <Link href="/signals/045" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
                   <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #042</span>
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #045</span>
                     <span className="text-xs px-2 py-0.5 rounded-full bg-red-500 text-white font-bold animate-pulse">BREAKING</span>
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 26, 2026</span>
+                    <span className="text-xs text-muted-foreground">Jan 28, 2026</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Yann LeCun at Machines Can Think 2026 — Objective-Driven AI in Abu Dhabi</h3>
-                  <p className="text-muted-foreground mb-4">Yann LeCun keynotes Machines Can Think 2026 in Abu Dhabi on objective-driven AI and world models. 1,500 experts, 6.6M online viewers. UAE positioning as global AI research hub.</p>
+                  <h3 className="text-xl font-bold mb-2">HUMAIN's $1.2B Saudi AI Data Center Framework</h3>
+                  <p className="text-muted-foreground mb-4">$1.2B framework for 250MW AI data center capacity. Shift from one-off projects to repeatable, institutional-grade platforms. Sovereign balance sheets taking early, asymmetric risk.</p>
                   <div className="flex items-center gap-4 text-sm">
-                    <span className="text-accent font-bold">Impact: 9.2/10</span>
-                    <span className="text-muted-foreground">🇦🇪 UAE</span>
+                    <span className="text-accent font-bold">Impact: 9.1/10</span>
+                    <span className="text-muted-foreground">🇸🇦 Saudi Arabia</span>
                   </div>
                 </div>
               </Link>
 
-              {/* Signal #043 - BREAKING */}
-              <Link href="/signals/043" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* Signal #046 - BREAKING */}
+              <Link href="/signals/046" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
                   <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #043</span>
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #046</span>
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-red-500 text-white font-bold animate-pulse">BREAKING</span>
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Jan 29, 2026</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">Saudi Arabia Unveils HUMAIN ONE Agentic AI Operating System</h3>
+                  <p className="text-muted-foreground mb-4">HUMAIN launches proprietary agentic AI OS powered by Arabic-first LLM ALLAM. Automates enterprise back-office operations. Indigenous AI capability development.</p>
+                  <div className="flex items-center gap-4 text-sm">
+                    <span className="text-accent font-bold">Impact: 8.9/10</span>
+                    <span className="text-muted-foreground">🇸🇦 Saudi Arabia</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Signal #047 - BREAKING */}
+              <Link href="/signals/047" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
+                  <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #047</span>
                     <span className="text-xs px-2 py-0.5 rounded-full bg-red-500 text-white font-bold animate-pulse">BREAKING</span>
                     <span className="text-xs text-muted-foreground">•</span>
                     <span className="text-xs text-muted-foreground">Jan 27, 2026</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Gulf Capital Pivots to India's AI Power Infrastructure</h3>
-                  <p className="text-muted-foreground mb-4">Sultan Al Jaber keynotes India Energy Week on AI power requirements. Gulf SWFs investing in India's AI-grade power infrastructure. Molecules → Electrons → Compute value chain.</p>
+                  <h3 className="text-xl font-bold mb-2">Qatar Investment Authority Backs d-Matrix in $2B AI Inference Round</h3>
+                  <p className="text-muted-foreground mb-4">QIA invests in d-Matrix at $2B valuation. Part of Gulf strategy to secure AI infrastructure supply chain. Diversification: UAE (chips/data centers), Saudi (platforms/models), Qatar (inference).</p>
                   <div className="flex items-center gap-4 text-sm">
-                    <span className="text-accent font-bold">Impact: 8.8/10</span>
-                    <span className="text-muted-foreground">🇦🇪 UAE</span>
-                  </div>
-                </div>
-              </Link>
-
-              {/* Signal #044 */}
-              <Link href="/signals/044" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent">SIGNAL #044</span>
-                    {isNewContent('2026-01-21') && (
-                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
-                    )}
-                    <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 21, 2026</span>
-                  </div>
-                  <h3 className="text-xl font-bold mb-2">GCC Agentic AI Adoption Accelerates — 83% Already Investing</h3>
-                  <p className="text-muted-foreground mb-4">83% of Gulf organizations already investing in AI (AWS research). Unified national strategies enabling rapid agentic AI deployment. GCC becoming testbed for autonomous systems.</p>
-                  <div className="flex items-center gap-4 text-sm">
-                    <span className="text-accent font-medium">Impact: 8.5/10</span>
-                    <span className="text-muted-foreground">🌍 GCC-Wide</span>
+                    <span className="text-accent font-bold">Impact: 8.7/10</span>
+                    <span className="text-muted-foreground">🇶🇦 Qatar</span>
                   </div>
                 </div>
               </Link>

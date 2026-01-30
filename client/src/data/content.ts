@@ -2,6 +2,43 @@
 // This file exports all signals and news articles for use across the application
 
 export const allSignals = [
+  // Latest Signals (Jan 30, 2026) - Saudi AI Infrastructure & Platforms
+  {
+    id: "047",
+    title: "Qatar Investment Authority Backs d-Matrix in $2B AI Inference Infrastructure Round",
+    description:
+      "Qatar Investment Authority invests in d-Matrix, global AI inference innovator valued at $2 billion. Funding supports expansion of d-Matrix's AI inference solutions. Part of broader Gulf strategy to secure AI infrastructure supply chain, complements Qatar's Qai initiative under QIA. Signals Gulf sovereign wealth funds moving beyond passive AI investments to strategic infrastructure plays. Inference infrastructure critical for AI deployment at scale. QIA positioning Qatar in AI inference layer (vs training infrastructure focus of UAE/Saudi). Diversification of Gulf AI strategies: UAE (chips/data centers), Saudi (platforms/models), Qatar (inference/applications). $2B valuation signals maturation of AI inference market.",
+    sector: "Infrastructure",
+    impact: 8.7,
+    horizon: "2–4y",
+    country: "Qatar",
+    category: "infrastructure",
+    date: "2026-01-27",
+  },
+  {
+    id: "046",
+    title: "Saudi Arabia Unveils HUMAIN ONE Agentic AI Operating System with Arabic-First ALLAM Model",
+    description:
+      "HUMAIN launches proprietary agentic AI operating system HUMAIN ONE at FII9 in Riyadh. Powered by agentic orchestration engine and Arabic-first LLM ALLAM (trained on 500-billion-token Arabic corpus). Designed to redefine enterprise AI by automating complex back-office operations. Unifies enterprise functions including HR, finance, procurement, and productivity within single language-based interface. Ensures tasks completed accurately, compliantly, and on time. ALLAM 7B model listed on Hugging Face, adopted across Adobe product series. Represents indigenous AI capability development vs dependency on Western models. Agentic AI moving from experimentation to enterprise deployment in Gulf. Arabic-first approach addresses linguistic sovereignty concerns.",
+    sector: "Enterprise AI",
+    impact: 8.9,
+    horizon: "1–2y",
+    country: "Saudi Arabia",
+    category: "deployment",
+    date: "2026-01-29",
+  },
+  {
+    id: "045",
+    title: "HUMAIN's $1.2B Saudi AI Data Center Framework — Sovereign-Backed Infrastructure Platforms",
+    description:
+      "HUMAIN-National Infrastructure Fund announces $1.2B framework for 250MW of AI data center capacity in Saudi Arabia. Represents shift from one-off projects to repeatable, institutional-grade platforms for AI infrastructure. Framework allows capital deployment in tranches, sequenced against construction, power delivery, and commercial de-risking. HUMAIN and Infra exploring co-anchored AI data center investment platform. Signals move to institutionalize AI data centers as infrastructure platforms designed to absorb capital repeatedly. Sovereign balance sheets taking early, asymmetric risk. Platform enables aggregation of multiple campuses under common governance. Competitive dynamic with UAE not about gigawatts, but about operating models. Winners will deliver low-cost reliable power, secure advanced silicon, operate at hyperscale standards, attract customers beyond domestic mandates.",
+    sector: "Infrastructure",
+    impact: 9.1,
+    horizon: "2–4y",
+    country: "Saudi Arabia",
+    category: "infrastructure",
+    date: "2026-01-28",
+  },
   // Latest Signals (Jan 28, 2026) - Yann LeCun, Gulf-India AI Infrastructure, Agentic AI
   {
     id: "044",
