@@ -30,4 +30,15 @@
 ## Update Henri's Photo (Jan 30, 2026)
 - [x] Copy new Henri photo to project public directory
 - [x] Update About page to use new photo
-- [ ] Save checkpoint
+- [x] Save checkpoint
+## Add 4 News Articles (Jan 30, 2026)
+- [x] Search for 4 latest GCC AI news articles
+- [x] Add 4 news articles to content.ts (043, 044, 045, 046)
+- [x] Create NewsArticle043.tsx
+- [x] Create NewsArticle044.tsx
+- [x] Create NewsArticle045.tsx
+- [x] Create NewsArticle046.tsx
+- [x] Update App.tsx routing
+- [x] Update homepage latest news section
+- [x] Update News page
+- [ ] Save checkpoint for publishing

@@ -97,6 +97,10 @@ import NewsArticle039 from "@/pages/news/NewsArticle039";
 import NewsArticle040 from "@/pages/news/NewsArticle040";
 import NewsArticle041 from "@/pages/news/NewsArticle041";
 import NewsArticle042 from "@/pages/news/NewsArticle042";
+import NewsArticle043 from "@/pages/news/NewsArticle043";
+import NewsArticle044 from "@/pages/news/NewsArticle044";
+import NewsArticle045 from "@/pages/news/NewsArticle045";
+import NewsArticle046 from "@/pages/news/NewsArticle046";
 import Premium from "./pages/Premium";
 import GCCMap from "./pages/GCCMap";
 import Changelog from "./pages/Changelog";
@@ -203,6 +207,10 @@ function Router() {
         <Route path={"/news/040"} component={NewsArticle040} />
         <Route path={"/news/041"} component={NewsArticle041} />
         <Route path={"/news/042"} component={NewsArticle042} />
+        <Route path={"/news/043"} component={NewsArticle043} />
+        <Route path={"/news/044"} component={NewsArticle044} />
+        <Route path={"/news/045"} component={NewsArticle045} />
+        <Route path={"/news/046"} component={NewsArticle046} />
         <Route path={"/news/:id"} component={NewsArticle} />
          <Route path="/premium" component={Premium} />
          <Route path={"/gcc-map"} component={GCCMap} />

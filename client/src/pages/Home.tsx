@@ -358,8 +358,30 @@ export default function Home() {
               </Link>
             </div>
             <div ref={newsScrollRef} onTouchStart={handleUserInteraction} onScroll={handleUserInteraction} className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0">
-              {/* News Article #042 */}
-              <Link href="/news/042" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* News Article #046 */}
+              <Link href="/news/046" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent">NEWS</span>
+                    {isNewContent('2026-01-27') && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
+                    )}
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Jan 27, 2026</span>
+                  </div>
+                  <h4 className="text-lg font-bold mb-2">AI Sovereignty in the Gulf: UAE and Saudi Arabia Embed AI into National Strategies</h4>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    UAE's AI 2031 strategy and Saudi's ASPIRE initiative integrate AI across all sectors. Sovereign wealth funds behaving as long-term AI investors, using capital to build domestic capability while anchoring global partnerships.
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">GCC-Wide</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">6 min read</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* News Article #045 */}
+              <Link href="/news/045" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>
@@ -369,34 +391,56 @@ export default function Home() {
                     <span className="text-xs text-muted-foreground">•</span>
                     <span className="text-xs text-muted-foreground">Jan 26, 2026</span>
                   </div>
-                  <h4 className="text-lg font-bold mb-2">Gulf States Face AI Governance Dilemma as Regulation Struggles to Keep Pace</h4>
+                  <h4 className="text-lg font-bold mb-2">Gulf Regulators Struggle to Keep Pace with Rapid AI Growth</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Saudi Arabia, UAE, and Qatar investing heavily in AI infrastructure while facing same regulatory challenges as EU. Three structural obstacles: profound uncertainty, fast-moving technology, and cross-border complexity.
+                    Saudi Arabia, UAE, and Qatar accelerating AI investment while regulators face pressure to regulate swiftly without harming diversification goals. Corporate influence and geopolitical competition complicate oversight.
                   </p>
                   <div className="flex items-center gap-2">
                     <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">GCC-Wide</span>
-                    <span className="text-xs px-2 py-1 rounded bg-secondary">6 min read</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">5 min read</span>
                   </div>
                 </div>
               </Link>
 
-              {/* News Article #041 */}
-              <Link href="/news/041" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* News Article #044 */}
+              <Link href="/news/044" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>
-                    {isNewContent('2026-01-28') && (
+                    {isNewContent('2026-01-30') && (
                       <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
                     )}
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 28, 2026</span>
+                    <span className="text-xs text-muted-foreground">Jan 30, 2026</span>
                   </div>
-                  <h4 className="text-lg font-bold mb-2">Saudi CEOs Lead Global AI Adoption with 94% Confidence in Economic Growth</h4>
+                  <h4 className="text-lg font-bold mb-2">Middle East Data Centre Growth to Outstrip Global Markets at 62.5% Annual Rate</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    PwC survey reveals 94% of Saudi CEOs confident in domestic growth, 80% say culture supports AI adoption, 73% plan major acquisitions. Kingdom positioned as top 10 global investment destination.
+                    Knight Frank forecasts Middle East capacity reaching 3.2GW by 2027, driven by gigawatt-scale AI infrastructure. Combined Saudi/UAE market valuations climbing from $35B to $115B by 2027.
                   </p>
                   <div className="flex items-center gap-2">
-                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Saudi Arabia</span>
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">GCC-Wide</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">7 min read</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* News Article #043 */}
+              <Link href="/news/043" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent">NEWS</span>
+                    {isNewContent('2026-01-30') && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
+                    )}
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Jan 30, 2026</span>
+                  </div>
+                  <h4 className="text-lg font-bold mb-2">Shaffra's Autonomous AI Teams Save Over 2 Million Work Hours Across GCC</h4>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Fully autonomous AI teams deployed at national and enterprise scale across Gulf, delivering up to 80% cost reductions. Operating across Saudi Arabia, Oman, Qatar, Bahrain and UAE with strategic telecom partnerships.
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">GCC-Wide</span>
                     <span className="text-xs px-2 py-1 rounded bg-secondary">5 min read</span>
                   </div>
                 </div>

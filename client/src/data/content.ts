@@ -577,6 +577,46 @@ export const allSignals = [
 
 export const allNews = [
   {
+    id: "046",
+    title: "AI Sovereignty in the Gulf: UAE and Saudi Arabia Embed AI into National Strategies",
+    excerpt: "UAE's AI 2031 strategy and Saudi's ASPIRE initiative integrate AI across all sectors. Sovereign wealth funds behaving as long-term AI investors, using capital to build domestic capability while anchoring global partnerships.",
+    date: "2026-01-27",
+    readTime: "6 min read",
+    country: "GCC-Wide",
+    category: "Strategy",
+    url: "/news/046"
+  },
+  {
+    id: "045",
+    title: "Gulf Regulators Struggle to Keep Pace with Rapid AI Growth",
+    excerpt: "Saudi Arabia, UAE, and Qatar accelerating AI investment while regulators face pressure to regulate swiftly without harming diversification goals. Corporate influence and geopolitical competition complicate oversight.",
+    date: "2026-01-26",
+    readTime: "5 min read",
+    country: "GCC-Wide",
+    category: "Regulation",
+    url: "/news/045"
+  },
+  {
+    id: "044",
+    title: "Middle East Data Centre Growth to Outstrip Global Markets at 62.5% Annual Rate",
+    excerpt: "Knight Frank forecasts Middle East capacity reaching 3.2GW by 2027, driven by gigawatt-scale AI infrastructure. Combined Saudi/UAE market valuations climbing from $35B to $115B by 2027.",
+    date: "2026-01-30",
+    readTime: "7 min read",
+    country: "GCC-Wide",
+    category: "Infrastructure",
+    url: "/news/044"
+  },
+  {
+    id: "043",
+    title: "Shaffra's Autonomous AI Teams Save Over 2 Million Work Hours Across GCC",
+    excerpt: "Fully autonomous AI teams deployed at national and enterprise scale across Gulf, delivering up to 80% cost reductions. Operating across Saudi Arabia, Oman, Qatar, Bahrain and UAE with strategic telecom partnerships.",
+    date: "2026-01-30",
+    readTime: "5 min read",
+    country: "GCC-Wide",
+    category: "Enterprise AI",
+    url: "/news/043"
+  },
+  {
     id: "042",
     title: "Gulf States Face AI Governance Dilemma as Regulation Struggles to Keep Pace",
     excerpt: "Saudi Arabia, UAE, and Qatar investing heavily in AI infrastructure while facing same regulatory challenges as EU. Three structural obstacles: profound uncertainty, fast-moving technology, and cross-border complexity.",
