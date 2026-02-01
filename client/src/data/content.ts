@@ -2,6 +2,55 @@
 // This file exports all signals and news articles for use across the application
 
 export const allSignals = [
+  // Latest Signals (Jan 31, 2026) - GCC AI Infrastructure & Defense
+  {
+    id: "051",
+    title: "GCC Sovereign Wealth Funds Deploy $3.6 Trillion for AI Infrastructure Access",
+    description:
+      "UAE, Qatar, and Saudi Arabia invested $3.6 trillion in US AI infrastructure for GPU access. Historic pivot from 'Black Gold' to 'Silicon Gold.' UAE invested $1.4 trillion, Qatar $1.2 trillion, Saudi Arabia $1 trillion. Complete NVIDIA ecosystem ordered including millions of Blackwell GPUs. Abu Dhabi alone ordered 500,000 NVIDIA units. UAE data centers: 250 MW live capacity, 5.5 GW under development. Major hyperscale projects include Khazna Data Center (500 MW), MBR Solar Park (Electricity & Water Authority - DEWA 100 MW), Masdar (40 MW). Represents largest sovereign AI infrastructure investment in history. Secures compute capacity for next decade of AI development. Positions GCC as global AI infrastructure hub. Reduces dependency on Western cloud providers. Enables indigenous AI model training at scale.",
+    sector: "Infrastructure",
+    impact: 9.5,
+    horizon: "2–4y",
+    country: "UAE, Qatar, Saudi Arabia",
+    category: "infrastructure",
+    date: "2026-01-31",
+  },
+  {
+    id: "050",
+    title: "Saudi Arabia Deploys Agentic AI for Autonomous Tourism Management Under Vision 2030",
+    description:
+      "Saudi Arabia testing AI agents that autonomously manage entire travel journeys in real-time. Systems can re-plan itineraries, handle flight delays, coordinate hotels, and manage crowd bottlenecks without human intervention. Globant CEO: 'autonomous journey orchestration' now operational reality, not theoretical. Riyadh-launched initiative creates unified standards-driven platform across airlines, hotels, giga-projects. Multi-agent collaboration: guest AI requests trip, airline agent responds with flights/disruption protocols, hotel agent adds rooms/perks, destination agent coordinates ground transportation/events/policies. Tourism positioned as proving ground for agentic AI under Vision 2030. Shift from reactive advice-giving systems to proactive action-taking agents. Giga-projects serve as living labs for multi-agent deployment. Represents first large-scale agentic AI deployment in consumer sector. Addresses interoperability challenge across multiple operators.",
+    sector: "Tourism & Hospitality",
+    impact: 9.0,
+    horizon: "1–2y",
+    country: "Saudi Arabia",
+    category: "deployment",
+    date: "2026-01-27",
+  },
+  {
+    id: "049",
+    title: "Qatar Launches Agentic AI for Customs — First GCC Government Deployment",
+    description:
+      "Qatar General Authority of Customs (GAC) launched AI services package including agentic AI for autonomous customs decision-making. Inaugurated by Minister of Finance Ali bin Ahmed Al Kuwari. New services: HSsify (Smart Harmonized System Classification Tool), Pre-Classification service, Agentic AI for autonomous decisions, Smart Virtual Assistant. Aligns with GAC Strategic Plan 2024-2030 to build pioneering customs authority. Processed 6.8 million customs declarations in 2025, generated QR4 billion revenue. 4,822 seizure reports (narcotics, counterfeit goods). Qatar chairs GCC Customs Union Authority Executive Council. First GCC entity to integrate with customs data exchange platform. Represents first government deployment of agentic AI in GCC. Shifts from command execution to intelligent autonomous action. Demonstrates AI moving from enterprise to government operations.",
+    sector: "Government Services",
+    impact: 8.4,
+    horizon: "1–2y",
+    country: "Qatar",
+    category: "deployment",
+    date: "2026-01-27",
+  },
+  {
+    id: "048",
+    title: "Saudi Arabia Outlines Five Defense AI Priorities for 2026",
+    description:
+      "Saudi Arabia outlined defense artificial intelligence priorities for 2026, concentrating on five specific outcomes. Decisive goal set for Kingdom to achieve in 2026. Saudi officials overseeing this strategy. Represents formalization of defense AI roadmap. Follows SAMI-NVIDIA AI defense lab launch in Riyadh. Aligns with HUMAIN's role as Kingdom's core AI and defense-technology platform. Part of broader Vision 2030 military modernization. Signals integration of AI into defense procurement, operations, and strategy. Positions Saudi Arabia as regional defense AI leader. Likely includes autonomous systems, intelligence analysis, logistics optimization, cyber defense, and decision support systems.",
+    sector: "Defense & Security",
+    impact: 8.6,
+    horizon: "1–2y",
+    country: "Saudi Arabia",
+    category: "policy",
+    date: "2026-01-30",
+  },
   // Latest Signals (Jan 30, 2026) - Saudi AI Infrastructure & Platforms
   {
     id: "047",
@@ -576,6 +625,57 @@ export const allSignals = [
 ];
 
 export const allNews = [
+  // Latest News (Jan 31, 2026)
+  {
+    id: "051",
+    title: "Middle East Enterprises Shift from AI Pilots to Process-Led Implementation",
+    excerpt: "iQuasar EMEA reports Middle East enterprises moving beyond pilot projects to embed AI into workflows in 2026. Strengthening governance, prioritizing high-impact use cases, and scaling AI with confidence across the region.",
+    date: "2026-01-27",
+    readTime: "5 min read",
+    country: "GCC-Wide",
+    category: "Enterprise AI",
+    url: "/news/051"
+  },
+  {
+    id: "050",
+    title: "Gulf AI Finance Leadership: UAE Enterprises Lead Regional Compliance Automation",
+    excerpt: "42% of UAE enterprises integrated AI for regulatory compliance, deploying automated anti-fraud frameworks. Reduced financial losses and streamlined operations position UAE as Gulf AI finance leader.",
+    date: "2026-01-26",
+    readTime: "4 min read",
+    country: "UAE",
+    category: "Finance",
+    url: "/news/050"
+  },
+  {
+    id: "049",
+    title: "ENTERTAINER Introduces HAPI: AI-Powered Personalization Assistant for UAE Consumers",
+    excerpt: "HAPI built around four specialized AI agents: knowledge agent for FAQs, search agent for platform navigation, recommendation agent, and transaction agent. UAE-based consumer technology company pioneering multi-agent consumer AI.",
+    date: "2026-01-27",
+    readTime: "4 min read",
+    country: "UAE",
+    category: "Consumer Tech",
+    url: "/news/049"
+  },
+  {
+    id: "048",
+    title: "Databricks: Multi-Agent AI Systems Rising in Enterprise Deployments",
+    excerpt: "Enterprises moving beyond AI pilots and chatbots to deploy multi-agent systems for real business workflows at scale. Rapid rise in enterprise adoption signals shift from experimentation to production AI.",
+    date: "2026-01-27",
+    readTime: "5 min read",
+    country: "Global",
+    category: "Enterprise AI",
+    url: "/news/048"
+  },
+  {
+    id: "047",
+    title: "Abu Dhabi Hosts Machines Can Think 2026 with 1,500 Global AI Experts",
+    excerpt: "Abu Dhabi's flagship AI Adopters event brings together 1,500 global AI experts. Major AI conference in UAE showcasing regional AI leadership and international collaboration.",
+    date: "2026-01-27",
+    readTime: "3 min read",
+    country: "UAE",
+    category: "Events",
+    url: "/news/047"
+  },
   {
     id: "046",
     title: "AI Sovereignty in the Gulf: UAE and Saudi Arabia Embed AI into National Strategies",
