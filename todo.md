@@ -65,4 +65,14 @@
 - [x] Update homepage latest news section
 - [x] Update Intelligence page (content.ts already updated)
 - [x] Update News page (content.ts already updated)
+- [x] Save checkpoint for publishing
+## Add More Intelligence Signals and News (Feb 1, 2026)
+- [x] Search for highly relevant GCC AI developments
+- [x] Add intelligence signals to content.ts (052-054)
+- [x] Create signal page files (Signal052-054)
+- [x] Update App.tsx routing for signals
+- [x] Add news articles to content.ts (052-054)
+- [x] Create news article page files (NewsArticle052-054)
+- [x] Update App.tsx routing for news
+- [x] Update homepage latest signals and news sections
 - [ ] Save checkpoint for publishing

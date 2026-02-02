@@ -2,7 +2,44 @@
 // This file exports all signals and news articles for use across the application
 
 export const allSignals = [
-  // Latest Signals (Jan 31, 2026) - GCC AI Infrastructure & Defense
+  // Latest Signals (Feb 1, 2026) - Middle East AI Hub Emergence
+  {
+    id: "054",
+    title: "Agentic AI Becomes Enterprise Standard as CXOs Shift from Copilots to Autonomous Systems",
+    description:
+      "Enterprise leaders shifting focus from AI copilots to agentic AI systems capable of end-to-end automation. CIOs and CTOs across industries asking: 'what can we automate end-to-end, what happens when AI becomes Agentic?' Productivity gains from copilots already priced in. Leaders now grappling with scale: moving from assisted tasks to systems that plan, decide, and execute across workflows with minimal human intervention. Zinnov research identifies Top 10 Agentic AI Trends for 2026. Key challenge: transitioning from recommendation systems to autonomous execution systems. Requires new governance models for agent deployment, monitoring, and policy constraints. Organizations treating agents as digital coworkers requiring onboarding and performance reviews. Represents shift from AI as tool to AI as workforce participant. GCC enterprises actively adopting agentic frameworks aligned with digital transformation mandates.",
+    sector: "Enterprise AI",
+    impact: 8.7,
+    horizon: "1–2y",
+    country: "Global (GCC adoption)",
+    category: "deployment",
+    date: "2026-02-02",
+  },
+  {
+    id: "053",
+    title: "SAP Predicts AI Shifts from Supporting Tool to Fundamental Enterprise Pillar in 2026",
+    description:
+      "SAP UAE Managing Director Marwan Zeineddine predicts AI will move from supporting tool to fundamental enterprise pillar in 2026. Organizations must shift from enhancing existing AI to AI-native architectures. Five key trends: (1) Specialized foundation models for specific data types/domains enabling simulation, synthetic training data, digital twins; (2) AI-native software architecture with multi-model natural language interaction; (3) Agentic governance as mission-critical capability addressing 'agent sprawl' challenge; (4) Intent-driven autonomous ERP as new user experience paradigm; (5) Sovereign AI requirements reshaping enterprise platforms. UAE National Strategy for Artificial Intelligence 2031 alignment critical. Organizations must build purpose-built AI enterprises with unified data across business. Autonomous ERP systems will proactively flag anomalies, recommend actions, execute workflows while staying aligned with policies and regulations. Represents fundamental shift in enterprise software architecture.",
+    sector: "Enterprise AI",
+    impact: 8.8,
+    horizon: "1–2y",
+    country: "UAE, wider GCC",
+    category: "strategy",
+    date: "2026-01-28",
+  },
+  {
+    id: "052",
+    title: "Middle East Emerges as Global AI Hub with $169B Tech Spending and $33.8B Infrastructure Investment",
+    description:
+      "MENA technology spending expected to reach $169 billion in 2026 as UAE and Saudi Arabia rapidly build AI-driven digital economies. $33.8 billion in AI infrastructure investments expected 2025-2030. Investments focus on expanding data center capacity, cloud regions, and high-performance computing. Research institutions being established to develop local AI expertise. Robust connectivity—both terrestrial and subsea—critical to handle massive data flows AI generates. Region positioning as strategic AI powerhouse and key digital partner for Europe and Global South. Abundant land, power, and water resources provide competitive advantage. Gulf emerging as alternative to Western cloud infrastructure. Capacity Global analysis shows Middle East data center growth outstripping global markets. Represents fundamental shift from oil-dependent economy to AI-powered digital economy. Strategic geographic position enables low-latency connectivity to three continents.",
+    sector: "Infrastructure",
+    impact: 9.0,
+    horizon: "2–4y",
+    country: "UAE, Saudi Arabia, MENA",
+    category: "infrastructure",
+    date: "2026-02-01",
+  },
+  // Previous Signals (Jan 31, 2026) - GCC AI Infrastructure & Defense
   {
     id: "051",
     title: "GCC Sovereign Wealth Funds Deploy $3.6 Trillion for AI Infrastructure Access",
@@ -625,7 +662,38 @@ export const allSignals = [
 ];
 
 export const allNews = [
-  // Latest News (Jan 31, 2026)
+  // Latest News (Feb 1, 2026)
+  {
+    id: "054",
+    title: "CXOs Prioritize Agentic AI Over Copilots as Enterprise Standard Emerges",
+    excerpt: "Enterprise leaders shifting focus from AI copilots to agentic AI systems capable of end-to-end automation. Organizations treating agents as digital coworkers requiring onboarding and performance reviews.",
+    date: "2026-02-02",
+    readTime: "6 min read",
+    country: "Global (GCC adoption)",
+    category: "Enterprise AI",
+    url: "/news/054"
+  },
+  {
+    id: "053",
+    title: "SAP: AI Becomes Enterprise Pillar in 2026 with Agentic Governance and Sovereign Requirements",
+    excerpt: "SAP UAE Managing Director predicts AI will move from supporting tool to fundamental enterprise pillar in 2026. Organizations must shift to AI-native architectures with specialized foundation models and agentic governance.",
+    date: "2026-01-28",
+    readTime: "7 min read",
+    country: "UAE, wider GCC",
+    category: "Enterprise AI",
+    url: "/news/053"
+  },
+  {
+    id: "052",
+    title: "MENA Tech Spending Hits $169B as Middle East Emerges as Global AI Hub",
+    excerpt: "MENA technology spending expected to reach $169 billion in 2026 with $33.8 billion in AI infrastructure investments. UAE and Saudi Arabia rapidly building AI-driven digital economies with massive data center expansion.",
+    date: "2026-02-01",
+    readTime: "6 min read",
+    country: "UAE, Saudi Arabia, MENA",
+    category: "Infrastructure",
+    url: "/news/052"
+  },
+  // Previous News (Jan 31, 2026)
   {
     id: "051",
     title: "Middle East Enterprises Shift from AI Pilots to Process-Led Implementation",

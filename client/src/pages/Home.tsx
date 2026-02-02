@@ -274,85 +274,66 @@ export default function Home() {
                   </div>
                 </div>
               )}
-              {/* Signal #048 - BREAKING */}
-              <Link href="/signals/048" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* Signal #052 - BREAKING */}
+              <Link href="/signals/052" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
                   <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #048</span>
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #052</span>
                     <span className="text-xs px-2 py-0.5 rounded-full bg-red-500 text-white font-bold animate-pulse">BREAKING</span>
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 31, 2026</span>
+                    <span className="text-xs text-muted-foreground">Feb 1, 2026</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Saudi Defense Ministry Prioritizes AI for 2026 Strategic Capabilities</h3>
-                  <p className="text-muted-foreground mb-4">Saudi defense AI priorities include autonomous systems, cyber defense, and intelligence analysis. Sovereign AI capability development for national security applications.</p>
+                  <h3 className="text-xl font-bold mb-2">Middle East Emerges as Global AI Hub with $169B Tech Spending</h3>
+                  <p className="text-muted-foreground mb-4">MENA tech spending reaches $169B in 2026 with $33.8B in AI infrastructure. UAE and Saudi Arabia rapidly building AI-driven digital economies with massive data center expansion.</p>
                   <div className="flex items-center gap-4 text-sm">
-                    <span className="text-accent font-bold">Impact: 8.8/10</span>
-                    <span className="text-muted-foreground">🇸🇦 Saudi Arabia</span>
+                    <span className="text-accent font-bold">Impact: 9.2/10</span>
+                    <span className="text-muted-foreground">🇦🇪 🇸🇦 MENA</span>
                   </div>
                 </div>
               </Link>
 
-              {/* Signal #049 - BREAKING */}
-              <Link href="/signals/049" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* Signal #053 - BREAKING */}
+              <Link href="/signals/053" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
                   <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #049</span>
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #053</span>
                     <span className="text-xs px-2 py-0.5 rounded-full bg-red-500 text-white font-bold animate-pulse">BREAKING</span>
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 30, 2026</span>
+                    <span className="text-xs text-muted-foreground">Jan 28, 2026</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Qatar General Customs Deploys Agentic AI for Trade Facilitation</h3>
-                  <p className="text-muted-foreground mb-4">Qatar GAC launches AI-powered customs classification, smart virtual assistants, and regional data exchange integration. First GCC entity with comprehensive agentic AI customs platform.</p>
+                  <h3 className="text-xl font-bold mb-2">SAP: AI Becomes Fundamental Enterprise Pillar in 2026</h3>
+                  <p className="text-muted-foreground mb-4">SAP UAE predicts AI shift from supporting tool to fundamental pillar. Organizations must adopt AI-native architectures with agentic governance and sovereign AI frameworks.</p>
                   <div className="flex items-center gap-4 text-sm">
-                    <span className="text-accent font-bold">Impact: 8.6/10</span>
-                    <span className="text-muted-foreground">🇶🇦 Qatar</span>
+                    <span className="text-accent font-bold">Impact: 8.9/10</span>
+                    <span className="text-muted-foreground">🇦🇪 UAE, GCC</span>
                   </div>
                 </div>
               </Link>
 
-              {/* Signal #050 - BREAKING */}
-              <Link href="/signals/050" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* Signal #054 - BREAKING */}
+              <Link href="/signals/054" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
                   <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #050</span>
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #054</span>
                     <span className="text-xs px-2 py-0.5 rounded-full bg-red-500 text-white font-bold animate-pulse">BREAKING</span>
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 31, 2026</span>
+                    <span className="text-xs text-muted-foreground">Feb 2, 2026</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Saudi Tourism Enters Agentic AI Era with Personalized Visitor Experiences</h3>
-                  <p className="text-muted-foreground mb-4">Saudi Arabia deploying agentic AI for tourism personalization, itinerary planning, and visitor services. Aligns with Vision 2030 goal of 150M annual visitors by 2030.</p>
+                  <h3 className="text-xl font-bold mb-2">Agentic AI Becomes Enterprise Standard as CXOs Shift Focus</h3>
+                  <p className="text-muted-foreground mb-4">Enterprise leaders prioritizing agentic AI over copilots for end-to-end automation. Organizations treating agents as digital coworkers requiring onboarding and performance reviews.</p>
                   <div className="flex items-center gap-4 text-sm">
-                    <span className="text-accent font-bold">Impact: 8.4/10</span>
-                    <span className="text-muted-foreground">🇸🇦 Saudi Arabia</span>
-                  </div>
-                </div>
-              </Link>
-
-              {/* Signal #051 - BREAKING */}
-              <Link href="/signals/051" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
-                  <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #051</span>
-                    <span className="text-xs px-2 py-0.5 rounded-full bg-red-500 text-white font-bold animate-pulse">BREAKING</span>
-                    <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 31, 2026</span>
-                  </div>
-                  <h3 className="text-xl font-bold mb-2">GCC Sovereign Wealth Funds Deploy $3.6T for AI Infrastructure Access</h3>
-                  <p className="text-muted-foreground mb-4">UAE, Qatar, and Saudi Arabia invested $3.6 trillion in US AI infrastructure for GPU access. Historic pivot from "Black Gold" to "Silicon Gold." Secures compute capacity for next decade.</p>
-                  <div className="flex items-center gap-4 text-sm">
-                    <span className="text-accent font-bold">Impact: 9.5/10</span>
-                    <span className="text-muted-foreground">🇦🇪 🇶🇦 🇸🇦 GCC</span>
+                    <span className="text-accent font-bold">Impact: 8.7/10</span>
+                    <span className="text-muted-foreground">🌐 Global (GCC adoption)</span>
                   </div>
                 </div>
               </Link>
             </div>
             {/* Scroll indicators for mobile */}
             <div className="flex justify-center gap-2 mt-4 md:hidden">
-              {[0, 1, 2, 3].map((index) => (
+              {[0, 1, 2].map((index) => (
                 <button
                   key={index}
                   onClick={() => handleDotClick(index, 'signals')}
@@ -377,20 +358,42 @@ export default function Home() {
               </Link>
             </div>
             <div ref={newsScrollRef} onTouchStart={handleUserInteraction} onScroll={handleUserInteraction} className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0">
-              {/* News Article #047 */}
-              <Link href="/news/047" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* News Article #052 */}
+              <Link href="/news/052" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>
-                    {isNewContent('2026-01-31') && (
+                    {isNewContent('2026-02-01') && (
                       <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
                     )}
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 31, 2026</span>
+                    <span className="text-xs text-muted-foreground">Feb 1, 2026</span>
                   </div>
-                  <h4 className="text-lg font-bold mb-2">Machines Can Think 2026 Abu Dhabi: Global AI Leaders Converge in UAE</h4>
+                  <h4 className="text-lg font-bold mb-2">MENA Tech Spending Hits $169B as Region Emerges as Global AI Hub</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Yann LeCun, Fei-Fei Li, and leading AI researchers gather in Abu Dhabi for premier AI conference. Signals UAE's positioning as global AI hub and neutral convening ground for AI research community.
+                    Middle East technology spending reaches $169B in 2026 with $33.8B dedicated to AI infrastructure. UAE and Saudi Arabia lead massive data center expansion positioning region as global AI powerhouse.
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">MENA</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">5 min read</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* News Article #053 */}
+              <Link href="/news/053" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent">NEWS</span>
+                    {isNewContent('2026-01-28') && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
+                    )}
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Jan 28, 2026</span>
+                  </div>
+                  <h4 className="text-lg font-bold mb-2">SAP: AI Will Move from Supporting Tool to Fundamental Enterprise Pillar in 2026</h4>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    SAP UAE predicts AI transformation from supporting tool to fundamental enterprise pillar. Organizations must adopt AI-native architectures with agentic governance frameworks and sovereign AI capabilities.
                   </p>
                   <div className="flex items-center gap-2">
                     <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">UAE</span>
@@ -399,97 +402,31 @@ export default function Home() {
                 </div>
               </Link>
 
-              {/* News Article #048 */}
-              <Link href="/news/048" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* News Article #054 */}
+              <Link href="/news/054" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>
-                    {isNewContent('2026-01-31') && (
+                    {isNewContent('2026-02-02') && (
                       <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
                     )}
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 31, 2026</span>
+                    <span className="text-xs text-muted-foreground">Feb 2, 2026</span>
                   </div>
-                  <h4 className="text-lg font-bold mb-2">Databricks: Multi-Agent AI Systems Rising as Enterprises Move to Production</h4>
+                  <h4 className="text-lg font-bold mb-2">CXOs Prioritize Agentic AI as Enterprise Standard Emerges</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Global shift from single-agent pilots to multi-agent production systems. Enterprises deploying specialized AI agents that collaborate to solve complex workflows. GCC enterprises participating in global trend.
+                    Enterprise leaders shift focus from AI copilots to agentic AI for end-to-end automation. Organizations treating AI agents as digital coworkers requiring onboarding and performance reviews. GCC enterprises adopting global best practices.
                   </p>
                   <div className="flex items-center gap-2">
                     <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Global</span>
-                    <span className="text-xs px-2 py-1 rounded bg-secondary">5 min read</span>
-                  </div>
-                </div>
-              </Link>
-
-              {/* News Article #049 */}
-              <Link href="/news/049" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent">NEWS</span>
-                    {isNewContent('2026-01-31') && (
-                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
-                    )}
-                    <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 31, 2026</span>
-                  </div>
-                  <h4 className="text-lg font-bold mb-2">ENTERTAINER Launches HAPI: AI Assistant for Dubai's Hospitality Sector</h4>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Dubai-based lifestyle platform deploys AI assistant for restaurant recommendations, reservations, and personalized dining experiences. Demonstrates practical AI deployment in consumer-facing applications.
-                  </p>
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">UAE</span>
-                    <span className="text-xs px-2 py-1 rounded bg-secondary">3 min read</span>
-                  </div>
-                </div>
-              </Link>
-
-              {/* News Article #050 */}
-              <Link href="/news/050" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent">NEWS</span>
-                    {isNewContent('2026-01-26') && (
-                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
-                    )}
-                    <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 26, 2026</span>
-                  </div>
-                  <h4 className="text-lg font-bold mb-2">Gulf AI Finance Leadership: UAE Enterprises Lead Regional Compliance Automation</h4>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    42% of UAE enterprises integrated AI for regulatory compliance, deploying automated anti-fraud frameworks. Reduced financial losses and streamlined operations position UAE as Gulf leader in AI-powered financial compliance.
-                  </p>
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">UAE</span>
                     <span className="text-xs px-2 py-1 rounded bg-secondary">4 min read</span>
-                  </div>
-                </div>
-              </Link>
-
-              {/* News Article #051 */}
-              <Link href="/news/051" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent">NEWS</span>
-                    {isNewContent('2026-01-27') && (
-                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
-                    )}
-                    <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 27, 2026</span>
-                  </div>
-                  <h4 className="text-lg font-bold mb-2">Middle East Enterprises Shift from AI Pilots to Process-Led Implementation</h4>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    iQuasar EMEA reports Middle East enterprises moving beyond pilot projects to embed AI into workflows in 2026. Strengthening governance, prioritizing high-impact use cases, and scaling AI with confidence.
-                  </p>
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">GCC-Wide</span>
-                    <span className="text-xs px-2 py-1 rounded bg-secondary">5 min read</span>
                   </div>
                 </div>
               </Link>
             </div>
             {/* Scroll indicators for mobile */}
             <div className="flex justify-center gap-2 mt-4 md:hidden">
-              {[0, 1, 2, 3, 4].map((index) => (
+              {[0, 1, 2].map((index) => (
                 <button
                   key={index}
                   onClick={() => handleDotClick(index, 'news')}
@@ -504,12 +441,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why AgentDub Section */}
-      <section className="relative py-20 px-4 bg-card border-t border-border overflow-hidden">
-        {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-radial from-emerald-900/15 via-transparent to-transparent pointer-events-none" />
+      {/* Why agentdub.ai Section */}
+      <section className="py-20 px-4 bg-card border-t border-border">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">Why AgentDubai</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center">Why agentdub.ai</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="p-6 rounded-lg bg-background border border-border hover:border-accent/50 transition-all">
@@ -546,62 +481,9 @@ export default function Home() {
               raises fundamental questions around trust, control, scalability, and economic impact.
             </p>
             <p className="text-muted-foreground">
-              AgentDubai exists to document this shift—clearly, independently, and with a regional
+              agentdub.ai exists to document this shift—clearly, independently, and with a regional
               lens aligned with Dubai's ambition to lead in applied AI.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Directory Preview Section */}
-      <section className="relative py-20 px-4 overflow-hidden">
-        {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-radial from-blue-900/15 via-transparent to-transparent pointer-events-none" />
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">AI Players Directory</h2>
-            <p className="text-xl text-muted-foreground">
-              Strategic intelligence directory with GCC readiness scoring and Sentinel briefs
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div className="p-6 rounded-lg bg-card border border-border">
-              <h3 className="text-lg font-bold mb-3">Comprehensive Coverage</h3>
-              <p className="text-muted-foreground mb-4">
-                Track enterprise AI agents, automation platforms, and specialized tools across
-                multiple categories and deployment models.
-              </p>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>✓ 25-point readiness scoring system</li>
-                <li>✓ GCC compliance indicators</li>
-                <li>✓ Sector-specific analysis</li>
-                <li>✓ Deployment model support</li>
-              </ul>
-            </div>
-
-            <div className="p-6 rounded-lg bg-card border border-border">
-              <h3 className="text-lg font-bold mb-3">Intelligent Filtering</h3>
-              <p className="text-muted-foreground mb-4">
-                Find the right tools for your use case with advanced filtering and sorting
-                capabilities.
-              </p>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>✓ Filter by category, sector, deployment</li>
-                <li>✓ GCC compliance filtering</li>
-                <li>✓ Search across all attributes</li>
-                <li>✓ Sort by readiness score or name</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="text-center">
-            <Link href="/directory">
-              <Button size="lg">
-                Browse AI Players
-                <ArrowRight className="ml-2" size={18} />
-              </Button>
-            </Link>
           </div>
         </div>
       </section>
@@ -611,7 +493,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h4 className="font-bold mb-4">AgentDubai</h4>
+              <h4 className="font-bold mb-4">agentdub.ai</h4>
               <p className="text-sm text-muted-foreground">
                 Independent intelligence on AI agents and digital transformation.
               </p>
@@ -648,9 +530,6 @@ export default function Home() {
               <h4 className="font-bold mb-4">Connect</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>
-                  <Link href="/contact">Contact Us</Link>
-                </li>
-                <li>
                   <a href="https://x.com/agentdub_ai" target="_blank" rel="noopener noreferrer">
                     X / Twitter
                   </a>
@@ -669,7 +548,7 @@ export default function Home() {
           </div>
 
           <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()} AgentDubai. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} agentdub.ai. All rights reserved.</p>
           </div>
         </div>
       </footer>
