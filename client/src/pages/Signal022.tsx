@@ -22,7 +22,7 @@ export default function Signal022() {
             <span className="text-sm text-muted-foreground">•</span>
             <span className="text-sm font-medium text-accent">UAE</span>
           </div>
-          <ShareButton
+          <ShareButton url="https://agentdub.ai/signal/022"
             title="Signal #022: UAE Retains #1 Global AI Adoption Ranking"
             description="Microsoft AI Diffusion Report confirms UAE as world leader in AI adoption for 2026, validating strategic infrastructure investments and policy framework."
           />

@@ -75,4 +75,14 @@
 - [x] Create news article page files (NewsArticle052-054)
 - [x] Update App.tsx routing for news
 - [x] Update homepage latest signals and news sections
+- [x] Save checkpoint for publishing
+## Add Intelligence Signals and News (Focus on Oman/Kuwait/Bahrain) (Feb 3, 2026)
+- [x] Search for GCC AI developments (focus on Oman, Kuwait, Bahrain)
+- [x] Add intelligence signals to content.ts (055, 056, 057)
+- [x] Create signal page files (Signal055, Signal056, Signal057)
+- [x] Update App.tsx routing for signals
+- [x] Add news articles to content.ts (055, 056, 057)
+- [x] Create news article page files (NewsArticle055, NewsArticle056, NewsArticle057)
+- [x] Update App.tsx routing for news
+- [x] Update homepage latest signals and news sections
 - [ ] Save checkpoint for publishing

@@ -46,7 +46,7 @@ export default function Home() {
   }, []);
   
   // Dynamic timestamp from latest content
-  const latestContentDate = "January 28, 2026"; // Will be computed from actual content dates
+  const latestContentDate = "February 3, 2026"; // Will be computed from actual content dates
   
   // Track scroll position for indicators
   useEffect(() => {
@@ -274,59 +274,55 @@ export default function Home() {
                   </div>
                 </div>
               )}
-              {/* Signal #052 - BREAKING */}
-              <Link href="/signals/052" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* Signal #057 - BREAKING */}
+              <Link href="/signals/057" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
                   <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #052</span>
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #057</span>
                     <span className="text-xs px-2 py-0.5 rounded-full bg-red-500 text-white font-bold animate-pulse">BREAKING</span>
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Feb 1, 2026</span>
+                    <span className="text-xs text-muted-foreground">Feb 3, 2026</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Middle East Emerges as Global AI Hub with $169B Tech Spending</h3>
-                  <p className="text-muted-foreground mb-4">MENA tech spending reaches $169B in 2026 with $33.8B in AI infrastructure. UAE and Saudi Arabia rapidly building AI-driven digital economies with massive data center expansion.</p>
+                  <h3 className="text-xl font-bold mb-2">Kuwait Launches First Sovereign AI Data Center with NVIDIA H200</h3>
+                  <p className="text-muted-foreground mb-4">Kuwait inaugurated sovereign AI-enabled data center through Ooredoo-NVIDIA partnership. Features H200 Tensor Core GPU enabling Arabic LLM development and zero-latency sovereign computing.</p>
                   <div className="flex items-center gap-4 text-sm">
-                    <span className="text-accent font-bold">Impact: 9.2/10</span>
-                    <span className="text-muted-foreground">🇦🇪 🇸🇦 MENA</span>
+                    <span className="text-accent font-bold">Impact: 9.0/10</span>
+                    <span className="text-muted-foreground">🇰🇼 Kuwait</span>
                   </div>
                 </div>
               </Link>
 
-              {/* Signal #053 - BREAKING */}
-              <Link href="/signals/053" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
-                  <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
+              {/* Signal #056 */}
+              <Link href="/signals/056" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-accent/50 hover:border-accent transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #053</span>
-                    <span className="text-xs px-2 py-0.5 rounded-full bg-red-500 text-white font-bold animate-pulse">BREAKING</span>
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #056</span>
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 28, 2026</span>
+                    <span className="text-xs text-muted-foreground">Feb 3, 2026</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2">SAP: AI Becomes Fundamental Enterprise Pillar in 2026</h3>
-                  <p className="text-muted-foreground mb-4">SAP UAE predicts AI shift from supporting tool to fundamental pillar. Organizations must adopt AI-native architectures with agentic governance and sovereign AI frameworks.</p>
+                  <h3 className="text-xl font-bold mb-2">Bahrain Formalizes AI in Diplomatic Work — First GCC Country</h3>
+                  <p className="text-muted-foreground mb-4">Bahrain Ministry of Foreign Affairs held AI diplomacy session at Diplomatic Forum 2026. First GCC country to integrate AI into foreign policy operations covering geopolitical dimensions.</p>
                   <div className="flex items-center gap-4 text-sm">
-                    <span className="text-accent font-bold">Impact: 8.9/10</span>
-                    <span className="text-muted-foreground">🇦🇪 UAE, GCC</span>
+                    <span className="text-accent font-bold">Impact: 8.4/10</span>
+                    <span className="text-muted-foreground">🇧🇭 Bahrain</span>
                   </div>
                 </div>
               </Link>
 
-              {/* Signal #054 - BREAKING */}
-              <Link href="/signals/054" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
-                  <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
+              {/* Signal #055 */}
+              <Link href="/signals/055" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-accent/50 hover:border-accent transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #054</span>
-                    <span className="text-xs px-2 py-0.5 rounded-full bg-red-500 text-white font-bold animate-pulse">BREAKING</span>
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #055</span>
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Feb 2, 2026</span>
+                    <span className="text-xs text-muted-foreground">Feb 3, 2026</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Agentic AI Becomes Enterprise Standard as CXOs Shift Focus</h3>
-                  <p className="text-muted-foreground mb-4">Enterprise leaders prioritizing agentic AI over copilots for end-to-end automation. Organizations treating agents as digital coworkers requiring onboarding and performance reviews.</p>
+                  <h3 className="text-xl font-bold mb-2">Oman's Methodical AI Approach — Strategy Over Speed</h3>
+                  <p className="text-muted-foreground mb-4">Oman launched AI pilot projects in healthcare, justice, education. Methodical approach prioritizes strategy, governance, solid foundations over speed, contrasting with rapid deployment elsewhere.</p>
                   <div className="flex items-center gap-4 text-sm">
-                    <span className="text-accent font-bold">Impact: 8.7/10</span>
-                    <span className="text-muted-foreground">🌐 Global (GCC adoption)</span>
+                    <span className="text-accent font-bold">Impact: 8.3/10</span>
+                    <span className="text-muted-foreground">🇴🇲 Oman</span>
                   </div>
                 </div>
               </Link>
@@ -358,68 +354,68 @@ export default function Home() {
               </Link>
             </div>
             <div ref={newsScrollRef} onTouchStart={handleUserInteraction} onScroll={handleUserInteraction} className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0">
-              {/* News Article #052 */}
-              <Link href="/news/052" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* News Article #057 */}
+              <Link href="/news/057" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>
-                    {isNewContent('2026-02-01') && (
+                    {isNewContent('2026-02-03') && (
                       <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
                     )}
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Feb 1, 2026</span>
+                    <span className="text-xs text-muted-foreground">Feb 3, 2026</span>
                   </div>
-                  <h4 className="text-lg font-bold mb-2">MENA Tech Spending Hits $169B as Region Emerges as Global AI Hub</h4>
+                  <h4 className="text-lg font-bold mb-2">Kuwait Launches First Sovereign AI Data Center with NVIDIA H200</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Middle East technology spending reaches $169B in 2026 with $33.8B dedicated to AI infrastructure. UAE and Saudi Arabia lead massive data center expansion positioning region as global AI powerhouse.
+                    Kuwait inaugurated sovereign AI-enabled data center through Ooredoo-NVIDIA partnership. Features H200 Tensor Core GPU enabling Arabic LLM development, predictive analytics, and zero-latency sovereign computing.
                   </p>
                   <div className="flex items-center gap-2">
-                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">MENA</span>
-                    <span className="text-xs px-2 py-1 rounded bg-secondary">5 min read</span>
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Kuwait</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">7 min read</span>
                   </div>
                 </div>
               </Link>
 
-              {/* News Article #053 */}
-              <Link href="/news/053" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* News Article #056 */}
+              <Link href="/news/056" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>
-                    {isNewContent('2026-01-28') && (
+                    {isNewContent('2026-02-03') && (
                       <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
                     )}
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Jan 28, 2026</span>
+                    <span className="text-xs text-muted-foreground">Feb 3, 2026</span>
                   </div>
-                  <h4 className="text-lg font-bold mb-2">SAP: AI Will Move from Supporting Tool to Fundamental Enterprise Pillar in 2026</h4>
+                  <h4 className="text-lg font-bold mb-2">Bahrain Diplomatic Forum 2026 Formalizes AI Integration into Foreign Policy</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    SAP UAE predicts AI transformation from supporting tool to fundamental enterprise pillar. Organizations must adopt AI-native architectures with agentic governance frameworks and sovereign AI capabilities.
+                    Bahrain Ministry of Foreign Affairs held AI diplomacy session at Diplomatic Forum 2026. First GCC country to formalize AI integration into diplomatic operations covering geopolitical dimensions and strategic communications.
                   </p>
                   <div className="flex items-center gap-2">
-                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">UAE</span>
-                    <span className="text-xs px-2 py-1 rounded bg-secondary">4 min read</span>
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Bahrain</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">6 min read</span>
                   </div>
                 </div>
               </Link>
 
-              {/* News Article #054 */}
-              <Link href="/news/054" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* News Article #055 */}
+              <Link href="/news/055" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>
-                    {isNewContent('2026-02-02') && (
+                    {isNewContent('2026-02-03') && (
                       <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
                     )}
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Feb 2, 2026</span>
+                    <span className="text-xs text-muted-foreground">Feb 3, 2026</span>
                   </div>
-                  <h4 className="text-lg font-bold mb-2">CXOs Prioritize Agentic AI as Enterprise Standard Emerges</h4>
+                  <h4 className="text-lg font-bold mb-2">Oman Launches AI Pilot Projects in Healthcare, Justice, Education</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Enterprise leaders shift focus from AI copilots to agentic AI for end-to-end automation. Organizations treating AI agents as digital coworkers requiring onboarding and performance reviews. GCC enterprises adopting global best practices.
+                    Oman launched AI pilot projects across healthcare, justice, public procurement, and education sectors. Methodical approach prioritizes strategy, governance, solid foundations over speed, contrasting with rapid deployment models elsewhere in GCC.
                   </p>
                   <div className="flex items-center gap-2">
-                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Global</span>
-                    <span className="text-xs px-2 py-1 rounded bg-secondary">4 min read</span>
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Oman</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">6 min read</span>
                   </div>
                 </div>
               </Link>

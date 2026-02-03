@@ -28,7 +28,7 @@ export default function NewsArticle014() {
               UAE
             </span>
           </div>
-          <ShareButton
+          <ShareButton url="https://agentdub.ai/news/014"
             title="UAE Retains #1 Global AI Adoption Ranking - Microsoft Report"
             description="Microsoft AI Diffusion Report January 2026 confirms UAE as world leader in AI adoption, validating strategic infrastructure investments."
           />

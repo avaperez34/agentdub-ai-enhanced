@@ -22,7 +22,7 @@ export default function Signal023() {
             <span className="text-sm text-muted-foreground">•</span>
             <span className="text-sm font-medium text-accent">UAE</span>
           </div>
-          <ShareButton
+          <ShareButton url="https://agentdub.ai/signal/023"
             title="Signal #023: World Government Summit 2026 - Dubai as Global AI Governance Hub"
             description="35 heads of state and 150+ ministers convene in Dubai for AI governance dialogue, positioning Emirates as neutral ground for global technology policy."
           />

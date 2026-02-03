@@ -2,7 +2,44 @@
 // This file exports all signals and news articles for use across the application
 
 export const allSignals = [
-  // Latest Signals (Feb 1, 2026) - Middle East AI Hub Emergence
+  // Latest Signals (Feb 3, 2026) - Underrepresented GCC Countries AI Developments
+  {
+    id: "057",
+    title: "Kuwait Launches First Sovereign AI-Enabled Data Center with NVIDIA H200 for Arabic LLM Development",
+    description:
+      "Kuwait inaugurated its first Sovereign AI-Enabled Data Center through Ooredoo Kuwait-NVIDIA partnership, marking historic shift in regional AI infrastructure. Facility features NVIDIA H200 Tensor Core GPU, currently most sought-after hardware in global AI race. Enables Large Language Model (LLM) development for Arabic-centric AI, predictive analytics for oil/gas and urban planning, and national security data processing with zero-latency and total residency compliance. Ooredoo evolved from telecommunications provider to digital infrastructure titan, delivering 'GPU-as-a-Service' allowing businesses to rent elite AI compute power locally. Aligns with Kuwait Vision 2035 goals. Economic impact: attracts tech startups, global investment, local talent development. 2026 focus on 'Made in Kuwait' AI applications. Showcased at Nexus 2025 and MoneyTech summits. First time Kuwait-based enterprises and government entities can harness world-class AI power without data crossing international borders. Represents economic diversification from oil dependency to AI-powered digital economy. Positions Kuwait as sovereign AI leader in GCC.",
+    sector: "Infrastructure",
+    impact: 9.0,
+    horizon: "1–2y",
+    country: "Kuwait",
+    category: "infrastructure",
+    date: "2026-02-03",
+  },
+  {
+    id: "056",
+    title: "Bahrain Formalizes AI in Diplomatic Work — First GCC Country to Integrate AI into Foreign Policy Operations",
+    description:
+      "Bahrain Ministry of Foreign Affairs held session on artificial intelligence in diplomacy as part of Diplomatic Forum 2026 marking Bahrain Diplomatic Day (January 14). Session delivered by Manas Chawla, Director of Oxbridge Diplomatic Academy and CEO of London Politica. Covered geopolitical dimensions of AI, role as support tool for diplomatic decision-making, applications in enhancing diplomatic missions performance, strategic communications and public diplomacy, security/ethics/diplomatic protocol issues. Interactive presentation on practical use of AI in diplomatic work attended by heads of Bahrain's diplomatic and consular missions abroad. Represents first GCC country to formalize AI integration into diplomatic operations. UNESCO global report commended Bahrain's AI readiness and potential to become regional leader in ethical, inclusive AI. National Policy for Use of Artificial Intelligence launched to establish comprehensive framework. Bahrain positioning as AI diplomacy innovator. Demonstrates AI moving from enterprise/government services into foreign policy and international relations. Signals recognition of AI as geopolitical tool requiring diplomatic expertise.",
+    sector: "Government Services",
+    impact: 8.4,
+    horizon: "1–2y",
+    country: "Bahrain",
+    category: "policy",
+    date: "2026-02-03",
+  },
+  {
+    id: "055",
+    title: "Oman's Methodical AI Approach — Strategy Over Speed with Pilot Projects in Healthcare, Justice, Education",
+    description:
+      "Oman stands out in Gulf for methodical AI transformation approach prioritizing strategy, incentives, governance, and building solid foundations over speed. Industry analysis: skipping maturity stages leads to fragmented processes, messy data, unclear roles, turning AI into mere demo. Current readiness mixed: SMEs wrestling with spreadsheets and legacy tech, public sector facing mandates vs silos and procurement challenges, corporates have infrastructure coming but mindset lags. While Saudi Arabia races ahead, Oman's honesty and pragmatism may be winning edge. Series of AI pilot projects launched across healthcare, justice, public procurement, and education sectors. National Program for Artificial Intelligence and Advanced Digital Technologies aims to adopt AI in economic and developmental sectors, localize advanced technologies. Part of Government Digital Transformation Program 2021-2025. Real transformation requires mindset shift across entire value chain: board, workforce, customers, suppliers. Oman's approach contrasts with rapid deployment models elsewhere in GCC. Represents alternative path: methodical, foundation-first, avoiding common pitfalls of premature scaling.",
+    sector: "Government Services",
+    impact: 8.3,
+    horizon: "2–4y",
+    country: "Oman",
+    category: "strategy",
+    date: "2026-02-03",
+  },
+  // Previous Signals (Feb 1, 2026) - Middle East AI Hub Emergence
   {
     id: "054",
     title: "Agentic AI Becomes Enterprise Standard as CXOs Shift from Copilots to Autonomous Systems",
@@ -662,7 +699,38 @@ export const allSignals = [
 ];
 
 export const allNews = [
-  // Latest News (Feb 1, 2026)
+  // Latest News (Feb 3, 2026) - Underrepresented GCC Countries
+  {
+    id: "057",
+    title: "Kuwait Launches First Sovereign AI Data Center with NVIDIA H200 for Arabic LLM Development",
+    excerpt: "Kuwait inaugurated its first Sovereign AI-Enabled Data Center through Ooredoo Kuwait-NVIDIA partnership. Features NVIDIA H200 Tensor Core GPU enabling Arabic-centric AI development, predictive analytics, and zero-latency sovereign computing.",
+    date: "2026-02-03",
+    readTime: "7 min read",
+    country: "Kuwait",
+    category: "Infrastructure",
+    url: "/news/057"
+  },
+  {
+    id: "056",
+    title: "Bahrain Diplomatic Forum 2026 Formalizes AI Integration into Foreign Policy Operations",
+    excerpt: "Bahrain Ministry of Foreign Affairs held session on AI in diplomacy at Diplomatic Forum 2026. First GCC country to formalize AI integration into diplomatic operations, covering geopolitical dimensions and strategic communications.",
+    date: "2026-02-03",
+    readTime: "6 min read",
+    country: "Bahrain",
+    category: "Government Services",
+    url: "/news/056"
+  },
+  {
+    id: "055",
+    title: "Oman Launches AI Pilot Projects in Healthcare, Justice, Education with Methodical Approach",
+    excerpt: "Oman launched AI pilot projects across healthcare, justice, public procurement, and education sectors. Methodical approach prioritizes strategy, governance, and solid foundations over speed, contrasting with rapid deployment models elsewhere in GCC.",
+    date: "2026-02-03",
+    readTime: "6 min read",
+    country: "Oman",
+    category: "Government Services",
+    url: "/news/055"
+  },
+  // Previous News (Feb 1, 2026)
   {
     id: "054",
     title: "CXOs Prioritize Agentic AI Over Copilots as Enterprise Standard Emerges",

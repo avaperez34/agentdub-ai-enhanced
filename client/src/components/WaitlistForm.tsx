@@ -3,7 +3,7 @@ import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
 
 interface WaitlistFormProps {
-  source: "directory" | "premium";
+  source: "directory" | "premium" | "news";
 }
 
 export function WaitlistForm({ source }: WaitlistFormProps) {
