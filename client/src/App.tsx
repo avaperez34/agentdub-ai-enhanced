@@ -193,7 +193,8 @@ function Router() {
       <Route path={"/signals/056"} component={Signal056} />
       <Route path={"/signals/057"} component={Signal057} />
         <Route path={"/news"} component={News} />
-      <Route path={"/contact"} component={Contact} />
+       <Route path="/contact" component={Contact} />
+      <Route path="/about" component={About} />
       <Route path="/investors" component={About} />
       <Route path={"/news"} component={News} />
         <Route path={"/news/001"} component={NewsArticle001} />

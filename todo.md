@@ -86,3 +86,9 @@
 - [x] Update App.tsx routing for news
 - [x] Update homepage latest signals and news sections
 - [ ] Save checkpoint for publishing
+## Fix About Page and Add Jacky Ouziel Profile (Feb 3, 2026)
+- [x] Fix About page route from /investors to /about
+- [x] Copy Jacky Ouziel's photo to project public directory
+- [x] Add Jacky Ouziel's profile to About page with description
+- [x] Verify About page loads correctly with all team members
+- [ ] Save checkpoint for publishing

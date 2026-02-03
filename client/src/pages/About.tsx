@@ -149,6 +149,25 @@ export default function About() {
                 </div>
               </div>
             </div>
+
+            {/* Jacky Ouziel */}
+            <div className="mt-8 bg-card border border-border rounded-lg p-8">
+              <div className="flex flex-col items-center text-center">
+                <img
+                  src="/jacky-ouziel.jpg"
+                  alt="Jacky Ouziel - Financial Expert and Advisor"
+                  className="w-48 h-48 object-cover rounded-lg border border-accent/20 shadow-lg mb-6"
+                />
+                <h3 className="text-2xl font-bold mb-2">Jacky Ouziel</h3>
+                <p className="text-lg text-accent mb-4">Financial Expert and Strategic Advisor</p>
+                <p className="text-muted-foreground mb-6 leading-relaxed text-left max-w-2xl">
+                  Jacky Ouziel is a financial expert in valuation models, with over 30 years of experience. He specializes in assisting company leaders with securing financing, fundraising, and serving as an independent board member. His work focuses on corporate finance, growth strategies, and related advisory roles.
+                </p>
+                <p className="text-muted-foreground mb-6 leading-relaxed text-left max-w-2xl">
+                  With deep expertise in financial structuring and strategic advisory, Jacky brings invaluable guidance to AgentDubai growth trajectory. His experience in helping companies navigate capital markets and scale operations provides critical perspective on the financial dimensions of AI transformation across the GCC region.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
