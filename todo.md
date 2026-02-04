@@ -91,4 +91,14 @@
 - [x] Copy Jacky Ouziel's photo to project public directory
 - [x] Add Jacky Ouziel's profile to About page with description
 - [x] Verify About page loads correctly with all team members
-- [ ] Save checkpoint for publishing
+- [x] Save checkpoint for publishing
+## Add New Intelligence Signals and News (Feb 4, 2026)
+- [x] Research new GCC AI developments for February 2026
+- [x] Create 3 new intelligence signals (058, 059, 060) with fresh content
+- [x] Create 3 new news articles (058, 059, 060) with fresh content
+- [x] Create signal detail pages (Signal058, Signal059, Signal060)
+- [x] Create news article detail pages (NewsArticle058, NewsArticle059, NewsArticle060)
+- [x] Update App.tsx routing for new signals and news
+- [x] Update homepage with latest signals (060, 059, 058 first)
+- [x] Update homepage with latest news (060, 059, 058 first)
+- [ ] Save checkpoint and publish

@@ -46,7 +46,7 @@ export default function Home() {
   }, []);
   
   // Dynamic timestamp from latest content
-  const latestContentDate = "February 3, 2026"; // Will be computed from actual content dates
+  const latestContentDate = "February 4, 2026"; // Will be computed from actual content dates
   
   // Track scroll position for indicators
   useEffect(() => {
@@ -274,13 +274,64 @@ export default function Home() {
                   </div>
                 </div>
               )}
-              {/* Signal #057 - BREAKING */}
-              <Link href="/signals/057" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* Signal #060 - BREAKING */}
+              <Link href="/signals/060" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
                   <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #057</span>
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #060</span>
                     <span className="text-xs px-2 py-0.5 rounded-full bg-red-500 text-white font-bold animate-pulse">BREAKING</span>
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Feb 4, 2026</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">GCC Sovereign Wealth Funds Lead Global AI Infrastructure Investment Wave</h3>
+                  <p className="text-muted-foreground mb-4">Sovereign wealth funds from UAE, Saudi Arabia, and Qatar backing AI with patient capital. GCC AI data center investment expected to exceed $5 billion in 2026. Positioning as alternative to Silicon Valley.</p>
+                  <div className="flex items-center gap-4 text-sm">
+                    <span className="text-accent font-bold">Impact: 9.1/10</span>
+                    <span className="text-muted-foreground">🌍 GCC</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Signal #059 */}
+              <Link href="/signals/059" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-accent/50 hover:border-accent transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #059</span>
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Feb 4, 2026</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">Saudi Arabia Accelerates HUMAIN Program Data Center Capacity</h3>
+                  <p className="text-muted-foreground mb-4">Saudi Arabia advancing national AI programme through HUMAIN program. Constructing new data center capacity and integrating infrastructure for AI development at scale. Data sovereignty focus.</p>
+                  <div className="flex items-center gap-4 text-sm">
+                    <span className="text-accent font-bold">Impact: 8.8/10</span>
+                    <span className="text-muted-foreground">🇸🇦 Saudi Arabia</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Signal #058 */}
+              <Link href="/signals/058" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-accent/50 hover:border-accent transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #058</span>
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Feb 4, 2026</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">Qatar Emerges as Premium AI Development Hub with Visionary Leadership</h3>
+                  <p className="text-muted-foreground mb-4">Qatar positioned as premium AI development destination. Young AI-native population, government investment, transparent regulations. Venture capitalists declare GCC best places to build AI.</p>
+                  <div className="flex items-center gap-4 text-sm">
+                    <span className="text-accent font-bold">Impact: 9.2/10</span>
+                    <span className="text-muted-foreground">🇶🇦 Qatar</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Signal #057 */}
+              <Link href="/signals/057" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-accent/50 hover:border-accent transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #057</span>
                     <span className="text-xs text-muted-foreground">•</span>
                     <span className="text-xs text-muted-foreground">Feb 3, 2026</span>
                   </div>
@@ -354,6 +405,72 @@ export default function Home() {
               </Link>
             </div>
             <div ref={newsScrollRef} onTouchStart={handleUserInteraction} onScroll={handleUserInteraction} className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0">
+              {/* News Article #060 */}
+              <Link href="/news/060" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent">NEWS</span>
+                    {isNewContent('2026-02-04') && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
+                    )}
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Feb 4, 2026</span>
+                  </div>
+                  <h4 className="text-lg font-bold mb-2">GCC AI Data Center Market Poised for Explosive Growth</h4>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    New market research indicates AI data center investment across GCC expected to exceed $5 billion in 2026. Sovereign wealth funds deploying patient capital with decades-long investment horizons for foundational AI infrastructure.
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">GCC</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">8 min read</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* News Article #059 */}
+              <Link href="/news/059" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent">NEWS</span>
+                    {isNewContent('2026-02-04') && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
+                    )}
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Feb 4, 2026</span>
+                  </div>
+                  <h4 className="text-lg font-bold mb-2">PwC Highlights AI Ambition Into Action as Key GCC Priority</h4>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    PwC identifies AI ambition translation as critical GCC priority for 2026. Saudi Arabia HUMAIN program exemplifies transition from strategy to execution, constructing data center capacity and integrating infrastructure for AI development at scale.
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">GCC</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">7 min read</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* News Article #058 */}
+              <Link href="/news/058" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent">NEWS</span>
+                    {isNewContent('2026-02-04') && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
+                    )}
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Feb 4, 2026</span>
+                  </div>
+                  <h4 className="text-lg font-bold mb-2">Venture Capitalists Declare Qatar and GCC Best Places to Build AI</h4>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    At Web Summit Qatar 2026, prominent venture capitalists highlighted Qatar, Saudi Arabia, and UAE as among worlds best places to build AI companies. Young AI-native population, government investment, and transparent regulations create unique advantages.
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Qatar</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">6 min read</span>
+                  </div>
+                </div>
+              </Link>
+
               {/* News Article #057 */}
               <Link href="/news/057" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">

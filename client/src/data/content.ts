@@ -2,7 +2,44 @@
 // This file exports all signals and news articles for use across the application
 
 export const allSignals = [
-  // Latest Signals (Feb 3, 2026) - Underrepresented GCC Countries AI Developments
+  // Latest Signals (Feb 4, 2026) - GCC as Global AI Hub
+  {
+    id: "060",
+    title: "GCC Sovereign Wealth Funds Lead Global AI Infrastructure Investment Wave",
+    description:
+      "Sovereign wealth funds from UAE, Saudi Arabia, and Qatar backing AI with patient, long-term capital, fundamentally reshaping global AI infrastructure investment landscape. GCC AI data center investment expected to exceed $5 billion in 2026 alone. Unique advantage: decades-long investment horizon compared to traditional venture capital timelines. Transparent governance and stable regulatory environment attracting global founders and operators. Stanford University AI Index ranks GCC among top globally in AI vibrancy. Sovereign funds deploying capital not available through traditional channels, enabling infrastructure plays impossible in Silicon Valley model. Patient capital enables buildout of foundational systems: data centers, research facilities, supply chain infrastructure for AI chips. GCC positioning as alternative to Silicon Valley and China for AI infrastructure. Regulatory transparency and founder confidence creating ecosystem effects. Building railways of 21st century for AI-enabled economy. Represents mega-trend of capital concentration in Gulf for AI infrastructure and startup ecosystem development. Investment model enables long-term thinking aligned with Vision 2030 and similar national strategies.",
+    sector: "Capital & Investment",
+    impact: 9.1,
+    horizon: "2-4y",
+    country: "UAE, Saudi Arabia, Qatar",
+    category: "investment",
+    date: "2026-02-04",
+  },
+  {
+    id: "059",
+    title: "Saudi Arabia Accelerates HUMAIN Program Data Center Capacity for AI Sovereignty",
+    description:
+      "Saudi Arabia advancing national AI programme through HUMAIN program, constructing new data center capacity and integrating infrastructure for AI development and deployment at scale. Part of broader Vision 2030 digital transformation objectives. Infrastructure buildout enables Saudi enterprises and government to develop, train, and deploy AI systems locally without external dependency. HUMAIN program represents transition from AI strategy to execution phase. Integration with mining and critical minerals strategy creates vertically integrated AI economy: securing compute capacity, developing supply chains for semiconductors and AI chips, building processing zones for battery metals and rare earth elements. Saudi Arabia establishing itself as regional AI infrastructure anchor. Data sovereignty and local capacity reducing dependency on external cloud providers. Long-term commitment to AI-enabled economy transformation evident in integration with broader economic diversification strategy. Critical minerals and battery metals processing zones support AI chip manufacturing supply chain. Represents infrastructure play with government backing and strategic integration into national economic objectives.",
+    sector: "Infrastructure",
+    impact: 8.8,
+    horizon: "1-2y",
+    country: "Saudi Arabia",
+    category: "infrastructure",
+    date: "2026-02-04",
+  },
+  {
+    id: "058",
+    title: "Qatar Emerges as Premium AI Development Hub with Visionary Leadership and AI-Native Population",
+    description:
+      "Qatar, Saudi Arabia, and UAE identified as best places to build AI globally by prominent venture capitalists at Web Summit Qatar 2026. Qatar positioning itself as premium AI development destination with unique competitive advantages. Young, AI-native population with strong adoption across consumers, businesses, and government sectors. Progressive policies balancing innovation with data privacy and consumer protection. Substantial government-backed capital driving foundational infrastructure development. World-class AI facilities being constructed outside US and China. Attracts global talent through combination of safety, stability, and visionary leadership. Government commitment to long-term AI infrastructure and R&D evident in investment levels and policy frameworks. Transparent regulatory framework and supportive government environment aligned with transitioning from hydrocarbon-based economies to technology-driven growth. Low energy costs and abundant resources provide competitive advantage. Venture capitalists highlighting GCC as top-tier AI development region with unique stability-capital-ambition combination. Qatar differentiating through ecosystem quality, talent attraction, and government vision. Market positioning as premium hub rather than cost-competitive alternative.",
+    sector: "Market Positioning",
+    impact: 9.2,
+    horizon: "1-2y",
+    country: "Qatar",
+    category: "strategy",
+    date: "2026-02-04",
+  },
+  // Previous Signals (Feb 3, 2026) - Underrepresented GCC Countries AI Developments
   {
     id: "057",
     title: "Kuwait Launches First Sovereign AI-Enabled Data Center with NVIDIA H200 for Arabic LLM Development",
@@ -699,7 +736,38 @@ export const allSignals = [
 ];
 
 export const allNews = [
-  // Latest News (Feb 3, 2026) - Underrepresented GCC Countries
+  // Latest News (Feb 4, 2026) - GCC as Global AI Hub
+  {
+    id: "060",
+    title: "GCC AI Data Center Market Poised for Explosive Growth as Sovereign Wealth Funds Double Down on Infrastructure",
+    excerpt: "New market research indicates AI data center investment across GCC expected to exceed $5 billion in 2026. Sovereign wealth funds from UAE, Saudi Arabia, and Qatar deploying patient capital with decades-long investment horizons.",
+    date: "2026-02-04",
+    readTime: "8 min read",
+    country: "GCC",
+    category: "Infrastructure",
+    url: "/news/060"
+  },
+  {
+    id: "059",
+    title: "PwC Highlights Turning AI Ambition Into Action as Key Economic Priority for GCC in 2026",
+    excerpt: "PwC identifies AI ambition translation as critical GCC priority for 2026. Saudi Arabia HUMAIN program exemplifies transition from strategy to execution, constructing data center capacity and integrating infrastructure for AI development at scale.",
+    date: "2026-02-04",
+    readTime: "7 min read",
+    country: "GCC",
+    category: "Strategy",
+    url: "/news/059"
+  },
+  {
+    id: "058",
+    title: "Venture Capitalists Declare Qatar and GCC Best Places to Build AI at Web Summit 2026",
+    excerpt: "At Web Summit Qatar 2026, prominent venture capitalists highlighted Qatar, Saudi Arabia, and UAE as among worlds best places to build AI companies. Young AI-native population, government investment, and transparent regulations create unique advantages.",
+    date: "2026-02-04",
+    readTime: "6 min read",
+    country: "Qatar",
+    category: "Market Positioning",
+    url: "/news/058"
+  },
+  // Previous News (Feb 3, 2026) - Underrepresented GCC Countries
   {
     id: "057",
     title: "Kuwait Launches First Sovereign AI Data Center with NVIDIA H200 for Arabic LLM Development",
