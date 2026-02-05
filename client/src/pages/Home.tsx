@@ -274,55 +274,55 @@ export default function Home() {
                   </div>
                 </div>
               )}
-              {/* Signal #060 - BREAKING */}
-              <Link href="/signals/060" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* Signal #063 - BREAKING */}
+              <Link href="/signals/063" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
                   <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #060</span>
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #063</span>
                     <span className="text-xs px-2 py-0.5 rounded-full bg-red-500 text-white font-bold animate-pulse">BREAKING</span>
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Feb 4, 2026</span>
+                    <span className="text-xs text-muted-foreground">Feb 5, 2026</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2">GCC Sovereign Wealth Funds Lead Global AI Infrastructure Investment Wave</h3>
-                  <p className="text-muted-foreground mb-4">Sovereign wealth funds from UAE, Saudi Arabia, and Qatar backing AI with patient capital. GCC AI data center investment expected to exceed $5 billion in 2026. Positioning as alternative to Silicon Valley.</p>
+                  <h3 className="text-xl font-bold mb-2">Qatar Commits $20 Billion to AI Infrastructure with Brookfield Partnership</h3>
+                  <p className="text-muted-foreground mb-4">Qatar Investment Authority announces $20 billion joint venture with Brookfield Asset Management for AI infrastructure. Patient capital model enabling competition with Silicon Valley and China in AI infrastructure race.</p>
                   <div className="flex items-center gap-4 text-sm">
-                    <span className="text-accent font-bold">Impact: 9.1/10</span>
+                    <span className="text-accent font-bold">Impact: 9.5/10</span>
+                    <span className="text-muted-foreground">🇶🇦 Qatar</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Signal #062 */}
+              <Link href="/signals/062" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-accent/50 hover:border-accent transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #062</span>
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Feb 5, 2026</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">IMF Chief: AI Could Boost GCC Non-Oil GDP by 2.8% - Largest Economic Opportunity</h3>
+                  <p className="text-muted-foreground mb-4">IMF Managing Director highlights AI could boost GCC non-oil GDP by 2.8 percent. UAE leads globally with 64% of workforce using AI. Economic diversification imperative for GCC economies.</p>
+                  <div className="flex items-center gap-4 text-sm">
+                    <span className="text-accent font-bold">Impact: 9.2/10</span>
                     <span className="text-muted-foreground">🌍 GCC</span>
                   </div>
                 </div>
               </Link>
 
-              {/* Signal #059 */}
-              <Link href="/signals/059" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* Signal #061 */}
+              <Link href="/signals/061" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-accent/50 hover:border-accent transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #059</span>
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #061</span>
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Feb 4, 2026</span>
+                    <span className="text-xs text-muted-foreground">Feb 5, 2026</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2">Saudi Arabia Accelerates HUMAIN Program Data Center Capacity</h3>
-                  <p className="text-muted-foreground mb-4">Saudi Arabia advancing national AI programme through HUMAIN program. Constructing new data center capacity and integrating infrastructure for AI development at scale. Data sovereignty focus.</p>
+                  <h3 className="text-xl font-bold mb-2">BCG Study: 39% of GCC Organizations Now AI Leaders - Public Sector Emerging</h3>
+                  <p className="text-muted-foreground mb-4">BCG Build for the Future 2026 study reveals 39% of GCC organizations now AI Leaders. Public Sector jumping 5 positions to rank second in maturity. Agentic AI projected to drive future growth.</p>
                   <div className="flex items-center gap-4 text-sm">
-                    <span className="text-accent font-bold">Impact: 8.8/10</span>
-                    <span className="text-muted-foreground">🇸🇦 Saudi Arabia</span>
-                  </div>
-                </div>
-              </Link>
-
-              {/* Signal #058 */}
-              <Link href="/signals/058" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border border-accent/50 hover:border-accent transition-all cursor-pointer h-full">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #058</span>
-                    <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Feb 4, 2026</span>
-                  </div>
-                  <h3 className="text-xl font-bold mb-2">Qatar Emerges as Premium AI Development Hub with Visionary Leadership</h3>
-                  <p className="text-muted-foreground mb-4">Qatar positioned as premium AI development destination. Young AI-native population, government investment, transparent regulations. Venture capitalists declare GCC best places to build AI.</p>
-                  <div className="flex items-center gap-4 text-sm">
-                    <span className="text-accent font-bold">Impact: 9.2/10</span>
-                    <span className="text-muted-foreground">🇶🇦 Qatar</span>
+                    <span className="text-accent font-bold">Impact: 9.3/10</span>
+                    <span className="text-muted-foreground">🌍 GCC</span>
                   </div>
                 </div>
               </Link>
@@ -405,42 +405,42 @@ export default function Home() {
               </Link>
             </div>
             <div ref={newsScrollRef} onTouchStart={handleUserInteraction} onScroll={handleUserInteraction} className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0">
-              {/* News Article #060 */}
-              <Link href="/news/060" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* News Article #063 */}
+              <Link href="/news/063" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>
-                    {isNewContent('2026-02-04') && (
+                    {isNewContent('2026-02-05') && (
                       <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
                     )}
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Feb 4, 2026</span>
+                    <span className="text-xs text-muted-foreground">Feb 5, 2026</span>
                   </div>
-                  <h4 className="text-lg font-bold mb-2">GCC AI Data Center Market Poised for Explosive Growth</h4>
+                  <h4 className="text-lg font-bold mb-2">Qatar Commits $20 Billion to AI Infrastructure with Brookfield</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    New market research indicates AI data center investment across GCC expected to exceed $5 billion in 2026. Sovereign wealth funds deploying patient capital with decades-long investment horizons for foundational AI infrastructure.
+                    Qatar Investment Authority announces $20 billion joint venture with Brookfield Asset Management for AI infrastructure. Patient capital model enabling competition with Silicon Valley and China in AI infrastructure race.
                   </p>
                   <div className="flex items-center gap-2">
-                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">GCC</span>
-                    <span className="text-xs px-2 py-1 rounded bg-secondary">8 min read</span>
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Qatar</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">6 min read</span>
                   </div>
                 </div>
               </Link>
 
-              {/* News Article #059 */}
-              <Link href="/news/059" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* News Article #062 */}
+              <Link href="/news/062" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>
-                    {isNewContent('2026-02-04') && (
+                    {isNewContent('2026-02-05') && (
                       <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
                     )}
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Feb 4, 2026</span>
+                    <span className="text-xs text-muted-foreground">Feb 5, 2026</span>
                   </div>
-                  <h4 className="text-lg font-bold mb-2">PwC Highlights AI Ambition Into Action as Key GCC Priority</h4>
+                  <h4 className="text-lg font-bold mb-2">IMF Chief: AI Could Boost GCC Non-Oil GDP by 2.8%</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    PwC identifies AI ambition translation as critical GCC priority for 2026. Saudi Arabia HUMAIN program exemplifies transition from strategy to execution, constructing data center capacity and integrating infrastructure for AI development at scale.
+                    IMF Managing Director highlights AI could boost GCC non-oil GDP by 2.8 percent. UAE leads globally with 64% of workforce using AI. Economic diversification imperative for GCC economies.
                   </p>
                   <div className="flex items-center gap-2">
                     <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">GCC</span>
@@ -449,24 +449,24 @@ export default function Home() {
                 </div>
               </Link>
 
-              {/* News Article #058 */}
-              <Link href="/news/058" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* News Article #061 */}
+              <Link href="/news/061" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent">NEWS</span>
-                    {isNewContent('2026-02-04') && (
+                    {isNewContent('2026-02-05') && (
                       <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
                     )}
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Feb 4, 2026</span>
+                    <span className="text-xs text-muted-foreground">Feb 5, 2026</span>
                   </div>
-                  <h4 className="text-lg font-bold mb-2">Venture Capitalists Declare Qatar and GCC Best Places to Build AI</h4>
+                  <h4 className="text-lg font-bold mb-2">BCG Study: 39% of GCC Organizations Now AI Leaders</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    At Web Summit Qatar 2026, prominent venture capitalists highlighted Qatar, Saudi Arabia, and UAE as among worlds best places to build AI companies. Young AI-native population, government investment, and transparent regulations create unique advantages.
+                    BCG Build for the Future 2026 study reveals 39% of GCC organizations now AI Leaders. Public Sector jumping 5 positions to rank second in maturity. Agentic AI projected to drive future growth.
                   </p>
                   <div className="flex items-center gap-2">
-                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Qatar</span>
-                    <span className="text-xs px-2 py-1 rounded bg-secondary">6 min read</span>
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">GCC</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">8 min read</span>
                   </div>
                 </div>
               </Link>

@@ -2,7 +2,41 @@
 // This file exports all signals and news articles for use across the application
 
 export const allSignals = [
-  // Latest Signals (Feb 4, 2026) - GCC as Global AI Hub
+  // Latest Signals (Feb 5, 2026) - GCC AI Leaders & Global Opportunity
+  {
+    id: "063",
+    title: "Qatar Commits $20 Billion to AI Infrastructure with Brookfield Asset Management",
+    description: "Qatar Investment Authority announces $20 billion joint venture with Brookfield Asset Management for AI infrastructure development. Patient capital model enabling competition with Silicon Valley and China. Sovereign wealth fund partnership accelerating execution and de-risking deployment.",
+    sector: "Capital & Infrastructure",
+    impact: 9.0,
+    horizon: "3-5y",
+    country: "Qatar",
+    category: "investment",
+    date: "2026-02-05",
+  },
+  {
+    id: "062",
+    title: "IMF Chief: AI Could Boost GCC Non-Oil GDP by 2.8 Percent - Largest Diversification Opportunity",
+    description: "IMF Managing Director highlights at World Government Summit Dubai that AI could boost GCC non-oil GDP by 2.8 percent. UAE leads globally with 64% of workforce using AI. Represents largest opportunity for economic diversification away from hydrocarbon dependency.",
+    sector: "Economic Policy",
+    impact: 9.4,
+    horizon: "2-3y",
+    country: "GCC",
+    category: "policy",
+    date: "2026-02-05",
+  },
+  {
+    id: "061",
+    title: "BCG Study: 39% of GCC Organizations Now AI Leaders - Public Sector Emerging as Unexpected Leader",
+    description: "BCG Build for the Future 2026 study reveals 39% of GCC organizations now AI Leaders, matching global average. Public Sector jumping 5 positions to rank second in maturity. Agentic AI projected to increase from 17% to 29% of AI-driven value by 2028.",
+    sector: "Organizational Maturity",
+    impact: 9.3,
+    horizon: "1-2y",
+    country: "GCC",
+    category: "adoption",
+    date: "2026-02-05",
+  },
+  // Previous Signals (Feb 4, 2026) - GCC as Global AI Hub
   {
     id: "060",
     title: "GCC Sovereign Wealth Funds Lead Global AI Infrastructure Investment Wave",
@@ -736,7 +770,38 @@ export const allSignals = [
 ];
 
 export const allNews = [
-  // Latest News (Feb 4, 2026) - GCC as Global AI Hub
+  // Latest News (Feb 5, 2026) - GCC AI Leaders & Global Opportunity
+  {
+    id: "063",
+    title: "Qatar Commits $20 Billion to AI Infrastructure with Brookfield - Signals Long-Term Commitment",
+    excerpt: "Qatar Investment Authority announces $20 billion joint venture with Brookfield Asset Management for AI infrastructure development. Patient capital model enabling competition with Silicon Valley and China in AI infrastructure race.",
+    date: "2026-02-05",
+    readTime: "6 min read",
+    country: "Qatar",
+    category: "Investment",
+    url: "/news/063"
+  },
+  {
+    id: "062",
+    title: "IMF Chief: AI Could Boost GCC Non-Oil GDP by 2.8% - Largest Economic Diversification Opportunity",
+    excerpt: "IMF Managing Director highlights at World Government Summit Dubai that AI could boost GCC non-oil GDP by 2.8 percent. UAE leads globally with 64% of workforce using AI - highest rate worldwide.",
+    date: "2026-02-05",
+    readTime: "7 min read",
+    country: "GCC",
+    category: "Economic Policy",
+    url: "/news/062"
+  },
+  {
+    id: "061",
+    title: "BCG Study: 39% of GCC Organizations Now AI Leaders - Public Sector Emerging as Unexpected Leader",
+    excerpt: "BCG Build for the Future 2026 study reveals 39% of GCC organizations now AI Leaders, matching global average. Public Sector jumping 5 positions to rank second in maturity. Agentic AI projected to drive future growth.",
+    date: "2026-02-05",
+    readTime: "8 min read",
+    country: "GCC",
+    category: "Adoption",
+    url: "/news/061"
+  },
+  // Previous News (Feb 4, 2026) - GCC as Global AI Hub
   {
     id: "060",
     title: "GCC AI Data Center Market Poised for Explosive Growth as Sovereign Wealth Funds Double Down on Infrastructure",

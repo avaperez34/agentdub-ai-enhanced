@@ -64,6 +64,9 @@ import Signal057 from "./pages/signals/Signal057";
 import Signal058 from "./pages/signals/Signal058";
 import Signal059 from "./pages/signals/Signal059";
 import Signal060 from "./pages/signals/Signal060";
+import Signal061 from "./pages/signals/Signal061";
+import Signal062 from "./pages/signals/Signal062";
+import Signal063 from "./pages/signals/Signal063";
 import SearchResults from "./pages/SearchResults";
 import About from "./pages/About";
 import News from "./pages/News";
@@ -195,12 +198,13 @@ function Router() {
       <Route path={"/signals/052"} component={Signal052} />
       <Route path={"/signals/053"} component={Signal053} />
       <Route path={"/signals/054"} component={Signal054} />
-      <Route path={"/signals/055"} component={Signal055} />
-      <Route path={"/signals/056"} component={Signal056} />
-      <Route path={"/signals/057"} component={Signal057} />
-      <Route path={"/signals/058"} component={Signal058} />
+      <Route path={"/signals/055"} component={Signal055} />      <Route path={"/signals/056"} component={Signal056} />
+      <Route path={"/signals/057"} component={Signal057} />      <Route path={"/signals/058"} component={Signal058} />
       <Route path={"/signals/059"} component={Signal059} />
       <Route path={"/signals/060"} component={Signal060} />
+      <Route path={"/signals/061"} component={Signal061} />
+      <Route path={"/signals/062"} component={Signal062} />
+      <Route path={"/signals/063"} component={Signal063} />
         <Route path={"/news"} component={News} />
        <Route path="/contact" component={Contact} />
       <Route path="/about" component={About} />

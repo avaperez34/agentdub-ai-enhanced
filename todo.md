@@ -101,4 +101,4 @@
 - [x] Update App.tsx routing for new signals and news
 - [x] Update homepage with latest signals (060, 059, 058 first)
 - [x] Update homepage with latest news (060, 059, 058 first)
-- [ ] Save checkpoint and publish
+- [x] Save checkpoint and publish
