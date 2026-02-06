@@ -2,7 +2,41 @@
 // This file exports all signals and news articles for use across the application
 
 export const allSignals = [
-  // Latest Signals (Feb 5, 2026) - GCC AI Leaders & Global Opportunity
+  // Latest Signals (Feb 6, 2026) - Unified Strategy & Execution
+  {
+    id: "066",
+    title: "Saudi Arabia Executes Vision 2030 AI Strategy Through HUMAIN - From Policy to Production",
+    description: "Saudi Arabia transitioning from AI policy statements to selective, purposeful execution through HUMAIN initiative. Building domestic AI infrastructure, models, and institutional capacity. AI deployed for transport, logistics, traffic management, and public safety analytics. Positioned to become global reference point for applied AI in regulated sectors by 2030. Challenge: fragmented data environments and limited interoperability across institutions restrict national-scale impact.",
+    sector: "National Strategy",
+    impact: 8.5,
+    horizon: "2-3y",
+    country: "Saudi Arabia",
+    category: "strategy",
+    date: "2026-02-06",
+  },
+  {
+    id: "065",
+    title: "GCC Organizations Leading Global Agentic AI Implementation - 19% at Scale, 74% Planning Adoption",
+    description: "Study reveals 19% of GCC organizations already moved from pilots to full-scale Agentic AI implementation, with 74% planning adoption. 83% of Gulf organizations already investing in AI. Structural advantages: sovereign cloud zones, unified national strategies, regulatory agility. Loan processing reduced from 2 days to 4 hours with AI agents. Oil & gas seismic analysis accuracy rose 70% with AI agents. GCC positioned as global leader in Agentic AI deployment.",
+    sector: "Technology Implementation",
+    impact: 8.8,
+    horizon: "1-2y",
+    country: "UAE, Saudi Arabia, Bahrain",
+    category: "adoption",
+    date: "2026-02-06",
+  },
+  {
+    id: "064",
+    title: "GCC Secretary General Announces $150B AI Investment Commitment - $260B Annual Target by 2030",
+    description: "GCC member states adopted ambitious national strategies in AI and digital economy. AI technologies projected to add $150 billion to GCC economy, with annual contribution expected to reach $260 billion by 2030. Statement delivered at 5th General Assembly of Digital Cooperation Organisation (DCO) in Kuwait. Represents unified GCC commitment to AI leadership and economic diversification. All six member states aligned on strategic AI development priorities.",
+    sector: "Strategic Policy",
+    impact: 9.2,
+    horizon: "3-5y",
+    country: "GCC",
+    category: "policy",
+    date: "2026-02-06",
+  },
+  // Previous Signals (Feb 5, 2026) - GCC AI Leaders & Global Opportunity
   {
     id: "063",
     title: "Qatar Commits $20 Billion to AI Infrastructure with Brookfield Asset Management",
@@ -770,7 +804,38 @@ export const allSignals = [
 ];
 
 export const allNews = [
-  // Latest News (Feb 5, 2026) - GCC AI Leaders & Global Opportunity
+  // Latest News (Feb 6, 2026) - Unified Strategy & Execution
+  {
+    id: "066",
+    title: "Saudi Arabia Executes Vision 2030 AI Strategy Through HUMAIN - From Policy to Production",
+    excerpt: "Saudi Arabia transitioning from AI policy statements to selective, purposeful execution through HUMAIN initiative. Building domestic AI infrastructure and models. AI deployed for transport, logistics, traffic management, and public safety analytics.",
+    date: "2026-02-06",
+    readTime: "8 min read",
+    country: "Saudi Arabia",
+    category: "National Strategy",
+    url: "/news/066"
+  },
+  {
+    id: "065",
+    title: "GCC Organizations Leading Global Agentic AI Implementation - 19% at Scale, 74% Planning Adoption",
+    excerpt: "Study reveals 19% of GCC organizations already moved from pilots to full-scale Agentic AI implementation. 83% of Gulf organizations investing in AI. Loan processing reduced from 2 days to 4 hours with AI agents. Oil & gas accuracy rose 70%.",
+    date: "2026-02-06",
+    readTime: "7 min read",
+    country: "GCC",
+    category: "Technology",
+    url: "/news/065"
+  },
+  {
+    id: "064",
+    title: "GCC Secretary General Announces $150B AI Investment Commitment - $260B Annual Target by 2030",
+    excerpt: "GCC member states adopted ambitious national strategies in AI and digital economy. AI technologies projected to add $150 billion to GCC economy, with annual contribution expected to reach $260 billion by 2030. Unified regional commitment to AI leadership.",
+    date: "2026-02-06",
+    readTime: "6 min read",
+    country: "GCC",
+    category: "Strategic Policy",
+    url: "/news/064"
+  },
+  // Previous News (Feb 5, 2026) - GCC AI Leaders & Global Opportunity
   {
     id: "063",
     title: "Qatar Commits $20 Billion to AI Infrastructure with Brookfield - Signals Long-Term Commitment",

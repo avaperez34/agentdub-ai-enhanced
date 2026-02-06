@@ -274,13 +274,64 @@ export default function Home() {
                   </div>
                 </div>
               )}
-              {/* Signal #063 - BREAKING */}
-              <Link href="/signals/063" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* Signal #066 - BREAKING */}
+              <Link href="/signals/066" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
                   <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #063</span>
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #066</span>
                     <span className="text-xs px-2 py-0.5 rounded-full bg-red-500 text-white font-bold animate-pulse">BREAKING</span>
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Feb 6, 2026</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">Saudi Arabia Executes Vision 2030 AI Strategy Through HUMAIN - From Policy to Production</h3>
+                  <p className="text-muted-foreground mb-4">Saudi Arabia transitioning from AI policy statements to selective, purposeful execution through HUMAIN initiative. Building domestic AI infrastructure and models for transport, logistics, and public safety.</p>
+                  <div className="flex items-center gap-4 text-sm">
+                    <span className="text-accent font-bold">Impact: 8.5/10</span>
+                    <span className="text-muted-foreground">🇸🇦 Saudi Arabia</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Signal #065 */}
+              <Link href="/signals/065" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-accent/50 hover:border-accent transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #065</span>
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Feb 6, 2026</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">GCC Organizations Leading Global Agentic AI Implementation - 19% at Scale, 74% Planning</h3>
+                  <p className="text-muted-foreground mb-4">Study reveals 19% of GCC organizations already at full-scale Agentic AI implementation. Loan processing reduced from 2 days to 4 hours. Oil & gas accuracy rose 70%. GCC positioned as global leader.</p>
+                  <div className="flex items-center gap-4 text-sm">
+                    <span className="text-accent font-bold">Impact: 8.8/10</span>
+                    <span className="text-muted-foreground">🌍 GCC</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Signal #064 */}
+              <Link href="/signals/064" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-accent/50 hover:border-accent transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #064</span>
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Feb 6, 2026</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">GCC Secretary General Announces $150B AI Investment Commitment - $260B by 2030</h3>
+                  <p className="text-muted-foreground mb-4">All six GCC member states aligned on unified AI strategy. $150 billion near-term investment with $260 billion annual contribution target by 2030. Historic regional alignment on AI leadership.</p>
+                  <div className="flex items-center gap-4 text-sm">
+                    <span className="text-accent font-bold">Impact: 9.2/10</span>
+                    <span className="text-muted-foreground">🌍 GCC</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Signal #063 */}
+              <Link href="/signals/063" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-accent/50 hover:border-accent transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #063</span>
                     <span className="text-xs text-muted-foreground">•</span>
                     <span className="text-xs text-muted-foreground">Feb 5, 2026</span>
                   </div>
@@ -405,6 +456,72 @@ export default function Home() {
               </Link>
             </div>
             <div ref={newsScrollRef} onTouchStart={handleUserInteraction} onScroll={handleUserInteraction} className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0">
+              {/* News Article #066 */}
+              <Link href="/news/066" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent">NEWS</span>
+                    {isNewContent('2026-02-06') && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
+                    )}
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Feb 6, 2026</span>
+                  </div>
+                  <h4 className="text-lg font-bold mb-2">Saudi Arabia Executes Vision 2030 AI Strategy Through HUMAIN</h4>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Saudi Arabia transitioning from AI policy statements to selective, purposeful execution through HUMAIN initiative. Building domestic AI infrastructure and models for transport, logistics, and public safety.
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Saudi Arabia</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">8 min read</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* News Article #065 */}
+              <Link href="/news/065" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent">NEWS</span>
+                    {isNewContent('2026-02-06') && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
+                    )}
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Feb 6, 2026</span>
+                  </div>
+                  <h4 className="text-lg font-bold mb-2">GCC Organizations Leading Global Agentic AI Implementation</h4>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Study reveals 19% of GCC organizations already at full-scale Agentic AI implementation. Loan processing reduced from 2 days to 4 hours. Oil & gas accuracy rose 70%. GCC positioned as global leader.
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">GCC</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">7 min read</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* News Article #064 */}
+              <Link href="/news/064" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent">NEWS</span>
+                    {isNewContent('2026-02-06') && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium animate-pulse">NEW</span>
+                    )}
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Feb 6, 2026</span>
+                  </div>
+                  <h4 className="text-lg font-bold mb-2">GCC Secretary General Announces $150B AI Investment Commitment</h4>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    All six GCC member states aligned on unified AI strategy. $150 billion near-term investment with $260 billion annual contribution target by 2030. Historic regional alignment on AI leadership.
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">GCC</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">6 min read</span>
+                  </div>
+                </div>
+              </Link>
+
               {/* News Article #063 */}
               <Link href="/news/063" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
