@@ -2,6 +2,18 @@
 // This file exports all signals and news articles for use across the application
 
 export const allSignals = [
+  // Latest Signals (Feb 7, 2026) - Geopolitical & Strategic Partnerships
+  {
+    id: "070",
+    title: "Russia Pivots to GCC for AI Partnerships Amid Sanctions - Strategic Diversification",
+    description: "Russia establishing formal AI cooperation framework with UAE and broader GCC through Strategic Financial Dialogue. Focus areas: AI in public financial management, digital governance, smart infrastructure, and cybersecurity. UAE-Russia bilateral trade reached record $12 billion in 2025 (4x increase from 2020). Russia leveraging industrial expertise and tech capabilities to access GCC capital and infrastructure. Represents geopolitical shift: GCC diversifying AI partnerships beyond US-China duopoly, Russia finding alternative markets amid international sanctions.",
+    sector: "Geopolitical Strategy",
+    impact: 8.2,
+    horizon: "2-3y",
+    country: "UAE, Russia",
+    category: "partnership",
+    date: "2026-02-07",
+  },
   // Latest Signals (Feb 7, 2026) - Operational Implementation & Regional Coordination
   {
     id: "069",

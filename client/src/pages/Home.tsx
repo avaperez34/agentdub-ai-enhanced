@@ -274,6 +274,25 @@ export default function Home() {
                   </div>
                 </div>
               )}
+              {/* Signal #070 - NEW */}
+              <Link href="/signals/070" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
+                  <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #070</span>
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-blue-500 text-white font-bold animate-pulse">NEW</span>
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Feb 7, 2026</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">Russia Pivots to GCC for AI Partnerships - Strategic Diversification Amid Sanctions</h3>
+                  <p className="text-muted-foreground mb-4">Russia establishing formal AI cooperation framework with UAE and broader GCC. Focus on financial management, digital governance, and smart infrastructure. UAE-Russia trade reached record $12B in 2025.</p>
+                  <div className="flex items-center gap-4 text-sm">
+                    <span className="text-accent font-bold">Impact: 8.2/10</span>
+                    <span className="text-muted-foreground">🇷🇺 Russia & UAE</span>
+                  </div>
+                </div>
+              </Link>
+
               {/* Signal #069 - BREAKING */}
               <Link href="/signals/069" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
