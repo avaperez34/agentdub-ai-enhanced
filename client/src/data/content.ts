@@ -2,6 +2,40 @@
 // This file exports all signals and news articles for use across the application
 
 export const allSignals = [
+  // Latest Signals (Feb 7, 2026) - Operational Implementation & Regional Coordination
+  {
+    id: "069",
+    title: "GCC Secretary General Affirms Unified AI Strategy - $150B Economic Impact Target",
+    description: "At Digital Cooperation Organisation 5th General Assembly in Kuwait, GCC Secretary General announced all six member states adopted ambitious national AI strategies. AI technologies projected to add $150 billion to GCC economy with annual contribution reaching $260 billion by 2030. Historic regional alignment demonstrates unified commitment to digital transformation.",
+    sector: "Regional Strategy",
+    impact: 8.9,
+    horizon: "3-5y",
+    country: "GCC",
+    category: "policy",
+    date: "2026-02-05",
+  },
+  {
+    id: "068",
+    title: "GCC Enters New Era of AI Self-Governance - Systematic Infrastructure Over Ownership",
+    description: "MIT Sloan analysis reveals 2026 marks fundamental shift in GCC AI strategy. Abu Dhabi Stargate (5-gigawatt campus) moving to production. Arabic-first models entering routine deployment. Global tech giants establishing localized operations with sovereign AI capabilities. Governance transitioning from ethical guidance to enforceable rules. Compute becoming industrial infrastructure.",
+    sector: "Infrastructure & Governance",
+    impact: 9.1,
+    horizon: "2-3y",
+    country: "UAE, Saudi Arabia, Qatar, Kuwait",
+    category: "infrastructure",
+    date: "2026-01-09",
+  },
+  {
+    id: "067",
+    title: "Qatar NPC Launches Enterprise AI Transformation with Microsoft Partnership",
+    description: "Qatar National Planning Council announced comprehensive AI transformation at Web Summit Qatar 2026. Three priorities: scaling Microsoft 365 Copilot adoption, enhancing operational efficiency through AI tools, cementing NPC as AI frontier organization. Partnership focuses on automating processes and streamlining workflows with clear governance frameworks. Aligns with Qatar National Vision 2030.",
+    sector: "Government Implementation",
+    impact: 8.7,
+    horizon: "1-2y",
+    country: "Qatar",
+    category: "adoption",
+    date: "2026-02-06",
+  },
   // Latest Signals (Feb 6, 2026) - Unified Strategy & Execution
   {
     id: "066",
@@ -804,6 +838,37 @@ export const allSignals = [
 ];
 
 export const allNews = [
+  // Latest News (Feb 7, 2026) - Operational Implementation & Regional Coordination
+  {
+    id: "069",
+    title: "GCC Secretary General Affirms Unified AI Strategy at DCO Assembly - $150B Economic Target",
+    excerpt: "At Digital Cooperation Organisation 5th General Assembly in Kuwait, GCC Secretary General announced all six member states adopted ambitious national AI strategies. AI technologies projected to add $150 billion to GCC economy with annual contribution reaching $260 billion by 2030. Historic regional alignment.",
+    date: "2026-02-05",
+    readTime: "6 min read",
+    country: "GCC",
+    category: "Regional Policy",
+    url: "/news/069"
+  },
+  {
+    id: "068",
+    title: "MIT Analysis: GCC Enters New Era of AI Self-Governance - From Ownership to Infrastructure",
+    excerpt: "MIT Sloan reveals 2026 marks fundamental shift in GCC AI strategy. Abu Dhabi Stargate (5-gigawatt campus) moving to production. Arabic-first models entering routine deployment. Global tech giants establishing localized operations with sovereign AI capabilities. Governance transitioning to enforceable rules.",
+    date: "2026-01-09",
+    readTime: "9 min read",
+    country: "GCC",
+    category: "Strategy",
+    url: "/news/068"
+  },
+  {
+    id: "067",
+    title: "Qatar NPC Launches Enterprise AI Transformation Initiative with Microsoft Partnership",
+    excerpt: "Qatar National Planning Council announced comprehensive AI transformation at Web Summit Qatar 2026. Three priorities: scaling Microsoft 365 Copilot adoption, enhancing operational efficiency through AI tools, cementing NPC as AI frontier organization. Aligns with Qatar National Vision 2030.",
+    date: "2026-02-06",
+    readTime: "7 min read",
+    country: "Qatar",
+    category: "Technology",
+    url: "/news/067"
+  },
   // Latest News (Feb 6, 2026) - Unified Strategy & Execution
   {
     id: "066",
