@@ -2,6 +2,40 @@
 // This file exports all signals and news articles for use across the application
 
 export const allSignals = [
+  // Latest Signals (Feb 8, 2026) - Enterprise Adoption & Regional Coordination
+  {
+    id: "073",
+    title: "Abu Dhabi Dialogue Adopts AI-Powered Labour Mobility Framework - Digital Credentials & Smart Compliance",
+    description: "8th Abu Dhabi Dialogue (Feb 2-3, 2026) brought together 17 Asian labour-sending nations and 6 GCC states to adopt AI-driven worker mobility roadmap. Key initiatives: interoperable digital credential wallets for real-time skills verification, risk-based e-inspection platforms analyzing payroll data to flag wage-theft risks, joint study on migrant remittances as development capital. UAE pivoting from low-wage construction to knowledge-intensive green-economy roles. Oman handed chairmanship to Philippines, strengthening sending-country voice in ethical recruitment standards.",
+    sector: "Labour Mobility & Compliance",
+    impact: 8.1,
+    horizon: "2-3y",
+    country: "GCC, Asia",
+    category: "policy",
+    date: "2026-02-03",
+  },
+  {
+    id: "072",
+    title: "Qatar Investment Authority Expands Fund of Funds to $3B with AI Compute Access - Venture Ecosystem Acceleration",
+    description: "Qatar Investment Authority tripled Fund of Funds program to $3 billion and introduced subsidized AI computing power access through Qai (state-backed AI infrastructure platform). Program has deployed capital to 12 firms with commitments ranging $50 million to $150 million+ per fund. Strategic move to attract global founders and engineers amid US/Europe immigration restrictions. QIA head Mohsin Pirzada: This is a big differentiator. Initiative positions Qatar on par with larger Gulf economies in venture capital ecosystem development.",
+    sector: "Venture Capital & Infrastructure",
+    impact: 8.5,
+    horizon: "1-2y",
+    country: "Qatar",
+    category: "investment",
+    date: "2026-02-02",
+  },
+  {
+    id: "071",
+    title: "Deloitte GenAI Adoption Survey Reveals C-Suite Ambition-Execution Gap in GCC - Enterprise Implementation Challenges",
+    description: "Deloitte 2026 GenAI Adoption Survey (Feb 9, 2026) captures how C-suite executives across UAE, KSA, and wider GCC approach enterprise GenAI. Key finding: momentum building but adoption remains uneven. While GenAI is priority for most professional services functions, activity concentrated in early-stage exploration. Distinct maturity levels emerging between organizations. Gap identified between digital ambition and execution capability. Survey examines current landscape of AI in tax, legal, and finance functions across Middle East.",
+    sector: "Enterprise Adoption",
+    impact: 7.8,
+    horizon: "2-3y",
+    country: "UAE, Saudi Arabia, GCC",
+    category: "adoption",
+    date: "2026-02-09",
+  },
   // Latest Signals (Feb 7, 2026) - Geopolitical & Strategic Partnerships
   {
     id: "070",
@@ -850,6 +884,37 @@ export const allSignals = [
 ];
 
 export const allNews = [
+  // Latest News (Feb 8, 2026) - Enterprise Adoption & Venture Ecosystem
+  {
+    id: "072",
+    title: "Abu Dhabi Dialogue Adopts AI-Driven Labour Mobility Roadmap - Digital Credentials & Smart Compliance",
+    excerpt: "8th Abu Dhabi Dialogue (Feb 2-3, 2026) brought together 17 Asian labour-sending nations and 6 GCC states to adopt AI-driven worker mobility roadmap. Key initiatives: interoperable digital credential wallets for real-time skills verification, risk-based e-inspection platforms analyzing payroll data to flag wage-theft risks. UAE pivoting from low-wage construction to knowledge-intensive green-economy roles.",
+    date: "2026-02-03",
+    readTime: "7 min read",
+    country: "GCC, Asia",
+    category: "Labour Mobility",
+    url: "/news/072"
+  },
+  {
+    id: "071",
+    title: "Qatar Investment Authority Expands Fund of Funds to $3B with AI Compute Access - Venture Acceleration",
+    excerpt: "Qatar Investment Authority tripled Fund of Funds program to $3 billion and introduced subsidized AI computing power access through Qai (state-backed AI infrastructure platform). Program has deployed capital to 12 firms with commitments ranging $50 million to $150 million+ per fund. Strategic move to attract global founders and engineers.",
+    date: "2026-02-02",
+    readTime: "6 min read",
+    country: "Qatar",
+    category: "Venture Capital",
+    url: "/news/071"
+  },
+  {
+    id: "070",
+    title: "Deloitte GenAI Adoption Survey Reveals C-Suite Ambition-Execution Gap in GCC - Enterprise Implementation Challenges",
+    excerpt: "Deloitte 2026 GenAI Adoption Survey (Feb 9, 2026) captures how C-suite executives across UAE, KSA, and wider GCC approach enterprise GenAI. Key finding: momentum building but adoption remains uneven. While GenAI is priority for most professional services functions, activity concentrated in early-stage exploration. Distinct maturity levels emerging between organizations.",
+    date: "2026-02-09",
+    readTime: "8 min read",
+    country: "UAE, Saudi Arabia, GCC",
+    category: "Enterprise Adoption",
+    url: "/news/070"
+  },
   // Latest News (Feb 7, 2026) - Operational Implementation & Regional Coordination
   {
     id: "069",

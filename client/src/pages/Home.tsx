@@ -274,13 +274,68 @@ export default function Home() {
                   </div>
                 </div>
               )}
-              {/* Signal #070 - NEW */}
-              <Link href="/signals/070" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* Signal #073 - NEW */}
+              <Link href="/signals/073" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
                   <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #070</span>
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #073</span>
                     <span className="text-xs px-2 py-0.5 rounded-full bg-blue-500 text-white font-bold animate-pulse">NEW</span>
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Feb 8, 2026</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">Abu Dhabi Dialogue Adopts AI-Driven Labour Mobility Roadmap - Digital Credentials & Smart Compliance</h3>
+                  <p className="text-muted-foreground mb-4">8th Abu Dhabi Dialogue brings together 17 Asian labour-sending nations and 6 GCC states to adopt AI-driven worker mobility roadmap. Interoperable digital credential wallets, risk-based e-inspection platforms, and wage-theft detection systems.</p>
+                  <div className="flex items-center gap-4 text-sm">
+                    <span className="text-accent font-bold">Impact: 8.6/10</span>
+                    <span className="text-muted-foreground">🌏 GCC & Asia</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Signal #072 - NEW */}
+              <Link href="/signals/072" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
+                  <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #072</span>
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-blue-500 text-white font-bold animate-pulse">NEW</span>
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Feb 8, 2026</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">Qatar Investment Authority Expands Fund of Funds to $3B with AI Compute Access - Venture Acceleration</h3>
+                  <p className="text-muted-foreground mb-4">QIA tripled Fund of Funds program to $3 billion and introduced subsidized AI computing power access through Qai. Program deployed capital to 12 firms with commitments ranging $50M-$150M+ per fund. Strategic move to attract global founders.</p>
+                  <div className="flex items-center gap-4 text-sm">
+                    <span className="text-accent font-bold">Impact: 8.4/10</span>
+                    <span className="text-muted-foreground">🇶🇦 Qatar</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Signal #071 - NEW */}
+              <Link href="/signals/071" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
+                  <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #071</span>
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-blue-500 text-white font-bold animate-pulse">NEW</span>
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Feb 9, 2026</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">Deloitte GenAI Adoption Survey Reveals C-Suite Ambition-Execution Gap in GCC - Enterprise Implementation Challenges</h3>
+                  <p className="text-muted-foreground mb-4">Deloitte 2026 GenAI Adoption Survey captures C-suite approaches to enterprise GenAI across UAE, KSA, and GCC. Key finding: momentum building but adoption remains uneven. Distinct maturity levels emerging between organizations.</p>
+                  <div className="flex items-center gap-4 text-sm">
+                    <span className="text-accent font-bold">Impact: 7.8/10</span>
+                    <span className="text-muted-foreground">📊 Enterprise</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Signal #070 */}
+              <Link href="/signals/070" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-accent/50 hover:border-accent transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #070</span>
                     <span className="text-xs text-muted-foreground">•</span>
                     <span className="text-xs text-muted-foreground">Feb 7, 2026</span>
                   </div>
@@ -475,6 +530,72 @@ export default function Home() {
               </Link>
             </div>
             <div ref={newsScrollRef} onTouchStart={handleUserInteraction} onScroll={handleUserInteraction} className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory md:snap-none pb-4 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0">
+              {/* News Article #072 - NEW */}
+              <Link href="/news/072" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent">NEWS</span>
+                    {isNewContent('2026-02-08') && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-blue-500 text-white font-medium animate-pulse">NEW</span>
+                    )}
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Feb 3, 2026</span>
+                  </div>
+                  <h4 className="text-lg font-bold mb-2">Abu Dhabi Dialogue Adopts AI-Driven Labour Mobility Roadmap</h4>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    8th Abu Dhabi Dialogue brings together 17 Asian labour-sending nations and 6 GCC states. Interoperable digital credential wallets, risk-based e-inspection platforms, and wage-theft detection systems.
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Labour Mobility</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">7 min read</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* News Article #071 - NEW */}
+              <Link href="/news/071" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent">NEWS</span>
+                    {isNewContent('2026-02-08') && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-blue-500 text-white font-medium animate-pulse">NEW</span>
+                    )}
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Feb 2, 2026</span>
+                  </div>
+                  <h4 className="text-lg font-bold mb-2">Qatar Investment Authority Expands Fund of Funds to $3B</h4>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    QIA tripled Fund of Funds program and introduced subsidized AI computing power access through Qai. Program deployed capital to 12 firms with commitments ranging $50M-$150M+ per fund.
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Venture Capital</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">6 min read</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* News Article #070 - NEW */}
+              <Link href="/news/070" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent">NEWS</span>
+                    {isNewContent('2026-02-09') && (
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-blue-500 text-white font-medium animate-pulse">NEW</span>
+                    )}
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Feb 9, 2026</span>
+                  </div>
+                  <h4 className="text-lg font-bold mb-2">Deloitte GenAI Adoption Survey Reveals Ambition-Execution Gap</h4>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Deloitte 2026 GenAI Adoption Survey captures C-suite approaches across UAE, KSA, and GCC. Key finding: momentum building but adoption remains uneven with distinct maturity levels.
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs px-2 py-1 rounded bg-accent/20 text-accent">Enterprise Adoption</span>
+                    <span className="text-xs px-2 py-1 rounded bg-secondary">8 min read</span>
+                  </div>
+                </div>
+              </Link>
+
               {/* News Article #069 */}
               <Link href="/news/069" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full">
