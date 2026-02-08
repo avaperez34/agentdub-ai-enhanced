@@ -576,10 +576,10 @@ export default function GCCMap() {
                   Want deeper intelligence on {selectedCountry.name}'s AI ecosystem?
                 </p>
                 <a
-                  href="/premium"
+                  href="/"
                   className="inline-block px-6 py-3 bg-accent text-accent-foreground rounded-lg font-semibold hover:bg-accent/90 transition-colors"
                 >
-                  View Premium Reports
+                  Explore Intelligence
                 </a>
               </div>
             </div>

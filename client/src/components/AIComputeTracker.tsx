@@ -186,12 +186,12 @@ export function AIComputeTracker() {
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
-                <Link href="/premium">
+                <Link href="/">
                   <Button 
                     size="lg" 
                     className="bg-accent hover:bg-accent/90 animate-pulse-subtle"
                   >
-                    Access Premium Compute Data
+                    Explore Intelligence
                     <ArrowRight className="ml-2" size={18} />
                   </Button>
                 </Link>

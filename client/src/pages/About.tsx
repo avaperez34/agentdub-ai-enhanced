@@ -355,14 +355,14 @@ export default function About() {
             premium directory, signals, and insights today.
           </p>
           <div className="flex gap-4 justify-center">
-            <Link href="/premium">
+            <Link href="/">
               <Button size="lg" className="bg-accent hover:bg-accent/90">
-                View Premium Plans
+                Explore Intelligence
               </Button>
             </Link>
-            <Link href="/directory">
+            <Link href="/sentinel">
               <Button size="lg" variant="outline">
-                Explore Directory
+                Explore Sentinel
               </Button>
             </Link>
           </div>

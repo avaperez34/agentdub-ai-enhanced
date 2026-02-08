@@ -609,9 +609,9 @@ export default function News() {
               <p className="text-sm text-muted-foreground mb-4">
                 Get access to exclusive deep-dive analysis, full GCC AI Directory, and premium intelligence reports.
               </p>
-              <Link href="/premium">
+              <Link href="/">
                 <Button className="w-full bg-accent hover:bg-accent/90">
-                  View Plans
+                  Explore Intelligence
                   <ArrowRight className="ml-2" size={16} />
                 </Button>
               </Link>

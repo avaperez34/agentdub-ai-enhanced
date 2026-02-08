@@ -212,22 +212,22 @@ export default function Home() {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/premium">
+            <Link href="/">
               <Button 
                 size="lg" 
                 className="w-full sm:w-auto bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white border-0"
-                onClick={() => trackButtonClick('view_premium_home', '/premium')}
+                onClick={() => trackButtonClick('explore_intelligence', '/')}
               >
-                View Premium Plans
+                Explore Intelligence
                 <ArrowRight className="ml-2" size={18} />
               </Button>
             </Link>
-            <Link href="/directory">
+            <Link href="/sentinel">
               <Button 
                 size="lg" 
                 variant="outline"
                 className="w-full sm:w-auto border-2 border-blue-500/50 text-white hover:bg-blue-500/10 hover:border-blue-400"
-                onClick={() => trackButtonClick('explore_directory_home', '/directory')}
+                onClick={() => trackButtonClick('explore_sentinel', '/sentinel')}
               >
                 Explore Directory
               </Button>
@@ -875,9 +875,7 @@ export default function Home() {
                 <li>
                   <Link href="/">Home</Link>
                 </li>
-                <li>
-                  <Link href="/directory">Directory</Link>
-                </li>
+
                 <li>
                   <Link href="/sentinel">Sentinel</Link>
                 </li>
