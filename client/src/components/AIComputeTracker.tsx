@@ -14,6 +14,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Cpu, Zap, TrendingUp, ArrowRight, Users } from "lucide-react";
+import { WaitlistModal } from "./WaitlistModal";
 
 interface ComputeMetric {
   entity: string;
@@ -81,6 +82,7 @@ const computeData: ComputeMetric[] = [
 
 export function AIComputeTracker() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -177,10 +179,13 @@ export function AIComputeTracker() {
 
         <div className="mt-12 text-center space-y-4">
           {/* Social Proof Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/10 border border-accent/20 rounded-full text-sm text-accent">
+          <button
+            onClick={() => setIsWaitlistOpen(true)}
+            className="inline-flex items-center gap-2 px-4 py-2 bg-accent/10 border border-accent/20 rounded-full text-sm text-accent hover:bg-accent/20 transition-colors cursor-pointer"
+          >
             <Users size={16} />
             <span className="font-medium">Join 50+ early subscribers</span>
-          </div>
+          </button>
 
           {/* Premium CTA with Pulsation */}
           <TooltipProvider>
@@ -215,6 +220,8 @@ export function AIComputeTracker() {
           </p>
         </div>
       </div>
+
+      <WaitlistModal isOpen={isWaitlistOpen} onClose={() => setIsWaitlistOpen(false)} />
     </section>
   );
 }
