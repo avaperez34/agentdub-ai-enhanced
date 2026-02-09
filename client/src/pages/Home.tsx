@@ -212,24 +212,14 @@ export default function Home() {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/">
+            <Link href="/intelligence">
               <Button 
                 size="lg" 
                 className="w-full sm:w-auto bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white border-0"
-                onClick={() => trackButtonClick('explore_intelligence', '/')}
+                onClick={() => trackButtonClick('explore_intelligence', '/intelligence')}
               >
                 Explore Intelligence
                 <ArrowRight className="ml-2" size={18} />
-              </Button>
-            </Link>
-            <Link href="/sentinel">
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="w-full sm:w-auto border-2 border-blue-500/50 text-white hover:bg-blue-500/10 hover:border-blue-400"
-                onClick={() => trackButtonClick('explore_sentinel', '/sentinel')}
-              >
-                Explore Directory
               </Button>
             </Link>
           </div>
