@@ -238,18 +238,7 @@ export default function Investors() {
           
           <div className="flex justify-center">
             <Button size="lg" className="bg-emerald-500 hover:bg-emerald-600" asChild>
-              <a 
-                href="https://agentdubai.gumroad.com/l/gcc-ai-directory" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                onClick={() => {
-                  trackButtonClick('buy_full_report_investors', 'gumroad');
-                  trackPurchaseIntent('GCC AI Directory - Lifetime Access', 299);
-                }}
-              >
-                Buy Full Report - $299
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
+              
             </Button>
           </div>
           

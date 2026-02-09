@@ -288,20 +288,7 @@ export default function Directory() {
                 Access the complete directory with 500+ AI agents across GCC, detailed compliance data, and monthly updates.
               </p>
             </div>
-            <a
-              href="https://agentdubai.gumroad.com/l/gcc-ai-directory"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-shrink-0"
-              onClick={() => {
-                trackButtonClick('buy_full_report_directory', 'gumroad');
-                trackPurchaseIntent('GCC AI Directory - Full Report', 299);
-              }}
-            >
-              <button className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors whitespace-nowrap">
-                Buy Full Report →
-              </button>
-            </a>
+            
           </div>
         </div>
 

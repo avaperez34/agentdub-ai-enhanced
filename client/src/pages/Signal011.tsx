@@ -327,14 +327,7 @@ export default function Signal011() {
                 View Premium Plans
               </Button>
             </Link>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="bg-white/10 border-white/20 hover:bg-white/20 text-white"
-              onClick={() => window.open('https://agentdubai.gumroad.com/l/gcc-ai-directory', '_blank')}
-            >
-              Buy GCC AI Directory
-            </Button>
+            
           </div>
         </section>
 

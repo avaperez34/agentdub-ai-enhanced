@@ -180,15 +180,7 @@ export default function Signal021() {
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
               Get access to our full intelligence reports, proprietary GCC AI readiness scoring, and weekly Sentinel briefs delivered to your inbox.
             </p>
-            <a
-              href="https://agentdubai.gumroad.com/l/gcc-ai-directory"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button size="lg" className="bg-accent hover:bg-accent/90">
-                View Premium Plans
-              </Button>
-            </a>
+            
           </div>
         </div>
       </div>

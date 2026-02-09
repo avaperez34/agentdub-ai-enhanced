@@ -293,14 +293,7 @@ export default function Signal009() {
                   Explore Directory
                 </button>
               </Link>
-              <a
-                href="https://agentdubai.gumroad.com/l/gcc-ai-directory"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 bg-card border-2 border-accent text-accent rounded-lg font-semibold hover:bg-accent/10 transition-colors inline-block"
-              >
-                Buy Full Report ($299)
-              </a>
+              
             </div>
           </div>
         </section>

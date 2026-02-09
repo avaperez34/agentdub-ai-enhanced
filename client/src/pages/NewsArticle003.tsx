@@ -127,15 +127,7 @@ export default function NewsArticle003() {
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
               Access our complete intelligence reports, proprietary readiness scoring, and daily analysis delivered to your inbox.
             </p>
-            <a
-              href="https://agentdubai.gumroad.com/l/gcc-ai-directory"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button size="lg" className="bg-accent hover:bg-accent/90">
-                View Premium Plans
-              </Button>
-            </a>
+            
           </div>
         </article>
       </div>

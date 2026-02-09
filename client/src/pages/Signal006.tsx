@@ -371,16 +371,7 @@ export default function Signal006() {
             Get detailed analysis of 500+ AI companies across all 6 GCC countries, including Kuwait's 
             AI ecosystem, vendor landscape, and investment opportunities.
           </p>
-          <a
-            href="https://agentdubai.gumroad.com/l/gcc-ai-directory"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block"
-          >
-            <button className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
-              Buy Full Report - $299 →
-            </button>
-          </a>
+          
         </section>
       </article>
     </div>
