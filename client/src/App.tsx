@@ -9,7 +9,7 @@ import { Navigation } from "./components/Navigation";
 import Home from "./pages/Home";
 import Directory from "./pages/Directory";
 import Sentinel from "./pages/Sentinel";
-import Intelligence from "./pages/Intelligence";
+import Intelligence from "./pages/IntelligenceMerged";
 import Signal001 from "./pages/Signal001";
 import Signal002 from "./pages/Signal002";
 import Signal003 from "./pages/Signal003";
@@ -77,6 +77,16 @@ import Signal070 from "./pages/signals/Signal070";
 import Signal071 from "./pages/signals/Signal071";
 import Signal072 from "./pages/signals/Signal072";
 import Signal073 from "./pages/signals/Signal073";
+import Signal074 from "./pages/signals/Signal074";
+import Signal075 from "./pages/signals/Signal075";
+import Signal076 from "./pages/signals/Signal076";
+import Signal077 from "./pages/signals/Signal077";
+import Signal078 from "./pages/signals/Signal078";
+import Signal079 from "./pages/signals/Signal079";
+import Signal080 from "./pages/signals/Signal080";
+import Signal081 from "./pages/signals/Signal081";
+import Signal082 from "./pages/signals/Signal082";
+import Signal083 from "./pages/signals/Signal083";
 import SearchResults from "./pages/SearchResults";
 import About from "./pages/About";
 import News from "./pages/News";
@@ -230,6 +240,16 @@ function Router() {
       <Route path="/signals/071" component={Signal071} />
       <Route path="/signals/072" component={Signal072} />
       <Route path="/signals/073" component={Signal073} />
+      <Route path="/signals/074" component={Signal074} />
+      <Route path="/signals/075" component={Signal075} />
+      <Route path="/signals/076" component={Signal076} />
+      <Route path="/signals/077" component={Signal077} />
+      <Route path="/signals/078" component={Signal078} />
+      <Route path="/signals/079" component={Signal079} />
+      <Route path="/signals/080" component={Signal080} />
+      <Route path="/signals/081" component={Signal081} />
+      <Route path="/signals/082" component={Signal082} />
+      <Route path="/signals/083" component={Signal083} />
       <Route path="/news" component={News} />      <Route path="/contact" component={Contact} />
       <Route path="/about" component={About} />
       <Route path="/investors" component={About} />
