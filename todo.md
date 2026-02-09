@@ -102,3 +102,14 @@
 - [x] Update homepage with latest signals (060, 059, 058 first)
 - [x] Update homepage with latest news (060, 059, 058 first)
 - [x] Save checkpoint and publish
+
+
+## Premium Paywall Implementation (Feb 9, 2026)
+- [ ] Create PremiumLock component for locked content with waitlist CTA
+- [ ] Update homepage Latest Signals section to show only latest signal free
+- [ ] Lock remaining signals on homepage behind premium paywall
+- [ ] Update Intelligence page to show latest signal free
+- [ ] Lock remaining signals on Intelligence page behind premium paywall
+- [ ] Add "Unlock Full Intelligence" button that triggers waitlist modal
+- [ ] Test paywall on both pages
+- [ ] Save checkpoint

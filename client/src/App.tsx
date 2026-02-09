@@ -9,7 +9,7 @@ import { Navigation } from "./components/Navigation";
 import Home from "./pages/Home";
 import Directory from "./pages/Directory";
 import Sentinel from "./pages/Sentinel";
-import Intelligence from "./pages/IntelligenceMerged";
+import Intelligence from "./pages/IntelligenceMergedPremium";
 import Signal001 from "./pages/Signal001";
 import Signal002 from "./pages/Signal002";
 import Signal003 from "./pages/Signal003";

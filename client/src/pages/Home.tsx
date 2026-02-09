@@ -7,6 +7,7 @@ import { ArrowRight, Zap, Shield, TrendingUp, Search } from "lucide-react";
 import { useLocation } from "wouter";
 import { AIComputeTracker } from "@/components/AIComputeTracker";
 import AnimatedParticles from "@/components/AnimatedParticles";
+import { PremiumLock } from "@/components/PremiumLock";
 
 export default function Home() {
   // The userAuth hooks provides authentication state
@@ -283,9 +284,9 @@ export default function Home() {
                 </div>
               </Link>
 
-              {/* Signal #072 - NEW */}
-              <Link href="/signals/072" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
+              {/* Signal #072 - PREMIUM LOCKED */}
+              <div className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border-2 border-accent/70 h-full relative overflow-hidden">
                   <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent font-bold">SIGNAL #072</span>
@@ -299,12 +300,18 @@ export default function Home() {
                     <span className="text-accent font-bold">Impact: 8.4/10</span>
                     <span className="text-muted-foreground">🇶🇦 Qatar</span>
                   </div>
+                  <div className="absolute inset-0 backdrop-blur-sm bg-black/30 rounded-lg flex items-center justify-center">
+                    <div className="text-center">
+                      <p className="text-white font-bold mb-2">Premium Content</p>
+                      <p className="text-sm text-gray-300">Join waitlist for full access</p>
+                    </div>
+                  </div>
                 </div>
-              </Link>
+              </div>
 
-              {/* Signal #071 - NEW */}
-              <Link href="/signals/071" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
+              {/* Signal #071 - PREMIUM LOCKED */}
+              <div className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border-2 border-accent/70 h-full relative overflow-hidden">
                   <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent font-bold">SIGNAL #071</span>
@@ -318,12 +325,18 @@ export default function Home() {
                     <span className="text-accent font-bold">Impact: 7.8/10</span>
                     <span className="text-muted-foreground">📊 Enterprise</span>
                   </div>
+                  <div className="absolute inset-0 backdrop-blur-sm bg-black/30 rounded-lg flex items-center justify-center">
+                    <div className="text-center">
+                      <p className="text-white font-bold mb-2">Premium Content</p>
+                      <p className="text-sm text-gray-300">Join waitlist for full access</p>
+                    </div>
+                  </div>
                 </div>
-              </Link>
+              </div>
 
-              {/* Signal #070 */}
-              <Link href="/signals/070" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border border-accent/50 hover:border-accent transition-all cursor-pointer h-full">
+              {/* Signal #070 - PREMIUM LOCKED */}
+              <div className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-accent/50 h-full relative overflow-hidden">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent font-bold">SIGNAL #070</span>
                     <span className="text-xs text-muted-foreground">•</span>
@@ -335,12 +348,18 @@ export default function Home() {
                     <span className="text-accent font-bold">Impact: 8.2/10</span>
                     <span className="text-muted-foreground">🇷🇺 Russia & UAE</span>
                   </div>
+                  <div className="absolute inset-0 backdrop-blur-sm bg-black/30 rounded-lg flex items-center justify-center">
+                    <div className="text-center">
+                      <p className="text-white font-bold mb-2">Premium Content</p>
+                      <p className="text-sm text-gray-300">Join waitlist for full access</p>
+                    </div>
+                  </div>
                 </div>
-              </Link>
+              </div>
 
-              {/* Signal #069 - BREAKING */}
-              <Link href="/signals/069" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
+              {/* Signal #069 - BREAKING - PREMIUM LOCKED */}
+              <div className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border-2 border-accent/70 h-full relative overflow-hidden">
                   <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent font-bold">SIGNAL #069</span>
@@ -354,8 +373,14 @@ export default function Home() {
                     <span className="text-accent font-bold">Impact: 9.1/10</span>
                     <span className="text-muted-foreground">🌍 GCC</span>
                   </div>
+                  <div className="absolute inset-0 backdrop-blur-sm bg-black/30 rounded-lg flex items-center justify-center">
+                    <div className="text-center">
+                      <p className="text-white font-bold mb-2">Premium Content</p>
+                      <p className="text-sm text-gray-300">Join waitlist for full access</p>
+                    </div>
+                  </div>
                 </div>
-              </Link>
+              </div>
 
               {/* Signal #068 */}
               <Link href="/signals/068" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
