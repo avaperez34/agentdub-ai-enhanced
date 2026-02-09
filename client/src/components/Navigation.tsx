@@ -12,7 +12,6 @@ export function Navigation() {
     { label: "Sentinel", href: "/sentinel", accent: "cyan" },
     { label: "Intelligence", href: "/intelligence", accent: "blue" },
     { label: "GCC Map", href: "/gcc-map", accent: "indigo" },
-    { label: "News", href: "/news", accent: "purple" },
     { label: "Premium", href: "/premium", accent: "amber" },
     { label: "About", href: "/about", accent: "slate" },
     { label: "Contact", href: "/contact", accent: "emerald" },
