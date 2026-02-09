@@ -8,6 +8,7 @@ import { useLocation } from "wouter";
 import { AIComputeTracker } from "@/components/AIComputeTracker";
 import AnimatedParticles from "@/components/AnimatedParticles";
 import { PremiumLock } from "@/components/PremiumLock";
+import { WaitlistModal } from "@/components/WaitlistModal";
 
 export default function Home() {
   // The userAuth hooks provides authentication state
@@ -30,6 +31,7 @@ export default function Home() {
   const [newsScrollIndex, setNewsScrollIndex] = useState(0);
   const [showSwipeHint, setShowSwipeHint] = useState(false);
   const [isAutoPlayPaused, setIsAutoPlayPaused] = useState(false);
+  const [showWaitlist, setShowWaitlist] = useState(false);
   
   const signalsScrollRef = useRef<HTMLDivElement>(null);
   const newsScrollRef = useRef<HTMLDivElement>(null);
@@ -300,12 +302,12 @@ export default function Home() {
                     <span className="text-accent font-bold">Impact: 8.4/10</span>
                     <span className="text-muted-foreground">🇶🇦 Qatar</span>
                   </div>
-                  <div className="absolute inset-0 backdrop-blur-sm bg-black/30 rounded-lg flex items-center justify-center">
+                  <button onClick={() => setShowWaitlist(true)} className="absolute inset-0 backdrop-blur-sm bg-black/30 rounded-lg flex items-center justify-center hover:bg-black/40 transition-all">
                     <div className="text-center">
                       <p className="text-white font-bold mb-2">Premium Content</p>
                       <p className="text-sm text-gray-300">Join waitlist for full access</p>
                     </div>
-                  </div>
+                  </button>
                 </div>
               </div>
 
@@ -325,12 +327,12 @@ export default function Home() {
                     <span className="text-accent font-bold">Impact: 7.8/10</span>
                     <span className="text-muted-foreground">📊 Enterprise</span>
                   </div>
-                  <div className="absolute inset-0 backdrop-blur-sm bg-black/30 rounded-lg flex items-center justify-center">
+                  <button onClick={() => setShowWaitlist(true)} className="absolute inset-0 backdrop-blur-sm bg-black/30 rounded-lg flex items-center justify-center hover:bg-black/40 transition-all">
                     <div className="text-center">
                       <p className="text-white font-bold mb-2">Premium Content</p>
                       <p className="text-sm text-gray-300">Join waitlist for full access</p>
                     </div>
-                  </div>
+                  </button>
                 </div>
               </div>
 
@@ -348,12 +350,12 @@ export default function Home() {
                     <span className="text-accent font-bold">Impact: 8.2/10</span>
                     <span className="text-muted-foreground">🇷🇺 Russia & UAE</span>
                   </div>
-                  <div className="absolute inset-0 backdrop-blur-sm bg-black/30 rounded-lg flex items-center justify-center">
+                  <button onClick={() => setShowWaitlist(true)} className="absolute inset-0 backdrop-blur-sm bg-black/30 rounded-lg flex items-center justify-center hover:bg-black/40 transition-all">
                     <div className="text-center">
                       <p className="text-white font-bold mb-2">Premium Content</p>
                       <p className="text-sm text-gray-300">Join waitlist for full access</p>
                     </div>
-                  </div>
+                  </button>
                 </div>
               </div>
 
@@ -373,12 +375,12 @@ export default function Home() {
                     <span className="text-accent font-bold">Impact: 9.1/10</span>
                     <span className="text-muted-foreground">🌍 GCC</span>
                   </div>
-                  <div className="absolute inset-0 backdrop-blur-sm bg-black/30 rounded-lg flex items-center justify-center">
+                  <button onClick={() => setShowWaitlist(true)} className="absolute inset-0 backdrop-blur-sm bg-black/30 rounded-lg flex items-center justify-center hover:bg-black/40 transition-all">
                     <div className="text-center">
                       <p className="text-white font-bold mb-2">Premium Content</p>
                       <p className="text-sm text-gray-300">Join waitlist for full access</p>
                     </div>
-                  </div>
+                  </button>
                 </div>
               </div>
 
@@ -645,6 +647,9 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      
+      {/* Waitlist Modal */}
+      <WaitlistModal isOpen={showWaitlist} onClose={() => setShowWaitlist(false)} />
     </div>
   );
 }
