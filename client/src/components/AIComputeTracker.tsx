@@ -186,7 +186,7 @@ export function AIComputeTracker() {
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
-                <Link href="/">
+                <Link href="/intelligence">
                   <Button 
                     size="lg" 
                     className="bg-accent hover:bg-accent/90 animate-pulse-subtle"
