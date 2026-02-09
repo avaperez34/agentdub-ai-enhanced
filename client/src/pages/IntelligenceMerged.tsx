@@ -224,7 +224,7 @@ export default function Intelligence() {
                           </span>
                         )}
                       </div>
-                      <Link href={item.type === "signal" ? `/signal/${item.id}` : `/news/${item.id}`}>
+                      <Link href={item.type === "signal" ? `/signals/${item.id}` : `/news/${item.id}`}>
                         <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                       </Link>
                     </div>
