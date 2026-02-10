@@ -384,9 +384,9 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Signal #068 - PREMIUM LOCKED */}
-              <div className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border border-accent/50 h-full relative overflow-hidden">
+              {/* Signal #068 */}
+              <Link href="/signals/068" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-accent/50 hover:border-accent transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent font-bold">SIGNAL #068</span>
                     <span className="text-xs text-muted-foreground">•</span>
@@ -398,18 +398,12 @@ export default function Home() {
                     <span className="text-accent font-bold">Impact: 8.7/10</span>
                     <span className="text-muted-foreground">🌍 GCC</span>
                   </div>
-                  <button onClick={() => setShowWaitlist(true)} className="absolute inset-0 backdrop-blur-sm bg-black/30 rounded-lg flex items-center justify-center hover:bg-black/40 transition-all">
-                    <div className="text-center">
-                      <p className="text-white font-bold mb-2">Premium Content</p>
-                      <p className="text-sm text-gray-300">Join waitlist for full access</p>
-                    </div>
-                  </button>
                 </div>
-              </div>
+              </Link>
 
-              {/* Signal #067 - PREMIUM LOCKED */}
-              <div className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border border-accent/50 h-full relative overflow-hidden">
+              {/* Signal #067 */}
+              <Link href="/signals/067" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-accent/50 hover:border-accent transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent font-bold">SIGNAL #067</span>
                     <span className="text-xs text-muted-foreground">•</span>
@@ -421,18 +415,12 @@ export default function Home() {
                     <span className="text-accent font-bold">Impact: 8.3/10</span>
                     <span className="text-muted-foreground">🇶🇦 Qatar</span>
                   </div>
-                  <button onClick={() => setShowWaitlist(true)} className="absolute inset-0 backdrop-blur-sm bg-black/30 rounded-lg flex items-center justify-center hover:bg-black/40 transition-all">
-                    <div className="text-center">
-                      <p className="text-white font-bold mb-2">Premium Content</p>
-                      <p className="text-sm text-gray-300">Join waitlist for full access</p>
-                    </div>
-                  </button>
                 </div>
-              </div>
+              </Link>
 
-              {/* Signal #063 - PREMIUM LOCKED */}
-              <div className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border border-accent/50 h-full relative overflow-hidden">
+              {/* Signal #063 */}
+              <Link href="/signals/063" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-accent/50 hover:border-accent transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent font-bold">SIGNAL #063</span>
                     <span className="text-xs text-muted-foreground">•</span>
@@ -444,18 +432,12 @@ export default function Home() {
                     <span className="text-accent font-bold">Impact: 9.5/10</span>
                     <span className="text-muted-foreground">🇶🇦 Qatar</span>
                   </div>
-                  <button onClick={() => setShowWaitlist(true)} className="absolute inset-0 backdrop-blur-sm bg-black/30 rounded-lg flex items-center justify-center hover:bg-black/40 transition-all">
-                    <div className="text-center">
-                      <p className="text-white font-bold mb-2">Premium Content</p>
-                      <p className="text-sm text-gray-300">Join waitlist for full access</p>
-                    </div>
-                  </button>
                 </div>
-              </div>
+              </Link>
 
-              {/* Signal #062 - PREMIUM LOCKED */}
-              <div className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border border-accent/50 h-full relative overflow-hidden">
+              {/* Signal #062 */}
+              <Link href="/signals/062" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-accent/50 hover:border-accent transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent font-bold">SIGNAL #062</span>
                     <span className="text-xs text-muted-foreground">•</span>
@@ -467,18 +449,12 @@ export default function Home() {
                     <span className="text-accent font-bold">Impact: 9.2/10</span>
                     <span className="text-muted-foreground">🌍 GCC</span>
                   </div>
-                  <button onClick={() => setShowWaitlist(true)} className="absolute inset-0 backdrop-blur-sm bg-black/30 rounded-lg flex items-center justify-center hover:bg-black/40 transition-all">
-                    <div className="text-center">
-                      <p className="text-white font-bold mb-2">Premium Content</p>
-                      <p className="text-sm text-gray-300">Join waitlist for full access</p>
-                    </div>
-                  </button>
                 </div>
-              </div>
+              </Link>
 
-              {/* Signal #061 - PREMIUM LOCKED */}
-              <div className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border border-accent/50 h-full relative overflow-hidden">
+              {/* Signal #061 */}
+              <Link href="/signals/061" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-accent/50 hover:border-accent transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent font-bold">SIGNAL #061</span>
                     <span className="text-xs text-muted-foreground">•</span>
@@ -490,18 +466,12 @@ export default function Home() {
                     <span className="text-accent font-bold">Impact: 9.3/10</span>
                     <span className="text-muted-foreground">🌍 GCC</span>
                   </div>
-                  <button onClick={() => setShowWaitlist(true)} className="absolute inset-0 backdrop-blur-sm bg-black/30 rounded-lg flex items-center justify-center hover:bg-black/40 transition-all">
-                    <div className="text-center">
-                      <p className="text-white font-bold mb-2">Premium Content</p>
-                      <p className="text-sm text-gray-300">Join waitlist for full access</p>
-                    </div>
-                  </button>
                 </div>
-              </div>
+              </Link>
 
-              {/* Signal #057 - PREMIUM LOCKED */}
-              <div className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border border-accent/50 h-full relative overflow-hidden">
+              {/* Signal #057 */}
+              <Link href="/signals/057" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-accent/50 hover:border-accent transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent font-bold">SIGNAL #057</span>
                     <span className="text-xs text-muted-foreground">•</span>
@@ -513,18 +483,12 @@ export default function Home() {
                     <span className="text-accent font-bold">Impact: 9.0/10</span>
                     <span className="text-muted-foreground">🇰🇼 Kuwait</span>
                   </div>
-                  <button onClick={() => setShowWaitlist(true)} className="absolute inset-0 backdrop-blur-sm bg-black/30 rounded-lg flex items-center justify-center hover:bg-black/40 transition-all">
-                    <div className="text-center">
-                      <p className="text-white font-bold mb-2">Premium Content</p>
-                      <p className="text-sm text-gray-300">Join waitlist for full access</p>
-                    </div>
-                  </button>
                 </div>
-              </div>
+              </Link>
 
-              {/* Signal #056 - PREMIUM LOCKED */}
-              <div className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border border-accent/50 h-full relative overflow-hidden">
+              {/* Signal #056 */}
+              <Link href="/signals/056" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-accent/50 hover:border-accent transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent font-bold">SIGNAL #056</span>
                     <span className="text-xs text-muted-foreground">•</span>
@@ -536,18 +500,12 @@ export default function Home() {
                     <span className="text-accent font-bold">Impact: 8.4/10</span>
                     <span className="text-muted-foreground">🇧🇭 Bahrain</span>
                   </div>
-                  <button onClick={() => setShowWaitlist(true)} className="absolute inset-0 backdrop-blur-sm bg-black/30 rounded-lg flex items-center justify-center hover:bg-black/40 transition-all">
-                    <div className="text-center">
-                      <p className="text-white font-bold mb-2">Premium Content</p>
-                      <p className="text-sm text-gray-300">Join waitlist for full access</p>
-                    </div>
-                  </button>
                 </div>
-              </div>
+              </Link>
 
-              {/* Signal #055 - PREMIUM LOCKED */}
-              <div className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border border-accent/50 h-full relative overflow-hidden">
+              {/* Signal #055 */}
+              <Link href="/signals/055" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-accent/50 hover:border-accent transition-all cursor-pointer h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent font-bold">SIGNAL #055</span>
                     <span className="text-xs text-muted-foreground">•</span>
@@ -559,14 +517,8 @@ export default function Home() {
                     <span className="text-accent font-bold">Impact: 8.3/10</span>
                     <span className="text-muted-foreground">🇴🇲 Oman</span>
                   </div>
-                  <button onClick={() => setShowWaitlist(true)} className="absolute inset-0 backdrop-blur-sm bg-black/30 rounded-lg flex items-center justify-center hover:bg-black/40 transition-all">
-                    <div className="text-center">
-                      <p className="text-white font-bold mb-2">Premium Content</p>
-                      <p className="text-sm text-gray-300">Join waitlist for full access</p>
-                    </div>
-                  </button>
                 </div>
-              </div>
+              </Link>
             </div>
             {/* Scroll indicators for mobile */}
             <div className="flex justify-center gap-2 mt-4 md:hidden">
