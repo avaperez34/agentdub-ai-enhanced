@@ -267,6 +267,73 @@ export default function Home() {
                   </div>
                 </div>
               )}
+              {/* Signal #107 - LATEST FREE */}
+              <Link href="/signals/107" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
+                  <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #107</span>
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-green-500 text-white font-bold animate-pulse">LATEST</span>
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Feb 10, 2026</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">UAE's Open-Source AI Ecosystem Attracts Global Developers - Alternative to Silicon Valley</h3>
+                  <p className="text-muted-foreground mb-4">UAE positioning as global hub for open-source AI development with government support and venture capital backing. Attracting developers from Europe, Asia, and North America seeking alternatives to US-dominated AI ecosystem.</p>
+                  <div className="flex items-center gap-4 text-sm">
+                    <span className="text-accent font-bold">Impact: 8.9/10</span>
+                    <span className="text-muted-foreground">🇦🇪 UAE</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Signal #106 - PREMIUM LOCKED */}
+              <div className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border-2 border-accent/70 h-full relative overflow-hidden">
+                  <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #106</span>
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-blue-500 text-white font-bold animate-pulse">NEW</span>
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Feb 10, 2026</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">Saudi Arabia-Germany AI Tech Partnership Deepens - Joint R&D Centers Announced</h3>
+                  <p className="text-muted-foreground mb-4">Saudi Arabia and Germany launch joint AI research centers in Riyadh and Berlin. Focus on industrial AI, autonomous systems, and green energy optimization. Strategic partnership positioning Saudi Arabia as bridge between Middle East and Europe.</p>
+                  <div className="flex items-center gap-4 text-sm">
+                    <span className="text-accent font-bold">Impact: 8.3/10</span>
+                    <span className="text-muted-foreground">🇸🇦 Saudi Arabia</span>
+                  </div>
+                  <button onClick={() => setShowWaitlist(true)} className="absolute inset-0 backdrop-blur-sm bg-black/30 rounded-lg flex items-center justify-center hover:bg-black/40 transition-all">
+                    <div className="text-center">
+                      <p className="text-white font-bold mb-2">Premium Content</p>
+                      <p className="text-sm text-gray-300">Join waitlist for full access</p>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              {/* Signal #105 - PREMIUM LOCKED */}
+              <div className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border border-accent/50 h-full relative overflow-hidden">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #105</span>
+                    <span className="text-xs text-muted-foreground">•</span>
+                    <span className="text-xs text-muted-foreground">Feb 10, 2026</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">Qatar Startup Fund Reaches $500M - AI and Quantum Computing Focus</h3>
+                  <p className="text-muted-foreground mb-4">Qatar's sovereign startup fund hits $500 million milestone with focus on AI, quantum computing, and advanced materials. Fund deployed to 45+ startups across GCC and MENA regions. Positioning Qatar as venture capital hub.</p>
+                  <div className="flex items-center gap-4 text-sm">
+                    <span className="text-accent font-bold">Impact: 8.7/10</span>
+                    <span className="text-muted-foreground">🇶🇦 Qatar</span>
+                  </div>
+                  <button onClick={() => setShowWaitlist(true)} className="absolute inset-0 backdrop-blur-sm bg-black/30 rounded-lg flex items-center justify-center hover:bg-black/40 transition-all">
+                    <div className="text-center">
+                      <p className="text-white font-bold mb-2">Premium Content</p>
+                      <p className="text-sm text-gray-300">Join waitlist for full access</p>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
               {/* Signal #073 - NEW */}
               <Link href="/signals/073" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
