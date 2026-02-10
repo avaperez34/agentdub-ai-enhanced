@@ -1,14 +1,72 @@
 import { useAuth } from "@/_core/hooks/useAuth";
 import { SubscriptionManagement } from "@/components/SubscriptionManagement";
 import { SubscriptionPlans } from "@/components/SubscriptionPlans";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { trpc } from "@/lib/trpc";
 import { CreditCard, TrendingUp } from "lucide-react";
 
 export default function Dashboard() {
-  const { user } = useAuth();
-  const { data: activeSubscription } = trpc.subscriptions.getActiveSubscription.useQuery();
+  const { user, isAuthenticated, loading } = useAuth({ redirectOnUnauthenticated: false });
+  const { data: activeSubscription } = trpc.subscriptions.getActiveSubscription.useQuery(undefined, {
+    enabled: isAuthenticated,
+  });
+
+  // Show loading state
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-accent mx-auto mb-4"></div>
+          <p className="text-muted-foreground">Loading...</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Show unauthenticated state with waitlist signup
+  if (!isAuthenticated) {
+    return (
+      <div className="min-h-screen flex items-center justify-center px-4">
+        <Card className="max-w-md w-full">
+          <CardHeader>
+            <CardTitle>Join Our Waitlist</CardTitle>
+            <CardDescription>
+              Subscribe to get early access to premium intelligence signals
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-6">
+            <div className="space-y-3">
+              <p className="text-sm text-muted-foreground">
+                The agentdub.ai dashboard is coming soon. Be among the first to access premium intelligence signals, advanced analytics, and exclusive insights.
+              </p>
+              <ul className="space-y-2 text-sm">
+                <li className="flex items-center gap-2">
+                  <span className="h-2 w-2 bg-accent rounded-full" />
+                  Premium intelligence signals
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-2 w-2 bg-accent rounded-full" />
+                  Advanced analytics dashboard
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-2 w-2 bg-accent rounded-full" />
+                  File export and reports
+                </li>
+              </ul>
+            </div>
+            <Button className="w-full" disabled>
+              Coming Soon
+            </Button>
+            <p className="text-xs text-muted-foreground text-center">
+              Subscribe to our newsletter to be notified when we launch
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-8">

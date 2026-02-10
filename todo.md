@@ -135,4 +135,7 @@
 - [x] Update Home.tsx to remove "Read Full Report" link from signal card
 - [x] Update IntelligenceMergedPremium.tsx to remove all "Read Full Report" links (no external links found)
 - [x] Test all pages to ensure no external Manus links remain
-- [ ] Save checkpoint
+- [x] Fix Dashboard authentication redirect to prevent Manus OAuth redirect
+- [x] Update Dashboard to show waitlist signup for unauthenticated users
+- [x] Test Dashboard tabs (My Subscriptions, View Plans) to ensure no Manus redirects
+- [x] Save checkpoint
