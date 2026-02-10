@@ -334,9 +334,9 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Signal #073 - NEW */}
-              <Link href="/signals/073" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
-                <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
+              {/* Signal #073 - PREMIUM LOCKED */}
+              <div className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+                <div className="p-6 rounded-lg bg-card border-2 border-accent/70 h-full relative overflow-hidden">
                   <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
                   <div className="flex items-center gap-2 mb-3">
                     <span className="text-xs font-mono text-accent font-bold">SIGNAL #073</span>
@@ -350,8 +350,14 @@ export default function Home() {
                     <span className="text-accent font-bold">Impact: 8.6/10</span>
                     <span className="text-muted-foreground">🌏 GCC & Asia</span>
                   </div>
+                  <button onClick={() => setShowWaitlist(true)} className="absolute inset-0 backdrop-blur-sm bg-black/30 rounded-lg flex items-center justify-center hover:bg-black/40 transition-all">
+                    <div className="text-center">
+                      <p className="text-white font-bold mb-2">Premium Content</p>
+                      <p className="text-sm text-gray-300">Join waitlist for full access</p>
+                    </div>
+                  </button>
                 </div>
-              </Link>
+              </div>
 
               {/* Signal #072 - PREMIUM LOCKED */}
               <div className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
