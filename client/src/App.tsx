@@ -180,6 +180,7 @@ import ShortLinksManager from "./pages/ShortLinksManager";
 import AnalyticsDashboard from "./pages/AnalyticsDashboard";
 import DomainInquiries from "./pages/DomainInquiries";
 import Contact from "./pages/Contact";
+import Dashboard from "./pages/Dashboard";
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -353,7 +354,8 @@ function Router() {
         <Route path={"/s/:slug"} component={ShortLinkRedirect} />
         <Route path={"/admin/short-links"} component={ShortLinksManager} />
         <Route path={"/admin/analytics"} component={AnalyticsDashboard} />
-        <Route path={"/admin/domain-inquiries"} component={DomainInquiries} />
+         <Route path="/admin/domain-inquiries" component={DomainInquiries} />
+        <Route path="/dashboard" component={Dashboard} />
         <Route path={"*"} component={NotFound} />
         {/* Final fallback route */}
         <Route component={NotFound} />

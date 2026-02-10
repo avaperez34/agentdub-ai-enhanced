@@ -113,3 +113,16 @@
 - [ ] Add "Unlock Full Intelligence" button that triggers waitlist modal
 - [ ] Test paywall on both pages
 - [ ] Save checkpoint
+
+## Client Subscription Dashboard (Feb 10, 2026)
+- [x] Create database schema for subscriptions (users, subscription_plans, subscriptions, subscription_history)
+- [x] Create tRPC procedures for subscription management (list plans, create subscription, get user subscriptions)
+- [x] Build DashboardLayout component for authenticated users
+- [x] Create SubscriptionPlans component showing available plans
+- [x] Create SubscriptionManagement component for managing active subscriptions
+- [x] Create Dashboard home page with subscription overview
+- [x] Add dashboard navigation to main App.tsx
+- [x] Implement subscription status display (active, expired, pending)
+- [x] Add subscription renewal/upgrade functionality
+- [x] Test dashboard authentication and subscription flows
+- [ ] Save checkpoint

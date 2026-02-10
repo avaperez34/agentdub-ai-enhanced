@@ -1,4 +1,4 @@
-import { int, mysqlEnum, mysqlTable, text, timestamp, varchar } from "drizzle-orm/mysql-core";
+import { int, mysqlEnum, mysqlTable, text, timestamp, varchar, decimal, json } from "drizzle-orm/mysql-core";
 
 /**
  * Core user table backing auth flow.
@@ -92,3 +92,65 @@ export const domainInquiries = mysqlTable("domain_inquiries", {
 
 export type DomainInquiry = typeof domainInquiries.$inferSelect;
 export type InsertDomainInquiry = typeof domainInquiries.$inferInsert;
+
+/**
+ * Subscription plans table
+ * Defines available subscription tiers for clients
+ */
+export const subscriptionPlans = mysqlTable("subscription_plans", {
+  id: int("id").autoincrement().primaryKey(),
+  name: varchar("name", { length: 100 }).notNull(), // e.g., "Starter", "Professional", "Enterprise"
+  description: text("description"), // Plan description
+  price: decimal("price", { precision: 10, scale: 2 }).notNull(), // Monthly price
+  billingCycle: mysqlEnum("billing_cycle", ["monthly", "annual"]).default("monthly").notNull(),
+  features: json("features").$type<string[]>().notNull(), // Array of feature strings
+  maxSignals: int("max_signals"), // Max signals accessible per month (null = unlimited)
+  maxExports: int("max_exports"), // Max file exports per month (null = unlimited)
+  priority: int("priority").default(0).notNull(), // Display order
+  isActive: int("is_active").default(1).notNull(), // 1 = active, 0 = archived
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export type SubscriptionPlan = typeof subscriptionPlans.$inferSelect;
+export type InsertSubscriptionPlan = typeof subscriptionPlans.$inferInsert;
+
+/**
+ * Subscriptions table
+ * Tracks active subscriptions for users
+ */
+export const subscriptions = mysqlTable("subscriptions", {
+  id: int("id").autoincrement().primaryKey(),
+  userId: int("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  planId: int("plan_id").notNull().references(() => subscriptionPlans.id),
+  status: mysqlEnum("status", ["active", "paused", "cancelled", "expired"]).default("active").notNull(),
+  startDate: timestamp("start_date").notNull(),
+  endDate: timestamp("end_date"), // null = ongoing
+  renewalDate: timestamp("renewal_date"), // Next renewal date
+  autoRenew: int("auto_renew").default(1).notNull(), // 1 = auto-renew, 0 = manual
+  signalsUsedThisMonth: int("signals_used_this_month").default(0).notNull(),
+  exportsUsedThisMonth: int("exports_used_this_month").default(0).notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export type Subscription = typeof subscriptions.$inferSelect;
+export type InsertSubscription = typeof subscriptions.$inferInsert;
+
+/**
+ * Subscription history table
+ * Tracks all subscription changes for audit trail
+ */
+export const subscriptionHistory = mysqlTable("subscription_history", {
+  id: int("id").autoincrement().primaryKey(),
+  subscriptionId: int("subscription_id").notNull().references(() => subscriptions.id, { onDelete: "cascade" }),
+  userId: int("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  action: mysqlEnum("action", ["created", "upgraded", "downgraded", "renewed", "cancelled", "paused", "resumed"]).notNull(),
+  previousPlanId: int("previous_plan_id").references(() => subscriptionPlans.id),
+  newPlanId: int("new_plan_id").references(() => subscriptionPlans.id),
+  notes: text("notes"), // Additional context
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+});
+
+export type SubscriptionHistory = typeof subscriptionHistory.$inferSelect;
+export type InsertSubscriptionHistory = typeof subscriptionHistory.$inferInsert;

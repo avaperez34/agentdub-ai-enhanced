@@ -13,6 +13,7 @@ export function Navigation() {
     { label: "Intelligence", href: "/intelligence", accent: "blue" },
     { label: "GCC Map", href: "/gcc-map", accent: "indigo" },
     { label: "Premium", href: "/premium", accent: "amber" },
+    { label: "Dashboard", href: "/dashboard", accent: "purple" },
     { label: "About", href: "/about", accent: "slate" },
     { label: "Contact", href: "/contact", accent: "emerald" },
   ];

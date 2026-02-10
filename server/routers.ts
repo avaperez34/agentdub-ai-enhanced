@@ -5,6 +5,7 @@ import { waitlistRouter } from "./waitlist";
 import { shortLinksRouter } from "./shortLinks";
 import { analytics404Router } from "./analytics404";
 import { domainInquiriesRouter } from "./domainInquiries";
+import { subscriptionsRouter } from "./subscriptions";
 import { publicProcedure, router } from "./_core/trpc";
 
 export const appRouter = router({
@@ -14,6 +15,7 @@ export const appRouter = router({
   shortLinks: shortLinksRouter,
   analytics404: analytics404Router,
   domainInquiries: domainInquiriesRouter,
+  subscriptions: subscriptionsRouter,
   auth: router({
     me: publicProcedure.query(opts => opts.ctx.user),
     logout: publicProcedure.mutation(({ ctx }) => {

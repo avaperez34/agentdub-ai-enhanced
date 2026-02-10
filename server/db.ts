@@ -1,6 +1,6 @@
-import { eq } from "drizzle-orm";
+import { eq, and } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users } from "../drizzle/schema";
+import { InsertUser, users, subscriptionPlans, subscriptions, subscriptionHistory, InsertSubscription, InsertSubscriptionHistory } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -89,4 +89,58 @@ export async function getUserByOpenId(openId: string) {
   return result.length > 0 ? result[0] : undefined;
 }
 
-// TODO: add feature queries here as your schema grows.
+export async function getSubscriptionPlans() {
+  const db = await getDb();
+  if (!db) return [];
+  try {
+    return await db.select().from(subscriptionPlans).where(eq(subscriptionPlans.isActive, 1)).orderBy(subscriptionPlans.priority);
+  } catch (error) {
+    console.error("[Database] Failed to get subscription plans:", error);
+    return [];
+  }
+}
+
+export async function getUserSubscriptions(userId: number) {
+  const db = await getDb();
+  if (!db) return [];
+  try {
+    return await db.select().from(subscriptions).where(eq(subscriptions.userId, userId));
+  } catch (error) {
+    console.error("[Database] Failed to get user subscriptions:", error);
+    return [];
+  }
+}
+
+export async function getActiveSubscription(userId: number) {
+  const db = await getDb();
+  if (!db) return undefined;
+  try {
+    const result = await db.select().from(subscriptions).where(and(eq(subscriptions.userId, userId), eq(subscriptions.status, "active"))).limit(1);
+    return result.length > 0 ? result[0] : undefined;
+  } catch (error) {
+    console.error("[Database] Failed to get active subscription:", error);
+    return undefined;
+  }
+}
+
+export async function createSubscription(data: InsertSubscription) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  try {
+    return await db.insert(subscriptions).values(data);
+  } catch (error) {
+    console.error("[Database] Failed to create subscription:", error);
+    throw error;
+  }
+}
+
+export async function createSubscriptionHistory(data: InsertSubscriptionHistory) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  try {
+    return await db.insert(subscriptionHistory).values(data);
+  } catch (error) {
+    console.error("[Database] Failed to create subscription history:", error);
+    throw error;
+  }
+}
