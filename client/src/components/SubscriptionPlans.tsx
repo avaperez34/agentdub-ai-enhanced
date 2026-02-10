@@ -60,15 +60,15 @@ export function SubscriptionPlans() {
             </div>
 
             <Button
-              onClick={() =>
-                createSubscription.mutate({ planId: plan.id })
-              }
-              disabled={createSubscription.isPending}
+              disabled
               className="w-full mt-6"
-              variant={plan.priority === 1 ? "default" : "outline"}
+              variant="outline"
             >
-              {createSubscription.isPending ? "Processing..." : "Subscribe Now"}
+              Coming Soon
             </Button>
+            <p className="text-xs text-muted-foreground text-center mt-2">
+              Join our waitlist to be notified when subscriptions launch
+            </p>
           </CardContent>
         </Card>
       ))}

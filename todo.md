@@ -126,3 +126,13 @@
 - [x] Add subscription renewal/upgrade functionality
 - [x] Test dashboard authentication and subscription flows
 - [ ] Save checkpoint
+
+
+## Remove External Links & Redirect to Waitlist (Feb 10, 2026)
+- [x] Update Dashboard.tsx to remove "Read Full Report" links
+- [x] Update SubscriptionPlans.tsx to show "Coming Soon" instead of subscribe button
+- [x] Update Signal107.tsx to remove "Read Full Report" link (no external links found)
+- [x] Update Home.tsx to remove "Read Full Report" link from signal card
+- [x] Update IntelligenceMergedPremium.tsx to remove all "Read Full Report" links (no external links found)
+- [x] Test all pages to ensure no external Manus links remain
+- [ ] Save checkpoint

@@ -287,11 +287,7 @@ export default function Home() {
                         </div>
                       </div>
                       
-                      {/* CTA */}
-                      <div className="flex items-center gap-2 text-accent font-semibold text-sm">
-                        <span>Read Full Report</span>
-                        <ArrowRight size={16} />
-                      </div>
+                      {/* CTA - Removed to avoid external links */}
                     </div>
                   </Link>
                 );
