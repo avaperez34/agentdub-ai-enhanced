@@ -237,7 +237,7 @@ export default function Home() {
                 const signal = allSignals.find(s => s.id === FREE_SIGNAL_ID)!;
                 return (
                   <Link href={`/signals/${FREE_SIGNAL_ID}`} className="flex-shrink-0 w-[95vw] md:w-full snap-center">
-                    <div className="p-8 rounded-lg bg-background border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
+                    <div className="p-8 rounded-lg bg-background border-2 border-accent/70 hover:border-accent transition-all cursor-pointer relative">
                       <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-40 h-40 pointer-events-none" />
                       
                       {/* Header */}
