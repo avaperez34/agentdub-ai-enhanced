@@ -7,6 +7,7 @@ import { ArrowRight, Share2, Search, Filter, ChevronLeft, ChevronRight, Calendar
 import { useState, useMemo } from "react";
 import { allSignals, allNews } from "@/data/content";
 import { WaitlistModal } from "@/components/WaitlistModal";
+import { FREE_SIGNAL_ID } from "@shared/const";
 
 export default function IntelligenceMerged() {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
@@ -138,8 +139,8 @@ export default function IntelligenceMerged() {
         {paginatedItems.length > 0 ? (
           <>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-              {paginatedItems.map((item, index) => {
-                const isFree = index === 0 && currentPage === 1; // Only first item on first page is free
+              {paginatedItems.map((item) => {
+                const isFree = item.id === FREE_SIGNAL_ID; // Only the signal matching FREE_SIGNAL_ID is free
                 return (
                   <div
                     key={`${item.type}-${item.id}`}

@@ -9,6 +9,8 @@ import { AIComputeTracker } from "@/components/AIComputeTracker";
 import AnimatedParticles from "@/components/AnimatedParticles";
 import { PremiumLock } from "@/components/PremiumLock";
 import { WaitlistModal } from "@/components/WaitlistModal";
+import { FREE_SIGNAL_ID } from "@shared/const";
+import { allSignals } from "@/data/content";
 
 export default function Home() {
   // The userAuth hooks provides authentication state
@@ -267,28 +269,26 @@ export default function Home() {
                   </div>
                 </div>
               )}
-              {/* Signal #107 - LATEST FREE */}
-              <Link href="/signals/107" className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
+              {/* FREE SIGNAL - DYNAMICALLY LOADED */}
+              {allSignals.find(s => s.id === FREE_SIGNAL_ID) && (
+                <Link href={`/signals/${FREE_SIGNAL_ID}`} className="flex-shrink-0 w-[85vw] md:w-auto snap-center">
                 <div className="p-6 rounded-lg bg-card border-2 border-accent/70 hover:border-accent transition-all cursor-pointer h-full relative overflow-hidden">
                   <div className="absolute top-0 right-0 bg-gradient-to-bl from-accent/20 to-transparent w-32 h-32 pointer-events-none" />
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #107</span>
+                    <span className="text-xs font-mono text-accent font-bold">SIGNAL #{FREE_SIGNAL_ID}</span>
                     <span className="text-xs px-2 py-0.5 rounded-full bg-green-500 text-white font-bold animate-pulse">LATEST</span>
                     <span className="text-xs text-muted-foreground">•</span>
-                    <span className="text-xs text-muted-foreground">Feb 10, 2026</span>
+                    <span className="text-xs text-muted-foreground">{allSignals.find(s => s.id === FREE_SIGNAL_ID) && new Date(allSignals.find(s => s.id === FREE_SIGNAL_ID)!.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-2">UAE's Open-Source AI Ecosystem Attracts Global Developers - Alternative to Silicon Valley</h3>
-                  <p className="text-muted-foreground mb-4">UAE positioning as global hub for open-source AI development with government support and venture capital backing. Attracting developers from Europe, Asia, and North America seeking alternatives to US-dominated AI ecosystem.</p>
+                  <h3 className="text-xl font-bold mb-2">{allSignals.find(s => s.id === FREE_SIGNAL_ID)?.title}</h3>
+                  <p className="text-muted-foreground mb-4">{allSignals.find(s => s.id === FREE_SIGNAL_ID)?.description.substring(0, 150)}...</p>
                   <div className="flex items-center gap-4 text-sm">
-                    <span className="text-accent font-bold">Impact: 8.9/10</span>
-                    <span className="text-muted-foreground">🇦🇪 UAE</span>
+                    <span className="text-accent font-bold">Impact: {allSignals.find(s => s.id === FREE_SIGNAL_ID)?.impact}/10</span>
+                    <span className="text-muted-foreground">{allSignals.find(s => s.id === FREE_SIGNAL_ID)?.country}</span>
                   </div>
                 </div>
               </Link>
-
-
-
-
+              )}
             </div>
             {/* Scroll indicators for mobile */}
             <div className="flex justify-center gap-2 mt-4 md:hidden">
