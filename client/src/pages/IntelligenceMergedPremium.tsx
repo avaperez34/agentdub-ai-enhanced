@@ -44,10 +44,16 @@ export default function IntelligenceMerged() {
     return [...signals, ...news];
   }, []);
 
-  // Sort by latest first
+  // Sort by latest first, but always put free signal at the top
   const sortedItems = useMemo(() => {
     const items = [...combinedItems];
-    items.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    items.sort((a, b) => {
+      // Free signal always comes first
+      if (a.id === FREE_SIGNAL_ID) return -1;
+      if (b.id === FREE_SIGNAL_ID) return 1;
+      // Then sort by date (latest first)
+      return new Date(b.date).getTime() - new Date(a.date).getTime();
+    });
     return items;
   }, [combinedItems]);
 
