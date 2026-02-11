@@ -2,7 +2,64 @@
 // This file exports all signals and news articles for use across the application
 
 export const allSignals = [
+  // Latest Signals (Feb 10, 2026) - GCC AI Infrastructure & Talent Transformation
+  {
+    id: "112",
+    title: "GCC States Adopt Unified AI Strategy - Regional Coordination Drives $260B Economic Impact by 2030",
+    description: "GCC Secretary General announced all six member states adopted ambitious national AI strategies at Digital Cooperation Organisation 5th General Assembly in Kuwait (Feb 5, 2026). AI technologies projected to add $150 billion to GCC economy with annual contribution reaching $260 billion by 2030. Kuwait National AI Strategy 2025-2028 launched with $800 million digital transformation allocation. Bahrain training 50,000 citizens in AI by 2030 through Labor Fund Tamkeen partnership with Microsoft and Bahrain Polytechnic. Oman advancing semiconductor ecosystem development. Regional coordination on AI governance and ethics frameworks emerging as competitive advantage. Marks historic alignment demonstrating unified GCC commitment to digital transformation and AI-powered economic diversification.",
+    sector: "Regional Strategy",
+    impact: 8.9,
+    horizon: "2-3y",
+    country: "GCC",
+    category: "policy",
+    date: "2026-02-10",
+  },
+  {
+    id: "111",
+    title: "Saudi Arabia Integrates AI Across All Vision 2030 Goals - Mandatory AI Education & SDAIA Leadership",
+    description: "Saudi Arabia embedding artificial intelligence across all 96 Vision 2030 goals (66 direct/indirect integration points) as national economic diversification strategy. AI taught as core subject in all public schools starting 2025-26 academic year, creating long-term talent pipeline. National Strategy for Data and AI (NSDAI) implemented with six strategic initiatives across key sectors. Saudi Data & Artificial Intelligence Authority (SDAIA) leading systematic deployment with mandatory AI curriculum for university undergraduates. Microsoft partnership expanding workforce AI training across government and private sector. 173+ open AI jobs in Saudi Arabia signaling massive talent demand. AI becoming inextricable from national security, defense, and foreign policy strategy. Positions Saudi Arabia as global reference point for applied AI in regulated sectors by 2030.",
+    sector: "National Strategy",
+    impact: 8.5,
+    horizon: "3-5y",
+    country: "Saudi Arabia",
+    category: "strategy",
+    date: "2026-02-10",
+  },
+  {
+    id: "110",
+    title: "Qatar AI Infrastructure Boom - $20B Brookfield Partnership & Cheap Power Advantage",
+    description: "Qatar's AI company Qai and investment firm Brookfield announced $20 billion strategic joint venture (Dec 2025) to establish AI infrastructure and services hub. Qatar Investment Authority making strategic investments in US AI chip startups with $500 billion US investment plan over 10 years. Qatar leveraging abundant cheap power as competitive advantage for AI data center operations, targeting 1.5-2 gigawatt market by 2030. Germany-Qatar deep-tech innovation hub established in Doha with focus on AI research. Qatar Center for Artificial Intelligence (QCAI) advancing research across full AI spectrum. Partnership positions Qatar on par with larger Gulf economies in AI infrastructure and venture capital ecosystem. Represents shift from tourism-focused economy to AI infrastructure and innovation hub.",
+    sector: "Infrastructure & Investment",
+    impact: 8.5,
+    horizon: "2-3y",
+    country: "Qatar",
+    category: "investment",
+    date: "2026-02-10",
+  },
+  {
+    id: "109",
+    title: "UAE AI Talent Crisis - 90% of Roles Unfilled Despite 59.4% Global Adoption Leadership",
+    description: "United Arab Emirates leads global AI adoption with 59.4% of workforce using AI tools, yet faces critical talent shortage with 90% of digital and AI roles hardest to fill across GCC. Digital Dubai launching comprehensive AI skills program with Microsoft to upskill government workforce. 87% of UAE employers prioritizing tech literacy and AI skills in hiring. 172+ open AI jobs in Dubai alone with competitive salaries attracting regional talent. Microsoft Elevate UAE initiative building future-ready workforce through AI literacy and readiness programs. 13% of UAE workforce actively using Coursera for training (highest in region). Massive skills gap creating both challenge and opportunity for AI talent recruitment and development services. Represents transition from adoption ambition to execution capability gap.",
+    sector: "Talent & Workforce",
+    impact: 8.0,
+    horizon: "2-3y",
+    country: "United Arab Emirates",
+    category: "adoption",
+    date: "2026-02-10",
+  },
+  {
+    id: "108",
+    title: "NEOM AI Data Center - $5B DataVolt Investment Marks Saudi Arabia's Infrastructure Pivot",
+    description: "DataVolt partnership with NEOM announced $5 billion initial investment (Feb 2025) to develop region's first net-zero AI data center, operational by 2026. Marks historic pivot from futuristic city concept (The Line) to AI infrastructure hub. Saudi Public Investment Fund strategy revamp focusing on renewable energy and AI data centers instead of tourism and urban design. The Line's 170km scope being slashed and repurposed as AI data center hub. Saudi Arabia planning $40 billion AI fund with foreign partners to accelerate AI infrastructure development. Positions Saudi Arabia as regional AI computing hub leveraging abundant renewable energy. Represents fundamental shift in NEOM's strategic mission from urban innovation to computational infrastructure leadership.",
+    sector: "Infrastructure",
+    impact: 9.0,
+    horizon: "1-2y",
+    country: "Saudi Arabia",
+    category: "infrastructure",
+    date: "2026-02-10",
+  },
   // Latest Signals (Feb 8, 2026) - Enterprise Adoption & Regional Coordination
+
   {
     id: "073",
     title: "Abu Dhabi Dialogue Adopts AI-Powered Labour Mobility Framework - Digital Credentials & Smart Compliance",

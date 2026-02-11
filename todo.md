@@ -139,3 +139,22 @@
 - [x] Update Dashboard to show waitlist signup for unauthenticated users
 - [x] Test Dashboard tabs (My Subscriptions, View Plans) to ensure no Manus redirects
 - [x] Save checkpoint
+
+
+## Add New GCC Intelligence Signals (Feb 10, 2026)
+- [x] Research NEOM AI data center funding and details
+- [x] Research Saudi Arabia AI investments and initiatives
+- [x] Research UAE AI talent and tech workforce shifts
+- [x] Research Qatar AI and tech developments
+- [x] Research Kuwait AI initiatives
+- [x] Research Bahrain and Oman tech developments
+- [x] Create Signal #108 - NEOM AI Data Center
+- [x] Create Signal #109 - Saudi Arabia AI Strategy
+- [x] Create Signal #110 - UAE Tech Talent Shift
+- [x] Create Signal #111 - Qatar AI Investments
+- [x] Create Signal #112 - GCC Tech Workforce Evolution
+- [x] Add all signals to content.ts
+- [x] Update FREE_SIGNAL_ID to latest signal
+- [x] Verify latest signal displays on homepage and Intelligence page
+- [x] Verify all other signals are locked
+- [ ] Test and save checkpoint
