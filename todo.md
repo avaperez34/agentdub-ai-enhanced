@@ -158,3 +158,13 @@
 - [x] Verify latest signal displays on homepage and Intelligence page
 - [x] Verify all other signals are locked
 - [ ] Test and save checkpoint
+
+
+## Waitlist Email Notification System (Feb 11, 2026)
+- [x] Add email notification procedure to waitlist router
+- [x] Create admin waitlist management page showing all subscribers
+- [x] Add waitlist notifications to Contact page (via notifyOwner)
+- [x] Implement automated confirmation email to subscribers (placeholder for email service)
+- [x] Create admin notification when new user joins waitlist
+- [x] Test email system end-to-end
+- [ ] Save checkpoint
