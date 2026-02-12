@@ -69,18 +69,6 @@ export const allSignals = [
     category: "strategy",
     date: "2026-02-06",
   },
-  // Latest Signals (Feb 11, 2026) - UAE Pension AI & Regional Coordination
-  {
-    id: "118",
-    title: "UAE Pension Board Approves Strategic AI Roadmap - National Financial Stability Through AI (2025-2029)",
-    description: "UAE pension board approved comprehensive AI roadmap spanning 2025 to 2029. Strategic initiative aims to secure national financial stability through AI-driven pension management and financial services optimization.",
-    sector: "Financial Services & AI",
-    impact: 8.2,
-    horizon: "2-3y",
-    country: "United Arab Emirates",
-    category: "policy",
-    date: "2026-02-11",
-  },
   // Latest Signals (Feb 10, 2026) - GCC AI Infrastructure & Talent Transformation
   {
     id: "112",
