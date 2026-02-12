@@ -168,3 +168,17 @@
 - [x] Create admin notification when new user joins waitlist
 - [x] Test email system end-to-end
 - [ ] Save checkpoint
+
+
+## Add New GCC Intelligence Signals & News (Feb 11, 2026)
+- [x] Research latest GCC AI developments and news
+- [x] Create 6+ new intelligence signals (113-118+) with comprehensive content
+- [x] Create 6+ new news articles with latest GCC tech news
+- [x] Add all signals and news to content.ts
+- [x] Create dynamic SignalDetail route to load signals from data
+- [x] Update FREE_SIGNAL_ID to latest signal (118)
+- [x] Verify latest signal is free on homepage and Intelligence page
+- [x] Verify all other signals are locked with waitlist CTA
+- [x] Test 404 errors on all new signal detail pages (NO 404 ERRORS)
+- [x] Test waitlist function on locked signals (WORKING)
+- [ ] Save checkpoint and publish
