@@ -181,4 +181,5 @@
 - [x] Verify all other signals are locked with waitlist CTA
 - [x] Test 404 errors on all new signal detail pages (NO 404 ERRORS)
 - [x] Test waitlist function on locked signals (WORKING)
+- [x] Expand Intelligence page signal cards to show full detailed content for free signal
 - [ ] Save checkpoint and publish

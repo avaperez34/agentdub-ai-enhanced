@@ -183,10 +183,10 @@ export default function IntelligenceMerged() {
                       {item.title}
                     </h3>
 
-                    {/* Excerpt */}
-                    <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
+                    {/* Excerpt/Full Content */}
+                    <div className={`text-sm text-muted-foreground mb-4 ${isFree ? 'whitespace-pre-wrap' : 'line-clamp-3'}`}>
                       {item.excerpt}
-                    </p>
+                    </div>
 
                     {/* Metadata */}
                     <div className="flex flex-wrap gap-2 mb-4">
