@@ -354,6 +354,93 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Sovereign AI Agent - Coming Soon Section */}
+      <section className="py-20 px-4 bg-gradient-to-b from-background to-secondary/30 border-t border-border">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Mascot Image */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-accent/5 rounded-lg blur-3xl" />
+                <img
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663028659189/BvIvNKGGYvzjwGug.png"
+                  alt="AgentDubai Sovereign AI Agent Mascot"
+                  className="relative w-full max-w-md h-auto rounded-lg shadow-2xl"
+                />
+              </div>
+            </div>
+
+            {/* Content */}
+            <div>
+              <div className="mb-6">
+                <span className="text-sm font-mono text-accent font-bold mb-2 block">COMING SOON</span>
+                <h2 className="text-4xl lg:text-5xl font-bold mb-4 leading-tight">
+                  Sovereign AI Agent
+                </h2>
+                <p className="text-lg text-muted-foreground mb-6">
+                  Intelligent autonomous system powered by our proprietary data and sovereign model architecture
+                </p>
+              </div>
+
+              <div className="space-y-4 mb-8">
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-10 w-10 rounded-lg bg-accent/20 text-accent">
+                      <span className="text-lg font-bold">⚡</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-foreground mb-1">Real-Time Intelligence Generation</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Autonomous analysis of GCC AI developments, market trends, and strategic opportunities
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-10 w-10 rounded-lg bg-accent/20 text-accent">
+                      <span className="text-lg font-bold">🔒</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-foreground mb-1">Sovereign Data Architecture</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Proprietary database and models ensuring data sovereignty and regional compliance
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-10 w-10 rounded-lg bg-accent/20 text-accent">
+                      <span className="text-lg font-bold">🧠</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-foreground mb-1">Predictive Insights</h3>
+                    <p className="text-sm text-muted-foreground">
+                      AI-driven forecasting for investment opportunities, policy changes, and market shifts
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-accent/10 border border-accent/30 rounded-lg p-4 mb-8">
+                <p className="text-sm text-foreground">
+                  <span className="font-bold">Post-MVP Feature:</span> After core platform stabilization, our sovereign AI agent will autonomously generate, analyze, and deliver intelligence signals powered by proprietary models and regional data.
+                </p>
+              </div>
+
+              <Button size="lg" className="bg-accent hover:bg-accent/90">
+                Join Waitlist for Agent Launch
+                <ArrowRight className="ml-2" size={18} />
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="py-12 px-4 bg-card border-t border-border">
         <div className="max-w-6xl mx-auto">
