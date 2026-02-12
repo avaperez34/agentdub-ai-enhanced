@@ -251,8 +251,14 @@ export default function Home() {
                       {/* Title */}
                       <h3 className="text-2xl font-bold mb-4 leading-tight">{signal.title}</h3>
                       
-                      {/* Full Description */}
-                      <p className="text-muted-foreground mb-6 leading-relaxed text-base">{signal.description}</p>
+                      {/* Truncated Description */}
+                      <p className="text-muted-foreground mb-4 leading-relaxed text-base line-clamp-3">{signal.description}</p>
+                      
+                      {/* Read More Link */}
+                      <Link href="/intelligence" className="inline-flex items-center text-accent hover:text-accent/80 font-semibold mb-6 transition-colors">
+                        Read Full Article on Intelligence Page
+                        <ArrowRight className="ml-2" size={16} />
+                      </Link>
                       
                       {/* Scoring & Metadata Section */}
                       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6 p-4 bg-card rounded-lg border border-border">
