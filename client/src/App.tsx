@@ -182,6 +182,7 @@ import DomainInquiries from "./pages/DomainInquiries";
 import Contact from "./pages/Contact";
 import Dashboard from "./pages/Dashboard";
 import AdminWaitlist from "./pages/AdminWaitlist";
+import AdminAgentWaitlist from "./pages/AdminAgentWaitlist";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -359,6 +360,7 @@ function Router() {
          <Route path="/admin/domain-inquiries" component={DomainInquiries} />
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/admin/waitlist" component={AdminWaitlist} />
+        <Route path="/admin/agent-waitlist" component={AdminAgentWaitlist} />
         <Route path={"*"} component={NotFound} />
         {/* Final fallback route */}
         <Route component={NotFound} />

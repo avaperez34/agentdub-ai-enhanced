@@ -183,3 +183,16 @@
 - [x] Test waitlist function on locked signals (WORKING)
 - [x] Expand Intelligence page signal cards to show full detailed content for free signal
 - [ ] Save checkpoint and publish
+
+
+## Agent Waitlist Functionality (Feb 12, 2026)
+- [x] Create AgentWaitlistModal component with email form
+- [x] Add agent_waitlist table to database schema
+- [x] Create tRPC procedures for agent waitlist signup
+- [x] Implement admin notification when user joins agent waitlist
+- [x] Integrate AgentWaitlistModal into Sovereign AI Agent section
+- [x] Test agent waitlist form and email capture
+- [x] Verify admin receives notifications and data stored in database
+- [x] Create admin dashboard for agent waitlist management
+- [x] Write comprehensive unit tests for agent waitlist
+- [ ] Save checkpoint

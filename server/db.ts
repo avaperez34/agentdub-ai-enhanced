@@ -1,6 +1,6 @@
 import { eq, and } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users, subscriptionPlans, subscriptions, subscriptionHistory, InsertSubscription, InsertSubscriptionHistory } from "../drizzle/schema";
+import { InsertUser, users, subscriptionPlans, subscriptions, subscriptionHistory, InsertSubscription, InsertSubscriptionHistory, agentWaitlist, InsertAgentWaitlist } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -142,5 +142,40 @@ export async function createSubscriptionHistory(data: InsertSubscriptionHistory)
   } catch (error) {
     console.error("[Database] Failed to create subscription history:", error);
     throw error;
+  }
+}
+
+export async function addToAgentWaitlist(data: InsertAgentWaitlist) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  try {
+    return await db.insert(agentWaitlist).values(data);
+  } catch (error) {
+    console.error("[Database] Failed to add to agent waitlist:", error);
+    throw error;
+  }
+}
+
+export async function getAgentWaitlistByEmail(email: string) {
+  const db = await getDb();
+  if (!db) return undefined;
+  try {
+    const result = await db.select().from(agentWaitlist).where(eq(agentWaitlist.email, email)).limit(1);
+    return result.length > 0 ? result[0] : undefined;
+  } catch (error) {
+    console.error("[Database] Failed to get agent waitlist entry:", error);
+    return undefined;
+  }
+}
+
+export async function getAgentWaitlistCount() {
+  const db = await getDb();
+  if (!db) return 0;
+  try {
+    const result = await db.select().from(agentWaitlist);
+    return result.length;
+  } catch (error) {
+    console.error("[Database] Failed to get agent waitlist count:", error);
+    return 0;
   }
 }

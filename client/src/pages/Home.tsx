@@ -5,12 +5,14 @@ import { ArrowRight } from "lucide-react";
 import { allSignals } from "@/data/content";
 import { FREE_SIGNAL_ID } from "@shared/const";
 import { useRef, useState, useEffect } from "react";
+import { AgentWaitlistModal } from "@/components/AgentWaitlistModal";
 
 export default function Home() {
   const { trackButtonClick } = useAnalytics();
   const signalsScrollRef = useRef<HTMLDivElement>(null);
   const [showSwipeHint, setShowSwipeHint] = useState(true);
   const [signalsScrollIndex, setSignalsScrollIndex] = useState(0);
+  const [isAgentWaitlistOpen, setIsAgentWaitlistOpen] = useState(false);
 
   const handleUserInteraction = () => {
     setShowSwipeHint(false);
@@ -438,10 +440,18 @@ export default function Home() {
                 </p>
               </div>
 
-              <Button size="lg" className="bg-accent hover:bg-accent/90">
+              <Button 
+                size="lg" 
+                className="bg-accent hover:bg-accent/90"
+                onClick={() => setIsAgentWaitlistOpen(true)}
+              >
                 Join Waitlist for Agent Launch
                 <ArrowRight className="ml-2" size={18} />
               </Button>
+              <AgentWaitlistModal 
+                isOpen={isAgentWaitlistOpen} 
+                onClose={() => setIsAgentWaitlistOpen(false)} 
+              />
             </div>
           </div>
         </div>

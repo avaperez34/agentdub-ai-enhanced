@@ -154,3 +154,19 @@ export const subscriptionHistory = mysqlTable("subscription_history", {
 
 export type SubscriptionHistory = typeof subscriptionHistory.$inferSelect;
 export type InsertSubscriptionHistory = typeof subscriptionHistory.$inferInsert;
+
+/**
+ * Agent waitlist table
+ * Collects email signups for the Sovereign AI Agent launch
+ */
+export const agentWaitlist = mysqlTable("agent_waitlist", {
+  id: int("id").autoincrement().primaryKey(),
+  email: varchar("email", { length: 320 }).notNull(),
+  name: varchar("name", { length: 255 }),
+  company: varchar("company", { length: 255 }),
+  interest: varchar("interest", { length: 255 }), // e.g., "predictive-analytics", "fraud-detection", "general"
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+});
+
+export type AgentWaitlist = typeof agentWaitlist.$inferSelect;
+export type InsertAgentWaitlist = typeof agentWaitlist.$inferInsert;
