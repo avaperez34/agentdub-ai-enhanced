@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Search, ArrowRight, FileText, Newspaper } from "lucide-react";
-import { allSignals, allNews } from "@/data/content";
+import { allSignals } from "@/data/content";
 import AnimatedParticles from "@/components/AnimatedParticles";
 
 export default function SearchResults() {
@@ -34,17 +34,10 @@ export default function SearchResults() {
       matchesAnyWord(signal.country)
     );
 
-    const matchedArticles = allNews.filter(article =>
-      matchesAnyWord(article.title) ||
-      matchesAnyWord(article.excerpt) ||
-      matchesAnyWord(article.category) ||
-      matchesAnyWord(article.country)
-    );
-
     return {
       signals: matchedSignals,
-      articles: matchedArticles,
-      total: matchedSignals.length + matchedArticles.length
+      articles: [],
+      total: matchedSignals.length
     };
   }, [query]);
 
@@ -190,7 +183,7 @@ export default function SearchResults() {
         ) : searchResults.total === 0 ? (
           <div className="text-center py-12">
             <p className="text-xl text-muted-foreground mb-4">No results found for "{query}"</p>
-            <p className="text-muted-foreground">Try different keywords or browse our <Link href="/intelligence" className="text-accent hover:underline">Intelligence</Link> and <Link href="/news" className="text-accent hover:underline">News</Link> pages</p>
+            <p className="text-muted-foreground">Try different keywords or browse our <Link href="/intelligence" className="text-accent hover:underline">Intelligence</Link> and  pages</p>
           </div>
         ) : (
           <div className="space-y-12">
@@ -228,37 +221,7 @@ export default function SearchResults() {
               </div>
             )}
 
-            {/* News Results */}
-            {searchResults.articles.length > 0 && (
-              <div>
-                <div className="flex items-center gap-3 mb-6">
-                  <Newspaper className="text-purple-500" size={24} />
-                  <h2 className="text-2xl font-bold">News Articles ({searchResults.articles.length})</h2>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {searchResults.articles.map((article) => (
-                    <Link key={article.id} href={`/news/${article.id}`}>
-                      <div className="p-6 rounded-lg bg-card border border-border hover:border-purple-500/50 transition-all cursor-pointer h-full flex flex-col">
-                        <div className="flex items-start justify-between mb-4">
-                          <Badge variant="outline" className="text-xs bg-purple-500/10 text-purple-500 border-purple-500/20">
-                            {article.category}
-                          </Badge>
-                          <span className="text-xs text-muted-foreground">{article.readTime} min</span>
-                        </div>
-                        <h3 className="text-lg font-bold mb-3 line-clamp-2">{highlightText(article.title, query)}</h3>
-                        <p className="text-sm text-muted-foreground mb-4 line-clamp-3 flex-grow">
-                          {highlightText(article.excerpt, query)}
-                        </p>
-                        <div className="flex items-center justify-between text-xs text-muted-foreground">
-                          <span>{article.country}</span>
-                          <span>{article.date}</span>
-                        </div>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            )}
+
           </div>
         )}
 
@@ -276,12 +239,7 @@ export default function SearchResults() {
                   <ArrowRight className="ml-2" size={16} />
                 </Button>
               </Link>
-              <Link href="/news">
-                <Button size="lg" variant="outline">
-                  View All News
-                  <ArrowRight className="ml-2" size={16} />
-                </Button>
-              </Link>
+              
             </div>
           </div>
         )}

@@ -208,4 +208,16 @@
 - [x] Implement visibility rules: all other signals locked with waitlist CTA
 - [x] Verify agent waitlist button works on locked signals
 - [x] Test for 404 errors on all signal pages
-- [ ] Save checkpoint and publish
+- [x] Save checkpoint and publish
+
+## Consolidate News Feed into Intelligence Signals (Feb 13, 2026)
+- [x] Remove duplicate news articles from allNews array (76 duplicates removed)
+- [x] Keep all signals in allSignals array (112 unique signals)
+- [x] Delete News.tsx and all NewsArticle pages
+- [x] Remove News routes from App.tsx
+- [x] Update Intelligence pages to use only signals
+- [x] Update SearchResults to use only signals
+- [x] Verify no 404 errors on signal pages
+- [x] Verify search functionality works with consolidated signals (111 results for "AI")
+- [x] Test all pages for broken links
+- [x] Save checkpoint

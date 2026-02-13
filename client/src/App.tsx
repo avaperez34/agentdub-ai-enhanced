@@ -107,77 +107,6 @@ import Signal124 from "./pages/Signal124";
 import SignalDetail from "./pages/SignalDetail";
 import SearchResults from "./pages/SearchResults";
 import About from "./pages/About";
-import News from "./pages/News";
-import NewsArticle from "./pages/NewsArticle";
-import NewsArticle001 from "./pages/NewsArticle001";
-import NewsArticle002 from "./pages/NewsArticle002";
-import NewsArticle003 from "./pages/NewsArticle003";
-import NewsArticle004 from "./pages/NewsArticle004";
-import NewsArticle005 from "./pages/NewsArticle005";
-import NewsArticle006 from "./pages/NewsArticle006";
-import NewsArticle007 from "./pages/NewsArticle007";
-import NewsArticle008 from "./pages/NewsArticle008";
-import NewsArticle009 from "./pages/NewsArticle009";
-import NewsArticle010 from "./pages/NewsArticle010";
-import NewsArticle011 from "./pages/NewsArticle011";
-import NewsArticle012 from "./pages/NewsArticle012";
-import NewsArticle013 from "./pages/NewsArticle013";
-import NewsArticle014 from "./pages/NewsArticle014";
-import NewsArticle015 from "./pages/NewsArticle015";
-import NewsArticle016 from "./pages/NewsArticle016";
-import NewsArticle017 from "./pages/news/NewsArticle017";
-import NewsArticle018 from "./pages/news/NewsArticle018";
-import NewsArticle019 from "./pages/news/NewsArticle019";
-import NewsArticle020 from "./pages/news/NewsArticle020";
-import NewsArticle021 from "./pages/news/NewsArticle021";
-import NewsArticle022 from "./pages/news/NewsArticle022";
-import NewsArticle023 from "./pages/news/NewsArticle023";
-import NewsArticle024 from "./pages/news/NewsArticle024";
-import NewsArticle025 from "./pages/news/NewsArticle025";
-import NewsArticle026 from "./pages/news/NewsArticle026";
-import NewsArticle027 from "./pages/news/NewsArticle027";
-import NewsArticle028 from "./pages/news/NewsArticle028";
-import NewsArticle029 from "./pages/news/NewsArticle029";
-import NewsArticle030 from "./pages/news/NewsArticle030";
-import NewsArticle031 from "./pages/news/NewsArticle031";
-import NewsArticle032 from "./pages/news/NewsArticle032";
-import NewsArticle033 from "@/pages/news/NewsArticle033";
-import NewsArticle034 from "@/pages/news/NewsArticle034";
-import NewsArticle035 from "@/pages/news/NewsArticle035";
-import NewsArticle036 from "@/pages/news/NewsArticle036";
-import NewsArticle037 from "@/pages/news/NewsArticle037";
-import NewsArticle038 from "@/pages/news/NewsArticle038";
-import NewsArticle039 from "@/pages/news/NewsArticle039";
-import NewsArticle040 from "@/pages/news/NewsArticle040";
-import NewsArticle041 from "@/pages/news/NewsArticle041";
-import NewsArticle042 from "@/pages/news/NewsArticle042";
-import NewsArticle043 from "@/pages/news/NewsArticle043";
-import NewsArticle044 from "@/pages/news/NewsArticle044";
-import NewsArticle045 from "@/pages/news/NewsArticle045";
-import NewsArticle046 from "@/pages/news/NewsArticle046";
-import NewsArticle047 from "@/pages/news/NewsArticle047";
-import NewsArticle048 from "@/pages/news/NewsArticle048";
-import NewsArticle049 from "@/pages/news/NewsArticle049";
-import NewsArticle050 from "@/pages/news/NewsArticle050";
-import NewsArticle051 from "@/pages/news/NewsArticle051";
-import NewsArticle052 from "@/pages/news/NewsArticle052";
-import NewsArticle053 from "@/pages/news/NewsArticle053";
-import NewsArticle054 from "@/pages/news/NewsArticle054";
-import NewsArticle055 from "@/pages/news/NewsArticle055";
-import NewsArticle056 from "@/pages/news/NewsArticle056";
-import NewsArticle057 from "@/pages/news/NewsArticle057";
-import NewsArticle058 from "@/pages/news/NewsArticle058";
-import NewsArticle059 from "@/pages/news/NewsArticle059";
-import NewsArticle060 from "@/pages/news/NewsArticle060";
-import NewsArticle064 from "@/pages/news/NewsArticle064";
-import NewsArticle065 from "@/pages/news/NewsArticle065";
-import NewsArticle066 from "@/pages/news/NewsArticle066";
-import NewsArticle067 from "@/pages/news/NewsArticle067";
-import NewsArticle068 from "@/pages/news/NewsArticle068";
-import NewsArticle069 from "@/pages/news/NewsArticle069";
-import NewsArticle070 from "@/pages/news/NewsArticle070";
-import NewsArticle071 from "@/pages/news/NewsArticle071";
-import NewsArticle072 from "@/pages/news/NewsArticle072";
 import Premium from "./pages/Premium";
 import GCCMap from "./pages/GCCMap";
 import Changelog from "./pages/Changelog";
@@ -289,81 +218,9 @@ function Router() {
       <Route path="/signals/122" component={Signal122} />
       <Route path="/signals/123" component={Signal123} />
       <Route path="/signals/124" component={Signal124} />
-      <Route path="/signals/:id" component={SignalDetail} />
-      <Route path="/news" component={News} />      <Route path="/contact" component={Contact} />
+      <Route path="/signals/:id" component={SignalDetail} /><Route path="/contact" component={Contact} />
       <Route path="/about" component={About} />
-      <Route path="/investors" component={About} />
-      <Route path={"/news"} component={News} />
-        <Route path={"/news/001"} component={NewsArticle001} />
-        <Route path={"/news/002"} component={NewsArticle002} />
-        <Route path={"/news/003"} component={NewsArticle003} />
-        <Route path={"/news/004"} component={NewsArticle004} />
-        <Route path={"/news/005"} component={NewsArticle005} />
-        <Route path={"/news/006"} component={NewsArticle006} />
-        <Route path={"/news/007"} component={NewsArticle007} />
-        <Route path={"/news/008"} component={NewsArticle008} />
-        <Route path={"/news/009"} component={NewsArticle009} />
-        <Route path={"/news/010"} component={NewsArticle010} />
-        <Route path={"/news/011"} component={NewsArticle011} />
-        <Route path={"/news/012"} component={NewsArticle012} />
-        <Route path={"/news/013"} component={NewsArticle013} />
-        <Route path={"/news/014"} component={NewsArticle014} />
-        <Route path={"/news/015"} component={NewsArticle015} />
-        <Route path={"/news/016"} component={NewsArticle016} />
-        <Route path={"/news/017"} component={NewsArticle017} />
-        <Route path={"/news/018"} component={NewsArticle018} />
-        <Route path={"/news/019"} component={NewsArticle019} />
-        <Route path={"/news/020"} component={NewsArticle020} />
-        <Route path={"/news/021"} component={NewsArticle021} />
-        <Route path={"/news/022"} component={NewsArticle022} />
-        <Route path={"/news/023"} component={NewsArticle023} />
-        <Route path={"/news/024"} component={NewsArticle024} />
-        <Route path={"/news/025"} component={NewsArticle025} />
-        <Route path={"/news/026"} component={NewsArticle026} />
-        <Route path={"/news/027"} component={NewsArticle027} />
-        <Route path={"/news/028"} component={NewsArticle028} />
-        <Route path={"/news/029"} component={NewsArticle029} />
-        <Route path={"/news/030"} component={NewsArticle030} />
-        <Route path={"/news/031"} component={NewsArticle031} />
-        <Route path={"/news/032"} component={NewsArticle032} />
-        <Route path={"/news/033"} component={NewsArticle033} />
-        <Route path={"/news/034"} component={NewsArticle034} />
-        <Route path={"/news/035"} component={NewsArticle035} />
-        <Route path={"/news/036"} component={NewsArticle036} />
-        <Route path={"/news/037"} component={NewsArticle037} />
-        <Route path={"/news/038"} component={NewsArticle038} />
-        <Route path={"/news/039"} component={NewsArticle039} />
-        <Route path={"/news/040"} component={NewsArticle040} />
-        <Route path={"/news/041"} component={NewsArticle041} />
-        <Route path={"/news/042"} component={NewsArticle042} />
-        <Route path={"/news/043"} component={NewsArticle043} />
-        <Route path={"/news/044"} component={NewsArticle044} />
-        <Route path={"/news/045"} component={NewsArticle045} />
-        <Route path={"/news/046"} component={NewsArticle046} />
-        <Route path={"/news/047"} component={NewsArticle047} />
-        <Route path={"/news/048"} component={NewsArticle048} />
-        <Route path={"/news/049"} component={NewsArticle049} />
-        <Route path={"/news/050"} component={NewsArticle050} />
-        <Route path={"/news/051"} component={NewsArticle051} />
-        <Route path={"/news/052"} component={NewsArticle052} />
-        <Route path={"/news/053"} component={NewsArticle053} />
-        <Route path={"/news/054"} component={NewsArticle054} />
-        <Route path={"/news/055"} component={NewsArticle055} />
-        <Route path={"/news/056"} component={NewsArticle056} />
-        <Route path={"/news/057"} component={NewsArticle057} />
-        <Route path={"/news/058"} component={NewsArticle058} />
-        <Route path={"/news/059"} component={NewsArticle059} />
-        <Route path={"/news/060"} component={NewsArticle060} />
-        <Route path={"/news/064"} component={NewsArticle064} />
-        <Route path={"/news/065"} component={NewsArticle065} />
-        <Route path={"/news/066"} component={NewsArticle066} />
-        <Route path={"/news/067"} component={NewsArticle067} />
-        <Route path={"/news/068"} component={NewsArticle068} />
-        <Route path="/news/069" component={NewsArticle069} />
-        <Route path="/news/070" component={NewsArticle070} />
-        <Route path="/news/071" component={NewsArticle071} />
-        <Route path="/news/072" component={NewsArticle072} />
-        <Route path="/news/:id" component={NewsArticle} />     <Route path="/premium" component={Premium} />
+      <Route path="/investors" component={About} /><Route path="/premium" component={Premium} />
          <Route path={"/gcc-map"} component={GCCMap} />
         <Route path={"/changelog"} component={Changelog} />
         <Route path={"/s/:slug"} component={ShortLinkRedirect} />

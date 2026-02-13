@@ -6,7 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { ArrowRight, Share2, Building2, Users, AlertTriangle, TrendingUp, GitCompare, Search, Filter, ChevronLeft, ChevronRight, Calendar, Clock } from "lucide-react";
 import { useState, useMemo } from "react";
 import { SignalComparison } from "@/components/SignalComparison";
-import { allSignals, allNews } from "@/data/content";
+import { allSignals } from "@/data/content";
 
 export default function Intelligence() {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
@@ -18,29 +18,13 @@ export default function Intelligence() {
 
   // Combine all items as Intelligence Signals
   const combinedItems = useMemo(() => {
-    const signals = allSignals.map(signal => ({
+    return allSignals.map(signal => ({
       ...signal,
       type: "signal" as const,
       date: signal.date,
       excerpt: signal.description,
       readTime: "3-5 min",
     }));
-
-    const news = allNews.map(article => ({
-      id: article.id,
-      title: article.title,
-      description: article.excerpt,
-      excerpt: article.excerpt,
-      category: article.category,
-      country: article.country || "GCC-Wide",
-      date: article.date,
-      readTime: article.readTime,
-      type: "signal" as const,
-      impact: 7.5,
-      sector: article.category,
-    }));
-
-    return [...signals, ...news];
   }, []);
 
   // Filter and search
@@ -224,7 +208,7 @@ export default function Intelligence() {
                           </span>
                         )}
                       </div>
-                      <Link href={item.type === "signal" ? `/signals/${item.id}` : `/news/${item.id}`}>
+                      <Link href={`/signals/${item.id}`}>
                         <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                       </Link>
                     </div>
