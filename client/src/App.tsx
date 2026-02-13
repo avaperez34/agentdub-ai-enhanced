@@ -98,6 +98,12 @@ import Signal103 from "./pages/Signal103";
 import Signal104 from "./pages/Signal104";
 import Signal105 from "./pages/Signal105";
 import Signal106 from "./pages/Signal106";
+import Signal119 from "./pages/Signal119";
+import Signal120 from "./pages/Signal120";
+import Signal121 from "./pages/Signal121";
+import Signal122 from "./pages/Signal122";
+import Signal123 from "./pages/Signal123";
+import Signal124 from "./pages/Signal124";
 import SignalDetail from "./pages/SignalDetail";
 import SearchResults from "./pages/SearchResults";
 import About from "./pages/About";
@@ -277,6 +283,12 @@ function Router() {
       <Route path="/signals/104" component={Signal104} />
       <Route path="/signals/105" component={Signal105} />
       <Route path="/signals/106" component={Signal106} />
+      <Route path="/signals/119" component={Signal119} />
+      <Route path="/signals/120" component={Signal120} />
+      <Route path="/signals/121" component={Signal121} />
+      <Route path="/signals/122" component={Signal122} />
+      <Route path="/signals/123" component={Signal123} />
+      <Route path="/signals/124" component={Signal124} />
       <Route path="/signals/:id" component={SignalDetail} />
       <Route path="/news" component={News} />      <Route path="/contact" component={Contact} />
       <Route path="/about" component={About} />

@@ -195,4 +195,17 @@
 - [x] Verify admin receives notifications and data stored in database
 - [x] Create admin dashboard for agent waitlist management
 - [x] Write comprehensive unit tests for agent waitlist
-- [ ] Save checkpoint
+- [x] Save checkpoint
+
+## Add More GCC AI/Deep Tech Intelligence Signals (Feb 13, 2026)
+- [x] Research latest GCC AI and deep tech developments
+- [x] Create 6 new intelligence signals (119-124) with comprehensive content
+- [x] Create signal detail pages for new signals
+- [x] Add all signals to content.ts
+- [x] Update FREE_SIGNAL_ID to latest signal (124)
+- [x] Implement visibility rules: latest signal free on homepage (short version with read more)
+- [x] Implement visibility rules: latest signal free on intelligence page (100+ lines version)
+- [x] Implement visibility rules: all other signals locked with waitlist CTA
+- [x] Verify agent waitlist button works on locked signals
+- [x] Test for 404 errors on all signal pages
+- [ ] Save checkpoint and publish

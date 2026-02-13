@@ -73,7 +73,7 @@ export default function IntelligenceMerged() {
     if (searchQuery) {
       items = items.filter(item =>
         item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        item.excerpt.toLowerCase().includes(searchQuery.toLowerCase())
+        (item.excerpt && item.excerpt.toLowerCase().includes(searchQuery.toLowerCase()))
       );
     }
 
@@ -91,8 +91,8 @@ export default function IntelligenceMerged() {
   const categories = useMemo(() => {
     const cats = new Set<string>();
     combinedItems.forEach(item => {
-      if (item.category) cats.add(item.category);
-      if (item.country) cats.add(item.country);
+      if (item && item.category) cats.add(item.category);
+      if (item && item.country) cats.add(item.country);
     });
     return Array.from(cats).sort();
   }, [combinedItems]);
