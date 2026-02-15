@@ -221,3 +221,18 @@
 - [x] Verify search functionality works with consolidated signals (111 results for "AI")
 - [x] Test all pages for broken links
 - [x] Save checkpoint
+
+## Add New Intelligence Signals with Full Analysis (Feb 15, 2026)
+- [x] Research 5+ new GCC AI developments with deep analysis
+- [x] Create 6 new intelligence signals (125-130) with 100+ lines each
+- [x] Create comprehensive analysis sections for each signal
+- [x] Add all signals to content.ts
+- [x] Update FREE_SIGNAL_ID to latest signal (130)
+- [x] Create signal detail pages for new signals (Signal125-130.tsx)
+- [x] Add routes for new signal pages in App.tsx
+- [x] Test latest signal displays free on homepage (✓ Signal 130 showing)
+- [x] Test latest signal displays free on intelligence page (✓ full 100+ lines version)
+- [x] Test other signals are locked with waitlist button (✓ working)
+- [x] Test for 404 errors on all new signal pages (✓ none found)
+- [x] Verify search functionality includes new signals (✓ 111+ results)
+- [ ] Save checkpoint and publish
