@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { ShareButton } from "@/components/ShareButton";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Loader2 } from "lucide-react";
@@ -41,6 +42,11 @@ export default function Signal127() {
             <span>{signal.date}</span>
             <span>•</span>
             <span>Impact: {signal.impact}/10</span>
+            <ShareButton 
+              url={`https://agentdub.ai/signals/${signal.id}`}
+              title={signal.title}
+              description="Read the latest GCC AI intelligence signal on agentdub.ai"
+            />
           </div>
         </div>
       </header>

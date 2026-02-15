@@ -236,3 +236,10 @@
 - [x] Test for 404 errors on all new signal pages (✓ none found)
 - [x] Verify search functionality includes new signals (✓ 111+ results)
 - [ ] Save checkpoint and publish
+
+## Add Share Buttons to All Signal Pages (Feb 15, 2026)
+- [x] Create ShareButton component with social media sharing (already exists)
+- [x] Add share button to all new signal pages (125-130)
+- [x] Verify all existing signals have share buttons
+- [x] Test share functionality on multiple signals (✓ LinkedIn, Twitter, Copy Link working)
+- [ ] Save checkpoint and publish
