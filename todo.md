@@ -273,3 +273,9 @@
 - [x] Test for 404 errors on all new signal pages (none found)
 - [x] Verify search functionality includes new signals (working)
 - [x] Save checkpoint and publish
+
+## Make Homepage Camel Dynamic (Feb 17, 2026)
+- [x] Inspect current camel element on homepage
+- [x] Design and implement dynamic animation for the camel
+- [x] Test animation on homepage
+- [ ] Save checkpoint and publish

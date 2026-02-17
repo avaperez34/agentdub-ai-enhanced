@@ -366,15 +366,48 @@ export default function Home() {
       <section className="py-20 px-4 bg-gradient-to-b from-background to-secondary/30 border-t border-border">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Mascot Image */}
+            {/* Animated Mascot Image */}
             <div className="flex justify-center lg:justify-end">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-accent/5 rounded-lg blur-3xl" />
-                <img
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663028659189/BvIvNKGGYvzjwGug.png"
-                  alt="AgentDubai Sovereign AI Agent Mascot"
-                  className="relative w-full max-w-md h-auto rounded-lg shadow-2xl"
-                />
+              <div className="relative" style={{ perspective: '1000px' }}>
+                {/* Pulsing glow aura */}
+                <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/30 via-teal-400/20 to-cyan-500/30 rounded-2xl blur-3xl animate-camel-glow" />
+                <div className="absolute -inset-4 bg-gradient-to-br from-emerald-600/10 to-cyan-600/10 rounded-2xl blur-2xl animate-camel-glow" style={{ animationDelay: '1.5s' }} />
+
+                {/* Orbiting particle ring - outer */}
+                <div className="absolute inset-0 animate-camel-orbit" style={{ zIndex: 10 }}>
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-2 w-2 h-2 bg-emerald-400 rounded-full animate-camel-twinkle-1 shadow-[0_0_8px_2px_rgba(16,185,129,0.6)]" />
+                  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-2 w-1.5 h-1.5 bg-teal-300 rounded-full animate-camel-twinkle-2 shadow-[0_0_6px_2px_rgba(94,234,212,0.5)]" />
+                  <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-2 w-1.5 h-1.5 bg-cyan-400 rounded-full animate-camel-twinkle-3 shadow-[0_0_6px_2px_rgba(34,211,238,0.5)]" />
+                  <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-2 w-2 h-2 bg-emerald-300 rounded-full animate-camel-twinkle-4 shadow-[0_0_8px_2px_rgba(110,231,183,0.6)]" />
+                </div>
+
+                {/* Orbiting particle ring - inner (reverse) */}
+                <div className="absolute inset-8 animate-camel-orbit-reverse" style={{ zIndex: 10 }}>
+                  <div className="absolute top-0 right-1/4 w-1 h-1 bg-teal-400 rounded-full animate-camel-twinkle-5 shadow-[0_0_4px_1px_rgba(45,212,191,0.5)]" />
+                  <div className="absolute bottom-0 left-1/4 w-1.5 h-1.5 bg-emerald-400 rounded-full animate-camel-twinkle-6 shadow-[0_0_6px_2px_rgba(52,211,153,0.5)]" />
+                </div>
+
+                {/* Floating mascot container */}
+                <div className="relative animate-camel-float">
+                  <img
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663028659189/BvIvNKGGYvzjwGug.png"
+                    alt="AgentDubai Sovereign AI Agent Mascot"
+                    className="relative w-full max-w-md h-auto rounded-lg shadow-2xl"
+                    style={{ filter: 'drop-shadow(0 0 20px rgba(16, 185, 129, 0.3))' }}
+                  />
+
+                  {/* Holographic scan line */}
+                  <div
+                    className="absolute left-0 right-0 h-[2px] animate-camel-scan pointer-events-none"
+                    style={{
+                      background: 'linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.6), rgba(45, 212, 191, 0.8), rgba(16, 185, 129, 0.6), transparent)',
+                      boxShadow: '0 0 12px 2px rgba(16, 185, 129, 0.4)',
+                    }}
+                  />
+
+                  {/* Shimmer overlay */}
+                  <div className="absolute inset-0 rounded-lg animate-camel-shimmer pointer-events-none" />
+                </div>
               </div>
             </div>
 
