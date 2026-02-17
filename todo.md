@@ -258,3 +258,18 @@
 - [x] Test for 404 errors on all new signal pages (✓ none found)
 - [x] Verify search functionality includes new signals (✓ working)
 - [ ] Save checkpoint and publish
+
+## Add New Intelligence Signals Batch 3 (Feb 17, 2026)
+- [x] Research 6 new GCC AI developments with deep analysis
+- [x] Create 6 new intelligence signals (137-142) with 100+ lines each
+- [x] Update FREE_SIGNAL_ID to latest signal (142)
+- [x] Create signal detail pages for new signals (Signal137-142.tsx)
+- [x] Add routes for new signal pages in App.tsx
+- [x] Add share buttons to all new signal pages (working)
+- [x] Test latest signal displays free on homepage (Signal 142 showing)
+- [x] Test latest signal displays full version on intelligence page (full content)
+- [x] Test other signals are locked with premium/waitlist format (working)
+- [x] Verify waitlist button works on all locked signals (modal opens)
+- [x] Test for 404 errors on all new signal pages (none found)
+- [x] Verify search functionality includes new signals (working)
+- [x] Save checkpoint and publish
