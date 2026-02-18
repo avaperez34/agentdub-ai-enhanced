@@ -211,7 +211,7 @@ export default function Home() {
           <div className="mb-12">
             <h2 className="text-4xl font-bold mb-3">Latest Intelligence</h2>
             <p className="text-muted-foreground">Fresh signals and breaking news from the GCC AI ecosystem</p>
-            <p className="text-sm text-muted-foreground mt-2">Last updated: February 4, 2026</p>
+            <p className="text-sm text-muted-foreground mt-2">Last updated: February 18, 2026</p>
           </div>
 
           {/* Latest Signals */}
