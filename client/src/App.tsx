@@ -129,6 +129,12 @@ import Signal145 from "@/pages/Signal145";
 import Signal146 from "@/pages/Signal146";
 import Signal147 from "@/pages/Signal147";
 import Signal148 from "@/pages/Signal148";
+import Signal149 from "@/pages/Signal149";
+import Signal150 from "@/pages/Signal150";
+import Signal151 from "@/pages/Signal151";
+import Signal152 from "@/pages/Signal152";
+import Signal153 from "@/pages/Signal153";
+import Signal154 from "@/pages/Signal154";
 import SearchResults from "./pages/SearchResults";
 import About from "./pages/About";
 import Premium from "./pages/Premium";
@@ -266,6 +272,12 @@ function Router() {
         <Route path="/signals/146" component={Signal146} />
         <Route path="/signals/147" component={Signal147} />
         <Route path="/signals/148" component={Signal148} />
+        <Route path="/signals/149" component={Signal149} />
+        <Route path="/signals/150" component={Signal150} />
+        <Route path="/signals/151" component={Signal151} />
+        <Route path="/signals/152" component={Signal152} />
+        <Route path="/signals/153" component={Signal153} />
+        <Route path="/signals/154" component={Signal154} />
       <Route path="/signals/:id" component={SignalDetail} /><Route path="/contact" component={Contact} />
       <Route path="/about" component={About} />
       <Route path="/investors" component={About} /><Route path="/premium" component={Premium} />

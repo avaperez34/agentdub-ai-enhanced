@@ -294,4 +294,20 @@
 - [x] Verify waitlist button works on all locked signals (homepage + intelligence page)
 - [x] Test for 404 errors on all new signal pages (none found, 404 page works correctly)
 - [x] Verify share buttons work on all signal pages (LinkedIn, Twitter, Copy Link)
+- [x] Save checkpoint and publish
+
+## Add New Intelligence Signals Batch 5 (Feb 20, 2026) - Fresh Batch
+- [x] Research 6 new fresh GCC AI developments
+- [x] Create 6 new intelligence signals (149-154) with 100+ lines each
+- [x] Add all signals to content.ts
+- [x] Update FREE_SIGNAL_ID to latest signal (154)
+- [x] Create signal detail pages for new signals (Signal149-154.tsx)
+- [x] Add routes for new signal pages in App.tsx
+- [x] Add share buttons to all new signal pages
+- [x] Test latest signal (154) displays free on homepage (read more format)
+- [x] Test latest signal (154) displays full version on intelligence page
+- [x] Test other signals (149-153) are locked as premium with waitlist CTA
+- [x] Verify waitlist button works on all locked signals (homepage + intelligence page)
+- [x] Test for 404 errors on all new signal pages (none found)
+- [x] Verify share buttons work on all signal pages (LinkedIn, Twitter, Copy Link)
 - [ ] Save checkpoint and publish
