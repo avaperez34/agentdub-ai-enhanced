@@ -1,7 +1,7 @@
 // Shared content data for search and other features
 // This file exports all signals and news articles for use across the application
 
-export const allSignals = [
+const allSignalsOriginal = [
   // Latest Signals (Feb 11, 2026) - UAE Pension AI & Regional Coordination
   {
     id: "118",
@@ -2907,7 +2907,7 @@ The UAE now ranks third globally for AI adoption, trailing only Singapore (66%) 
 
 THE STRATEGIC FOUNDATION
 
-The UAE's early adoption of a national AI strategy in 2017—among the first in the world—has created a foundational advantage that continues to compound. The nation's Vision 2030 explicitly targets AI leadership, positioning artificial intelligence as a cornerstone of economic diversification and competitive advantage. This strategic clarity has enabled consistent policy alignment, infrastructure investment, and talent development across government and private sectors.
+The UAE's early adoption of a national AI strategy in 2017 among the first in the world has created a foundational advantage that continues to compound. The nation's Vision 2030 explicitly targets AI leadership, positioning artificial intelligence as a cornerstone of economic diversification and competitive advantage. This strategic clarity has enabled consistent policy alignment, infrastructure investment, and talent development across government and private sectors.
 
 SECTOR-WIDE DEPLOYMENT ACCELERATION
 
@@ -3111,3 +3111,232 @@ The GCC's data centre hub positioning has implications for global AI infrastruct
     date: "2026-02-20",
   },
 ];
+
+// Fresh Signals Batch (Feb 21, 2026) - Latest GCC AI Developments
+export const freshSignals155to160 = [
+  {
+    id: "155",
+    title: "Saudi Arabia Joins Global Partnership on Artificial Intelligence - Shaping International AI Standards",
+    description: `Saudi Arabia has officially joined the Global Partnership on Artificial Intelligence (GPAI), an initiative hosted by the Organization for Economic Cooperation and Development and originating from the G7. This strategic accession, announced by Saudi Data and Artificial Intelligence Authority (SDAIA) President Dr. Abdullah Al-Ghamdi at the India AI Impact Summit 2026, marks a significant milestone in the Kingdom's commitment to responsible and reliable AI development on the global stage.
+
+EXECUTIVE SUMMARY
+
+Saudi Arabia's membership in GPAI positions the Kingdom alongside over 40 nations in actively shaping international AI standards and governance frameworks. This accession underscores the Kingdom's leadership in fostering responsible and reliable AI use while aligning with Vision 2030 goals to localize advanced technologies and boost the digital economy's contribution to GDP. The membership reflects Saudi Arabia's evolution from a technology consumer to a technology governance participant.
+
+STRATEGIC ALIGNMENT WITH VISION 2030
+
+The GPAI membership is directly supported by Crown Prince Mohammed bin Salman bin Abdulaziz Al Saud and aligns with Vision 2030 objectives to localize advanced technologies and increase the digital economy's contribution to GDP. By participating in international AI governance, Saudi Arabia is ensuring that global AI standards reflect the interests and values of emerging markets and non-Western perspectives. This positioning strengthens the Kingdom's influence in shaping the future of global AI development.
+
+EXPANDING AI RISK MONITORING TO THE MIDDLE EAST
+
+The GPAI membership aims to expand AI risk monitoring to the Middle East, aligning regional priorities with international standards. This expansion is critical as AI adoption accelerates across the GCC. By participating in GPAI's risk assessment and governance frameworks, Saudi Arabia can help establish standards that balance innovation with responsible development. This approach protects the region while enabling continued AI advancement.
+
+RIYADH CHARTER ON AI
+
+Saudi Arabia's GPAI membership reinforces the Riyadh Charter on AI, a framework developed to ensure ethical technological development for the benefit of humanity. The Charter reflects the Kingdom's commitment to responsible AI governance and its role as a regional leader in establishing ethical AI standards. This framework is increasingly influencing how other GCC states approach AI governance and regulation.
+
+ATTRACTING GLOBAL AI INVESTMENTS
+
+By joining GPAI and demonstrating commitment to responsible AI governance, Saudi Arabia is positioning itself to attract high-quality global investments in AI infrastructure and research. International companies and investors are increasingly prioritizing markets with clear governance frameworks and regulatory clarity. Saudi Arabia's GPAI membership signals that the Kingdom offers both opportunity and responsible governance.
+
+IMPLICATIONS FOR GCC LEADERSHIP
+
+Saudi Arabia's GPAI membership establishes the Kingdom as a governance leader within the GCC. Other Gulf states are likely to follow, creating a coordinated regional approach to international AI governance. This collective action strengthens the GCC's voice in shaping global AI standards and positions the region as a responsible steward of AI development.`,
+    sector: "AI Governance & International Standards",
+    impact: 8.9,
+    horizon: "1-2y",
+    country: "Saudi Arabia",
+    category: "governance",
+    date: "2026-02-21",
+  },
+  {
+    id: "156",
+    title: "UAE Leads Global AI Leaders Ranking - 42% of Firms Achieve AI Leadership Status",
+    description: `The United Arab Emirates has reinforced its position as one of the world's leading artificial intelligence hubs, with 42 percent of business institutions classified as 'AI leaders,' according to a comprehensive report by Boston Consulting Group (BCG). This achievement positions the UAE not merely as a regional frontrunner but as a global benchmark for AI-driven transformation and sustainable value creation.
+
+EXECUTIVE SUMMARY
+
+The UAE's 42 percent AI leader classification represents a fundamental shift in how organizations across the nation are deploying advanced technologies. The study, titled 'Unlocking Potential: How GCC Organizations Can Convert AI Momentum into Sustainable Value at Scale,' surveyed 200 senior executives and assessed 41 digital capabilities across seven sectors. The findings demonstrate that UAE organizations are not only keeping pace with global peers but are translating AI investments into measurable financial returns.
+
+DIGITAL MATURITY ACCELERATION
+
+37 percent of UAE institutions have reached the 'scaling' stage of digital maturity, marking a clear shift from isolated pilot initiatives to enterprise-wide implementation. The UAE leads the region with an average digital maturity score of 46 points, while only 13 percent of institutions were identified as lagging. This distribution reflects the success of strategic investments in infrastructure and the firm commitment to the UAE Artificial Intelligence Strategy 2031.
+
+FINANCIAL IMPACT OF AI LEADERSHIP
+
+AI leaders in the GCC deliver total shareholder returns 1.7 times higher and operating profit margins 1.5 times higher than slower adopters. For UAE organizations, this translates to substantial competitive advantages and measurable business value. The financial impact demonstrates that AI adoption is not merely a technology initiative but a strategic driver of business performance.
+
+REGIONAL LEADERSHIP POSITION
+
+Dr. Lars Littig, Managing Director & Partner at Boston Consulting Group, noted that the UAE's notable progress as an advanced market and the classification of a significant proportion of its institutions as leaders directly reflects the strength of strategic investments in infrastructure. The UAE's leadership position is attracting global technology companies, talent, and investment capital seeking to participate in the region's AI transformation.
+
+ADVANCED TECHNOLOGY DEPLOYMENT AT SCALE
+
+UAE organizations are demonstrating strong progress in deploying advanced technologies at scale. This includes generative AI applications, machine learning systems, and AI-driven business process automation. The scale of deployment is creating network effects that accelerate innovation and attract additional investment.
+
+IMPLICATIONS FOR GLOBAL AI MARKETS
+
+The UAE's AI leadership ranking establishes the nation as a model for how emerging markets can rapidly develop AI capabilities and translate them into business value. This positioning attracts global technology partners, research institutions, and investment capital seeking to participate in the UAE's continued AI evolution.`,
+    sector: "AI Leadership & Digital Transformation",
+    impact: 9.0,
+    horizon: "0-6m",
+    country: "UAE",
+    category: "adoption",
+    date: "2026-02-21",
+  },
+  {
+    id: "157",
+    title: "Qatar Accelerates AI Adoption - 10% Surge in Emerging Organizations Signals Momentum",
+    description: `Qatar is demonstrating significant momentum in artificial intelligence advancement within the GCC, recording a remarkable 10 percentage-point increase in 'Emerging' AI organizations between 2024 and 2025. This acceleration positions the nation firmly within the region's AI acceleration trajectory and reflects sustained organizational commitment to AI transformation and economic diversification.
+
+EXECUTIVE SUMMARY
+
+According to a comprehensive study by Boston Consulting Group, Qatar has achieved a notable 10 percentage-point increase in 'Emerging' AI organizations, positioning the nation as one of the fastest-accelerating AI markets in the GCC. The study, which surveyed 200 C-suite executives and assessed 41 digital and AI capabilities across seven industries, shows Qatar's average AI maturity score of 39 rising rapidly year-over-year. This upward trajectory indicates a growing pipeline of organizations transitioning from experimental phases toward comprehensive AI integrations.
+
+AI MATURITY ACCELERATION
+
+Qatar's rapid AI maturation reflects the nation's strategic approach to technological transformation and economic diversification. The 10 percentage-point surge in emerging AI organizations demonstrates Qatar's ability to accelerate from experimentation to systematic implementation at scale. This acceleration is creating a robust foundation for sustained AI leadership across multiple sectors including financial services, healthcare, energy, and government.
+
+STRATEGIC INFRASTRUCTURE INVESTMENTS
+
+Qatar's investment in advanced AI compute capabilities reflects the nation's commitment to building indigenous AI infrastructure. The country's digital infrastructure investments, including 5G coverage, cloud computing capabilities, and data centre development, are enabling rapid AI adoption. These infrastructure investments are attracting technology companies and talent seeking to build AI solutions in a digitally advanced environment.
+
+PUBLIC SECTOR AI LEADERSHIP
+
+The GCC region demonstrates exceptional AI leadership, with its public sector achieving the highest AI maturity levels globally across all surveyed markets. Qatar's public sector is leading this transformation, implementing AI systems for government service delivery, policy analysis, and operational efficiency. This public sector leadership is creating a model for private sector AI adoption.
+
+FINANCIAL IMPACT OF AI ADOPTION
+
+AI Leaders across the GCC deliver up to 1.7 times higher total shareholder returns and 1.5 times higher EBIT margins compared to AI Laggards. For Qatar, this financial impact is driving continued investment in AI capabilities and attracting international companies seeking to participate in the nation's AI transformation.
+
+FRONTIER TECHNOLOGIES - AGENTIC AI EXPERIMENTATION
+
+38 percent of GCC organizations are already experimenting with agentic AI, positioning the region competitively against the global average of 46%. Qatar is participating in this frontier technology exploration, with organizations testing autonomous AI systems for complex decision-making and operational tasks. The value generated from agentic AI initiatives is projected to double from 17% to 29% by 2028.`,
+    sector: "AI Adoption & Emerging Technologies",
+    impact: 8.8,
+    horizon: "1-2y",
+    country: "Qatar",
+    category: "adoption",
+    date: "2026-02-21",
+  },
+  {
+    id: "158",
+    title: "GCC AI Compute Capacity Expansion - 8-10 GW Strategic Investment in Regional Infrastructure",
+    description: `Saudi Arabia, the United Arab Emirates, and Qatar are collectively planning 8-10 gigawatts (GW) of AI-related compute capacity, spread across multiple sites, grids, and jurisdictions. This massive infrastructure investment represents a strategic commitment to positioning the GCC as a global AI infrastructure hub and reflects the region's understanding that compute capacity is becoming a form of geopolitical leverage in the 21st century.
+
+EXECUTIVE SUMMARY
+
+The GCC's 8-10 GW AI compute capacity expansion is not merely a technology investment but a strategic hedge against diminishing hydrocarbon revenues and a foundation for sustaining power in the rapidly shifting world order. This coordinated regional approach to AI infrastructure development reflects a sophisticated understanding of how compute capacity translates into economic influence and geopolitical leverage. The scale of this investment positions the GCC to compete with established AI infrastructure hubs globally.
+
+ECONOMIC DIVERSIFICATION IMPERATIVE
+
+All six GCC countries—Bahrain, Kuwait, Oman, Qatar, Saudi Arabia, and the United Arab Emirates—have published national AI strategies, signaling top-level political commitment to this transition. The 8-10 GW compute capacity expansion is the physical manifestation of this strategic commitment. By building world-class AI infrastructure, GCC states are creating new engines of economic growth beyond oil and traditional services.
+
+GEOPOLITICAL LEVERAGE THROUGH COMPUTE
+
+Compute is becoming a form of geopolitical leverage in the 21st century. Nations and regions that control significant compute capacity can influence global AI development, attract talent and investment, and shape international AI standards. The GCC's 8-10 GW expansion positions the region to exercise this leverage and participate in shaping the future of global AI development.
+
+STRATEGIC POSITIONING IN GLOBAL AI MARKETS
+
+The GCC's compute capacity expansion is partly driven by competition for AI workloads and talent from Asia, Europe, and North America. By offering world-class infrastructure, regulatory frameworks, and financial incentives, the GCC is positioning itself to attract AI research initiatives, data centre operations, and AI-native companies. This positioning creates opportunities for technology exports and long-term economic growth.
+
+US-GCC STRATEGIC ALIGNMENT
+
+The GCC's compute capacity expansion is aligned with broader US-GCC strategic partnerships. By building infrastructure powered by US chips, cloud platforms, and security protocols, the GCC is anchoring itself within the American AI ecosystem. This alignment strengthens US influence across the Middle East, South Asia, and Africa while providing GCC states with access to cutting-edge technology and global markets.
+
+REGIONAL COORDINATION AND COMPETITION
+
+While GCC states are coordinating on some infrastructure initiatives, competition is also driving innovation. The UAE, Saudi Arabia, and Qatar are each pursuing distinct compute capacity strategies tailored to their economic priorities and geographic advantages. This combination of coordination and competition is accelerating infrastructure development and creating a robust regional ecosystem.
+
+IMPLICATIONS FOR GLOBAL AI INFRASTRUCTURE MARKETS
+
+The GCC's 8-10 GW compute capacity expansion will reshape global AI infrastructure markets. As the region develops world-class infrastructure, it will attract AI workloads from Europe, Asia, and Africa. This creates opportunities for GCC technology companies to offer hosting, consulting, and managed services while positioning the region as a strategic node in the global AI infrastructure network.`,
+    sector: "AI Infrastructure & Compute Capacity",
+    impact: 9.3,
+    horizon: "1-2y",
+    country: "GCC",
+    category: "infrastructure",
+    date: "2026-02-21",
+  },
+  {
+    id: "159",
+    title: "GCC Public Sector AI Maturity - Highest Global Rankings Across All Markets",
+    description: `The GCC region demonstrates exceptional AI leadership, with its public sector achieving the highest AI maturity levels globally across all surveyed markets. This remarkable achievement reflects years of strategic investment in digital government transformation, AI capability development, and organizational change management. The public sector's AI leadership is creating a model for private sector adoption and positioning the GCC as a global benchmark for government AI implementation.
+
+EXECUTIVE SUMMARY
+
+According to comprehensive research by Boston Consulting Group, the GCC public sector has achieved the highest AI maturity levels globally among all markets assessed. This achievement is not accidental but reflects deliberate strategic investments in digital government infrastructure, AI talent development, and organizational transformation. The public sector's leadership is creating a demonstration effect that is accelerating private sector AI adoption across the region.
+
+DIGITAL GOVERNMENT TRANSFORMATION
+
+GCC governments have invested heavily in digital government infrastructure that enables AI deployment. Electronic service delivery systems, integrated data platforms, and cloud computing infrastructure have created the foundation for AI-driven government operations. These investments are enabling governments to deliver services more efficiently, make better policy decisions, and respond more quickly to citizen needs.
+
+AI MATURITY ACROSS SECTORS
+
+While Technology, Media, and Telecommunications (TMT) continues to lead in AI maturity within the GCC, there is rapid advancement occurring in other critical sectors including Financial Institutions, Healthcare, Industrial Goods, and Travel, Cities, and Infrastructure. This broad-based AI transformation across sectors reflects the region's comprehensive approach to AI adoption and its commitment to leveraging AI across the entire economy.
+
+WORKFORCE DEVELOPMENT AND AI SKILLS
+
+The GCC's public sector AI leadership reflects significant investments in workforce development. Training programs have equipped tens of thousands of public sector employees with AI and cloud computing skills. This human capital development is essential for sustaining AI adoption and ensuring that organizations can effectively deploy and manage AI systems.
+
+FINANCIAL IMPACT OF PUBLIC SECTOR AI
+
+Public sector AI implementations are delivering measurable financial returns through improved operational efficiency, reduced service delivery costs, and enhanced citizen satisfaction. These financial benefits are creating business cases for continued AI investment and demonstrating the value of AI adoption to private sector organizations.
+
+FIVE CRITICAL STRATEGIC MOVES FOR AI LEADERSHIP
+
+Successful AI Leaders in the GCC distinguish themselves through five critical strategic moves: (1) pursuing multi-year strategic ambitions with 2.5 times more leadership engagement than laggards, (2) fundamentally reshaping business processes rather than simply deploying off-the-shelf solutions, (3) implementing AI-first operating models with robust governance frameworks, (4) securing and upskilling talent at 1.8 times the rate of competitors, and (5) building fit-for-purpose technology architectures that reduce adoption challenges by 15%.
+
+IMPLICATIONS FOR GLOBAL GOVERNMENT AI ADOPTION
+
+The GCC's public sector AI leadership establishes a model for how governments globally can effectively deploy AI to improve service delivery and operational efficiency. This positioning is attracting international technology companies, consulting firms, and research institutions seeking to participate in the region's continued AI evolution and learn from the GCC's government AI implementation experience.`,
+    sector: "Public Sector AI & Digital Government",
+    impact: 8.9,
+    horizon: "0-6m",
+    country: "GCC",
+    category: "government",
+    date: "2026-02-21",
+  },
+  {
+    id: "160",
+    title: "Agentic AI Frontier - GCC Organizations Leading Experimentation with Autonomous AI Systems",
+    description: `The GCC region is positioning itself at the frontier of agentic AI development, with 38 percent of organizations already experimenting with autonomous AI systems capable of independent decision-making and initiative. This frontier technology exploration positions the GCC competitively against the global average of 46% and reflects the region's commitment to staying at the cutting edge of AI innovation.
+
+EXECUTIVE SUMMARY
+
+Agentic AI represents the next frontier of artificial intelligence development, moving beyond traditional AI systems that respond to human input toward autonomous systems capable of independent decision-making, planning, and execution. The GCC's 38 percent experimentation rate demonstrates significant organizational readiness to explore and deploy these advanced capabilities. The value generated from agentic AI initiatives is currently at 17% and is projected to double to 29% by 2028, driven by continued experimentation and strategic deployment.
+
+AGENTIC AI CAPABILITIES AND APPLICATIONS
+
+Agentic AI systems are capable of operating autonomously within defined parameters, making decisions based on real-time data, and taking initiative to achieve organizational objectives. Applications include autonomous supply chain optimization, intelligent customer service agents, autonomous research systems, and self-managing infrastructure. These applications promise significant productivity gains and operational efficiency improvements.
+
+GCC ORGANIZATIONAL READINESS
+
+The GCC's 38 percent agentic AI experimentation rate reflects organizational readiness to explore advanced AI capabilities. Organizations across the region are testing autonomous systems in controlled environments, learning from early implementations, and preparing for broader deployment. This experimentation phase is critical for developing the organizational capabilities and governance frameworks needed for large-scale agentic AI deployment.
+
+VALUE CREATION FROM AGENTIC AI
+
+The value generated from agentic AI initiatives is currently at 17% of total AI value creation in the GCC. This value is projected to double to 29% by 2028 as organizations move from experimentation to production deployment. This value growth reflects the substantial productivity and efficiency gains that agentic AI systems can deliver when properly implemented and governed.
+
+GOVERNANCE FRAMEWORKS FOR AUTONOMOUS SYSTEMS
+
+Successful agentic AI deployment requires robust governance frameworks that balance autonomy with human oversight. GCC organizations are developing governance models that define decision-making authority, establish oversight mechanisms, and ensure that autonomous systems operate within acceptable risk parameters. These governance frameworks are critical for maintaining organizational control while realizing the benefits of autonomous AI systems.
+
+COMPETITIVE POSITIONING AGAINST GLOBAL AVERAGE
+
+While the GCC's 38 percent agentic AI experimentation rate trails the global average of 46%, the region is rapidly closing this gap. The combination of organizational readiness, infrastructure investments, and talent development is positioning the GCC to accelerate agentic AI adoption and potentially achieve global leadership in autonomous AI deployment.
+
+IMPLICATIONS FOR FUTURE AI DEVELOPMENT
+
+Agentic AI represents the next phase of AI-driven value creation. Organizations that successfully develop agentic AI capabilities will gain significant competitive advantages in productivity, efficiency, and innovation. The GCC's early experimentation positions the region to lead in autonomous AI development and establish standards for responsible agentic AI governance that will influence global AI development.`,
+    sector: "Frontier AI Technologies & Autonomous Systems",
+    impact: 8.7,
+    horizon: "1-2y",
+    country: "GCC",
+    category: "frontier",
+    date: "2026-02-21",
+  },
+];
+
+// Merge fresh signals with existing signals - combine both batches
+export const allSignals = [...allSignalsOriginal, ...freshSignals155to160];
