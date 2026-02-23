@@ -327,3 +327,19 @@
 - [ ] Verify share buttons work on all signal pages (LinkedIn, Twitter, Copy Link)
 - [ ] Verify no 404 errors on all new signal pages
 - [ ] Save checkpoint and publish
+
+## Add New Intelligence Signals Batch 7 (Feb 22, 2026) - Fresh Batch Today
+- [ ] Research 6 new fresh GCC AI developments
+- [ ] Create 6 new intelligence signals (161-166) with 100+ lines each
+- [ ] Add all signals to content.ts
+- [ ] Update FREE_SIGNAL_ID to latest signal (166)
+- [ ] Create signal detail pages for new signals (Signal161-166.tsx)
+- [ ] Add routes for new signal pages in App.tsx
+- [ ] Add share buttons to all new signal pages
+- [ ] Verify latest signal (166) displays on homepage with read more format
+- [ ] Verify all new signals (161-166) display on intelligence page
+- [ ] Verify latest signal (166) readable in full 100+ lines on intelligence page
+- [ ] Verify other signals (161-165) are locked as premium with waitlist CTA
+- [ ] Verify share buttons work on all signal pages (LinkedIn, Twitter, Copy Link)
+- [ ] Verify no 404 errors on all new signal pages
+- [ ] Save checkpoint and publish

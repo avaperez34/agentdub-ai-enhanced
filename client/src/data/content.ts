@@ -3338,5 +3338,243 @@ Agentic AI represents the next phase of AI-driven value creation. Organizations 
   },
 ];
 
-// Merge fresh signals with existing signals - combine both batches
-export const allSignals = [...allSignalsOriginal, ...freshSignals155to160];
+// Fresh Signals Batch 2 (Feb 22, 2026) - Latest GCC AI Developments
+export const freshSignals161to166 = [
+  {
+    id: "161",
+    title: "GCC X Summit 2026 - Agentic AI & GenAI Innovation Leadership in Global Capability Centers",
+    description: `The GCC X Summit 2026 in Bengaluru (February 20) highlighted the strategic importance of Global Capability Centers (GCCs) in enterprise AI deployment and innovation. The summit explored 'Now, New & Next' in GCCs with emphasis on Agentic AI, GenAI, data engineering, and cloud computing. This landmark event positioned GCCs as critical infrastructure for enterprise AI transformation at scale and demonstrated growing recognition of GCC importance in the global AI ecosystem.
+
+EXECUTIVE SUMMARY
+
+The GCC X Summit 2026 brought together technology leaders, enterprise executives, and innovation experts to discuss how Global Capability Centers are evolving to support enterprise AI deployment. The summit featured discussions on Agentic AI++, GenAI applications, data engineering, data platforms, and cloud computing. The event demonstrated that GCCs are transitioning from cost optimization centers to innovation hubs driving enterprise AI transformation.
+
+AGENTIC AI IN GLOBAL CAPABILITY CENTERS
+
+GCCs are increasingly deploying agentic AI systems to automate complex business processes and enable autonomous decision-making. These autonomous systems are capable of managing supply chains, optimizing resource allocation, and coordinating cross-functional initiatives with minimal human intervention. The deployment of agentic AI in GCCs represents a qualitative leap in operational sophistication and value creation.
+
+GENAI APPLICATIONS AT ENTERPRISE SCALE
+
+Generative AI applications are being deployed across GCCs for code generation, documentation, customer service, and business analysis. The scale of GenAI deployment in GCCs is creating network effects that accelerate innovation and improve service quality. Organizations are discovering that GenAI can significantly increase productivity when properly integrated into existing workflows.
+
+DATA ENGINEERING AND PLATFORMS
+
+GCCs are building advanced data engineering capabilities and platforms to support AI workloads. These platforms enable rapid data processing, model training, and inference at scale. The investment in data infrastructure is critical for supporting enterprise AI applications and ensuring data quality and governance.
+
+CLOUD COMPUTING INFRASTRUCTURE
+
+Cloud computing platforms are enabling GCCs to scale AI workloads globally while maintaining security and compliance. Multi-cloud strategies are becoming standard, allowing organizations to optimize costs and performance across different cloud providers. The flexibility of cloud infrastructure is enabling GCCs to rapidly deploy new AI capabilities.
+
+IMPLICATIONS FOR ENTERPRISE AI TRANSFORMATION
+
+The GCC X Summit demonstrated that Global Capability Centers are becoming central to enterprise AI transformation. Organizations that successfully leverage GCCs for AI innovation will gain significant competitive advantages in speed, cost, and capability. The summit positioned GCCs as essential infrastructure for the next generation of enterprise AI applications.`,
+    sector: "AI Infrastructure & Enterprise Innovation",
+    impact: 8.4,
+    horizon: "0-6m",
+    country: "Global",
+    category: "infrastructure",
+    date: "2026-02-20",
+  },
+  {
+    id: "162",
+    title: "GCC AI Governance Leadership - International Standards Shaping & Responsible Development Framework",
+    description: `The GCC region is emerging as a leader in international AI governance, with member states actively shaping global AI standards and establishing frameworks for responsible development. Saudi Arabia's participation in the Global Partnership on Artificial Intelligence (GPAI) and the region's commitment to ethical AI governance reflect a sophisticated understanding of how governance frameworks influence global AI development. The GCC's approach balances innovation with responsibility, positioning the region as a trusted steward of AI advancement.
+
+EXECUTIVE SUMMARY
+
+GCC states are moving beyond technology adoption to governance leadership, actively participating in international bodies that shape AI standards and regulations. This transition reflects the region's maturity in AI development and commitment to establishing ethical frameworks that protect societies while enabling innovation. The GCC's governance approach is increasingly influencing how other regions approach AI regulation and oversight.
+
+INTERNATIONAL STANDARDS PARTICIPATION
+
+GCC nations are participating in international standards bodies and governance forums including GPAI, UN AI bodies, and regional cooperation initiatives. This participation ensures that global AI standards reflect the interests and values of emerging markets and non-Western perspectives. The GCC's voice in international governance is strengthening the region's influence over future AI development.
+
+ETHICAL AI FRAMEWORKS
+
+The region is developing comprehensive ethical AI frameworks that address data privacy, algorithmic transparency, and human oversight. These frameworks are being embedded into national AI strategies and are influencing how private sector organizations approach AI development. The emphasis on ethical AI is attracting responsible technology companies and investors.
+
+RIADH CHARTER ON AI
+
+Saudi Arabia's Riyadh Charter on AI establishes principles for ethical technological development and responsible AI governance. The Charter is influencing how other GCC states approach AI governance and is increasingly recognized internationally as a model for responsible AI development. The Charter reflects the region's commitment to ensuring that AI benefits humanity while protecting individual rights.
+
+REGIONAL COORDINATION ON AI GOVERNANCE
+
+GCC states are coordinating on AI governance approaches, creating a unified regional voice in international forums. This coordination strengthens the region's influence and enables member states to establish consistent standards across borders. The regional coordination is also facilitating knowledge sharing and best practice adoption.
+
+ATTRACTING RESPONSIBLE AI INVESTMENT
+
+The GCC's governance leadership is attracting investment from companies and institutions prioritizing responsible AI development. International technology companies are establishing research centers and innovation hubs in the region, recognizing the GCC as a leader in ethical AI governance. This investment is strengthening the region's AI ecosystem and creating high-quality employment opportunities.
+
+IMPLICATIONS FOR GLOBAL AI GOVERNANCE
+
+The GCC's governance leadership is shaping how the world approaches AI regulation and oversight. The region's emphasis on balancing innovation with responsibility is establishing a model that other regions are adopting. As AI becomes increasingly central to global commerce and governance, the GCC's influence over international standards will continue to grow.`,
+    sector: "AI Governance & International Standards",
+    impact: 8.6,
+    horizon: "1-2y",
+    country: "GCC",
+    category: "governance",
+    date: "2026-02-21",
+  },
+  {
+    id: "163",
+    title: "UAE Cybersecurity Victory - AI-Powered Cyber Attack Blocked, Government Digital Systems Protected",
+    description: `The United Arab Emirates successfully defended against a sophisticated, AI-powered cyber attack targeting critical infrastructure and government digital platforms. The attack, described as having 'terrorist nature' by the UAE Cybersecurity Council, employed artificial intelligence to enhance operations and evade detection. The successful defense demonstrates the effectiveness of the UAE's layered cyber defense systems and advanced monitoring capabilities in protecting national digital infrastructure.
+
+EXECUTIVE SUMMARY
+
+The UAE Cybersecurity Council confirmed that a series of organized and sophisticated cyberattacks were blocked before causing major disruption. The attackers used artificial intelligence to enhance their operations, allowing malicious tools to adapt, evade detection, and execute phishing campaigns with greater precision. The successful containment of the attack demonstrates the effectiveness of the UAE's cyber defense framework and the importance of proactive preparation in defending against advanced digital threats.
+
+AI-POWERED CYBER ATTACK CHARACTERISTICS
+
+The attack employed AI to adapt malicious tools in real-time, evade detection systems, and execute sophisticated phishing operations. The attackers targeted government digital platforms with the goal of destabilizing the nation and disrupting essential services. The sophistication of the attack reflects the evolving threat landscape where AI is being weaponized by malicious actors.
+
+UAE CYBER DEFENSE FRAMEWORK
+
+The UAE's layered cyber defense systems, continuous monitoring, and rapid-response teams worked in sync to detect and neutralize threats before major disruption occurred. Dr Mohamed Al Kuwaiti, Head of Cybersecurity for the UAE Government, stated that the attacks were 'complex and highly coordinated' but were detected early through advanced monitoring systems. The country's cyber defense framework allowed authorities to 'contain and neutralise' the threats effectively.
+
+CRITICAL INFRASTRUCTURE PROTECTION
+
+The successful defense protected essential services including financial systems, healthcare networks, and transportation grids. The continuity of public services and protection of personal data were prioritized throughout the response. The incident demonstrates the importance of robust cyber defense infrastructure for protecting critical services.
+
+INTERNATIONAL COOPERATION
+
+Cooperation between government bodies, service providers, and international partners was identified as a key factor in preventing escalation. The UAE's cyber defense success reflects the importance of coordinated international efforts in combating advanced cyber threats. This cooperation model is being adopted by other nations seeking to strengthen their cyber defenses.
+
+AI CYBER WARFARE IMPLICATIONS
+
+The incident underscores a broader global reality: cyber conflict is becoming central to national security. As governments digitize services and expand smart infrastructure, the stakes grow higher. A successful breach could paralyze critical systems. The UAE's experience illustrates both vulnerability and resilience in the face of advanced digital offensives.
+
+FUTURE CYBER DEFENSE EVOLUTION
+
+The incident is driving continued investment in advanced cyber defense capabilities, including AI-powered threat detection and response systems. Organizations are strengthening cybersecurity hygiene and implementing additional safeguards. The UAE's successful defense is establishing a model for how nations can protect digital infrastructure against advanced AI-powered attacks.`,
+    sector: "Cybersecurity & Digital Defense",
+    impact: 8.5,
+    horizon: "0-6m",
+    country: "UAE",
+    category: "security",
+    date: "2026-02-23",
+  },
+  {
+    id: "164",
+    title: "Autocratic AI Order - GCC Geopolitical Positioning & Global AI Power Consolidation",
+    description: `The GCC region is consolidating a third power bloc in artificial intelligence geopolitics, driven by petrostates leveraging oil wealth to build AI infrastructure and influence global technology standards. Saudi Arabia's HUMAIN, UAE's MGX, and Qatar's Qai have collectively secured tens of billions in funding for AI infrastructure, data centers, and technology investments. This consolidation raises strategic questions about how AI governance will evolve and whether democratic values will be preserved in the emerging AI-driven world order.
+
+EXECUTIVE SUMMARY
+
+As 2026 dawns, a torrent of artificial intelligence investments has been unleashed by Gulf states that could reshape global tech supremacy. Since its launch in 2025, Saudi Arabia's HUMAIN has secured multi-billion-dollar commitments including a $3 billion Blackstone deal, $10 billion Google Cloud AI hub, and collaborations with Nvidia and Qualcomm. The UAE's MGX executed a $40 billion purchase of Aligned Data Centers with BlackRock and Nvidia. Qatar unveiled Qai with $20 billion backing including investment in OpenAI rival Anthropic. Combined with expected $5-7 billion in regional data-centre spending, these developments suggest consolidation of a third power bloc in AI geopolitics.
+
+STRATEGIC DRIVERS OF GCC AI EXPANSION
+
+The GCC's AI investments stem from strategic drivers catapulting Gulf nations to the vanguard of AI. Post-petroleum economic transformation is key, a critical element in decarbonizing the world. The UAE's National Strategy for Artificial Intelligence 2031 and Saudi Arabia's Vision 2030 explicitly position AI as the pivotal new resource, redirecting sovereign wealth vehicles toward advanced technology. Financed by crude profit, the region possesses extraordinary fiscal capacity to fund AI development.
+
+COMPUTE CAPACITY AS GEOPOLITICAL LEVERAGE
+
+The GCC's 8-10 GW of planned AI compute capacity positions the region as a provider of critical AI infrastructure to global markets. This compute capacity grants new geo-economic leverage in the coming decades. By offering partners cheap oil and competitively priced large-scale computing, the GCC can sustain and increase its power in the rapidly shifting world order.
+
+REGULATORY ADVANTAGES AND CONCERNS
+
+As the European Union struggles with stringent AI Act privacy demands and America deliberates chip control, the Gulf states adopt relaxed frameworks. Their AI ethical pull in Western businesses and limited oversight on data usage are deterred by bureaucracy. A 2025 Amazon Web Services study revealed that 83% of Gulf bodies are investing in AI, and 19% have implemented self-running agentic systems, far beyond the global average. However, this regulatory flexibility raises concerns about data privacy and ethical AI development.
+
+AUTHORITARIAN AI RISKS
+
+The GCC's rise in AI carries significant risks of establishing autocratic governance via artificial intelligence. Gulf states, defined by absolute rule and surveillance, can infuse global technology with authoritarian bias. Saudi Arabia's Neom initiative and the UAE's facial recognition systems merge AI with social regulation, raising concerns for 'digital authoritarianism.' As these nations build self-contained AI ecosystems, they focus on instruments for censorship, citizen monitoring, and anticipatory policing.
+
+WESTERN TECHNOLOGY COMPANY ENTANGLEMENT
+
+Major US tech giants including Microsoft, OpenAI, and Nvidia are intricately linked to Gulf investments. Microsoft's holding in G42, Nvidia's chip agreement with HUMAIN, and BlackRock's infrastructure bets push advances from democracies to autocratic hands. This is not simple opportunism; it is a costly bargain. US companies gain access to Gulf markets and capital during chip shortages, while potentially abandoning ethical oversight.
+
+IMPLICATIONS FOR DEMOCRATIC NORMS
+
+International tech standards, from AI safety to data sovereignty, risk shifting from openness to control. If Gulf AI rises unabated, there could be a bifurcated digital era: one where dictatorial systems reinforce surveillance capitalism, degrading privacy in supply chains and social media algorithms. The stakes are crucial for preserving democratic values in the emerging AI-driven world order.`,
+    sector: "AI Geopolitics & Global Power",
+    impact: 8.8,
+    horizon: "1-2y",
+    country: "GCC",
+    category: "geopolitics",
+    date: "2026-02-20",
+  },
+  {
+    id: "165",
+    title: "AI-Powered Global Capability Centers - Enterprise Scale AI Operations & Innovation Hubs",
+    description: `AI-powered Global Capability Centers (AI-GCCs) are gaining significant traction among global enterprises as organizations scale artificial intelligence operations and establish innovation hubs. These centers are evolving from cost optimization functions to strategic innovation platforms managing AI platforms, data governance, and model development at enterprise scale. The trend reflects broader enterprise AI maturation as companies move from experimentation to production deployment of sophisticated AI systems.
+
+EXECUTIVE SUMMARY
+
+AI-GCCs represent a fundamental evolution in how enterprises organize AI development and deployment. Rather than centralizing all AI operations in headquarters, organizations are establishing distributed innovation hubs that combine local talent, domain expertise, and advanced AI infrastructure. These centers manage AI platforms, data governance, and model development while maintaining alignment with global enterprise standards. The scale and sophistication of AI-GCCs is increasing rapidly as organizations recognize the competitive advantages of distributed AI innovation.
+
+AI PLATFORM MANAGEMENT AT SCALE
+
+AI-GCCs are responsible for managing enterprise-wide AI platforms that support thousands of applications and millions of users. These platforms provide standardized tools, frameworks, and infrastructure for AI development, enabling rapid deployment of new AI capabilities. The platform approach reduces development time and improves consistency across the enterprise.
+
+DATA GOVERNANCE AND QUALITY
+
+Data governance is a critical function of AI-GCCs, ensuring that data used for AI training and inference meets quality standards and complies with regulations. AI-GCCs establish data pipelines, implement quality controls, and manage data access permissions. Effective data governance is essential for ensuring that AI systems produce reliable, unbiased results.
+
+MODEL DEVELOPMENT AND DEPLOYMENT
+
+AI-GCCs are developing and deploying AI models for diverse business applications including autonomous supply chain optimization, intelligent customer service agents, autonomous research systems, and self-managing infrastructure. The sophistication of models being deployed is increasing rapidly as organizations gain experience with AI systems. Model development is becoming a core competency of enterprise AI-GCCs.
+
+HIGH-IMPACT USE CASES
+
+AI-GCCs are identifying and implementing high-impact use cases that deliver measurable business value. These use cases span multiple industries and business functions, from manufacturing and logistics to financial services and healthcare. The diversity of use cases demonstrates the broad applicability of AI across enterprise operations.
+
+TALENT DEVELOPMENT AND RETENTION
+
+AI-GCCs are attracting and developing AI talent by offering challenging work, advanced infrastructure, and opportunities to work on high-impact problems. The concentration of AI talent in GCCs is creating centers of excellence that drive innovation and establish best practices. These talent hubs are becoming increasingly important for enterprise AI competitiveness.
+
+IMPLICATIONS FOR ENTERPRISE AI TRANSFORMATION
+
+The emergence of AI-GCCs represents a maturation of enterprise AI strategy. Organizations that successfully establish and scale AI-GCCs will gain significant competitive advantages in speed, cost, and capability. The GCC model is becoming the standard approach for enterprises seeking to scale AI operations globally.`,
+    sector: "Enterprise AI & Innovation",
+    impact: 8.3,
+    horizon: "0-6m",
+    country: "Global",
+    category: "enterprise",
+    date: "2026-02-21",
+  },
+  {
+    id: "166",
+    title: "GCC Autocratic AI Consolidation - Surveillance Capitalism & Democratic Values at Risk",
+    description: `The consolidation of AI power in the hands of GCC petrostates raises fundamental questions about the future of democratic values in an AI-driven world. As Gulf states build self-contained AI ecosystems and establish standards for global AI development, the risk of 'digital authoritarianism' grows. The entanglement of Western technology companies with Gulf AI investments creates a complex dynamic where profit motives may override ethical considerations and democratic principles.
+
+EXECUTIVE SUMMARY
+
+The GCC's rapid consolidation of AI power through massive infrastructure investments and strategic technology partnerships is reshaping global AI geopolitics. While the region's investments are driving innovation and creating economic opportunities, they also raise concerns about how AI governance will evolve and whether democratic values will be preserved. The concentration of AI infrastructure and decision-making power in the hands of authoritarian governments creates risks of surveillance capitalism and digital authoritarianism spreading globally.
+
+DIGITAL AUTHORITARIANISM RISKS
+
+Gulf states, defined by absolute rule and surveillance, can infuse global technology with authoritarian bias. Saudi Arabia's Neom initiative and the UAE's facial recognition systems demonstrate how AI can be deployed for social regulation and citizen monitoring. As these nations build self-contained AI ecosystems, they focus on instruments for censorship, citizen monitoring, and anticipatory policing. These capabilities could be exported globally through AI systems and standards developed in the GCC.
+
+SURVEILLANCE CAPITALISM EXPANSION
+
+The combination of AI infrastructure, data collection capabilities, and limited regulatory oversight creates conditions for surveillance capitalism to flourish. Organizations operating in the GCC can collect vast amounts of data with minimal privacy protections. This data can be used to train AI systems that are subsequently deployed globally, potentially exporting surveillance practices to other regions.
+
+WESTERN TECHNOLOGY COMPANY COMPLICITY
+
+Major US technology companies are deeply entangled with Gulf AI investments, creating a dynamic where corporate profit motives may override ethical considerations. Companies are gaining access to Gulf capital and markets while potentially compromising on data privacy and ethical AI development. The entanglement raises questions about whether Western technology companies can maintain ethical standards while pursuing business opportunities in the GCC.
+
+GLOBAL STANDARDS INFLUENCE
+
+As the GCC builds AI infrastructure and establishes standards for AI development, these standards will increasingly influence global AI governance. International tech standards, from AI safety to data sovereignty, risk shifting from openness to control. If GCC-developed standards prioritize surveillance and control over privacy and transparency, these standards could be adopted globally.
+
+DEMOCRATIC VALUES AT RISK
+
+The bifurcation of the digital world into regions with strong privacy protections and regions with surveillance capitalism creates risks for global democratic norms. Citizens in democracies could find themselves subject to AI systems developed in authoritarian contexts that prioritize control over freedom. The global nature of AI systems means that authoritarian AI governance in one region can affect citizens worldwide.
+
+ALTERNATIVE GOVERNANCE MODELS
+
+Democratic nations need to develop alternative governance models that can compete with GCC infrastructure investments while maintaining ethical standards and democratic values. This requires coordinated international efforts to establish standards for responsible AI development and deployment. The stakes are high: the future of democratic values in an AI-driven world depends on whether democracies can establish credible alternatives to authoritarian AI governance.
+
+IMPLICATIONS FOR GLOBAL GOVERNANCE
+
+The consolidation of AI power in the GCC requires a fundamental rethinking of how the international community governs AI development. New governance frameworks are needed that balance innovation with democratic values and ethical considerations. Without such frameworks, the risk of a bifurcated digital world dominated by surveillance capitalism and authoritarian control grows significantly.`,
+    sector: "AI Governance & Democratic Values",
+    impact: 8.9,
+    horizon: "1-2y",
+    country: "GCC",
+    category: "governance",
+    date: "2026-02-22",
+  },
+];
+
+// Merge fresh signals with existing signals - combine all batches
+export const allSignals = [...allSignalsOriginal, ...freshSignals155to160, ...freshSignals161to166];

@@ -135,6 +135,18 @@ import Signal151 from "@/pages/Signal151";
 import Signal152 from "@/pages/Signal152";
 import Signal153 from "@/pages/Signal153";
 import Signal154 from "@/pages/Signal154";
+import Signal155 from "@/pages/Signal155";
+import Signal156 from "@/pages/Signal156";
+import Signal157 from "@/pages/Signal157";
+import Signal158 from "@/pages/Signal158";
+import Signal159 from "@/pages/Signal159";
+import Signal160 from "@/pages/Signal160";
+import Signal161 from "@/pages/Signal161";
+import Signal162 from "@/pages/Signal162";
+import Signal163 from "@/pages/Signal163";
+import Signal164 from "@/pages/Signal164";
+import Signal165 from "@/pages/Signal165";
+import Signal166 from "@/pages/Signal166";
 import SearchResults from "./pages/SearchResults";
 import About from "./pages/About";
 import Premium from "./pages/Premium";
@@ -277,7 +289,19 @@ function Router() {
         <Route path="/signals/151" component={Signal151} />
         <Route path="/signals/152" component={Signal152} />
         <Route path="/signals/153" component={Signal153} />
-        <Route path="/signals/154" component={Signal154} />
+       <Route path={"signals/154"} component={Signal154} />
+      <Route path={"signals/155"} component={Signal155} />
+      <Route path={"signals/156"} component={Signal156} />
+      <Route path={"signals/157"} component={Signal157} />
+      <Route path={"signals/158"} component={Signal158} />
+      <Route path={"signals/159"} component={Signal159} />
+      <Route path={"signals/160"} component={Signal160} />
+      <Route path={"signals/161"} component={Signal161} />
+      <Route path={"signals/162"} component={Signal162} />
+      <Route path={"signals/163"} component={Signal163} />
+      <Route path={"signals/164"} component={Signal164} />
+      <Route path={"signals/165"} component={Signal165} />
+      <Route path={"signals/166"} component={Signal166} />
       <Route path="/signals/:id" component={SignalDetail} /><Route path="/contact" component={Contact} />
       <Route path="/about" component={About} />
       <Route path="/investors" component={About} /><Route path="/premium" component={Premium} />
