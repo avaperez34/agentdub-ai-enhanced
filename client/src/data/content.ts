@@ -3576,5 +3576,219 @@ The consolidation of AI power in the GCC requires a fundamental rethinking of ho
   },
 ];
 
+// Fresh signals batch 167-172 (February 24, 2026)
+const freshSignals167to172 = [
+  {
+    id: "167",
+    title: "Qatar's $20B AI Infrastructure Mega-Venture with Brookfield - Regional Hub Acceleration",
+    description: `Qatar is positioning itself as a global AI infrastructure powerhouse through a landmark $20 billion joint venture between Qai and Brookfield to build high-performance compute centres across Qatar and beyond. This mega-venture represents one of the largest AI infrastructure investments in the region and signals Qatar's commitment to becoming a regional hub for AI innovation and deployment.
+
+EXECUTIVE SUMMARY
+
+The $20 billion partnership between Qai and Brookfield marks a watershed moment in GCC AI infrastructure development. This joint venture will build and operate high-performance compute centres designed to support AI training, inference, and research at global scale. The investment positions Qatar not merely as a consumer of AI technology but as a provider of critical infrastructure serving global AI development. This strategic positioning creates economic value, attracts talent, and establishes Qatar as a trusted partner in the international AI ecosystem.
+
+QAI'S STRATEGIC POSITIONING
+
+Qai, Qatar's sovereign AI entity, has been strategically building capabilities in AI infrastructure, data governance, and technology partnerships. The Brookfield partnership represents the culmination of years of planning and positions Qai as a major player in global AI infrastructure. By partnering with Brookfield, a global leader in infrastructure investment and operations, Qai gains access to operational expertise, capital, and international relationships necessary to scale compute centres globally.
+
+BROOKFIELD'S INFRASTRUCTURE EXPERTISE
+
+Brookfield brings decades of experience in building, operating, and managing large-scale infrastructure projects globally. The company's expertise in power management, cooling systems, security, and operational efficiency is essential for high-performance compute centres. This partnership combines Qatar's capital and strategic vision with Brookfield's operational excellence and global relationships. The combination creates a formidable competitor in the global AI infrastructure market.
+
+GLOBAL EXPANSION STRATEGY
+
+The $20 billion investment will support compute centre development not only in Qatar but across multiple geographies. This global expansion strategy positions Qatar as a hub within a distributed network of AI infrastructure. Companies developing large language models, training AI agents, and conducting AI research will have access to compute capacity in Qatar and other strategic locations. This geographic diversification reduces latency and provides redundancy for mission-critical AI workloads.
+
+COMPETITIVE IMPLICATIONS FOR GCC
+
+Qatar's mega-venture complements similar infrastructure investments by the UAE and Saudi Arabia. The GCC is collectively building compute capacity that rivals global technology companies. This competitive dynamic is shifting the balance of power in AI infrastructure from Western technology companies to sovereign entities in the Gulf. Organizations seeking alternatives to US-based cloud providers now have credible options in the GCC.
+
+ECONOMIC AND GEOPOLITICAL SIGNIFICANCE
+
+The Brookfield partnership generates economic value through infrastructure fees, operational services, and technology partnerships. It also establishes Qatar as a trusted partner for global technology companies seeking geographic diversification. The project strengthens Qatar's position in the global AI economy and creates opportunities for technology exports and consulting services. The geopolitical implications are significant: nations that control AI infrastructure have influence over which AI systems are developed and deployed globally.`,
+    sector: "AI Infrastructure & Sovereign Computing",
+    impact: 9.1,
+    horizon: "0-6m",
+    country: "Qatar",
+    category: "infrastructure",
+    date: "2026-02-24",
+  },
+  {
+    id: "168",
+    title: "UAE Origen AI Startup Raises $50M - Government AI Deployment Accelerates",
+    description: `Abu Dhabi-based AI startup Origen has secured a $50 million strategic investment from BlueFive Capital to accelerate the deployment of artificial intelligence across government services, smart homes, and advanced manufacturing in the UAE. The funding round positions Origen as a leader in real-world AI application and demonstrates investor confidence in practical AI solutions for government transformation.
+
+EXECUTIVE SUMMARY
+
+Origen's $50 million funding round represents a significant validation of the market opportunity for AI solutions tailored to government and enterprise needs. Founded in 2025, Origen has rapidly developed four core products addressing critical needs in digital transformation, geospatial intelligence, agentic AI, and smart home automation. The funding will accelerate product development, expand strategic partnerships, and attract specialized talent necessary to scale government AI deployment across the UAE and potentially the broader GCC.
+
+ORIGEN'S PRODUCT PORTFOLIO
+
+SpatialWare, Origen's digital twin platform, enables planning and scheduling of projects from entire cities down to individual building components within an integrated system. This capability is transformative for urban planning, infrastructure development, and smart city initiatives. Stellaware provides geospatial intelligence and data from 400 low-Earth-orbit satellites, enabling real-time monitoring and analysis of geographic areas. AWF, Origen's agentic AI platform, can read documents, screenshots, Excel files, and logs, integrating information into business workflows. Domia, the smart home service, uses AI to manage homes via smart devices, security systems, and temperature control.
+
+GOVERNMENT AI DEPLOYMENT FOCUS
+
+Origen's explicit focus on addressing government service challenges positions it at the center of UAE's digital transformation agenda. Government agencies are increasingly seeking AI solutions that can improve service delivery, reduce costs, and enhance citizen experience. Origen's products are designed specifically for government workflows and regulatory requirements. This focus creates a pathway to significant government contracts and establishes Origen as the trusted AI partner for public sector digital transformation.
+
+BLUEFIVE CAPITAL'S STRATEGIC BACKING
+
+BlueFive Capital's decision to provide the entire $50 million investment signals strong confidence in Origen's technology and market opportunity. BlueFive, based in Abu Dhabi, brings deep connections to government and enterprise decision-makers. This backing provides Origen with not only capital but also strategic relationships and market access necessary to scale government AI deployment. The investment also signals to other investors and partners that Origen is a credible, well-backed player in the AI infrastructure space.
+
+SCALING IMPLICATIONS FOR GCC
+
+Origen's success creates a template for other GCC startups developing AI solutions for government and enterprise. The $50 million funding round demonstrates that investors are willing to back companies building practical AI applications for real-world problems. This success will likely attract additional talent and capital to the UAE AI startup ecosystem, accelerating the pace of AI innovation and deployment across the region.
+
+COMPETITIVE POSITIONING
+
+Origen's government focus differentiates it from global AI companies that often prioritize consumer applications or enterprise software. By specializing in government transformation, Origen is building deep expertise and relationships that are difficult for larger competitors to replicate. This positioning creates sustainable competitive advantage and establishes Origen as a leader in the emerging market for government AI solutions.`,
+    sector: "AI Deployment & Government Transformation",
+    impact: 8.7,
+    horizon: "0-6m",
+    country: "UAE",
+    category: "deployment",
+    date: "2026-02-24",
+  },
+  {
+    id: "169",
+    title: "Uber Autonomous Solutions Launches Robotaxi in GCC - Abu Dhabi, Dubai, Riyadh Commercial Deployment",
+    description: `Uber has unveiled Uber Autonomous Solutions, a comprehensive platform for accelerating autonomous mobility and delivery worldwide, with immediate commercial deployment of fully driverless robotaxi services in Abu Dhabi, Dubai, and Riyadh through a partnership with Chinese autonomous vehicle company WeRide. This marks a watershed moment for autonomous vehicle commercialization in the GCC and represents the most significant autonomous mobility deployment in the region to date.
+
+EXECUTIVE SUMMARY
+
+Uber Autonomous Solutions combines Uber's demand generation, rider experience, and customer operations capabilities with WeRide's advanced L4 autonomous driving technology to enable commercial robotaxi services in major GCC cities. The partnership represents a strategic alignment between a global mobility platform and a leading autonomous vehicle technology provider. For the GCC, this deployment signals that autonomous mobility is transitioning from pilot projects to commercial-scale operations. The implications for urban transportation, employment, and economic activity are profound.
+
+WERIDE'S AUTONOMOUS TECHNOLOGY
+
+WeRide brings fully integrated autonomous driving solutions spanning the entire autonomous vehicle stack, vehicle integration, and large-scale fleet operations. The company has demonstrated operational performance across international markets and has built the technical capabilities necessary to operate robotaxi services reliably and safely. WeRide's technology represents a credible alternative to Western autonomous vehicle companies and demonstrates that advanced autonomous capabilities are being developed outside traditional Silicon Valley centers.
+
+UBER'S OPERATIONAL PLATFORM
+
+Uber Autonomous Solutions provides the operational layer necessary to commercialize autonomous vehicles at scale. This includes demand generation through Uber's existing rider base, customer experience optimization, fleet management, maintenance scheduling, and customer support. By combining WeRide's autonomous technology with Uber's operational platform, the partnership creates a complete commercial robotaxi service. This integration model is likely to become the template for autonomous vehicle commercialization globally.
+
+GCC DEPLOYMENT SIGNIFICANCE
+
+The deployment in Abu Dhabi, Dubai, and Riyadh simultaneously positions the GCC as a leader in autonomous vehicle commercialization. These three cities represent the largest markets in the region and have the infrastructure, regulatory frameworks, and consumer demand to support robotaxi services. The simultaneous deployment across three major cities signals confidence in the technology and market readiness. Success in these cities will likely lead to expansion to other GCC cities and potentially other regions.
+
+URBAN TRANSPORTATION TRANSFORMATION
+
+Robotaxi services will fundamentally transform urban transportation in GCC cities. Reduced transportation costs, improved safety, and increased convenience will drive adoption. The transition from human-driven to autonomous vehicles will have significant implications for employment in the transportation sector. Policymakers will need to address workforce transition, insurance frameworks, and regulatory structures for autonomous vehicles. The economic implications are substantial: autonomous vehicles could reduce transportation costs by 50-70% over the next decade.
+
+COMPETITIVE IMPLICATIONS
+
+Uber's deployment in the GCC establishes the company as the leading autonomous mobility platform in the region. Competitors like Lyft, Didi, and regional players will need to develop or acquire autonomous vehicle technology to remain competitive. The race for autonomous vehicle market share in the GCC is intensifying, with significant economic and strategic implications. The GCC's regulatory openness and infrastructure investment are creating an environment where autonomous vehicle companies can innovate and scale rapidly.`,
+    sector: "Autonomous Mobility & Transportation",
+    impact: 9.3,
+    horizon: "0-6m",
+    country: "UAE, Saudi Arabia",
+    category: "mobility",
+    date: "2026-02-24",
+  },
+  {
+    id: "170",
+    title: "GCC AI Budget Growth at 85% - Behavioral Change Remains Critical Challenge",
+    description: `Across the Gulf Cooperation Council, 85 percent of organizations expect to increase their AI budgets in 2026, with the UAE among the most active markets driving AI growth. However, despite this massive investment momentum, behavioral change remains the critical bottleneck slowing AI adoption and value realization. Technology is not the problem; organizational culture, workforce readiness, and change management are the limiting factors in GCC AI transformation.
+
+EXECUTIVE SUMMARY
+
+The GCC is experiencing unprecedented AI investment growth, with 85% of organizations planning budget increases in 2026. This investment surge reflects genuine commitment to AI transformation and recognition of AI's strategic importance. However, research indicates that behavioral change—not technology—is the primary obstacle to successful AI implementation. Organizations are investing in AI infrastructure, tools, and talent but struggling to transform workflows, decision-making processes, and organizational culture necessary to realize AI value. This gap between investment and value realization represents both a challenge and an opportunity for GCC organizations.
+
+THE INVESTMENT SURGE
+
+The UAE is leading GCC AI investment growth, with 70% of strategic goals now involving data and AI. Saudi Arabia has committed $1.2 billion to AI infrastructure. Qatar is investing in AI research and development. This investment surge reflects recognition that AI is transformative and that early movers will gain competitive advantage. Organizations across sectors—finance, healthcare, government, manufacturing—are allocating resources to AI initiatives. The scale of investment is creating demand for AI talent, infrastructure, and solutions.
+
+THE BEHAVIORAL CHANGE CHALLENGE
+
+Generative AI has created new opportunities and challenges for organizations. While the technology is powerful, realizing value requires fundamental changes in how organizations operate. Employees need to learn new skills and adapt to working alongside AI systems. Managers need to develop new approaches to performance management and decision-making. Organizations need to establish governance frameworks for AI use. These behavioral changes are difficult, time-consuming, and often encounter resistance from employees and managers accustomed to traditional workflows.
+
+THE TECHNOLOGY-BEHAVIOR GAP
+
+Many GCC organizations have invested in AI technology but struggle to achieve expected returns. The gap between technology capability and business value realization often stems from insufficient attention to behavioral change. Organizations that invest heavily in technology but neglect change management, training, and cultural transformation often see disappointing results. Conversely, organizations that combine technology investment with comprehensive change management programs achieve significantly better outcomes.
+
+WORKFORCE READINESS IMPLICATIONS
+
+The behavioral change challenge has significant implications for workforce development. Organizations need employees with AI literacy, critical thinking skills, and adaptability. Educational institutions need to prepare students for AI-augmented work environments. Professional development programs need to help existing workers transition to AI-native roles. The GCC's investment in AI education and training is critical to addressing this challenge.
+
+COMPETITIVE ADVANTAGE THROUGH CHANGE MANAGEMENT
+
+Organizations that successfully manage behavioral change will gain competitive advantage. They will realize greater value from AI investments, attract and retain top talent, and build organizational capabilities that are difficult to replicate. GCC organizations that invest in change management alongside technology investment will outperform competitors that focus solely on technology. This represents an opportunity for consulting firms, training providers, and organizational development specialists.`,
+    sector: "AI Adoption & Organizational Change",
+    impact: 8.4,
+    horizon: "0-6m",
+    country: "GCC",
+    category: "adoption",
+    date: "2026-02-24",
+  },
+  {
+    id: "171",
+    title: "Saudi Arabia's $1.2B AI Infrastructure vs Enterprise Pilot Failure Rate - The Implementation Gap",
+    description: `Saudi Arabia has secured $1.2 billion in funding for AI infrastructure development as part of Vision 2030 strategic priorities, yet global research indicates that 95 percent of enterprise AI pilots are failing to transition to production. This paradox—massive infrastructure investment combined with widespread pilot failures—reveals a critical gap between infrastructure capability and organizational capacity to implement AI successfully. For the GCC, this gap represents both a warning and an opportunity.
+
+EXECUTIVE SUMMARY
+
+Saudi Arabia's $1.2 billion AI infrastructure investment reflects genuine commitment to AI leadership and positions the kingdom as a major player in global AI infrastructure development. However, MIT research indicates that 95% of enterprise AI pilots fail to transition to production systems. This stark contrast reveals that infrastructure alone is insufficient for successful AI transformation. Organizations need not only compute capacity and data infrastructure but also talent, governance frameworks, change management, and organizational readiness. The GCC's massive infrastructure investments will only generate returns if organizations can successfully implement AI at scale.
+
+THE INFRASTRUCTURE INVESTMENT
+
+Saudi Arabia's $1.2 billion commitment to AI infrastructure includes data centres, compute capacity, research facilities, and technology partnerships. This investment aligns with Vision 2030 objectives to diversify the economy and build technology leadership. The infrastructure investment is necessary and strategic. However, infrastructure alone does not guarantee successful AI transformation. Organizations need to build capabilities to utilize infrastructure effectively.
+
+THE ENTERPRISE PILOT FAILURE CRISIS
+
+MIT's research on enterprise AI pilot failures reveals systemic challenges in translating AI technology into business value. Common reasons for failure include poor data quality, inadequate talent, unclear business objectives, governance challenges, and organizational resistance. Many organizations invest in AI pilots without clear understanding of how AI will create business value or how to operationalize AI systems. The high failure rate suggests that organizations are struggling with fundamental aspects of AI implementation, not just technology challenges.
+
+THE IMPLEMENTATION GAP
+
+The gap between infrastructure investment and pilot success rates reveals a critical bottleneck in AI transformation. Organizations have access to computing power and data but struggle to translate these resources into business value. The gap stems from multiple factors: lack of AI talent, unclear business strategy, poor data governance, organizational silos, and resistance to change. Closing this gap requires attention to organizational factors, not just technology factors.
+
+TALENT AND CAPABILITY CHALLENGES
+
+The GCC faces significant talent challenges in AI implementation. There is a shortage of experienced data scientists, ML engineers, and AI architects. Organizations struggle to attract and retain top talent. Educational institutions are working to build AI talent pipelines, but the pace of talent development lags behind demand. The talent shortage is a critical constraint on the pace of AI implementation across the GCC.
+
+STRATEGIC IMPLICATIONS FOR SAUDI ARABIA
+
+Saudi Arabia's $1.2 billion infrastructure investment will generate returns only if organizations can successfully implement AI. The kingdom needs to complement infrastructure investment with talent development, governance frameworks, and organizational change management. Organizations need clear strategies for how AI will create business value. The most successful organizations will be those that combine infrastructure investment with comprehensive organizational transformation. This represents an opportunity for consulting firms, training providers, and organizational development specialists to help organizations close the implementation gap.`,
+    sector: "AI Implementation & Enterprise Transformation",
+    impact: 8.6,
+    horizon: "1-2y",
+    country: "Saudi Arabia",
+    category: "implementation",
+    date: "2026-02-24",
+  },
+  {
+    id: "172",
+    title: "GCC Digital Sovereignty & Quantum-Resistant Security - Data Residency Becomes Non-Negotiable",
+    description: `Governments across the Gulf Cooperation Council are prioritizing digital sovereignty, data residency, and quantum-resistant security as foundational requirements for AI system deployment. This shift reflects recognition that data is a strategic asset and that reliance on foreign cloud providers creates geopolitical risks. The move toward sovereign data infrastructure and quantum-resistant security is reshaping technology procurement decisions and creating new opportunities for GCC technology companies.
+
+EXECUTIVE SUMMARY
+
+GCC governments are establishing non-negotiable requirements for data residency, digital sovereignty, and quantum-resistant security in AI systems. These requirements are driven by concerns about data privacy, geopolitical risk, and long-term security. Organizations deploying AI systems must ensure that sensitive data remains within GCC borders, that systems are protected against quantum computing threats, and that governance frameworks maintain government control over critical AI infrastructure. This shift is transforming technology procurement and creating opportunities for GCC-based technology providers.
+
+DIGITAL SOVEREIGNTY IMPERATIVE
+
+Digital sovereignty refers to a nation's ability to control its digital infrastructure and data without dependence on foreign technology companies or governments. GCC nations recognize that reliance on US-based cloud providers creates geopolitical vulnerabilities. If tensions escalate between the GCC and the United States, US technology companies could be required to restrict access to GCC data or systems. By building sovereign digital infrastructure, GCC nations reduce this geopolitical risk and maintain strategic autonomy. This imperative is driving investment in local data centres, cloud infrastructure, and technology companies.
+
+DATA RESIDENCY REQUIREMENTS
+
+GCC governments are establishing requirements that sensitive data must remain within national borders. This applies to government data, financial data, healthcare data, and other sensitive information. Data residency requirements are creating demand for local cloud providers and data centre operators. Organizations operating in the GCC must ensure that their AI systems comply with data residency requirements. This creates barriers to entry for foreign cloud providers and opportunities for GCC-based technology companies.
+
+QUANTUM-RESISTANT SECURITY
+
+Quantum computing poses a long-term threat to current encryption standards. Quantum computers will be able to break RSA and other widely-used encryption algorithms. GCC governments are requiring that AI systems be protected against quantum computing threats through quantum-resistant encryption algorithms. This requirement is driving investment in quantum-resistant cryptography research and implementation. Organizations need to begin transitioning to quantum-resistant security now to ensure long-term protection of sensitive data.
+
+DATA WAREHOUSE MODERNIZATION
+
+Data warehouse modernization is identified as the critical first step for AI and agentic systems in the Middle East. Organizations need to ensure that their data infrastructure can support AI workloads, that data quality is sufficient for AI training, and that data governance frameworks are in place. Data warehouse modernization is a prerequisite for successful AI implementation. This creates demand for data infrastructure consulting, data quality services, and data governance solutions.
+
+IMPLICATIONS FOR TECHNOLOGY PROCUREMENT
+
+GCC organizations are increasingly requiring that technology vendors demonstrate compliance with digital sovereignty, data residency, and quantum-resistant security requirements. This is reshaping technology procurement decisions and creating opportunities for GCC-based technology companies that can meet these requirements. Foreign technology companies are adapting by establishing local data centres and partnerships with GCC entities. The competitive dynamic is shifting toward providers that can demonstrate commitment to GCC sovereignty and security requirements.`,
+    sector: "Digital Sovereignty & Cybersecurity",
+    impact: 8.8,
+    horizon: "0-6m",
+    country: "GCC",
+    category: "security",
+    date: "2026-02-24",
+  },
+];
+
 // Merge fresh signals with existing signals - combine all batches
-export const allSignals = [...allSignalsOriginal, ...freshSignals155to160, ...freshSignals161to166];
+export const allSignals = [...allSignalsOriginal, ...freshSignals155to160, ...freshSignals161to166, ...freshSignals167to172];

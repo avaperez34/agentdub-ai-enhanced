@@ -6,4 +6,4 @@ export const NOT_ADMIN_ERR_MSG = 'You do not have required permission (10002)';
 
 // Premium Content - Update this ID daily when publishing new free signals
 // This ensures the same signal is free on both homepage and Intelligence page
-export const FREE_SIGNAL_ID = "166";
+export const FREE_SIGNAL_ID = "172";
