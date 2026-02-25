@@ -3788,6 +3788,10 @@ GCC organizations are increasingly requiring that technology vendors demonstrate
     category: "security",
     date: "2026-02-24",
   },
+];
+
+// Fresh signals batch 173-178 (Feb 25, 2026)
+const freshSignals173to178 = [
   {
     id: "173",
     title: "Saudi Arabia AI-Powered Stadium Analytics Market Reaches $1.2B - Sports Tech Innovation Accelerates",
