@@ -4328,5 +4328,210 @@ Successful AI implementation in the GCC requires solutions that integrate data i
   },
 ];
 
-// Merge fresh signals with existing signals - combine all batches
-export const allSignals = [...allSignalsOriginal, ...freshSignals155to160, ...freshSignals161to166, ...freshSignals167to172, ...freshSignals173to178, ...freshSignals179to184];
+// Fresh signals batch 191-196 will be defined below, then merged
+
+// Fresh signals batch 191-196 (Mar 9, 2026) - Arab LLMs and Regional AI Training
+const freshSignals191to196 = [
+  {
+    id: "191",
+    title: "Jais 2: The Arabic LLM Revolution - 70B Parameters and Arabic-First Dominance",
+    description: `In December 2025, Inception, Cerebras Systems, and MBZUAI released Jais 2, marking a watershed moment for Arabic language AI development. With 70 billion parameters trained on the largest Arabic-first dataset ever assembled, Jais 2 represents a fundamental shift in how the GCC approaches artificial intelligence—moving from adapting Western models to building native, culturally-aligned systems. The model is now available on Hugging Face and through jaischat.ai, with immediate adoption across government, finance, and enterprise sectors.
+
+EXECUTIVE SUMMARY
+
+Jais 2 is not merely an incremental improvement over previous Arabic models. It is a structural break from the "translated model" paradigm that has dominated enterprise AI for the past five years. Unlike global models that treat Arabic as a secondary language layer, Jais 2 was engineered from the ground up with Arabic as the primary language. This architectural choice has profound implications: the model understands not just Modern Standard Arabic (MSA), but also the 17+ regional dialects spoken across the GCC, from Khaleeji to Levantine to Egyptian Arabic. It captures code-switching—the natural tendency of Gulf professionals to mix Arabic and English seamlessly in conversation—with a fluency that global models cannot match.
+
+ARCHITECTURAL INNOVATION
+
+Jais 2 features a redesigned architecture optimized for Arabic linguistic patterns. The model was trained on 1.6 trillion tokens of Arabic-first data, including contemporary sources, regional literature, poetry, social media, and technical documentation. This diversity of training data enables Jais 2 to handle not just formal business communication, but also the informal tone of customer service, the nuance of legal contracts, and the cultural depth of creative writing. The model excels at reasoning tasks, mathematical problem-solving, and technical analysis—areas where previous Arabic models have lagged behind global alternatives.
+
+SAFETY AND CULTURAL ALIGNMENT
+
+Jais 2 integrates a comprehensive safety-first framework supported by instruction-tuning, evaluation, and continuous user feedback. The model has been specifically trained to understand Arabic cultural context, including poetry, customs, and social norms. This cultural alignment enables the model to generate responses that resonate with Arabic speakers in ways that translated models cannot achieve. The result is a system that captures Arabic not as a linguistic exercise, but as a lived language—the way it is spoken, written, and understood across the region.
+
+IMMEDIATE ENTERPRISE ADOPTION
+
+Financial institutions across the GCC are already deploying Jais 2 for customer service, fraud detection, and regulatory compliance. Government agencies are using the model for document analysis and policy development. Healthcare organizations are leveraging Jais 2 for patient communication and medical record analysis. The speed of adoption signals that enterprises have been waiting for a native Arabic model of this caliber.`,
+    sector: "AI Models & Language Technology",
+    impact: 9.2,
+    horizon: "0-3m",
+    country: "UAE",
+    category: "innovation",
+    date: "2026-03-09",
+  },
+  {
+    id: "192",
+    title: "Falcon-H1 Arabic: Abu Dhabi's Hybrid Architecture Outperforms 70B+ Global Models",
+    description: `Abu Dhabi's Technology Innovation Institute (TII) launched Falcon-H1 Arabic in January 2026, introducing a revolutionary hybrid Mamba-Transformer architecture that challenges the conventional wisdom about model scaling. With 34 billion parameters, Falcon-H1 Arabic outperforms many 70B+ parameter global models while requiring significantly less computational power. The model tops the Open Arabic LLM Leaderboard and is optimized for sovereign cloud deployment, making it the preferred choice for government and financial institutions prioritizing data residency and regulatory compliance.
+
+EXECUTIVE SUMMARY
+
+Falcon-H1 Arabic represents a paradigm shift in how the GCC approaches AI infrastructure. Rather than competing on parameter count—a metric that favors well-funded American and Chinese companies—TII has focused on architectural efficiency and linguistic optimization. The hybrid Mamba-Transformer design combines the strengths of both architectures: Mamba's efficiency and Transformer's reasoning capabilities. This approach enables Falcon-H1 to deliver state-of-the-art performance with a fraction of the compute required by comparable global models.
+
+TECHNICAL ARCHITECTURE
+
+The Mamba-Transformer hybrid architecture is the result of three years of research at TII. Mamba components handle sequential processing efficiently, while Transformer components manage complex reasoning and long-range dependencies. This hybrid approach reduces inference latency while maintaining accuracy across diverse Arabic language tasks. The model supports context windows of up to 256,000 tokens, enabling it to process entire legal documents, financial reports, and technical specifications without losing context.
+
+DATA RESIDENCY AND SOVEREIGNTY
+
+Falcon-H1 Arabic is optimized to run on sovereign cloud infrastructure within the UAE and other GCC nations. This design ensures that sensitive data never leaves national borders, maintaining compliance with the UAE Data Protection Law, Saudi Arabia's NDMO requirements, and other regional regulations. For enterprises in finance, healthcare, and government, this sovereignty guarantee is a critical differentiator from global models that require data transmission to external cloud providers.
+
+PERFORMANCE BENCHMARKS
+
+On the Open Arabic LLM Leaderboard, Falcon-H1 Arabic ranks first across multiple dimensions: dialect accuracy, cultural context understanding, and technical reasoning. The 7B variant of Falcon-H1 outscores nearly all 10B-class competitors, while the 34B variant delivers performance comparable to global 70B+ models. This efficiency advantage translates directly to lower infrastructure costs and faster deployment timelines for enterprises.
+
+AGENTIC AI CAPABILITIES
+
+Falcon-H1 Arabic is engineered for "agentic AI"—autonomous systems that can execute complex tasks without human intervention. The long context window enables the model to analyze entire contracts, identify risks, and generate recommendations. The dialect depth enables customer service agents to communicate in natural Khaleeji or Levantine tones, dramatically improving user trust and engagement.`,
+    sector: "AI Models & Infrastructure",
+    impact: 9.0,
+    horizon: "0-3m",
+    country: "UAE",
+    category: "innovation",
+    date: "2026-03-08",
+  },
+  {
+    id: "193",
+    title: "Arabic-First LLMs Rendering Translated Models Obsolete - Enterprise Shift Accelerating",
+    description: `As of March 2026, a structural shift has occurred in the Middle Eastern tech ecosystem. For years, regional businesses relied on "multilingual" models from Silicon Valley, often struggling with literal translations and cultural tone-deafness. Today, the release of Jais 2 and Falcon-H1 Arabic has rendered the "translated model" obsolete. These native, Arabic-centric Large Language Models (LLMs) are now the primary engines for digital transformation in government, finance, and healthcare across the GCC. Enterprise adoption is accelerating at a pace that suggests the transition from global to native models will be complete by end of 2026.
+
+EXECUTIVE SUMMARY
+
+The shift from translated to native Arabic models is not merely a technology upgrade—it is a strategic repositioning of the GCC as an AI developer rather than an AI consumer. For the first time, enterprises across the region have access to models that understand Arabic as deeply as they understand English. This parity enables GCC organizations to build competitive advantages in AI applications that were previously dominated by Western companies.
+
+NATIVE UNDERSTANDING VS. MACHINE TRANSLATION
+
+Unlike global models that learn Arabic as a secondary layer, Jais 2 and Falcon-H1 were trained on "Arabic-first" datasets. This allows them to process over 17 regional dialects and formal Modern Standard Arabic (MSA) with a level of nuance that Western models cannot match. The difference is not merely quantitative—it is qualitative. A translated model might render a customer service inquiry as formal and robotic; a native Arabic model understands the cultural context and responds with appropriate tone and familiarity.
+
+DATA SOVEREIGNTY AS STRATEGIC IMPERATIVE
+
+In the 2026 regulatory environment, "where your data lives" is as important as "what your AI does." Sovereign AI has become a non-negotiable requirement for GCC enterprises. Native Arabic models like Jais 2 and Falcon-H1 are optimized to run on local sovereign clouds, ensuring that sensitive banking, medical, and governmental data never leaves national borders. This sovereignty guarantee is a critical differentiator from global models that require data transmission to external cloud providers.
+
+ENTERPRISE ADOPTION PATTERNS
+
+Financial institutions across the GCC are rapidly adopting native Arabic models for customer service, fraud detection, risk management, and regulatory compliance. Banks are using Jais 2 and Falcon-H1 to power customer inquiries, detect fraudulent transactions, and assess credit risk. The adoption of native Arabic models in finance is accelerating despite economic uncertainties, suggesting that financial institutions view these models as critical to operational efficiency and competitive positioning.
+
+AGENTIC AI AND AUTONOMOUS SYSTEMS
+
+The 2026 enterprise standard has moved beyond simple chat interfaces toward "agentic AI"—autonomous systems that can execute complex tasks. Native Arabic models enable these autonomous systems to operate with cultural and linguistic fidelity. A bank can deploy an autonomous agent that reviews Arabic contracts, identifies risks, and generates recommendations—all without human intervention and with full cultural understanding.`,
+    sector: "AI Adoption & Digital Transformation",
+    impact: 8.8,
+    horizon: "0-6m",
+    country: "GCC",
+    category: "adoption",
+    date: "2026-03-07",
+  },
+  {
+    id: "194",
+    title: "GCC AI Training Ecosystem - KAUST, MBZUAI, and the Race for AI Talent",
+    description: `The GCC's commitment to AI leadership extends beyond model development to talent cultivation. KAUST (King Abdullah University of Science and Technology) in Saudi Arabia and MBZUAI (Mohamed bin Zayed University of Artificial Intelligence) in the UAE have emerged as the region's premier AI training institutions, attracting top researchers and students from around the world. KAUST's Center of Excellence for Generative AI and the Cisco-KAUST AI Institute, launched in October 2025, are positioning Saudi Arabia as a global AI research hub. Meanwhile, MBZUAI's Master in Applied Artificial Intelligence (MAAI) program aspires to become the "Stanford of the Middle East," attracting elite talent and driving innovation.
+
+EXECUTIVE SUMMARY
+
+The GCC's AI training ecosystem represents a long-term strategic investment in human capital. Rather than relying on imported talent, the region is building indigenous research and development capacity. KAUST and MBZUAI are not merely training students—they are creating the intellectual infrastructure for sustained AI leadership. The success of these institutions signals that the GCC is treating AI as a foundational discipline, not a temporary trend.
+
+KAUST'S CENTER OF EXCELLENCE FOR GENERATIVE AI
+
+KAUST's Center of Excellence for Generative AI is dedicated to placing Saudi Arabia at the forefront of AI research in the region and globally. The center conducts research in scalable models, neural networks, optimization, and generative AI with practical applications. The Cisco-KAUST AI Institute, launched in October 2025, serves as a co-innovation center dedicated to AI research, development, and education. This partnership brings Silicon Valley expertise to Saudi Arabia while anchoring innovation in the region.
+
+MBZUAI'S MASTER IN APPLIED ARTIFICIAL INTELLIGENCE
+
+MBZUAI's MAAI program is designed to address the critical skills gap in AI applications across the Middle East. The program attracts top students from around the world and provides hands-on training in building AI systems for real-world problems. The Institute of Foundation Models at MBZUAI is conducting cutting-edge research in large language models, with Jais 2 serving as a flagship project. MBZUAI's aspiration to become the "Stanford of the Middle East" reflects the UAE's commitment to building world-class research institutions.
+
+REGIONAL COOPERATION AND UNIFIED STRATEGY
+
+The GCC eLearning Committee has adopted a unified AI strategy, proposing the development of a coordinated Gulf LLM initiative. This regional cooperation signals that GCC nations view AI talent development as a collective priority. The National eLearning Center (NeLC) in Saudi Arabia is spearheading efforts to coordinate AI education across the region, ensuring that training programs are aligned with industry needs and strategic priorities.
+
+TALENT ATTRACTION AND RETENTION
+
+Despite geopolitical tensions, GCC organizations continue to attract AI talent from around the world. Universities, research institutions, and technology companies are expanding AI programs and hiring researchers, engineers, and data scientists. This talent attraction signals confidence in the region's AI future and suggests that geopolitical tensions are not deterring skilled professionals from pursuing careers in the GCC. Salaries, research opportunities, and the chance to work on cutting-edge projects are drawing top talent to the region.`,
+    sector: "AI Education & Talent Development",
+    impact: 8.5,
+    horizon: "0-12m",
+    country: "GCC",
+    category: "adoption",
+    date: "2026-03-06",
+  },
+  {
+    id: "195",
+    title: "GCC AI Startup Ecosystem: 241 Companies, Continued Funding Despite Tensions",
+    description: `The GCC's AI startup ecosystem is demonstrating remarkable resilience despite regional geopolitical challenges. As of January 2026, there are 241 AI startups operating across the GCC, with 28 actively funded companies securing capital for expansion. Companies like ResquadAI (Saudi Arabia) have secured $1.5 million seed rounds, while established players like Mozn, Derq, Nybl AI, Intella, and OmniOps continue to grow. The startup ecosystem reflects a fundamental shift in investor priorities: founders who can articulate full AI narratives—not just "AI features"—are winning capital and market share.
+
+EXECUTIVE SUMMARY
+
+The GCC's AI startup ecosystem is moving from experimentation to execution. The 241 companies operating in the region represent diverse sectors: fintech, healthcare, logistics, customer service, and enterprise software. The presence of 28 funded companies signals that venture capital and corporate investors are confident in the region's AI opportunity. The continued funding despite geopolitical tensions suggests that investors view AI as essential infrastructure, not discretionary spending.
+
+CAPITAL DEPLOYMENT AND INVESTOR PRIORITIES
+
+Regional venture capital firms and sovereign wealth funds are actively deploying capital into AI startups. Investors are prioritizing founders who can move beyond building isolated "AI features" and instead create full AI narratives supported by differentiated technology, market positioning, and business models. This shift reflects a maturation of the startup ecosystem—investors are no longer betting on AI as a technology, but on AI as a business model.
+
+SECTOR DIVERSITY AND MARKET OPPORTUNITIES
+
+The 241 AI startups operating in the GCC span diverse sectors. In fintech, companies are building AI-powered credit scoring, fraud detection, and investment advisory systems. In healthcare, startups are developing diagnostic AI, patient engagement platforms, and drug discovery tools. In logistics, companies are optimizing supply chains and last-mile delivery. In customer service, startups are building multilingual chatbots and sentiment analysis tools. This sector diversity signals that the GCC's AI opportunity extends far beyond language models.
+
+TALENT AND EXECUTION FOCUS
+
+The GCC's AI startups are increasingly focused on execution rather than experimentation. Founders are hiring experienced engineers, data scientists, and product managers. Companies are building go-to-market strategies aligned with regional enterprise needs. The shift from "AI features" to "AI narratives" reflects a maturation of founder thinking—they understand that technology alone is not sufficient; they must build sustainable businesses.
+
+RESILIENCE DESPITE TENSIONS
+
+The continued funding and startup formation despite geopolitical tensions signals that investors and entrepreneurs view the GCC's AI opportunity as structural, not cyclical. Tensions may create short-term uncertainty, but they do not fundamentally undermine the region's competitive advantages: abundant capital, energy resources, strategic geographic position, and growing technical talent.`,
+    sector: "AI Startups & Entrepreneurship",
+    impact: 8.3,
+    horizon: "0-12m",
+    country: "GCC",
+    category: "adoption",
+    date: "2026-03-05",
+  },
+  {
+    id: "196",
+    title: "Big Tech's $300B+ AI Infrastructure Commitment - Geopolitical Risks vs. Strategic Imperative",
+    description: `Despite escalating Iran-Gulf tensions and military confrontations, tech giants are maintaining and expanding their AI infrastructure commitments across the GCC. Google Cloud and Saudi Arabia's Public Investment Fund are investing $10 billion to build and operate a global AI hub. Amazon is committing $5.3 billion to a new data center region in Saudi Arabia. Microsoft, Oracle, and Nvidia have all poured billions into large-scale facilities across the region. The total AI infrastructure commitment from Big Tech exceeds $300 billion, representing one of the largest technology investments in the Middle East's history. Yet recent Iranian attacks on data centers in the UAE and Bahrain have raised questions about the viability of these investments amid escalating tensions.
+
+EXECUTIVE SUMMARY
+
+The GCC's AI infrastructure boom reflects a fundamental strategic calculation by tech giants: the region's competitive advantages—cheap energy, vast land, strategic geographic position, and abundant capital—outweigh the risks posed by geopolitical tensions. However, recent Iranian military actions targeting data centers have introduced a new dimension of risk. The question is no longer whether Big Tech will invest in the GCC, but whether these investments can withstand military confrontation. The answer will shape the region's AI future for the next decade.
+
+STRUCTURAL ADVANTAGES ATTRACTING INVESTMENT
+
+The GCC's structural advantages for AI infrastructure are compelling. The region has abundant renewable and fossil fuel energy at costs far below global averages. Land is plentiful and inexpensive. The geographic position between Europe, Asia, and Africa makes the GCC a natural hub for serving AI workloads across time zones. Regulatory frameworks are increasingly AI-friendly, with governments actively supporting data center development. These advantages have attracted tech giants despite geopolitical risks.
+
+GOOGLE CLOUD AND SAUDI PIF: $10B PARTNERSHIP
+
+Google Cloud and Saudi Arabia's Public Investment Fund announced a $10 billion partnership to build and operate a global AI hub in Saudi Arabia. The hub will serve as a regional center for AI research, development, and deployment. The partnership reflects Google's confidence in Saudi Arabia's AI opportunity and the PIF's commitment to positioning the Kingdom as a global AI leader. The investment is expected to create thousands of jobs and accelerate AI adoption across the region.
+
+AMAZON'S $5.3B DATA CENTER REGION
+
+Amazon Web Services is investing $5.3 billion to build a new data center region in Saudi Arabia. The region will serve enterprise customers across the Middle East, North Africa, and South Asia. AWS's investment reflects confidence in the region's AI opportunity and the company's commitment to serving customers in geopolitically sensitive regions. The data center region is expected to be operational by 2027.
+
+MICROSOFT, ORACLE, AND NVIDIA COMMITMENTS
+
+Microsoft is expanding its cloud infrastructure across the GCC, with data centers in the UAE and Saudi Arabia. Oracle is building enterprise cloud infrastructure in the region. Nvidia is establishing regional headquarters and research centers. The collective commitment from these tech giants signals that the GCC is now a priority market for global AI infrastructure providers.
+
+GEOPOLITICAL RISKS AND MILITARY CONFRONTATION
+
+Recent Iranian attacks on data centers in the UAE and Bahrain have introduced a new risk dimension. These attacks signal that regional military actors view AI infrastructure as a legitimate target. The question is whether tech giants will continue investing despite these risks, or whether they will diversify their infrastructure across other regions. The answer will depend on the trajectory of Iran-Gulf tensions and the effectiveness of defensive measures.
+
+SOVEREIGN AI INFRASTRUCTURE AND RESILIENCE
+
+The McKinsey analysis suggests that sovereign AI infrastructure requires an ecosystem effort connecting energy, compute, data, models, platforms, and applications. The GCC's sovereign AI strategy must account for geopolitical risks and build redundancy into infrastructure. This may require diversifying data center locations, building defensive capabilities, and establishing backup systems. The cost of building resilient AI infrastructure is higher than building non-resilient infrastructure, but the strategic imperative may justify the additional investment.`,
+    sector: "AI Infrastructure & Investment",
+    impact: 8.7,
+    horizon: "0-24m",
+    country: "GCC",
+    category: "infrastructure",
+    date: "2026-03-09",
+  },
+];
+
+// Merge all signals
+export const allSignals = [
+  ...allSignalsOriginal,
+  ...freshSignals167to172,
+  ...freshSignals173to178,
+  ...freshSignals179to184,
+  ...freshSignals191to196,
+];
+
+// Export FREE_SIGNAL_ID from const.ts
+export { FREE_SIGNAL_ID } from "@shared/const";
