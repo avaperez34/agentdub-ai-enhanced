@@ -4524,13 +4524,136 @@ The McKinsey analysis suggests that sovereign AI infrastructure requires an ecos
   },
 ];
 
-// Merge all signals
+
+
+// Fresh signals 197-202 (March 12, 2026)
+const freshSignals197to202 = [
+  {
+    id: "197",
+    title: "UAE-South Korea Stargate Partnership: Nuclear Power Grid for AI Infrastructure",
+    description: `South Korea has officially joined the UAE's Stargate project, marking a significant expansion of the international coalition building the world's largest AI data center complex. As of March 11, 2026, South Korea has committed to helping build the power grid for Stargate using nuclear power, gas, and renewable energy sources. This partnership represents a strategic alignment between two technologically advanced nations and signals that international cooperation on AI infrastructure is accelerating despite geopolitical tensions.
+
+The Stargate project, valued at over $30 billion, aims to create a sovereign AI infrastructure hub in the UAE. South Korea's participation adds critical expertise in nuclear power generation and grid management. The country has decades of experience operating advanced nuclear facilities and managing complex energy infrastructure. By partnering with the UAE, South Korea gains access to the world's largest AI data center complex and positions itself as a key player in global AI infrastructure development.
+
+The partnership also reflects the geopolitical realignment around AI infrastructure. As tensions persist between Western powers and China, countries like South Korea are hedging their bets by diversifying their AI infrastructure partnerships. The UAE-South Korea partnership strengthens the GCC's position as a neutral ground for international AI collaboration.
+
+Key implications: (1) Stargate is becoming a truly international project with participation from multiple countries; (2) Nuclear power is becoming central to AI infrastructure strategy; (3) South Korea is positioning itself as a critical player in global AI infrastructure; (4) The GCC is emerging as a hub for international AI cooperation despite regional tensions.`,
+    sector: "AI Infrastructure & Investment",
+    impact: 9.2,
+    horizon: "0-24m",
+    country: "UAE",
+    category: "infrastructure",
+    date: "2026-03-11",
+  },
+  {
+    id: "198",
+    title: "Nuclear Power Grid for Stargate: The Energy Foundation of Sovereign AI",
+    description: `The Stargate project's power requirements are unprecedented. The AI data center complex will require 8-12 gigawatts of continuous power, equivalent to the electricity consumption of a mid-sized country. To meet these demands sustainably and securely, the project is building a dedicated nuclear power grid. South Korea's involvement in this effort is critical because the country has some of the world's most advanced nuclear technology and expertise.
+
+The nuclear power grid for Stargate will include multiple reactors designed specifically for AI infrastructure. These reactors will operate 24/7 to provide consistent, reliable power. The grid will also include backup systems and redundancy to ensure that power outages never disrupt AI operations. This level of infrastructure investment reflects the strategic importance of AI to the UAE and its international partners.
+
+The decision to use nuclear power for Stargate is significant for several reasons. First, it demonstrates that AI infrastructure is now considered critical national infrastructure, worthy of the same level of investment and protection as military or financial systems. Second, it shows that countries are willing to invest in long-term energy solutions rather than relying on short-term fixes like fossil fuels or renewable energy alone. Third, it signals that AI is no longer a niche technology but a fundamental pillar of national competitiveness.
+
+The nuclear power grid also addresses environmental concerns. AI data centers are energy-intensive, and critics have raised concerns about their carbon footprint. By using nuclear power, the Stargate project can operate with near-zero carbon emissions. This positions the UAE as a leader in sustainable AI infrastructure and sets a precedent for other countries building AI hubs.
+
+Key implications: (1) AI infrastructure is now considered critical national infrastructure; (2) Nuclear power is becoming the preferred energy source for AI data centers; (3) The Stargate project is setting new standards for sustainable AI infrastructure; (4) Energy security is becoming a key factor in AI competitiveness.`,
+    sector: "AI Infrastructure & Energy",
+    impact: 8.9,
+    horizon: "0-24m",
+    country: "UAE",
+    category: "infrastructure",
+    date: "2026-03-11",
+  },
+  {
+    id: "199",
+    title: "International Coalition for AI Infrastructure: Stargate's Expanding Partnerships",
+    description: `The Stargate project has evolved from a UAE-US initiative into a truly international coalition. South Korea's recent announcement is just the latest in a series of partnerships that now include multiple countries and tech giants. This expansion reflects the recognition that AI infrastructure is too large and complex for any single country or company to build alone.
+
+The coalition now includes: (1) UAE - providing land, capital, and political support; (2) United States - providing technology and capital; (3) South Korea - providing nuclear power expertise and energy infrastructure; (4) Multiple tech companies including OpenAI, Oracle, and others. Each partner brings unique capabilities and resources to the project.
+
+This international coalition model is unprecedented in infrastructure development. Typically, major infrastructure projects are either built by a single country or by a regional bloc. The Stargate project, however, is bringing together countries from different regions and with different geopolitical alignments. This suggests that AI infrastructure is becoming so critical that countries are willing to set aside traditional rivalries to collaborate.
+
+The coalition also reflects the recognition that AI infrastructure requires diverse expertise. The UAE provides capital and strategic location. The US provides technology and business expertise. South Korea provides energy infrastructure expertise. Together, these partners can build something that none could build alone.
+
+However, the coalition also faces challenges. Coordinating between multiple countries with different political systems and strategic interests is complex. Ensuring that technology and intellectual property are protected while allowing collaboration requires careful diplomacy. Managing the geopolitical implications of such a large international project requires sophisticated political maneuvering.
+
+Key implications: (1) AI infrastructure is becoming a domain for international cooperation; (2) Traditional geopolitical rivalries are being set aside for AI infrastructure development; (3) The Stargate project is setting a precedent for future international AI infrastructure projects; (4) Coalition-based infrastructure development may become the new model for large-scale AI projects.`,
+    sector: "AI Infrastructure & Geopolitics",
+    impact: 8.8,
+    horizon: "0-24m",
+    country: "GCC",
+    category: "infrastructure",
+    date: "2026-03-11",
+  },
+  {
+    id: "200",
+    title: "Stargate's Geopolitical Implications: AI Infrastructure as Strategic Leverage",
+    description: `The Stargate project is more than just infrastructure development—it's a geopolitical chess move. By hosting the world's largest AI data center complex, the UAE is positioning itself as the central hub for global AI development. This gives the UAE significant leverage in international negotiations and makes it a critical node in the global AI supply chain.
+
+For the US, Stargate represents a way to maintain influence over AI infrastructure development outside of US territory. By partnering with the UAE, the US ensures that critical AI infrastructure is in a country aligned with US interests. This is particularly important given concerns about China's AI capabilities and the need to ensure that AI development remains in the hands of US-aligned countries.
+
+For South Korea, participation in Stargate provides access to the world's largest AI data center complex and positions the country as a key player in global AI infrastructure. This enhances South Korea's strategic position in Asia and gives it leverage in negotiations with China and other regional powers.
+
+For China, the Stargate project represents a challenge. China has been developing its own AI infrastructure, but the Stargate project's scale and international coalition give it significant advantages. China may respond by accelerating its own AI infrastructure development or by seeking partnerships with other countries to build competing AI hubs.
+
+The geopolitical implications of Stargate extend beyond AI. The project demonstrates that the UAE is willing and able to host critical international infrastructure. This could lead to other countries hosting similar projects, transforming the UAE into a global hub for critical infrastructure. This would significantly enhance the UAE's strategic position and economic influence.
+
+Key implications: (1) AI infrastructure is becoming a tool of geopolitical leverage; (2) The UAE is positioning itself as the central hub for global AI development; (3) Stargate represents a US strategy to maintain influence over AI infrastructure development; (4) The project has significant implications for US-China competition in AI.`,
+    sector: "AI Infrastructure & Geopolitics",
+    impact: 9.1,
+    horizon: "0-24m",
+    country: "UAE",
+    category: "infrastructure",
+    date: "2026-03-11",
+  },
+  {
+    id: "201",
+    title: "GCC AI Talent Pipeline: Building the Human Infrastructure for AI",
+    description: `While Stargate focuses on physical infrastructure, the GCC is simultaneously investing in human infrastructure—the talent needed to operate, maintain, and innovate within the AI ecosystem. Universities like MBZUAI, KAUST, and Sorbonne Abu Dhabi are training the next generation of AI researchers and engineers. Governments are offering scholarships and incentives to attract top talent from around the world.
+
+The GCC's talent strategy includes: (1) Investing in world-class universities and research institutions; (2) Offering competitive salaries and benefits to attract international talent; (3) Creating innovation hubs and startup ecosystems; (4) Partnering with international tech companies to provide training and internships; (5) Supporting local entrepreneurs and researchers.
+
+This talent pipeline is critical to the success of Stargate and other AI infrastructure projects. Physical infrastructure is only valuable if there are skilled people to operate and innovate within it. The GCC's investment in talent development ensures that the region will have the human capital needed to compete in the global AI economy.
+
+The talent strategy also reflects the recognition that AI development is not just about building data centers—it's about creating an entire ecosystem of innovation. This ecosystem includes researchers, engineers, entrepreneurs, and policymakers working together to advance AI technology and applications.
+
+Key implications: (1) The GCC is investing heavily in AI talent development; (2) Human infrastructure is becoming as important as physical infrastructure; (3) The region is positioning itself as a destination for top AI talent; (4) The talent pipeline will support long-term AI competitiveness in the region.`,
+    sector: "AI Education & Talent",
+    impact: 8.5,
+    horizon: "0-36m",
+    country: "GCC",
+    category: "talent",
+    date: "2026-03-11",
+  },
+  {
+    id: "202",
+    title: "GCC AI Adoption Momentum: Despite Tensions, Business Continues",
+    description: `Despite geopolitical tensions and regional conflicts, GCC organizations continue to invest in AI adoption. A recent survey shows that 56% of UAE organizations have adopted AI in their operations, with plans to expand in the coming years. Saudi Arabia, Qatar, and other GCC countries are reporting similar trends. This momentum reflects the recognition that AI is essential to long-term competitiveness, regardless of short-term political challenges.
+
+The adoption momentum is driven by several factors: (1) Government support and incentives for AI adoption; (2) Recognition of AI's competitive advantages; (3) Availability of AI talent and expertise; (4) Access to AI infrastructure and tools; (5) Success stories from early adopters demonstrating ROI.
+
+Organizations across sectors are adopting AI: (1) Financial services - using AI for fraud detection, risk management, and customer service; (2) Healthcare - using AI for diagnostics and drug discovery; (3) Manufacturing - using AI for predictive maintenance and optimization; (4) Retail - using AI for personalization and inventory management; (5) Government - using AI for citizen services and policy analysis.
+
+The adoption momentum is also creating opportunities for AI startups and service providers. Companies offering AI consulting, implementation, and support services are seeing strong demand. This is creating a virtuous cycle where AI adoption drives demand for AI services, which attracts more talent and investment, which accelerates further adoption.
+
+Key implications: (1) GCC organizations are committed to AI adoption despite geopolitical challenges; (2) AI adoption is becoming mainstream across sectors; (3) The region is building a sustainable AI ecosystem; (4) AI adoption momentum will support long-term economic competitiveness.`,
+    sector: "AI Adoption & Business",
+    impact: 8.3,
+    horizon: "0-24m",
+    country: "GCC",
+    category: "adoption",
+    date: "2026-03-11",
+  },
+];
+
+// Update allSignals export to include freshSignals197to202
 export const allSignals = [
   ...allSignalsOriginal,
   ...freshSignals167to172,
   ...freshSignals173to178,
   ...freshSignals179to184,
   ...freshSignals191to196,
+  ...freshSignals197to202,
 ];
 
 // Export FREE_SIGNAL_ID from const.ts
