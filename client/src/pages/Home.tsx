@@ -1,4 +1,4 @@
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { useAnalytics } from "@/hooks/useAnalytics";
 import { ArrowRight } from "lucide-react";
@@ -9,10 +9,12 @@ import { AgentWaitlistModal } from "@/components/AgentWaitlistModal";
 
 export default function Home() {
   const { trackButtonClick } = useAnalytics();
+  const [, navigate] = useLocation();
   const signalsScrollRef = useRef<HTMLDivElement>(null);
   const [showSwipeHint, setShowSwipeHint] = useState(true);
   const [signalsScrollIndex, setSignalsScrollIndex] = useState(0);
   const [isAgentWaitlistOpen, setIsAgentWaitlistOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const handleUserInteraction = () => {
     setShowSwipeHint(false);
@@ -90,11 +92,24 @@ export default function Home() {
             <input
               type="text"
               placeholder="Search signals and news across the GCC..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              onKeyPress={(e) => {
+                if (e.key === 'Enter' && searchQuery.trim()) {
+                  trackButtonClick('search_home', `/search?q=${encodeURIComponent(searchQuery)}`);
+                  navigate(`/search?q=${encodeURIComponent(searchQuery)}`);
+                }
+              }}
               className="w-full px-6 py-4 rounded-full bg-background border-2 border-border focus:border-accent focus:outline-none transition-colors"
             />
             <Button 
               className="absolute right-2 top-1/2 -translate-y-1/2"
-              onClick={() => trackButtonClick('search_home', '/')}
+              onClick={() => {
+                if (searchQuery.trim()) {
+                  trackButtonClick('search_home', `/search?q=${encodeURIComponent(searchQuery)}`);
+                  navigate(`/search?q=${encodeURIComponent(searchQuery)}`);
+                }
+              }}
             >
               Search
             </Button>
