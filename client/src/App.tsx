@@ -183,6 +183,12 @@ import Signal199 from "@/pages/Signal199";
 import Signal200 from "@/pages/Signal200";
 import Signal201 from "@/pages/Signal201";
 import Signal202 from "@/pages/Signal202";
+import Signal203 from "@/pages/Signal203";
+import Signal204 from "@/pages/Signal204";
+import Signal205 from "@/pages/Signal205";
+import Signal206 from "@/pages/Signal206";
+import Signal207 from "@/pages/Signal207";
+import Signal208 from "@/pages/Signal208";
 import SearchResults from "./pages/SearchResults";
 import About from "./pages/About";
 import Premium from "./pages/Premium";
@@ -374,6 +380,12 @@ function Router() {
       <Route path={"signals/200"} component={Signal200} />
       <Route path={"signals/201"} component={Signal201} />
       <Route path={"signals/202"} component={Signal202} />
+      <Route path={"signals/203"} component={Signal203} />
+      <Route path={"signals/204"} component={Signal204} />
+      <Route path={"signals/205"} component={Signal205} />
+      <Route path={"signals/206"} component={Signal206} />
+      <Route path={"signals/207"} component={Signal207} />
+      <Route path={"signals/208"} component={Signal208} />
       <Route path="/signals/:id" component={SignalDetail} /><Route path="/contact" component={Contact} />
       <Route path="/about" component={About} />
       <Route path="/investors" component={About} /><Route path="/premium" component={Premium} />
