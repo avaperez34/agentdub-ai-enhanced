@@ -2,8 +2,9 @@ import { useState, useMemo } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Search, ArrowRight, FileText, Newspaper } from "lucide-react";
+import { Search, ArrowRight, FileText, Newspaper, Lock } from "lucide-react";
 import { allSignals } from "@/data/content";
+import { FREE_SIGNAL_ID } from "@shared/const";
 import AnimatedParticles from "@/components/AnimatedParticles";
 
 export default function SearchResults() {
@@ -195,28 +196,61 @@ export default function SearchResults() {
                   <h2 className="text-2xl font-bold">Intelligence Signals ({searchResults.signals.length})</h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {searchResults.signals.map((signal) => (
-                    <Link key={signal.id} href={`/signals/${signal.id}`}>
-                      <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full flex flex-col">
-                        <div className="flex items-start justify-between mb-4">
-                          <Badge variant="outline" className="text-xs">
-                            Signal {signal.id}
-                          </Badge>
-                          <Badge className="bg-accent/10 text-accent border-accent/20">
-                            Impact {signal.impact}
-                          </Badge>
+                  {searchResults.signals.map((signal) => {
+                    const isFreeSignal = String(signal.id) === FREE_SIGNAL_ID || signal.id === FREE_SIGNAL_ID;
+                    
+                    return isFreeSignal ? (
+                      <Link key={signal.id} href={`/signals/${signal.id}`}>
+                        <div className="p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all cursor-pointer h-full flex flex-col">
+                          <div className="flex items-start justify-between mb-4">
+                            <Badge variant="outline" className="text-xs">
+                              Signal {signal.id}
+                            </Badge>
+                            <Badge className="bg-accent/10 text-accent border-accent/20">
+                              Impact {signal.impact}
+                            </Badge>
+                          </div>
+                          <h3 className="text-lg font-bold mb-3 line-clamp-2">{highlightText(signal.title, query)}</h3>
+                          <p className="text-sm text-muted-foreground mb-4 line-clamp-3 flex-grow">
+                            {highlightText(signal.description, query)}
+                          </p>
+                          <div className="flex items-center justify-between text-xs text-muted-foreground">
+                            <span>{signal.country}</span>
+                            <span>{signal.date}</span>
+                          </div>
                         </div>
-                        <h3 className="text-lg font-bold mb-3 line-clamp-2">{highlightText(signal.title, query)}</h3>
-                        <p className="text-sm text-muted-foreground mb-4 line-clamp-3 flex-grow">
-                          {highlightText(signal.description, query)}
-                        </p>
-                        <div className="flex items-center justify-between text-xs text-muted-foreground">
-                          <span>{signal.country}</span>
-                          <span>{signal.date}</span>
+                      </Link>
+                    ) : (
+                      <div key={signal.id} className="p-6 rounded-lg bg-card border border-border opacity-60 h-full flex flex-col relative">
+                        <div className="absolute inset-0 bg-gradient-to-br from-black/40 to-black/20 rounded-lg" />
+                        <div className="relative z-10">
+                          <div className="flex items-start justify-between mb-4">
+                            <Badge variant="outline" className="text-xs">
+                              Signal {signal.id}
+                            </Badge>
+                            <Badge className="bg-accent/10 text-accent border-accent/20">
+                              Impact {signal.impact}
+                            </Badge>
+                          </div>
+                          <h3 className="text-lg font-bold mb-3 line-clamp-2 blur-sm">{signal.title}</h3>
+                          <p className="text-sm text-muted-foreground mb-4 line-clamp-3 flex-grow blur-sm">
+                            {signal.description}
+                          </p>
+                          <div className="flex items-center justify-between text-xs text-muted-foreground">
+                            <span>{signal.country}</span>
+                            <span>{signal.date}</span>
+                          </div>
+                        </div>
+                        <div className="absolute inset-0 flex items-center justify-center rounded-lg">
+                          <div className="text-center">
+                            <Lock className="mx-auto mb-2 text-accent" size={24} />
+                            <p className="text-sm font-semibold text-accent">Premium Signal</p>
+                            <p className="text-xs text-muted-foreground mt-1">Join waitlist for access</p>
+                          </div>
                         </div>
                       </div>
-                    </Link>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             )}
