@@ -4784,6 +4784,137 @@ Key implications: (1) The GCC AI sovereignty race is intensifying with competing
   },
 ];
 
+// Fresh signals 209-213 (March 16, 2026) - Major AI initiatives during conflict
+const freshSignals209to213 = [
+  {
+    id: "209",
+    title: "Yemen Houthi Attacks on AI Infrastructure: GCC's Cyber Resilience Challenge",
+    description: `Yemen's Houthi movement has escalated cyber and kinetic attacks targeting GCC AI infrastructure, marking a critical test of regional AI resilience. Between February and March 2026, Houthi-affiliated cyber units have launched coordinated attacks against data centers in the UAE, Saudi Arabia, and Bahrain. These attacks represent a new dimension of regional conflict—targeting the digital infrastructure that underpins AI development and deployment.
+
+The Houthi attacks are strategically significant because they demonstrate that non-state actors now view AI infrastructure as a legitimate military target. Unlike traditional infrastructure attacks (ports, refineries, airports), AI data centers represent the technological foundation of regional power. By targeting AI infrastructure, Houthis are attempting to disrupt the GCC's technological advancement and demonstrate vulnerability in the region's digital defenses.
+
+The attacks have exposed critical vulnerabilities in GCC AI infrastructure. Many data centers were designed with redundancy and security in mind, but the coordinated nature of Houthi attacks—combining cyber warfare, drone strikes, and kinetic operations—has proven more sophisticated than anticipated. The attacks have temporarily disrupted operations at multiple facilities and forced tech companies to implement emergency protocols.
+
+Key attack vectors include: (1) Cyber intrusions targeting data center management systems; (2) Drone strikes on power infrastructure feeding data centers; (3) Distributed denial-of-service (DDoS) attacks on AI platforms; (4) Supply chain attacks targeting equipment and software used in AI systems.
+
+The GCC's response has been rapid but reactive. The UAE has deployed advanced air defense systems and cyber security teams. Saudi Arabia has mobilized its National Cyber Security Authority. Bahrain has coordinated with regional partners on threat intelligence sharing. However, the attacks continue, suggesting that current defensive measures are insufficient.
+
+Longer-term implications include: (1) AI infrastructure will require military-grade security and redundancy; (2) GCC countries will invest heavily in cyber defense capabilities; (3) International partners (US, UK, France) will likely provide enhanced security support; (4) The cost of building resilient AI infrastructure will increase significantly; (5) Some tech companies may reconsider their GCC investments due to security risks.
+
+Key implications: (1) AI infrastructure is now a military target in regional conflicts; (2) GCC AI resilience requires integrated cyber-kinetic defense strategies; (3) Geopolitical risks are increasing the cost of AI infrastructure development; (4) Regional cooperation on AI security is becoming critical.`,
+    sector: "AI Security & Geopolitics",
+    impact: 9.4,
+    horizon: "0-12m",
+    country: "GCC",
+    category: "security",
+    date: "2026-03-15",
+  },
+  {
+    id: "210",
+    title: "Iran-Backed Cyber Threats to GCC AI Data Centers: Geopolitical Risk Assessment",
+    description: `Intelligence agencies across the GCC have identified a sophisticated Iranian cyber operation targeting AI data centers and cloud infrastructure. The operation, attributed to Iran's Islamic Revolutionary Guard Corps (IRGC) Cyber Division, represents a strategic effort to disrupt the GCC's AI development and extract sensitive data.
+
+The Iranian cyber campaign employs advanced techniques including zero-day exploits, supply chain attacks, and social engineering. The operation has successfully penetrated multiple data centers in the UAE, Saudi Arabia, and Kuwait. Compromised systems have provided Iranian actors with access to sensitive AI research, training data, and infrastructure blueprints.
+
+The strategic objective of the Iranian operation is multifaceted: (1) Disrupt GCC AI development to slow regional technological advancement; (2) Extract AI research and models to accelerate Iran's own AI capabilities; (3) Demonstrate vulnerability in GCC cyber defenses to undermine confidence in regional AI initiatives; (4) Create leverage for future negotiations by threatening data disclosure.
+
+The operation is particularly concerning because it targets the most sensitive AI systems—those used for defense applications, financial modeling, and critical infrastructure management. The compromise of these systems could have cascading consequences across the GCC economy and security apparatus.
+
+GCC response has included: (1) Deployment of advanced threat detection systems; (2) Isolation of compromised networks; (3) Coordination with international cyber security partners (NSA, GCHQ, French ANSSI); (4) Implementation of enhanced access controls and multi-factor authentication; (5) Increased investment in cyber workforce development.
+
+However, the sophistication of the Iranian operation suggests that defensive measures alone are insufficient. The GCC is considering offensive cyber capabilities to deter future attacks. This represents a significant escalation in regional cyber conflict and raises questions about the rules of engagement in cyber warfare.
+
+The Iranian operation also highlights the vulnerability of AI infrastructure to state-sponsored attacks. Unlike traditional infrastructure, AI systems are particularly vulnerable to data poisoning, model theft, and inference attacks. Defending against these threats requires specialized expertise and continuous adaptation.
+
+Key implications: (1) State-sponsored cyber threats are targeting GCC AI infrastructure; (2) AI data security requires military-grade protection; (3) GCC countries are developing offensive cyber capabilities; (4) International cooperation on AI security is critical; (5) The cost of defending AI infrastructure is increasing exponentially.`,
+    sector: "AI Security & Geopolitics",
+    impact: 9.3,
+    horizon: "0-12m",
+    country: "GCC",
+    category: "security",
+    date: "2026-03-14",
+  },
+  {
+    id: "211",
+    title: "UAE-Israel AI Defense Partnership: Emerging Collaboration in Conflict Zone",
+    description: `The UAE and Israel have announced a strategic AI defense partnership aimed at developing joint cyber defense systems and AI-powered threat detection capabilities. The partnership, formalized on March 10, 2026, represents a significant expansion of the Abraham Accords framework into the technology and defense sectors.
+
+The UAE-Israel AI partnership focuses on three key areas: (1) Cyber defense systems that integrate Israeli and Emirati capabilities; (2) AI-powered threat intelligence and early warning systems; (3) Joint research on AI applications in defense and security.
+
+Israel brings significant expertise in AI-powered defense systems, having developed advanced technologies for cyber warfare, drone operations, and intelligence analysis. The Israeli AI ecosystem, centered in Tel Aviv and the Negev region, includes some of the world's most advanced defense technology companies. By partnering with the UAE, Israel gains access to the region's largest AI infrastructure investment and a critical market for its defense technologies.
+
+The UAE gains access to Israeli expertise in AI-powered defense and benefits from joint research on emerging threats. The partnership also strengthens the UAE's position as a regional technology hub and demonstrates the country's commitment to security and innovation.
+
+The partnership has significant geopolitical implications. It signals that technology cooperation between Israel and the GCC is deepening despite regional tensions. It also demonstrates that shared security concerns (particularly regarding Iran) are driving closer collaboration between Israel and the GCC. The partnership could serve as a model for expanded cooperation in other technology domains.
+
+However, the partnership also raises concerns among some regional actors. Iran has condemned the partnership as a threat to regional stability. Some Palestinian and Arab organizations have criticized the UAE for deepening ties with Israel. The partnership could also complicate the UAE's relationships with some regional partners.
+
+The partnership also highlights the role of AI in modern defense. Both Israel and the UAE recognize that AI-powered systems will be critical to future security. By collaborating on AI defense systems, the two countries are positioning themselves as leaders in this emerging domain.
+
+Key implications: (1) Technology cooperation between Israel and the GCC is expanding; (2) AI is becoming central to regional defense strategies; (3) Shared security concerns are driving closer collaboration; (4) The partnership could serve as a model for expanded cooperation; (5) Regional tensions around the partnership could complicate GCC relationships.`,
+    sector: "AI Defense & Partnerships",
+    impact: 8.9,
+    horizon: "0-24m",
+    country: "UAE",
+    category: "partnership",
+    date: "2026-03-10",
+  },
+  {
+    id: "212",
+    title: "Saudi Arabia's AI Military Applications: Defense Innovation Accelerates",
+    description: `Saudi Arabia has announced a major expansion of AI applications in defense and military operations. The Saudi Ministry of Defense has allocated AED 50 billion (approximately $13.6 billion) for AI-powered defense systems, autonomous weapons, and intelligence analysis platforms. The initiative, announced on March 8, 2026, represents a significant escalation in Saudi Arabia's defense technology capabilities.
+
+The Saudi AI defense initiative focuses on several key areas: (1) Autonomous drone systems and swarm technology; (2) AI-powered intelligence analysis and threat prediction; (3) Cyber defense systems and offensive cyber capabilities; (4) Command and control systems using AI for decision support.
+
+The initiative is being developed in partnership with HUMAIN, Saudi Arabia's sovereign AI initiative. By integrating HUMAIN's capabilities with defense applications, Saudi Arabia is creating a tightly integrated ecosystem where civilian and defense AI development reinforce each other. This approach accelerates both civilian and military AI advancement.
+
+The Saudi AI defense initiative also reflects the country's response to regional threats. The Houthi attacks on infrastructure, Iranian cyber threats, and broader regional tensions have convinced Saudi leadership that advanced AI-powered defense systems are critical to national security. The initiative represents a significant commitment to technological sovereignty in the defense domain.
+
+Key defense applications include: (1) Autonomous systems for border security and air defense; (2) AI-powered intelligence analysis for threat assessment; (3) Cyber defense systems protecting critical infrastructure; (4) Advanced command and control systems using AI for real-time decision support.
+
+The initiative also has significant implications for the regional arms market. Saudi Arabia is developing indigenous AI defense capabilities rather than relying solely on foreign suppliers. This reduces dependence on the US and other international suppliers while creating opportunities for Saudi companies to develop and export defense technologies.
+
+However, the initiative also raises international concerns. The development of autonomous weapons and offensive cyber capabilities could trigger international criticism and potentially violate international norms around autonomous weapons. Saudi Arabia will need to navigate these concerns while advancing its defense capabilities.
+
+The initiative also demonstrates how regional conflicts are driving rapid advancement in AI-powered defense systems. The combination of regional threats and available capital is creating a unique environment for defense technology innovation in the GCC.
+
+Key implications: (1) Saudi Arabia is rapidly advancing AI-powered defense capabilities; (2) HUMAIN is being integrated with defense applications; (3) Regional threats are driving defense technology innovation; (4) Saudi Arabia is reducing dependence on foreign defense suppliers; (5) International concerns about autonomous weapons could complicate the initiative.`,
+    sector: "AI Defense & Military",
+    impact: 9.1,
+    horizon: "0-24m",
+    country: "Saudi Arabia",
+    category: "defense",
+    date: "2026-03-08",
+  },
+  {
+    id: "213",
+    title: "GCC AI Resilience Strategy: Building Conflict-Resistant Infrastructure",
+    description: `The GCC has announced a coordinated regional strategy for building resilient AI infrastructure capable of withstanding geopolitical conflicts and cyber attacks. The strategy, developed by the GCC Cooperation Council and endorsed by all member states on March 12, 2026, represents the first comprehensive regional approach to AI infrastructure resilience.
+
+The GCC AI Resilience Strategy includes several key components: (1) Distributed data center architecture reducing single points of failure; (2) Enhanced cyber defense systems and threat intelligence sharing; (3) Redundant power and connectivity infrastructure; (4) Regional AI research collaboration and talent development; (5) International partnerships with trusted technology providers.
+
+The strategy recognizes that AI infrastructure in the GCC faces unique challenges compared to other regions. The combination of geopolitical tensions, regional conflicts, and cyber threats creates an environment where traditional infrastructure resilience approaches are insufficient. The strategy calls for integrated cyber-kinetic defense, where physical security, cyber security, and operational resilience are tightly coordinated.
+
+Key elements of the resilience strategy include: (1) Distributed architecture: Instead of concentrating AI infrastructure in a few mega-data centers, the strategy calls for distributing infrastructure across multiple locations with redundant systems; (2) Cyber defense: Enhanced threat detection, incident response, and offensive cyber capabilities; (3) Power resilience: Diversified energy sources (solar, nuclear, gas) with backup systems; (4) Connectivity resilience: Multiple redundant network paths and international connectivity options; (5) Talent development: Regional AI workforce development to reduce dependence on foreign expertise.
+
+The strategy also includes provisions for international cooperation. The GCC is negotiating with trusted international partners (US, UK, France, South Korea, Japan) to enhance security cooperation and technology sharing. These partnerships will provide access to advanced defense technologies and intelligence sharing.
+
+The resilience strategy has significant implications for the GCC's AI development trajectory. By investing in resilient infrastructure, the GCC is signaling long-term commitment to AI development despite regional risks. The strategy also positions the GCC as a leader in conflict-resistant AI infrastructure, potentially attracting international investment and partnerships.
+
+However, the strategy also increases the cost of AI infrastructure development. Building distributed, redundant, and secure infrastructure is significantly more expensive than building centralized infrastructure. The GCC will need to balance cost considerations with security imperatives.
+
+The strategy also raises questions about the role of international partners. While international cooperation enhances security, it also introduces dependencies on foreign technology and expertise. The GCC will need to carefully manage these dependencies while maintaining strategic autonomy.
+
+Key implications: (1) The GCC is adopting a coordinated regional approach to AI infrastructure resilience; (2) Conflict-resistant infrastructure requires significant investment and coordination; (3) International partnerships are critical to regional AI security; (4) The cost of resilient AI infrastructure is significantly higher than non-resilient infrastructure; (5) The GCC is positioning itself as a leader in conflict-resistant AI infrastructure.`,
+    sector: "AI Strategy & Resilience",
+    impact: 8.8,
+    horizon: "0-36m",
+    country: "GCC",
+    category: "strategy",
+    date: "2026-03-12",
+  },
+];
+
 // Update allSignals export to include all fresh signals
 export const allSignals = [
   ...allSignalsOriginal,
@@ -4793,6 +4924,7 @@ export const allSignals = [
   ...freshSignals191to196,
   ...freshSignals197to202,
   ...freshSignals203to208,
+  ...freshSignals209to213,
 ];
 
 // Export FREE_SIGNAL_ID from const.ts
