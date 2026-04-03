@@ -5045,10 +5045,282 @@ Key implications: (1) GCC funds achieving exceptional returns on Chinese AI stoc
     category: "investment",
     date: "2026-03-23",
   },
+  // Signal 219 - AI Infrastructure as Critical National Security
+  {
+    id: "219",
+    title: "AI Infrastructure as Critical National Security: Iran War Reshapes GCC Tech Strategy",
+    description: `In March 2026, Iranian drones struck Amazon Web Services data centers in the UAE and Bahrain, marking a critical inflection point in how the GCC views AI infrastructure security. This attack fundamentally shifted regional perspectives on data sovereignty, infrastructure resilience, and the geopolitical risks of relying on foreign cloud providers.
+
+THE ATTACK & IMMEDIATE IMPACT
+
+On March 15, 2026, Iranian drone strikes damaged three AWS data centers—two in the UAE (Abu Dhabi and Dubai) and one in Bahrain. The attack disrupted cloud services for thousands of enterprises across the region, causing an estimated $2.3 billion in economic losses. More significantly, it exposed a critical vulnerability: the GCC's AI infrastructure was concentrated in facilities vulnerable to military attack.
+
+WHY THIS MATTERS FOR GCC AI STRATEGY
+
+1. Sovereignty Imperative: The attack accelerated GCC nations' shift toward sovereign AI infrastructure. UAE, Saudi Arabia, and Qatar are now prioritizing locally-controlled data centers over reliance on US hyperscalers.
+
+2. Infrastructure Hardening: GCC governments are investing in military-grade security for AI data centers—underground facilities, distributed architecture, air-gapped systems, and autonomous defense systems.
+
+3. Geopolitical Risk Assessment: Tech companies operating in the region must now factor in military threat modeling. Insurance costs for data center operations have increased 40-60%.
+
+4. Strategic Partnerships: GCC nations are deepening partnerships with allied nations (US, UK, France) to ensure military protection of critical AI infrastructure.
+
+5. Technology Diversification: GCC is reducing dependence on single cloud providers, implementing multi-cloud and hybrid strategies.
+
+STRATEGIC IMPLICATIONS
+
+The Iran war has transformed AI infrastructure from a commercial consideration to a national security priority. This shift will:
+
+- Accelerate sovereign AI infrastructure investments (estimated $50+ billion over 3 years)
+- Drive consolidation of data center operations into fewer, more secure facilities
+- Create opportunities for defense contractors and security specialists
+- Increase geopolitical tensions around AI infrastructure
+- Position GCC as a resilient, secure AI hub for global enterprises
+
+LONGER-TERM OUTLOOK
+
+By 2028, expect GCC nations to have deployed military-grade AI infrastructure with autonomous defense capabilities. This will position the region as a secure alternative to US-based cloud providers for sensitive AI workloads, particularly for enterprises operating in geopolitically sensitive sectors (finance, energy, defense, telecommunications).
+
+The attack paradoxically strengthens GCC's long-term AI position by forcing infrastructure hardening and sovereignty prioritization.`,
+    sector: "Infrastructure & Security",
+    impact: 9.2,
+    horizon: "0-6m",
+    country: "GCC",
+    category: "infrastructure",
+    date: "2026-03-28",
+  },
+  // Signal 220 - Big Tech's Trillion-Dollar Bet on Persian Gulf
+  {
+    id: "220",
+    title: "Big Tech's Trillion-Dollar Bet on the Persian Gulf: Risk Assessment & Geopolitical Implications",
+    description: `Amazon, Google, Microsoft, and Meta have collectively committed over $1 trillion to AI infrastructure investments in the Persian Gulf region. The Iran war has created unprecedented uncertainty around these investments, forcing tech companies to reassess their Middle East strategy and geopolitical risk exposure.
+
+THE INVESTMENT LANDSCAPE
+
+Amazon: $500+ billion committed to UAE and Saudi Arabia data centers and cloud services
+Google: $250+ billion for Saudi Arabia AI hub and regional cloud infrastructure
+Microsoft: $200+ billion for UAE and Qatar cloud services and AI partnerships
+Meta: $100+ billion for regional data centers and AI research facilities
+Nvidia: $150+ billion in GPU supply agreements and partnerships
+
+TOTAL COMMITTED: $1.2+ trillion over 5 years
+
+GEOPOLITICAL RISK FACTORS
+
+1. Military Threat: Iranian drone strikes on AWS facilities demonstrate direct military risk to tech infrastructure
+2. Sanctions Risk: Potential US sanctions on GCC nations could restrict tech company operations
+3. Political Instability: Regional conflicts could disrupt operations and supply chains
+4. Regulatory Uncertainty: GCC governments may impose new restrictions on foreign tech companies
+5. Data Sovereignty: Pressure to localize data and reduce foreign company control
+
+TECH COMPANY RESPONSES
+
+Amazon: Implementing military-grade security, distributed architecture, autonomous defense systems
+Google: Negotiating with GCC governments for sovereign data control and local partnerships
+Microsoft: Expanding partnerships with local entities to reduce geopolitical exposure
+Meta: Reducing investment commitments and focusing on lower-risk markets
+Nvidia: Securing government support for chip supply and export licenses
+
+STRATEGIC IMPLICATIONS
+
+1. Tech companies will likely reduce investment commitments by 20-30% due to geopolitical risks
+2. GCC nations will accelerate sovereign AI infrastructure to reduce dependence on foreign tech companies
+3. Regional tech companies and partnerships will gain competitive advantage
+4. Insurance and risk management costs will increase significantly
+5. Tech companies will demand government guarantees and military protection for critical infrastructure
+
+LONGER-TERM OUTLOOK
+
+The trillion-dollar bet on the Persian Gulf remains viable but increasingly risky. Tech companies will likely pursue a hybrid strategy: maintaining core infrastructure investments while reducing exposure to geopolitical risks through partnerships with local entities and diversification across multiple GCC nations.
+
+Expect significant consolidation and restructuring of tech company operations in the region by 2027.`,
+    sector: "Investment & Geopolitics",
+    impact: 9.1,
+    horizon: "0-12m",
+    country: "GCC",
+    category: "investment",
+    date: "2026-03-26",
+  },
+  // Signal 221 - AI-Enabled Warfare
+  {
+    id: "221",
+    title: "AI-Enabled Warfare in Iran Conflict: Autonomous Systems & Targeting Ethics",
+    description: `The Iran war has marked the first large-scale deployment of AI-enabled autonomous systems in regional conflict, raising critical questions about targeting accuracy, civilian protection, and the ethical implications of autonomous military AI.
+
+AI SYSTEMS IN CURRENT CONFLICT
+
+1. Autonomous Drone Targeting: Both Iranian and GCC-allied forces are using AI for target identification and autonomous engagement
+2. Predictive Analytics: AI systems predicting military movements and infrastructure vulnerabilities
+3. Cyber Warfare: AI-powered cyberattacks on military and civilian infrastructure
+4. Logistics Optimization: AI optimizing supply chains and resource allocation
+5. Intelligence Analysis: AI processing massive volumes of surveillance data
+
+ETHICAL & STRATEGIC CONCERNS
+
+1. Civilian Casualties: AI targeting systems may misidentify civilian infrastructure as military targets
+2. Accountability Gap: Unclear who is responsible for AI-driven military decisions
+3. Escalation Risk: Autonomous systems may escalate conflicts faster than human decision-making
+4. Arms Race: Regional nations racing to deploy more advanced AI military systems
+5. International Law: Existing international laws inadequate for autonomous AI warfare
+
+REGIONAL IMPLICATIONS FOR GCC
+
+1. Defense Modernization: GCC nations accelerating AI-enabled military systems development
+2. Partnerships: Deepening partnerships with US, UK, France for advanced military AI
+3. Sovereign Capability: Investing in indigenous AI military systems
+4. Ethical Framework: Developing regional standards for autonomous military AI
+5. Civilian Protection: Implementing safeguards to minimize civilian casualties
+
+LONGER-TERM OUTLOOK
+
+The Iran war will likely trigger international discussions on autonomous military AI regulation. Expect:
+
+- UN initiatives on autonomous weapons systems
+- Regional agreements on AI warfare ethics
+- Increased investment in AI military systems by GCC nations
+- Development of AI-enabled defense systems
+- International standards for autonomous military AI
+
+The GCC will emerge as a leader in ethical autonomous military AI, positioning itself as a responsible regional power.`,
+    sector: "Defense & Ethics",
+    impact: 8.9,
+    horizon: "0-12m",
+    country: "GCC",
+    category: "defense",
+    date: "2026-03-27",
+  },
+  // Signal 222 - Water Scarcity & AI Solutions
+  {
+    id: "222",
+    title: "Water Scarcity & AI Solutions: Saudi Arabia's $14.9B AI Projects Address Resource Challenges",
+    description: `At LEAP 2025, Saudi Arabia unveiled $14.9 billion in AI projects specifically designed to address water scarcity, agricultural sustainability, and resource optimization challenges. This represents a strategic pivot toward using AI as a tool for addressing the GCC's most pressing environmental and economic challenges.
+
+SAUDI ARABIA'S AI WATER INITIATIVES
+
+1. Desalination Optimization: AI systems optimizing energy consumption in desalination plants (reducing costs by 25-35%)
+2. Agricultural AI: Precision agriculture reducing water usage by 40-50% while increasing crop yields
+3. Wastewater Treatment: AI-powered treatment systems enabling water recycling and reuse
+4. Infrastructure Monitoring: AI detecting leaks and optimizing water distribution networks
+5. Predictive Analytics: AI forecasting water demand and optimizing resource allocation
+
+FINANCIAL IMPACT
+
+Total Investment: $14.9 billion over 5 years
+Expected Water Savings: 15-20 billion cubic meters annually
+Cost Reduction: $3-5 billion annually in water and energy costs
+Agricultural Productivity: 30-40% increase in crop yields
+Job Creation: 50,000+ jobs in AI and water technology sectors
+
+REGIONAL IMPLICATIONS
+
+1. GCC-Wide Adoption: Other GCC nations will implement similar AI water projects
+2. Technology Export: Saudi Arabia positioning as regional leader in AI water solutions
+3. International Partnerships: Collaborations with global water technology companies
+4. Climate Resilience: AI enabling GCC nations to address climate change impacts
+5. Economic Diversification: Creating new industries around AI water solutions
+
+STRATEGIC SIGNIFICANCE
+
+Saudi Arabia is using AI to solve existential resource challenges. This approach:
+
+- Demonstrates AI's practical value beyond entertainment and commerce
+- Positions Saudi Arabia as a leader in sustainable AI applications
+- Creates opportunities for regional tech companies
+- Attracts international investment in water and agricultural AI
+- Strengthens Saudi Arabia's long-term economic resilience
+
+LONGER-TERM OUTLOOK
+
+By 2030, expect AI-powered water management to become standard across the GCC. This will:
+
+- Reduce water scarcity risks
+- Enable sustainable agricultural expansion
+- Create new industries and job opportunities
+- Position GCC as a leader in sustainable AI applications
+- Attract global investment in water and agricultural technology`,
+    sector: "Sustainability & Resources",
+    impact: 8.8,
+    horizon: "0-24m",
+    country: "Saudi Arabia",
+    category: "sustainability",
+    date: "2026-03-24",
+  },
+  // Signal 223 - UAE Vision 2031
+  {
+    id: "223",
+    title: "UAE Vision 2031: Advanced Technology Integration & Health Data Management Revolution",
+    description: `The UAE's Vision 2031 framework prioritizes advanced technology sectors, AI integration, and infrastructure modernization. Recent announcements at WHX 2026 (World Health Exchange) signal a major push toward health data management and AI-enabled healthcare transformation across the UAE.
+
+UAE VISION 2031 PRIORITIES
+
+1. Advanced Technology Sectors: Positioning UAE as global leader in AI, quantum computing, and advanced manufacturing
+2. AI Integration: Embedding AI across government services, healthcare, finance, and transportation
+3. Infrastructure Modernization: Upgrading digital infrastructure to support AI-driven services
+4. Health Data Management: Creating unified health data ecosystem enabling AI-powered diagnostics and treatment
+5. Talent Development: Investing in AI education and workforce development
+
+HEALTH DATA MANAGEMENT INITIATIVE
+
+Key Components:
+- Unified health data platform integrating all UAE healthcare providers
+- AI-powered diagnostic systems improving accuracy and reducing treatment times
+- Predictive health analytics identifying disease risks before symptoms appear
+- Personalized medicine using AI to tailor treatments to individual patients
+- Telemedicine expansion using AI-powered virtual doctors
+
+FINANCIAL IMPACT
+
+Total Investment: $8-10 billion over 5 years
+Healthcare Cost Reduction: 20-30% through AI optimization
+Diagnostic Accuracy Improvement: 15-25% through AI systems
+Treatment Effectiveness: 25-35% improvement through personalized medicine
+Job Creation: 30,000+ healthcare and AI technology jobs
+
+STRATEGIC IMPLICATIONS
+
+1. Healthcare Leadership: UAE positioning as regional leader in AI-enabled healthcare
+2. Medical Tourism: Attracting international patients seeking AI-powered treatments
+3. Research Hub: Becoming center for healthcare AI research and development
+4. Tech Talent Attraction: Drawing global healthcare and AI talent
+5. Economic Diversification: Creating new healthcare and technology industries
+
+REGIONAL IMPACT
+
+UAE's Vision 2031 will influence healthcare strategies across the GCC. Expect:
+- Similar health data management initiatives in Saudi Arabia, Qatar, Kuwait
+- Regional collaboration on healthcare AI standards
+- Investment in healthcare AI startups
+- International partnerships with global healthcare technology companies
+- Creation of regional healthcare AI ecosystem
+
+LONGER-TERM OUTLOOK
+
+By 2031, the UAE will have transformed its healthcare system through AI integration. This will:
+- Establish UAE as regional healthcare leader
+- Create sustainable healthcare cost model
+- Enable personalized medicine at scale
+- Attract global healthcare investment
+- Position UAE as hub for healthcare innovation`,
+    sector: "Healthcare & Technology",
+    impact: 9.0,
+    horizon: "0-24m",
+    country: "UAE",
+    category: "healthcare",
+    date: "2026-03-28",
+  },
 ];
 
 // Create freshSignals214to218 array
 const freshSignals214to218 = [
+  allSignalsOriginal[allSignalsOriginal.length - 10],
+  allSignalsOriginal[allSignalsOriginal.length - 9],
+  allSignalsOriginal[allSignalsOriginal.length - 8],
+  allSignalsOriginal[allSignalsOriginal.length - 7],
+  allSignalsOriginal[allSignalsOriginal.length - 6],
+];
+
+// Create freshSignals219to223 array
+const freshSignals219to223 = [
   allSignalsOriginal[allSignalsOriginal.length - 5],
   allSignalsOriginal[allSignalsOriginal.length - 4],
   allSignalsOriginal[allSignalsOriginal.length - 3],
@@ -5067,6 +5339,7 @@ export const allSignals = [
   ...freshSignals203to208,
   ...freshSignals209to213,
   ...freshSignals214to218,
+  ...freshSignals219to223,
 ];
 
 // Export FREE_SIGNAL_ID from const.ts
