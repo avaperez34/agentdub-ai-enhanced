@@ -5308,6 +5308,402 @@ By 2031, the UAE will have transformed its healthcare system through AI integrat
     category: "healthcare",
     date: "2026-03-28",
   },
+  // Signal 224: HUMAIN-Turing Partnership
+  {
+    id: "224",
+    title: "HUMAIN-Turing Partnership: Saudi Arabia's AI Agent Marketplace Goes Global",
+    description: `On March 26, 2026, Saudi Arabia's HUMAIN announced a strategic partnership with US-based Turing to build the world's first enterprise-scale AI Agent Marketplace on HUMAIN ONE. The partnership was unveiled at the FII PRIORITY summit in Miami, marking a pivotal moment in Saudi Arabia's positioning as a global AI hub and exporter.
+
+PARTNERSHIP OVERVIEW
+
+HUMAIN and Turing have formed a strategic partnership to develop an enterprise-scale AI Agent Marketplace built on HUMAIN ONE, Saudi Arabia's sovereign AI platform. Turing becomes the first US-based customer of HUMAIN ONE, highlighting Saudi Arabia's ambition to position itself as both a hub and exporter of AI technology globally.
+
+KEY STRATEGIC ELEMENTS
+
+1. Enterprise AI Agent Marketplace: The partnership creates the first marketplace specifically designed for enterprise AI agents, enabling organizations to discover, deploy, and manage autonomous AI systems at scale.
+
+2. HUMAIN ONE Integration: Turing will leverage HUMAIN ONE's sovereign AI infrastructure, built on Saudi Arabia's PIF-backed technology stack, to deliver enterprise-grade AI agent services.
+
+3. Global Reach: The partnership positions HUMAIN ONE as a viable alternative to Western cloud providers for enterprise AI deployments, particularly for organizations seeking data sovereignty and geopolitical risk mitigation.
+
+4. Superintelligence Acceleration: The partnership aims to accelerate superintelligence deployment in Saudi Arabia and globally, positioning the GCC as a center for advanced AI research and deployment.
+
+WHY THIS MATTERS
+
+1. Validation of Saudi AI Strategy: Turing's partnership validates Saudi Arabia's HUMAIN platform as production-ready for enterprise deployments, not just theoretical or experimental.
+
+2. Global Talent Attraction: The partnership signals that Saudi Arabia can attract world-class AI talent and companies, competing directly with Silicon Valley and other global AI hubs.
+
+3. Enterprise AI Adoption: The marketplace model enables rapid adoption of AI agents across enterprises, accelerating the transition from AI experimentation to production deployment.
+
+4. Sovereign AI Infrastructure: Demonstrates that sovereign AI platforms can meet enterprise requirements for performance, security, and reliability.
+
+5. Regional Positioning: Positions Saudi Arabia as the enterprise AI hub for the Middle East, North Africa, and South Asia.
+
+STRATEGIC IMPLICATIONS
+
+1. Competition with Western Providers: HUMAIN-Turing partnership creates direct competition with AWS, Google Cloud, and Microsoft Azure for enterprise AI workloads.
+
+2. Geopolitical Significance: Demonstrates that enterprise organizations are willing to diversify cloud providers based on data sovereignty and geopolitical risk considerations.
+
+3. Regional Ecosystem Development: Success of HUMAIN-Turing partnership will trigger similar partnerships across the GCC, creating a regional AI ecosystem.
+
+4. Talent Migration: May accelerate migration of AI talent from Silicon Valley to Saudi Arabia and the GCC region.
+
+5. Investment Acceleration: Will likely trigger increased venture capital investment in GCC-based AI companies and startups.
+
+FINANCIAL IMPLICATIONS
+
+Estimated Market Size: $50-100 billion for enterprise AI agent marketplace by 2030
+HUMAIN Revenue Projection: $2-5 billion annually by 2028
+Turing Revenue Growth: 300-500% through HUMAIN ONE platform access
+GCC AI Sector Growth: 25-35% annually through 2030
+
+LONGER-TERM OUTLOOK
+
+The HUMAIN-Turing partnership represents a watershed moment for Saudi Arabia and the GCC. It demonstrates that the region can build world-class AI infrastructure and attract global enterprises. By 2028, expect:
+- 50+ enterprise customers on HUMAIN ONE
+- $10+ billion in AI agent marketplace transactions
+- 10,000+ AI agents deployed globally on HUMAIN ONE
+- HUMAIN as a top-5 global AI infrastructure provider
+- Saudi Arabia as a top-3 AI hub globally`,
+    sector: "AI Infrastructure & Enterprise",
+    impact: 9.6,
+    horizon: "0-12m",
+    country: "Saudi Arabia",
+    category: "infrastructure",
+    date: "2026-03-26",
+  },
+  // Signal 225: Enterprise AI Agents
+  {
+    id: "225",
+    title: "Enterprise AI Agents: The New Frontier of Autonomous Business Operations",
+    description: `The emergence of enterprise AI agents represents a fundamental shift in how organizations automate and optimize business operations. Unlike traditional automation tools that follow predetermined rules, enterprise AI agents operate autonomously, making real-time decisions based on complex data analysis, market conditions, and business objectives.
+
+WHAT ARE ENTERPRISE AI AGENTS?
+
+Enterprise AI agents are autonomous software systems that can:
+1. Perceive complex business environments
+2. Reason about multiple scenarios and trade-offs
+3. Make autonomous decisions within defined parameters
+4. Execute actions across multiple business systems
+5. Learn and adapt from outcomes
+6. Collaborate with human decision-makers
+
+KEY APPLICATIONS
+
+1. Supply Chain Optimization: AI agents managing inventory, logistics, and supplier relationships in real-time
+2. Financial Operations: Autonomous trading, risk management, and portfolio optimization
+3. Customer Service: AI agents handling complex customer inquiries and resolving issues autonomously
+4. HR Operations: Autonomous recruitment, onboarding, and employee development
+5. Manufacturing: Autonomous production scheduling, quality control, and maintenance
+6. Healthcare: Autonomous patient monitoring, treatment recommendations, and resource allocation
+
+MARKET OPPORTUNITY
+
+Global Enterprise AI Agent Market:
+- 2026: $15-20 billion
+- 2028: $50-75 billion
+- 2030: $150-200 billion
+
+GCC Opportunity:
+- 2026: $2-3 billion
+- 2028: $8-12 billion
+- 2030: $25-35 billion
+
+STRATEGIC IMPLICATIONS FOR GCC
+
+1. Competitive Advantage: Early adoption of enterprise AI agents can provide GCC organizations with significant competitive advantages
+2. Operational Efficiency: 30-50% reduction in operational costs through autonomous operations
+3. Decision Quality: Improved decision-making through AI-powered analysis
+4. Talent Transformation: Shift from routine operations to strategic decision-making
+5. Global Competitiveness: Enable GCC organizations to compete globally on operational efficiency
+
+CHALLENGES AND RISKS
+
+1. Trust and Transparency: Organizations must trust AI agents to make critical decisions
+2. Regulatory Compliance: AI agents must operate within regulatory frameworks
+3. Cybersecurity: Autonomous systems create new attack surfaces
+4. Talent Requirements: Organizations need AI expertise to develop and manage agents
+5. Ethical Considerations: Autonomous decision-making raises ethical questions
+
+GCC POSITIONING
+
+Saudi Arabia's HUMAIN-Turing partnership positions the GCC as a leader in enterprise AI agent deployment. Organizations across the region are beginning to explore AI agent implementations in:
+- Financial services
+- Energy and utilities
+- Healthcare
+- Telecommunications
+- Government services
+
+FUTURE OUTLOOK
+
+By 2030, enterprise AI agents will be as common as enterprise resource planning (ERP) systems. Organizations that successfully implement AI agents will gain significant competitive advantages. The GCC, with its capital resources and strategic positioning, is well-positioned to become a global leader in enterprise AI agent adoption and innovation.`,
+    sector: "Enterprise AI",
+    impact: 8.9,
+    horizon: "0-24m",
+    country: "GCC",
+    category: "enterprise",
+    date: "2026-03-27",
+  },
+  // Signal 226: HUMAIN ONE Platform
+  {
+    id: "226",
+    title: "HUMAIN ONE Platform: Sovereign AI Infrastructure Meeting Global Enterprise Demand",
+    description: `HUMAIN ONE represents Saudi Arabia's flagship sovereign AI platform, designed to meet the needs of global enterprises seeking alternatives to Western cloud providers. Built with support from Saudi Arabia's Public Investment Fund (PIF), HUMAIN ONE combines sovereign data control with enterprise-grade performance and reliability.
+
+PLATFORM ARCHITECTURE
+
+HUMAIN ONE is built on:
+1. Saudi-controlled infrastructure with data residency guarantees
+2. Advanced GPU clusters for training and inference
+3. Enterprise-grade security and compliance frameworks
+4. Multi-region deployment for global latency optimization
+5. Integration with international AI research and development
+
+KEY CAPABILITIES
+
+1. AI Model Training: Support for training large language models and specialized AI systems
+2. Inference Services: Low-latency inference for real-time AI applications
+3. AI Agent Marketplace: Platform for discovering and deploying enterprise AI agents
+4. Data Management: Secure data storage and processing with sovereignty guarantees
+5. API Services: RESTful APIs for integration with enterprise systems
+6. Compliance Tools: Built-in compliance and audit capabilities
+
+COMPETITIVE ADVANTAGES
+
+1. Data Sovereignty: Guaranteed data residency within Saudi Arabia
+2. Geopolitical Risk Mitigation: Reduces exposure to US export controls and sanctions
+3. Cost Efficiency: Competitive pricing compared to Western cloud providers
+4. Local Support: Arabic-speaking support teams and local expertise
+5. Strategic Alignment: Alignment with Saudi Arabia's Vision 2030 objectives
+
+ENTERPRISE ADOPTION
+
+Current Customers:
+- Turing (US-based AI company)
+- Multiple Saudi enterprises in finance, energy, and telecommunications
+- Regional enterprises across GCC
+
+Projected Adoption:
+- 2026: 20-30 enterprise customers
+- 2027: 50-100 enterprise customers
+- 2028: 200-300 enterprise customers
+- 2030: 1,000+ enterprise customers globally
+
+REVENUE PROJECTIONS
+
+HUMAIN ONE Revenue:
+- 2026: $500 million - $1 billion
+- 2027: $2-3 billion
+- 2028: $5-8 billion
+- 2030: $15-25 billion
+
+STRATEGIC POSITIONING
+
+HUMAIN ONE positions Saudi Arabia as:
+1. Global AI Infrastructure Provider
+2. Alternative to Western Cloud Providers
+3. Hub for Enterprise AI Deployment
+4. Leader in Sovereign AI Technology
+5. Regional AI Innovation Center
+
+CHALLENGES AND RISKS
+
+1. Competition: Competing against established cloud providers with massive resources
+2. Talent Retention: Attracting and retaining world-class AI talent
+3. International Expansion: Navigating geopolitical complexities in global expansion
+4. Regulatory Compliance: Meeting diverse regulatory requirements across markets
+5. Technology Innovation: Maintaining pace with rapid AI innovation
+
+FUTURE OUTLOOK
+
+HUMAIN ONE is positioned to become one of the world's top-5 AI infrastructure providers by 2030. Success will depend on:
+1. Continued investment in technology and talent
+2. Successful customer acquisition and retention
+3. International expansion and partnerships
+4. Innovation in AI capabilities and services
+5. Alignment with global AI standards and best practices`,
+    sector: "AI Infrastructure",
+    impact: 9.3,
+    horizon: "0-24m",
+    country: "Saudi Arabia",
+    category: "infrastructure",
+    date: "2026-03-26",
+  },
+  // Signal 227: Turing's Strategic Bet
+  {
+    id: "227",
+    title: "Turing's Strategic Bet on Saudi AI: What It Means for Global AI Talent",
+    description: `Turing's decision to partner with HUMAIN and become the first US-based customer of HUMAIN ONE represents a significant strategic bet on Saudi Arabia's AI infrastructure and talent ecosystem. This partnership has major implications for global AI talent distribution and the future of AI development.
+
+TURING'S STRATEGIC POSITIONING
+
+Turing is a US-based AI company that connects global AI talent with enterprises. By partnering with HUMAIN, Turing is:
+1. Diversifying its infrastructure away from US-based providers
+2. Gaining access to Saudi Arabia's capital resources
+3. Positioning itself as a bridge between Western and Middle Eastern AI ecosystems
+4. Demonstrating confidence in Saudi Arabia's AI capabilities
+5. Attracting international enterprises seeking sovereign AI infrastructure
+
+WHY THIS MATTERS FOR GLOBAL AI TALENT
+
+1. Talent Mobility: Partnership signals that top AI talent can work on cutting-edge projects in Saudi Arabia
+2. Career Opportunities: Creates high-paying opportunities for AI engineers and researchers in the GCC
+3. Research Collaboration: Enables collaboration between global AI researchers and Saudi institutions
+4. Compensation Competition: May drive up AI talent compensation globally as GCC competes for talent
+5. Brain Drain Reversal: Could reverse brain drain from Middle East to Silicon Valley
+
+GLOBAL IMPLICATIONS
+
+1. Multipolar AI Ecosystem: Signals emergence of multiple AI hubs beyond Silicon Valley
+2. Geopolitical Diversification: Enterprises can now diversify AI infrastructure across geopolitical regions
+3. Talent Distribution: AI talent will increasingly distribute across multiple global hubs
+4. Innovation Acceleration: Competition between hubs will accelerate AI innovation
+5. Regulatory Fragmentation: Different regulatory approaches across hubs will create complexity
+
+TALENT IMPLICATIONS FOR GCC
+
+Turing-HUMAIN partnership will likely:
+1. Attract top AI talent to Saudi Arabia and the GCC
+2. Create high-paying opportunities for AI engineers, researchers, and entrepreneurs
+3. Enable brain drain reversal from Silicon Valley to Middle East
+4. Establish GCC as a legitimate AI talent destination
+5. Create career paths for international AI professionals in the region
+
+COMPETITION FOR TALENT
+
+GCC is now competing with:
+- Silicon Valley (US)
+- Beijing (China)
+- London (UK)
+- Toronto (Canada)
+- Singapore (Asia-Pacific)
+
+Competitive Advantages:
+1. Capital Resources: Abundant funding from sovereign wealth funds
+2. Strategic Location: Geographic position between Europe, Asia, and Africa
+3. Government Support: Strong government backing for AI initiatives
+4. Tax Incentives: Attractive tax and visa policies for international talent
+5. Quality of Life: High living standards and modern infrastructure
+
+CHALLENGES
+
+1. Perception: Overcoming negative perceptions about working in the Middle East
+2. Visa Restrictions: Navigating visa and immigration policies
+3. Cultural Adaptation: Supporting international talent in adapting to local culture
+4. Brain Drain Risk: Risk of talent leaving after short-term assignments
+5. Competition: Competing with established tech hubs with strong talent ecosystems
+
+FUTURE OUTLOOK
+
+By 2030, the GCC will be home to 10,000-15,000 international AI professionals. The region will be recognized as a top-5 global AI talent destination. Turing-HUMAIN partnership is a catalyst for this transformation, signaling that the GCC is serious about becoming a global AI hub.`,
+    sector: "AI Talent & Human Capital",
+    impact: 8.7,
+    horizon: "0-36m",
+    country: "GCC",
+    category: "talent",
+    date: "2026-03-27",
+  },
+  // Signal 228: AI Agent Economy
+  {
+    id: "228",
+    title: "The AI Agent Economy: How GCC is Positioning Itself as the Enterprise AI Hub",
+    description: `The emergence of the AI agent economy represents a fundamental shift in how organizations operate and compete. The GCC, through initiatives like HUMAIN-Turing partnership, is positioning itself as a global leader in this new economic paradigm.
+
+THE AI AGENT ECONOMY
+
+The AI agent economy is characterized by:
+1. Autonomous Systems: AI agents making independent decisions and executing actions
+2. Distributed Intelligence: Multiple AI agents collaborating to solve complex problems
+3. Real-Time Optimization: Continuous optimization of business processes
+4. Autonomous Markets: AI agents trading, negotiating, and transacting with each other
+5. New Business Models: Entirely new industries built around AI agent services
+
+MARKET OPPORTUNITY
+
+Global AI Agent Economy:
+- 2026: $25-35 billion
+- 2028: $100-150 billion
+- 2030: $300-500 billion
+- 2035: $1-2 trillion
+
+GCC Opportunity:
+- 2026: $3-5 billion
+- 2028: $15-25 billion
+- 2030: $50-75 billion
+- 2035: $150-250 billion
+
+GCC POSITIONING
+
+The GCC is positioning itself as the enterprise AI hub through:
+1. HUMAIN ONE: Sovereign AI infrastructure for global enterprises
+2. Capital Resources: Abundant funding for AI startups and companies
+3. Strategic Location: Geographic position between Europe, Asia, and Africa
+4. Government Support: Strong government backing for AI initiatives
+5. Talent Attraction: Attracting world-class AI talent
+6. International Partnerships: Partnerships with global AI companies like Turing
+
+KEY SECTORS FOR AI AGENT DEPLOYMENT
+
+1. Financial Services: Autonomous trading, risk management, portfolio optimization
+2. Supply Chain: Autonomous logistics, inventory management, supplier relationships
+3. Energy: Autonomous production optimization, predictive maintenance
+4. Healthcare: Autonomous patient monitoring, treatment recommendations
+5. Manufacturing: Autonomous production scheduling, quality control
+6. Telecommunications: Autonomous network optimization, customer service
+7. Government: Autonomous service delivery, policy optimization
+
+COMPETITIVE ADVANTAGES
+
+1. Capital: Sovereign wealth funds can invest in AI infrastructure at scale
+2. Data: Access to regional data from multiple countries
+3. Talent: Attracting international AI talent
+4. Partnerships: Strategic partnerships with global AI companies
+5. Regulation: Supportive regulatory environment for AI innovation
+6. Speed: Ability to move quickly on AI initiatives
+
+STRATEGIC IMPLICATIONS
+
+1. Global Leadership: GCC positioning as top-3 global AI hub
+2. Economic Diversification: AI agent economy reducing dependence on oil
+3. Job Creation: Creating high-paying jobs in AI and technology sectors
+4. Innovation: Attracting global innovation to the region
+5. Geopolitical Influence: AI leadership translating to geopolitical influence
+
+CHALLENGES
+
+1. Talent Retention: Retaining international talent in the region
+2. Innovation Culture: Building culture of innovation and entrepreneurship
+3. Regulatory Framework: Developing appropriate regulatory frameworks
+4. Ethical Considerations: Addressing ethical implications of autonomous systems
+5. Competition: Competing with established AI hubs globally
+
+FUTURE OUTLOOK
+
+By 2030, the GCC will be home to:
+- 500+ AI agent companies
+- 50,000+ AI professionals
+- $50-75 billion in AI agent economy value
+- Top-3 position in global AI hub rankings
+
+The HUMAIN-Turing partnership is a catalyst for this transformation. Success will depend on continued investment, talent attraction, and innovation. The GCC has the capital and strategic positioning to become a global leader in the AI agent economy.`,
+    sector: "AI Economy & Innovation",
+    impact: 9.1,
+    horizon: "0-36m",
+    country: "GCC",
+    category: "economy",
+    date: "2026-03-28",
+  },
+];
+
+// Create freshSignals224to228 array
+const freshSignals224to228 = [
+  allSignalsOriginal[allSignalsOriginal.length - 5],
+  allSignalsOriginal[allSignalsOriginal.length - 4],
+  allSignalsOriginal[allSignalsOriginal.length - 3],
+  allSignalsOriginal[allSignalsOriginal.length - 2],
+  allSignalsOriginal[allSignalsOriginal.length - 1],
 ];
 
 // Create freshSignals214to218 array
@@ -5340,6 +5736,7 @@ export const allSignals = [
   ...freshSignals209to213,
   ...freshSignals214to218,
   ...freshSignals219to223,
+  ...freshSignals224to228,
 ];
 
 // Export FREE_SIGNAL_ID from const.ts
