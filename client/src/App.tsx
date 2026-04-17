@@ -209,6 +209,11 @@ import Signal225 from "@/pages/Signal225";
 import Signal226 from "@/pages/Signal226";
 import Signal227 from "@/pages/Signal227";
 import Signal228 from "@/pages/Signal228";
+import Signal229 from "@/pages/Signal229";
+import Signal230 from "@/pages/Signal230";
+import Signal231 from "@/pages/Signal231";
+import Signal232 from "@/pages/Signal232";
+import Signal233 from "@/pages/Signal233";
 import SearchResults from "./pages/SearchResults";
 import About from "./pages/About";
 import Premium from "./pages/Premium";
@@ -426,6 +431,11 @@ function Router() {
       <Route path={"signals/226"} component={Signal226} />
       <Route path={"signals/227"} component={Signal227} />
       <Route path={"signals/228"} component={Signal228} />
+      <Route path={"signals/229"} component={Signal229} />
+      <Route path={"signals/230"} component={Signal230} />
+      <Route path={"signals/231"} component={Signal231} />
+      <Route path={"signals/232"} component={Signal232} />
+      <Route path={"signals/233"} component={Signal233} />
       <Route path="/signals/:id" component={SignalDetail} /><Route path="/contact" component={Contact} />
       <Route path="/about" component={About} />
       <Route path="/investors" component={About} /><Route path="/premium" component={Premium} />
