@@ -405,8 +405,8 @@ export default function Home() {
                 {/* Floating mascot container */}
                 <div className="relative animate-camel-float">
                   <img
-                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663028659189/BvIvNKGGYvzjwGug.png"
-                    alt="AgentDubai Sovereign AI Agent Mascot"
+                    src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028659189/eDJcJZKVVfHaA8q3xWztkP/agentdubai-banner-corrected-2avvY9umympWQLVHdNuxzm.webp"
+                    alt="AgentDubai Sovereign AI Agent Banner"
                     className="relative w-full max-w-md h-auto rounded-lg shadow-2xl"
                     style={{ filter: 'drop-shadow(0 0 20px rgba(16, 185, 129, 0.3))' }}
                   />
